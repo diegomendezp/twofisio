@@ -1,7 +1,7 @@
 import React from 'react';
 
 const displayDescription = (description) => { 
-  return description.map((element, index) => <li>{element}</li>)
+  return description.map((element, i) => <li key={i}>{element}</li>)
 }
 const Treatment = ({name, description}) => {
   return (
