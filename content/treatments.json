@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Traumatología",
+    "description": [
+      "Patologías de columna vertebral (esguinces cervicales, dorsalgias, lumbalgias, escoliosis, ciáticas…)",
+      "Patologías musculo-tendinosas (contracturas, roturas fibrilares, tendinosis…)",
+      "Patologías articulares (artrosis, artritis, debilidad articular…)",
+      "Lesiones deportivas (esguinces, luxaciones, fracturas, distensiones…)",
+      "Lesiones mandibulares"
+    ]
+  },
+  {
+    "name": "Circulatorio",
+    "description": [
+      "Piernas cansadas (por insuficiencia venosa crónica)",
+      "Cirugías con extirpación de ganglios linfáticos",
+      "Edemas y linfedemas",
+      "Varices"
+    ]
+  },
+  {
+    "name": "Pre y post-cirugía",
+    "description": [
+      " Preparación del paciente para conseguir una total recuperación funcional tras la cirugía",
+      "Reeducación",
+      "Equilibrio",
+      "Marcha",
+      "Coordinación",
+      "Musculación",
+      "Propiocepción"
+    ]
+  },
+  {
+    "name": "Neurología",
+    "description": [
+      "Cefaleas",
+      "Migrañas",
+      "Vértigos",
+      "Hemiplejías",
+      "Parkinson",
+      "Ictus"
+    ]
+  },
+  {
+    "name": "Tratamiento visceral",
+    "description": [
+      "Digestiones pesadas",
+      "Colon irritable",
+      "Menstruaciones dolorosas"
+    ]
+  }
+]

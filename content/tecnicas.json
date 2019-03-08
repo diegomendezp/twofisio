@@ -1,0 +1,34 @@
+{
+  "description": "En Twofisio basamos nuestros tratamientos sobre todo, en la terapia manual, ya que la consideramos de las más efectivas y por tanto imprescindible para la mejor recuperación del cliente.",
+  "techniques": [
+    {
+      "name": "Fisioterapia",
+      "description":"a través de la aplicación de técnicas específicas, (masoterapia, movilizaciones, estiramientos, electroterapia, magnetoterapia…), cura, previene, recupera y adapta a personas afectadas de disfunciones somáticas y orgánicas o a aquellos que desean mantener un adecuado nivel de salud"
+    },
+    {
+      "name": "Osteopatía",
+      "description":"relacionada con el mantenimiento de la integridad morfológica normal del cuerpo. Incluye técnicas de manipulación articular, técnicas dirigidas a la reposición de vísceras y tratamiento de partes blandas."
+    },
+    {
+      "name": "Terapia miofascial",
+      "description": "trabajo del tejido blando del cuerpo para conseguir la total libertad de movimientos del mismo."
+    },
+    {
+      "name": "Drenaje linfático manual",
+      "description": "maniobras manuales suaves realizas con el fin de desplazar o drenar la linfa que por cualquier cusa patológica se encuentra estancada."
+    },
+    {
+      "name": "Vendaje neuromuscular o kinesiotaping",
+      "description": "técnica de vendaje que ayuda a la recuperación de la lesión sin producir los efectos secundarios del vendaje funcional (pérdida de masa muscular, rigideces articulares…)"
+    },
+    {
+      "name": "Puntos gatillo",
+      "description": "maniobras dirigidas a tratar puntos gatillo (puntos hipersensibles dentro de la banda tensa de un músculo esquelético que producen dolores en otras zonas del cuerpo). Incluyen técnica de Jones, punción seca…"
+    },
+    {
+      "name": "Estiramientos musculares",
+      "description": "cuyo objetivo es alargar el tejido blando para conseguir mayor amplitud articular, relación de la musculatura…"
+    }
+  ]
+}
+
