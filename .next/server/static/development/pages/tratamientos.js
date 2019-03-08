@@ -88,15 +88,15 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./components/Member/Member.js":
-/*!*************************************!*\
-  !*** ./components/Member/Member.js ***!
-  \*************************************/
+/***/ "./components/Member/Treatment.js":
+/*!****************************************!*\
+  !*** ./components/Member/Treatment.js ***!
+  \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -104,13 +104,12 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/components/Member/Member.js";
+var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/components/Member/Treatment.js";
 
 
-var displayCurriculum = function displayCurriculum(curriculum) {
-  return curriculum.map(function (element, i) {
+var displayDescription = function displayDescription(description) {
+  return description.map(function (element, index) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-      key: i,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 4
@@ -120,10 +119,9 @@ var displayCurriculum = function displayCurriculum(curriculum) {
   });
 };
 
-var Member = function Member(_ref) {
+var Treatment = function Treatment(_ref) {
   var name = _ref.name,
-      number = _ref.number,
-      curriculum = _ref.curriculum;
+      description = _ref.description;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
@@ -136,41 +134,21 @@ var Member = function Member(_ref) {
       lineNumber: 9
     },
     __self: this
-  }, name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "https://images.unsplash.com/photo-1514672013381-c6d0df1c8b18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
-    alt: "".concat(name, "-photo"),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, "N\xBAColegiado: ", number), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12
-    },
-    __self: this
-  }, displayCurriculum(curriculum)));
+  }, name), displayDescription(description));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Member);
+/* harmony default export */ __webpack_exports__["default"] = (Treatment);
 
 /***/ }),
 
-/***/ "./content/team.json":
-/*!***************************!*\
-  !*** ./content/team.json ***!
-  \***************************/
-/*! exports provided: 0, 1, 2, 3, default */
+/***/ "./content/treatments.json":
+/*!*********************************!*\
+  !*** ./content/treatments.json ***!
+  \*********************************/
+/*! exports provided: 0, 1, 2, 3, 4, default */
 /***/ (function(module) {
 
-module.exports = [{"name":"Rebeca Poyatos","number":5474,"curriculum":["Grado en fisioterapia (Universidad San Pablo Ceu)","Experto en osteopatía (Universidad Alcalá de Henares)","Ecografía músculo esquelética (Universidad autónoma de Madrid ONCE y MVClinic)","Fisioterapia invasiva (MVClinic)","Integración clínica osteopática (Escuela Thuban)","Experta en terapia miofascial (Universidad Europea de Madrid y 1 er curso en la Escuela de Andreu Pilat)","Formación en drenaje linfático manual (Escuela de formación en terapias manulaes Kabat)","Terapia manual y punción seca en el Síndrome miofascial. Puntos gatillo miofasciales (Escuela de Osteopatía de Madrid)","Curso de terapia cráneo-sacral I (Instituto Upledger)","Tratamiento fisioterápico en disfunciones articulación témporo-mandibular (Fisioterapia Arguelles)","Monitora de pilates (Federación Madrileña de Gimnasia)"],"photo":""},{"name":"Clara Taboada","number":6184,"curriculum":["Diplomada en fisioterapia (Universidad Rey Juan Carlos)","Experto en terapia miofascial (Universidad Europea de Madrid)","Ecografía músculo esquelética (Universidad autónoma de Madrid ONCE y MVClinic)","Fisioterapia invasiva (MVClinic)","Monitor pilates suelo, aparatos estabilizadores nivel I y nivel II (Federación Madrileña de Gimnasia)","Terapia Manual y Punción Seca en el Síndrome de Dolor Miofascial. Puntos Gatillo Miofasciales (Escuela de Osteopatía de Madrid)","XXI Jornadas de Fisioterapia Deportiva. Actualizaciones en Regeneración Muscular y Tendinosa (Escuela de fisioterapia de la ONCE)","Terapia manual osteopática (Instituto Relater)","Integración clínica osteopática (Escuela Thuban)","Máster en fisioterapia deportiva (Universidad Europea de Madrid y Escuela de fisioterapia del Real Madrid)","Kinesiotaping nivel I y nivel II (Universidad Europea de Madrid)"],"photo":""},{"name":"Alejandro Méndez","number":9775,"curriculum":["Grado en fisioterapia (Universidad Pontificia de Comillas)","Especialista en Fisioterapia Deportiva (Universidad Complutense de Madrid)","Especialista en Nutrición Deportiva y Fisiología del ejercicio (Dietas, Deportes y Tecnología S.L)","Experto en pilates y su aplicación a la fisioterapia (AEFEP)"],"photo":""},{"name":"Lara González","number":0,"curriculum":["Grado en fisioterapia (Universidad Rey Juan Carlos)","Certificado “Ejercicio terapéutico y control motor basado en el método pilates suelo por la Dirección General de Investigación y Gestión del Conocimiento de la Consejería de Salud de la Junta de Andalucía (20h).","Certificado “Kinesio Taping Fundamentals And Advanced (KT1 &amp; KT2)” por la Kinesio Taping International Association","Máster en fisioterapia deportiva (Universidad Pontificia de Salamanca y Clinica Cemtro)"],"photo":""}];
+module.exports = [{"name":"Traumatología","description":["Patologías de columna vertebral (esguinces cervicales, dorsalgias, lumbalgias, escoliosis, ciáticas…)","Patologías musculo-tendinosas (contracturas, roturas fibrilares, tendinosis…)","Patologías articulares (artrosis, artritis, debilidad articular…)","Lesiones deportivas (esguinces, luxaciones, fracturas, distensiones…)","Lesiones mandibulares"]},{"name":"Circulatorio","description":["Piernas cansadas (por insuficiencia venosa crónica)","Cirugías con extirpación de ganglios linfáticos","Edemas y linfedemas","Varices"]},{"name":"Pre y post-cirugía","description":[" Preparación del paciente para conseguir una total recuperación funcional tras la cirugía","Reeducación","Equilibrio","Marcha","Coordinación","Musculación","Propiocepción"]},{"name":"Neurología","description":["Cefaleas","Migrañas","Vértigos","Hemiplejías","Parkinson","Ictus"]},{"name":"Tratamiento visceral","description":["Digestiones pesadas","Colon irritable","Menstruaciones dolorosas"]}];
 
 /***/ }),
 
@@ -218,10 +196,10 @@ function _extends() {
 
 /***/ }),
 
-/***/ "./pages/nosotros.js":
-/*!***************************!*\
-  !*** ./pages/nosotros.js ***!
-  \***************************/
+/***/ "./pages/tratamientos.js":
+/*!*******************************!*\
+  !*** ./pages/tratamientos.js ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -230,20 +208,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _content_team_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../content/team.json */ "./content/team.json");
-var _content_team_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../content/team.json */ "./content/team.json", 1);
-/* harmony import */ var _components_Member_Member_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Member/Member.js */ "./components/Member/Member.js");
+/* harmony import */ var _content_treatments_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../content/treatments.json */ "./content/treatments.json");
+var _content_treatments_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../content/treatments.json */ "./content/treatments.json", 1);
+/* harmony import */ var _components_Member_Treatment_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Member/Treatment.js */ "./components/Member/Treatment.js");
 
-var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/pages/nosotros.js";
-
-
+var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/pages/tratamientos.js";
 
 
-var displayTeam = function displayTeam() {
-  return _content_team_json__WEBPACK_IMPORTED_MODULE_2__.map(function (member, i) {
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Member_Member_js__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+
+
+var displayTreatments = function displayTreatments() {
+  return _content_treatments_json__WEBPACK_IMPORTED_MODULE_2__.map(function (treatment, i) {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Member_Treatment_js__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
       key: i
-    }, member, {
+    }, treatment, {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 6
@@ -253,28 +231,28 @@ var displayTeam = function displayTeam() {
   });
 };
 
-var nosotros = function nosotros(props) {
+var tratamientos = function tratamientos(props) {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
-  }, displayTeam());
+  }, displayTreatments());
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (nosotros);
+/* harmony default export */ __webpack_exports__["default"] = (tratamientos);
 
 /***/ }),
 
-/***/ 5:
-/*!*********************************!*\
-  !*** multi ./pages/nosotros.js ***!
-  \*********************************/
+/***/ 4:
+/*!*************************************!*\
+  !*** multi ./pages/tratamientos.js ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/Diegomendez1997/Tailor/twofisio/pages/nosotros.js */"./pages/nosotros.js");
+module.exports = __webpack_require__(/*! /Users/Diegomendez1997/Tailor/twofisio/pages/tratamientos.js */"./pages/tratamientos.js");
 
 
 /***/ }),
@@ -302,4 +280,4 @@ module.exports = require("react");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=nosotros.js.map
+//# sourceMappingURL=tratamientos.js.map
