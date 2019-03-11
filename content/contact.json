@@ -1,6 +1,9 @@
-{
-  "address": "Avenida Padre Piquer 39, Madrid",
-  "tel": "917116205 609058398",
-  "timetable": "Lunes a jueves de 9 a 14 y de 15 a 21 horas. Viernes de 9 a 14 y de 16 a 21 horas"
-}
-
+[
+  { "name": "Teléfono", "value": "917116205 | 609058398" },
+  { "name": "Email", "value": "centrodefisioterapia@twofisio.es" },
+  { "name": "Dirección", "value": "Avenida Padre Piquer 39, Madrid" },
+  {
+    "name": "Horario",
+    "value": "Lunes a jueves de 9 a 14 y de 15 a 21 horas. Viernes de 9 a 14 y de 16 a 21 horas"
+  }
+]

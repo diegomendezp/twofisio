@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <React.Fragment>
     <NavbarStyles>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Ucr_modern_logo.png" alt="two-fisio-logo"/>
+      <img src="/static/logo.png" alt="two-fisio-logo"/>
       <ul>
         <Link href="/nosotros">
           <a>Nosotros</a>
