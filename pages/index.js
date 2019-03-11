@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import Navbar from '../components/Navbar/Navbar';
 
 export default () => (
-  <div>
-    <Title>My First Next.js Page</Title>
-  </div>
+  <React.Fragment>
+    <Navbar />
+  </React.Fragment>
 );
 
 const Title = styled.h1`
