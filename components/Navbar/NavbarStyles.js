@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const NavbarWrapper = styled.div`
+  z-index: 100;
   font-family: "Monserrat-Semibold";
   display: flex;
   justify-content: space-between;

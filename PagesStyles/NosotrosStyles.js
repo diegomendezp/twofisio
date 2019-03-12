@@ -4,7 +4,20 @@ const NosotrosStyles = styled.div`
   max-width: 100vw;
   padding-top: 100px;
   font-family: "Monserrat-Regular";
+  .accordion__body--hidden {
+    display: none;
+    opacity: 0;
+    animation: fadein 0.35s ease-in;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
 
+    100% {
+        opacity: 1;
+    }
+}
   .member-img {
     width: 100%;
     height: 200px;

@@ -2255,7 +2255,7 @@ function (_Document) {
                         return sheet.collectStyles(react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(App, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, props, {
                           __source: {
                             fileName: _jsxFileName,
-                            lineNumber: 12
+                            lineNumber: 13
                           },
                           __self: this
                         })));

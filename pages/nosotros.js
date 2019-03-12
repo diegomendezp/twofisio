@@ -7,6 +7,7 @@ import NosotrosStyles from "../PagesStyles/NosotrosStyles.js";
 import Head from "next/head";
 import MonserratSemiBold from "../static/fonts/Montserrat/Montserrat-SemiBold.ttf";
 import MonserratRegular from "../static/fonts/Montserrat/Montserrat-Regular.ttf";
+import {withRouter} from 'next/router'
 
 const displayTeam = () => {
   return team.map((member, i) => <Member key={i} {...member} />);

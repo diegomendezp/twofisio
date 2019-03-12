@@ -942,6 +942,11 @@ ajv@^6.1.0:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
+all@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/all/-/all-0.0.0.tgz#fb2aa75d4759d40e39ecbb118fabf0cc11ff554f"
+  integrity sha1-+yqnXUdZ1A457LsRj6vwzBH/VU8=
+
 ansi-colors@^3.0.0:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.2.4.tgz#e3a3da4bfbae6c86a9c285625de124a234026fbf"
@@ -3171,6 +3176,11 @@ neo-async@^2.5.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.0.tgz#b9d15e4d71c6762908654b5183ed38b753340835"
   integrity sha512-MFh0d/Wa7vkKO3Y3LlacqAEeHK0mckVqzDieUKTT+KGxi+zIpeVsFxymkIiRpbpDziHc290Xr9A1O4Om7otoRA==
+
+next-compose-plugins@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/next-compose-plugins/-/next-compose-plugins-2.1.1.tgz#7da0a3ce0c8ce267b5cb4164d2fb6e4aaf61bf86"
+  integrity sha512-4yLtmGjnBlzuYdL66+c/zi8ljl24sK9jtP31UsTG1ZAAHj+ybWfEG/S+HMwK+pD2fNmJ4xQyr4xOubzExcS+Lg==
 
 next-compose@^0.0.2:
   version "0.0.2"

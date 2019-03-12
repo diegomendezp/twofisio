@@ -14,7 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 var NosotrosStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "NosotrosStyles",
   componentId: "ak83kl-0"
-})(["max-width:100vw;padding-top:100px;font-family:\"Monserrat-Regular\";.member-img{width:100%;height:200px;object-fit:cover;}.member-description{width:90%;letter-spacing:0.2px;margin:0 auto;margin-bottom:50px;margin-top:25px;}p{width:100%;letter-spacing:0.2px;margin:0 auto;}.accordion{border:0;border-radius:0;max-width:100vw;}.member-info{justify-content:center;display:flex;flex-direction:column;align-items:center;width:90%;margin:0 auto;}.accordion__title{background-color:white;color:#444;cursor:pointer;outline:none;padding:0px;width:100%;text-align:left;border:none;height:80px;display:flex;justify-content:space-evenly;width:90%;margin:0 auto;}.member-name{color:#740a64;font-family:Monserrat-Semibold;letter-spacing:0.6px;}.accordion__body{margin:0 auto;margin-bottom:5%;padding:0px;animation:fadein 0.35s ease-in;width:90%;}.team{width:100%;}@media only screen and (min-width:415px) and (max-width:768px){.member{width:40%;}.team{display:flex;flex-wrap:wrap;justify-content:space-around;}.member-description{width:80%;letter-spacing:0.2px;margin:0 auto;margin-bottom:50px;margin-top:25px;}}@media only screen and (min-width:769px) and (max-width:1440px){.member{width:40%;}.team{display:flex;flex-wrap:wrap;justify-content:space-around;}.member-description{width:80%;letter-spacing:0.2px;margin:0 auto;margin-bottom:50px;margin-top:25px;}}@media only screen and (min-width:1441px){.member{width:40%;}.team{display:flex;flex-wrap:wrap;justify-content:space-around;}.member-description{width:80%;letter-spacing:0.2px;margin:0 auto;margin-bottom:50px;margin-top:25px;}}"]);
+})(["max-width:100vw;padding-top:100px;font-family:\"Monserrat-Regular\";.accordion__body--hidden{display:none;opacity:0;animation:fadein 0.35s ease-in;}@keyframes fadein{0%{opacity:0;}100%{opacity:1;}}.member-img{width:100%;height:200px;object-fit:cover;}.member-description{width:90%;letter-spacing:0.2px;margin:0 auto;margin-bottom:50px;margin-top:25px;}p{width:100%;letter-spacing:0.2px;margin:0 auto;}.accordion{border:0;border-radius:0;max-width:100vw;}.member-info{justify-content:center;display:flex;flex-direction:column;align-items:center;width:90%;margin:0 auto;}.accordion__title{background-color:white;color:#444;cursor:pointer;outline:none;padding:0px;width:100%;text-align:left;border:none;height:80px;display:flex;justify-content:space-evenly;width:90%;margin:0 auto;}.member-name{color:#740a64;font-family:Monserrat-Semibold;letter-spacing:0.6px;}.accordion__body{margin:0 auto;margin-bottom:5%;padding:0px;animation:fadein 0.35s ease-in;width:90%;}.team{width:100%;}@media only screen and (min-width:415px) and (max-width:768px){.member{width:40%;}.team{display:flex;flex-wrap:wrap;justify-content:space-around;}.member-description{width:80%;letter-spacing:0.2px;margin:0 auto;margin-bottom:50px;margin-top:25px;}}@media only screen and (min-width:769px) and (max-width:1440px){.member{width:40%;}.team{display:flex;flex-wrap:wrap;justify-content:space-around;}.member-description{width:80%;letter-spacing:0.2px;margin:0 auto;margin-bottom:50px;margin-top:25px;}}@media only screen and (min-width:1441px){.member{width:40%;}.team{display:flex;flex-wrap:wrap;justify-content:space-around;}.member-description{width:80%;letter-spacing:0.2px;margin:0 auto;margin-bottom:50px;margin-top:25px;}}"]);
 /* harmony default export */ __webpack_exports__["default"] = (NosotrosStyles);
 
 /***/ }),
@@ -184,8 +184,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-accessible-accordion */ "./node_modules/react-accessible-accordion/dist/umd/index.js");
 /* harmony import */ var react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var react_accessible_accordion_dist_fancy_example_css__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-accessible-accordion/dist/fancy-example.css */ "./node_modules/react-accessible-accordion/dist/fancy-example.css");
-/* harmony import */ var react_accessible_accordion_dist_fancy_example_css__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_accessible_accordion_dist_fancy_example_css__WEBPACK_IMPORTED_MODULE_10__);
 
 
 
@@ -195,7 +193,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/components/Member/Member.js";
-
 
 
 var Member =
@@ -336,24 +333,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _NavbarStyles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavbarStyles */ "./components/Navbar/NavbarStyles.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "./node_modules/next/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/components/Navbar/Navbar.js";
+
 
 
 
 
 var Navbar = function Navbar(_ref) {
   var link = _ref.link;
-  var url = link === "Cerrar" ? "/" : "/nosotros";
+  var url;
+
+  if (link === "Cerrar") {
+    url = "/";
+  } else if (link === "Nosotros") {
+    url = "/nosotros";
+  }
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavbarStyles__WEBPACK_IMPORTED_MODULE_1__["NavbarStyles"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 15
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavbarStyles__WEBPACK_IMPORTED_MODULE_1__["NavbarWrapper"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 16
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -361,26 +368,26 @@ var Navbar = function Navbar(_ref) {
     alt: "two-fisio-logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 17
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 18
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: url,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 19
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 20
     },
     __self: this
   }, link)))));
@@ -406,7 +413,7 @@ __webpack_require__.r(__webpack_exports__);
 var NavbarWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "NavbarStyles__NavbarWrapper",
   componentId: "sc-1p3za07-0"
-})(["font-family:\"Monserrat-Semibold\";display:flex;justify-content:space-between;align-items:center;color:rgb(116,10,100);width:90%;max-width:100vw;position:fixed;top:0;margin:0 auto;img{height:80px;object-fit:contain;}ul{a{list-style:none;text-decoration:none;font-size:20px;letter-spacing:0.6pt;}a:visited{color:rgb(116,10,100);}}"]);
+})(["z-index:100;font-family:\"Monserrat-Semibold\";display:flex;justify-content:space-between;align-items:center;color:rgb(116,10,100);width:90%;max-width:100vw;position:fixed;top:0;margin:0 auto;img{height:80px;object-fit:contain;}ul{a{list-style:none;text-decoration:none;font-size:20px;letter-spacing:0.6pt;}a:visited{color:rgb(116,10,100);}}"]);
 var NavbarStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "NavbarStyles",
   componentId: "sc-1p3za07-1"
@@ -16765,8 +16772,11 @@ var _content_team_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__w
 /* harmony import */ var _static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../static/fonts/Montserrat/Montserrat-Regular.ttf */ "./static/fonts/Montserrat/Montserrat-Regular.ttf");
 /* harmony import */ var _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! next/router */ "./node_modules/next/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_11__);
 
 var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/pages/nosotros.js";
+
 
 
 
@@ -16785,7 +16795,7 @@ var displayTeam = function displayTeam() {
     }, member, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 13
       },
       __self: this
     }));
@@ -16796,13 +16806,13 @@ var nosotros = function nosotros(props) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_8___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
@@ -16811,7 +16821,7 @@ var nosotros = function nosotros(props) {
     className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a]]]),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 20
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
@@ -16819,44 +16829,44 @@ var nosotros = function nosotros(props) {
     className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a]]]),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
     id: "3898954932",
     dynamic: [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a],
     __self: this
-  }, "@font-face{font-family:\"Monserrat-Semibold\";src:url(".concat(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}@font-face{font-family:\"Monserrat-Regular\";src:url(").concat(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}body{margin:0;padding:0;max-width:100%;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9EaWVnb21lbmRlejE5OTcvVGFpbG9yL3R3b2Zpc2lvL3BhZ2VzL25vc290cm9zLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXFCeUIsQUFHNEMsQUFNRCxBQU92QixTQUNDLFVBQ0ssYUFSMEMsQ0FOQSxDQWUzRCx1REFScUIsQ0FOQSxrQkFPRCxDQU5BLGlCQU9wQixDQU5BIiwiZmlsZSI6Ii9Vc2Vycy9EaWVnb21lbmRlejE5OTcvVGFpbG9yL3R3b2Zpc2lvL3BhZ2VzL25vc290cm9zLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gXCJyZWFjdFwiO1xuaW1wb3J0IHRlYW0gZnJvbSBcIi4uL2NvbnRlbnQvdGVhbS5qc29uXCI7XG5pbXBvcnQgeyBNZW1iZXIgfSBmcm9tIFwiLi4vY29tcG9uZW50cy9NZW1iZXIvTWVtYmVyLmpzXCI7XG5pbXBvcnQgTmF2YmFyIGZyb20gXCIuLi9jb21wb25lbnRzL05hdmJhci9OYXZiYXJcIjtcbmltcG9ydCBGb290ZXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvRm9vdGVyL0Zvb3Rlci5qc1wiO1xuaW1wb3J0IE5vc290cm9zU3R5bGVzIGZyb20gXCIuLi9QYWdlc1N0eWxlcy9Ob3NvdHJvc1N0eWxlcy5qc1wiO1xuaW1wb3J0IEhlYWQgZnJvbSBcIm5leHQvaGVhZFwiO1xuaW1wb3J0IE1vbnNlcnJhdFNlbWlCb2xkIGZyb20gXCIuLi9zdGF0aWMvZm9udHMvTW9udHNlcnJhdC9Nb250c2VycmF0LVNlbWlCb2xkLnR0ZlwiO1xuaW1wb3J0IE1vbnNlcnJhdFJlZ3VsYXIgZnJvbSBcIi4uL3N0YXRpYy9mb250cy9Nb250c2VycmF0L01vbnRzZXJyYXQtUmVndWxhci50dGZcIjtcblxuY29uc3QgZGlzcGxheVRlYW0gPSAoKSA9PiB7XG4gIHJldHVybiB0ZWFtLm1hcCgobWVtYmVyLCBpKSA9PiA8TWVtYmVyIGtleT17aX0gey4uLm1lbWJlcn0gLz4pO1xufTtcblxuY29uc3Qgbm9zb3Ryb3MgPSBwcm9wcyA9PiB7XG4gIHJldHVybiAoXG4gICAgPFJlYWN0LkZyYWdtZW50PlxuICAgICAgPEhlYWQ+XG4gICAgICAgIDxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MVwiIC8+XG4gICAgICAgIDxtZXRhIGNoYXJTZXQ9XCJ1dGYtOFwiIC8+XG4gICAgICA8L0hlYWQ+XG4gICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICBAZm9udC1mYWNlIHtcbiAgICAgICAgICBmb250LWZhbWlseTogXCJNb25zZXJyYXQtU2VtaWJvbGRcIjtcbiAgICAgICAgICBzcmM6IHVybCgke01vbnNlcnJhdFNlbWlCb2xkfSkgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgICAgIH1cbiAgICAgICAgQGZvbnQtZmFjZSB7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiTW9uc2VycmF0LVJlZ3VsYXJcIjtcbiAgICAgICAgICBzcmM6IHVybCgke01vbnNlcnJhdFJlZ3VsYXJ9KSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbiAgICAgICAgICBmb250LXdlaWdodDogbm9ybWFsO1xuICAgICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgICAgICAgfVxuXG4gICAgICAgIGJvZHkge1xuICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICAgIG1heC13aWR0aDogMTAwJTtcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgICAgPE5hdmJhciBsaW5rPVwiQ2VycmFyXCIvPlxuICAgICAgPE5vc290cm9zU3R5bGVzPlxuICAgICAgICA8cCBjbGFzc05hbWU9XCJtZW1iZXItZGVzY3JpcHRpb25cIj5cbiAgICAgICAgICBFbiBudWVzdHJvIGNlbnRybyBkZSBmaXNpb3RlcmFwaWEgc2llbXByZSBzZXLDoSBhdGVuZGlkbyBwb3JcbiAgICAgICAgICBwcm9mZXNpb25hbGVzIGNvbGVnaWFkb3MgY29uIGFtcGxpYSBleHBlcmllbmNpYSBlbiBlbCBzZWN0b3IgeSBlblxuICAgICAgICAgIGNvbnRpbnVhIGZvcm1hY2nDs24gcGFyYSBvZnJlY2VybGUgZWwgbWVqb3IgdHJhdGFtaWVudG8gcG9zaWJsZS5cbiAgICAgICAgPC9wPlxuXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidGVhbVwiPntkaXNwbGF5VGVhbSgpfTwvZGl2PlxuICAgICAgPC9Ob3NvdHJvc1N0eWxlcz5cbiAgICAgIDxGb290ZXIgLz5cbiAgICA8L1JlYWN0LkZyYWdtZW50PlxuICApO1xufTtcblxuZXhwb3J0IGRlZmF1bHQgbm9zb3Ryb3M7XG4iXX0= */\n/*@ sourceURL=/Users/Diegomendez1997/Tailor/twofisio/pages/nosotros.js */")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "@font-face{font-family:\"Monserrat-Semibold\";src:url(".concat(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}@font-face{font-family:\"Monserrat-Regular\";src:url(").concat(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}body{margin:0;padding:0;max-width:100%;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9EaWVnb21lbmRlejE5OTcvVGFpbG9yL3R3b2Zpc2lvL3BhZ2VzL25vc290cm9zLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXNCeUIsQUFHNEMsQUFNRCxBQU92QixTQUNDLFVBQ0ssYUFSMEMsQ0FOQSxDQWUzRCx1REFScUIsQ0FOQSxrQkFPRCxDQU5BLGlCQU9wQixDQU5BIiwiZmlsZSI6Ii9Vc2Vycy9EaWVnb21lbmRlejE5OTcvVGFpbG9yL3R3b2Zpc2lvL3BhZ2VzL25vc290cm9zLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gXCJyZWFjdFwiO1xuaW1wb3J0IHRlYW0gZnJvbSBcIi4uL2NvbnRlbnQvdGVhbS5qc29uXCI7XG5pbXBvcnQgeyBNZW1iZXIgfSBmcm9tIFwiLi4vY29tcG9uZW50cy9NZW1iZXIvTWVtYmVyLmpzXCI7XG5pbXBvcnQgTmF2YmFyIGZyb20gXCIuLi9jb21wb25lbnRzL05hdmJhci9OYXZiYXJcIjtcbmltcG9ydCBGb290ZXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvRm9vdGVyL0Zvb3Rlci5qc1wiO1xuaW1wb3J0IE5vc290cm9zU3R5bGVzIGZyb20gXCIuLi9QYWdlc1N0eWxlcy9Ob3NvdHJvc1N0eWxlcy5qc1wiO1xuaW1wb3J0IEhlYWQgZnJvbSBcIm5leHQvaGVhZFwiO1xuaW1wb3J0IE1vbnNlcnJhdFNlbWlCb2xkIGZyb20gXCIuLi9zdGF0aWMvZm9udHMvTW9udHNlcnJhdC9Nb250c2VycmF0LVNlbWlCb2xkLnR0ZlwiO1xuaW1wb3J0IE1vbnNlcnJhdFJlZ3VsYXIgZnJvbSBcIi4uL3N0YXRpYy9mb250cy9Nb250c2VycmF0L01vbnRzZXJyYXQtUmVndWxhci50dGZcIjtcbmltcG9ydCB7d2l0aFJvdXRlcn0gZnJvbSAnbmV4dC9yb3V0ZXInXG5cbmNvbnN0IGRpc3BsYXlUZWFtID0gKCkgPT4ge1xuICByZXR1cm4gdGVhbS5tYXAoKG1lbWJlciwgaSkgPT4gPE1lbWJlciBrZXk9e2l9IHsuLi5tZW1iZXJ9IC8+KTtcbn07XG5cbmNvbnN0IG5vc290cm9zID0gcHJvcHMgPT4ge1xuICByZXR1cm4gKFxuICAgIDxSZWFjdC5GcmFnbWVudD5cbiAgICAgIDxIZWFkPlxuICAgICAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTFcIiAvPlxuICAgICAgICA8bWV0YSBjaGFyU2V0PVwidXRmLThcIiAvPlxuICAgICAgPC9IZWFkPlxuICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgQGZvbnQtZmFjZSB7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiTW9uc2VycmF0LVNlbWlib2xkXCI7XG4gICAgICAgICAgc3JjOiB1cmwoJHtNb25zZXJyYXRTZW1pQm9sZH0pIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICAgICAgICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gICAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgICAgICB9XG4gICAgICAgIEBmb250LWZhY2Uge1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIk1vbnNlcnJhdC1SZWd1bGFyXCI7XG4gICAgICAgICAgc3JjOiB1cmwoJHtNb25zZXJyYXRSZWd1bGFyfSkgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgICAgIH1cblxuICAgICAgICBib2R5IHtcbiAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgICBtYXgtd2lkdGg6IDEwMCU7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cbiAgICAgIDxOYXZiYXIgbGluaz1cIkNlcnJhclwiLz5cbiAgICAgIDxOb3NvdHJvc1N0eWxlcz5cbiAgICAgICAgPHAgY2xhc3NOYW1lPVwibWVtYmVyLWRlc2NyaXB0aW9uXCI+XG4gICAgICAgICAgRW4gbnVlc3RybyBjZW50cm8gZGUgZmlzaW90ZXJhcGlhIHNpZW1wcmUgc2Vyw6EgYXRlbmRpZG8gcG9yXG4gICAgICAgICAgcHJvZmVzaW9uYWxlcyBjb2xlZ2lhZG9zIGNvbiBhbXBsaWEgZXhwZXJpZW5jaWEgZW4gZWwgc2VjdG9yIHkgZW5cbiAgICAgICAgICBjb250aW51YSBmb3JtYWNpw7NuIHBhcmEgb2ZyZWNlcmxlIGVsIG1lam9yIHRyYXRhbWllbnRvIHBvc2libGUuXG4gICAgICAgIDwvcD5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRlYW1cIj57ZGlzcGxheVRlYW0oKX08L2Rpdj5cbiAgICAgIDwvTm9zb3Ryb3NTdHlsZXM+XG4gICAgICA8Rm9vdGVyIC8+XG4gICAgPC9SZWFjdC5GcmFnbWVudD5cbiAgKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IG5vc290cm9zO1xuIl19 */\n/*@ sourceURL=/Users/Diegomendez1997/Tailor/twofisio/pages/nosotros.js */")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"], {
     link: "Cerrar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 43
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_PagesStyles_NosotrosStyles_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 44
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
     className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a]]]) + " " + "member-description",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 45
     },
     __self: this
   }, "En nuestro centro de fisioterapia siempre ser\xE1 atendido por profesionales colegiados con amplia experiencia en el sector y en continua formaci\xF3n para ofrecerle el mejor tratamiento posible."), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a]]]) + " " + "team",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 51
     },
     __self: this
   }, displayTeam())), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Footer_Footer_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     },
     __self: this
   }));
@@ -16911,5 +16921,5 @@ module.exports = dll_9d2e7eb3ce4bb71fa337;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]));;
+},[[1,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=nosotros.js.map

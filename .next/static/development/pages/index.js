@@ -157,24 +157,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _NavbarStyles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavbarStyles */ "./components/Navbar/NavbarStyles.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "./node_modules/next/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/components/Navbar/Navbar.js";
+
 
 
 
 
 var Navbar = function Navbar(_ref) {
   var link = _ref.link;
-  var url = link === "Cerrar" ? "/" : "/nosotros";
+  var url;
+
+  if (link === "Cerrar") {
+    url = "/";
+  } else if (link === "Nosotros") {
+    url = "/nosotros";
+  }
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavbarStyles__WEBPACK_IMPORTED_MODULE_1__["NavbarStyles"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 15
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavbarStyles__WEBPACK_IMPORTED_MODULE_1__["NavbarWrapper"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 16
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
@@ -182,26 +192,26 @@ var Navbar = function Navbar(_ref) {
     alt: "two-fisio-logo",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 17
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 18
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: url,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 19
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 20
     },
     __self: this
   }, link)))));
@@ -227,7 +237,7 @@ __webpack_require__.r(__webpack_exports__);
 var NavbarWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "NavbarStyles__NavbarWrapper",
   componentId: "sc-1p3za07-0"
-})(["font-family:\"Monserrat-Semibold\";display:flex;justify-content:space-between;align-items:center;color:rgb(116,10,100);width:90%;max-width:100vw;position:fixed;top:0;margin:0 auto;img{height:80px;object-fit:contain;}ul{a{list-style:none;text-decoration:none;font-size:20px;letter-spacing:0.6pt;}a:visited{color:rgb(116,10,100);}}"]);
+})(["z-index:100;font-family:\"Monserrat-Semibold\";display:flex;justify-content:space-between;align-items:center;color:rgb(116,10,100);width:90%;max-width:100vw;position:fixed;top:0;margin:0 auto;img{height:80px;object-fit:contain;}ul{a{list-style:none;text-decoration:none;font-size:20px;letter-spacing:0.6pt;}a:visited{color:rgb(116,10,100);}}"]);
 var NavbarStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "NavbarStyles",
   componentId: "sc-1p3za07-1"
@@ -15390,7 +15400,7 @@ module.exports = "/_next/static/fonts/Montserrat-SemiBold-c88cecbffad6d8e731fd95
 
 /***/ }),
 
-/***/ 4:
+/***/ 2:
 /*!**********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2FDiegomendez1997%2FTailor%2Ftwofisio%2Fpages%2Findex.js ***!
   \**********************************************************************************************************************************/
@@ -15413,5 +15423,5 @@ module.exports = dll_9d2e7eb3ce4bb71fa337;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[2,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map

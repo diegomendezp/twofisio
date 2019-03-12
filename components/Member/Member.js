@@ -5,7 +5,7 @@ import {
   AccordionItemTitle,
   AccordionItemBody
 } from "react-accessible-accordion";
-import "react-accessible-accordion/dist/fancy-example.css";
+
 
 export class Member extends React.Component {
   constructor(props) {
