@@ -95,6 +95,46 @@ const NosotrosStyles = styled.div`
       margin-top: 25px;
     }
   }
+
+  @media only screen and (min-width: 769px) and (max-width: 1440px) {
+    .member {
+      width: 40%;
+    }
+
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .member-description {
+      width: 80%;
+      letter-spacing: 0.2px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      margin-top: 25px;
+    }
+  }
+
+  @media only screen and (min-width: 1441px) {
+    .member {
+      width: 40%;
+    }
+
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .member-description {
+      width: 80%;
+      letter-spacing: 0.2px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      margin-top: 25px;
+    }
+  }
 `;
 
 export default NosotrosStyles;
