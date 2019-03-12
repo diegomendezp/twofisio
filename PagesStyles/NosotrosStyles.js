@@ -117,6 +117,7 @@ const NosotrosStyles = styled.div`
   }
 
   @media only screen and (min-width: 1441px) {
+    
     .member {
       width: 40%;
     }

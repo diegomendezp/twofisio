@@ -5,10 +5,12 @@ const displayDescription = (description) => {
 }
 const Treatment = ({name, description}) => {
   return (
-    <React.Fragment>
-      <p className="treatment-name">{name}</p>
-      {displayDescription(description)}
-    </React.Fragment>
+    
+      <div className="treatment">
+        <p className="treatment-name">{name}</p>
+        {displayDescription(description)}
+      </div>
+    
   );
 };
 

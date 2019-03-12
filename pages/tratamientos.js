@@ -44,7 +44,9 @@ const tratamientos = (props) => {
         <img className="treatments-img" src="../static/imgTratamientos.jpg" alt="tratamientos-img"/>
         <div className="treatments-content">
           <h2>Tratamientos</h2>
-          {displayTreatments()}
+          <div className="treatments">
+            {displayTreatments()}
+          </div>
         </div>
       </TratamientosStyles>
       <Footer />
