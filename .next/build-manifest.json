@@ -17,11 +17,7 @@
       "static/chunks/styles.js",
       "static/runtime/main.js"
     ],
-    "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/": [
+    "/tratamientos": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

@@ -1,12 +1,12 @@
 import React from 'react';
 
 const displayDescription = (description) => { 
-  return description.map((element, i) => <li key={i}>{element}</li>)
+  return description.map((element, i) => <li key={i}>- {element}</li>)
 }
 const Treatment = ({name, description}) => {
   return (
     <React.Fragment>
-      <p>{name}</p>
+      <p className="treatment-name">{name}</p>
       {displayDescription(description)}
     </React.Fragment>
   );
