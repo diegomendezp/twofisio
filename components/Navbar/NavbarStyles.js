@@ -23,7 +23,7 @@ const NavbarStyles = styled.div`
     a {
       list-style: none;
       text-decoration: none;
-      font-size: 1.25vw;
+      font-size: 20px;
       letter-spacing:0.6pt;
     }
 

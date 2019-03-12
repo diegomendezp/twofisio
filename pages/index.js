@@ -1,9 +1,8 @@
+import Head from "next/head";
+import Navbar from '../components/Navbar/Navbar';
+import Footer from '../components/Footer/Footer';
 import MonserratSemiBold from '../static/fonts/Montserrat/Montserrat-SemiBold.ttf';
 import MonserratRegular from '../static/fonts/Montserrat/Montserrat-Regular.ttf';
-
-import Navbar from '../components/Navbar/Navbar';
-import Head from 'next/head'
-import Footer from '../components/Footer/Footer';
 export default () => (
   <React.Fragment>
     <Head>
@@ -27,7 +26,7 @@ export default () => (
       body {
         margin: 0;
         padding: 0;
-        max-width: 100vw;
+        max-width: 100%;
       }
     `}</style>
     <React.Fragment>
