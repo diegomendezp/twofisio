@@ -26,9 +26,14 @@ const Footer = () => {
       <div className="footer-content">
         <h3 className="contact">Contacto</h3>
         {displayContactElements(contactList)}
+        
       </div>
     </FooterStyles>
+    
   );
 };
 
 export default Footer;
+
+
+
