@@ -39,7 +39,7 @@ const nosotros = props => {
           max-width: 100%;
         }
       `}</style>
-      <Navbar />
+      <Navbar link="Cerrar"/>
       <NosotrosStyles>
         <p className="member-description">
           En nuestro centro de fisioterapia siempre será atendido por

@@ -30,7 +30,7 @@ export default () => (
       }
     `}</style>
     <React.Fragment>
-    <Navbar />
+    <Navbar link="Nosotros"/>
     <Footer></Footer>
   </React.Fragment>
   </React.Fragment>
