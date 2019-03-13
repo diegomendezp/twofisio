@@ -1,6 +1,6 @@
 import React from 'react'
 import treatments from '../content/treatments.json'
-import Treatment from '../components/Member/Treatment.js';
+import Treatment from '../components/Treatment.js';
 import TratamientosStyles from '../PagesStyles/TratamientosStyles.js';
 import MonserratSemiBold from '../static/fonts/Montserrat/Montserrat-SemiBold.ttf';
 import MonserratRegular from '../static/fonts/Montserrat/Montserrat-Regular.ttf';

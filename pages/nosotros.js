@@ -1,13 +1,13 @@
 import React from "react";
 import team from "../content/team.json";
-import { Member } from "../components/Member/Member.js";
+import { Member } from "../components/Member.js";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer.js";
 import NosotrosStyles from "../PagesStyles/NosotrosStyles.js";
 import Head from "next/head";
 import MonserratSemiBold from "../static/fonts/Montserrat/Montserrat-SemiBold.ttf";
 import MonserratRegular from "../static/fonts/Montserrat/Montserrat-Regular.ttf";
-import {withRouter} from 'next/router'
+
 
 const displayTeam = () => {
   return team.map((member, i) => <Member key={i} {...member} />);
