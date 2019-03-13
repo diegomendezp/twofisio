@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import ecographyPhoto from '../static/imgEcografía2.jpg';
 
 const EcographyStyles = styled.div`
   font-family: "Monserrat-Regular";
@@ -16,11 +17,21 @@ const EcographyStyles = styled.div`
     font-family: "Monserrat-Semibold";
     color: #740a64;
   }
+/*   
+  .back-photo{
+
+    background-image: url(${ecographyPhoto});
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  } */
   .ecography-content {
     width: 90%;
     margin: 0 auto;
+    opacity: 1;
   }
-
   li {
     list-style: none;
     letter-spacing: 0.2px;

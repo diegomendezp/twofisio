@@ -1,0 +1,26 @@
+webpackHotUpdate("static/development/pages/ecografia.js",{
+
+/***/ "./PagesStyles/EcografiaStyles.js":
+/*!****************************************!*\
+  !*** ./PagesStyles/EcografiaStyles.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _static_imgEcografi_a2_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../static/imgEcografía2.jpg */ "./static/imgEcografía2.jpg");
+/* harmony import */ var _static_imgEcografi_a2_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_static_imgEcografi_a2_jpg__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var EcographyStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "EcografiaStyles__EcographyStyles",
+  componentId: "sc-1445ohi-0"
+})(["font-family:\"Monserrat-Regular\";.ecography-img{width:100%;object-fit:cover;}h2{font-family:\"Monserrat-Semibold\";color:#740a64;letter-spacing:0.2px;}.treatment-name{font-family:\"Monserrat-Semibold\";color:#740a64;}.ecography-content{width:90%;margin:0 auto;opacity:1;}.back-photo{-khtml-opacity:.50;-moz-opacity:.50;-ms-filter:\"alpha(opacity=50)\";filter:alpha(opacity=50);filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);opacity:.50;background-image:url(", ");background-size:cover;background-position:center;object-fit:cover;background-repeat:no-repeat;}li{list-style:none;letter-spacing:0.2px;margin-top:2%;margin-bottom:2%;}@media only screen and (min-width:415px) and (max-width:768px){.ecography{display:flex;flex-wrap:wrap;justify-content:space-between;}}@media only screen and (min-width:769px) and (max-width:1440px){.ecography-img{height:50vh;}.ecography-content{width:60%;margin-left:5%;}.ecography{display:flex;flex-wrap:wrap;justify-content:space-between;}}@media only screen and (min-width:1441px){.ecography-img{height:50vh;}.ecography-content{width:60%;margin-left:5%;}.ecography{display:flex;flex-wrap:wrap;justify-content:space-between;}}"], _static_imgEcografi_a2_jpg__WEBPACK_IMPORTED_MODULE_1___default.a);
+/* harmony default export */ __webpack_exports__["default"] = (EcographyStyles);
+
+/***/ })
+
+})
+//# sourceMappingURL=ecografia.js.c9cb970dab58eac88832.hot-update.js.map
