@@ -27,6 +27,9 @@ const Footer = () => {
         <div className="footer-content">
           <h3 className="contact">Contacto</h3>
           {displayContactElements(contactList)}
+          <div className="copyright">
+            <span>© 2019 by tailor </span><img src="../../static/iconWhite.svg" alt="logo-tailor"/>
+          </div> 
         </div>
       </FooterWrapper>
     </FooterStyles>

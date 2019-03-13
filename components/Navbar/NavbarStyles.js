@@ -26,6 +26,7 @@ const NavbarWrapper = styled.div`
       text-decoration: none;
       font-size: 20px;
       letter-spacing:0.6pt;
+      color: rgb(116, 10, 100);
     }
 
     a:visited {

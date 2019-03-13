@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import map from './map.png';
 
+
 const FooterStyles = styled.div`
 
   font-family: "Monserrat-Regular";
@@ -19,12 +20,18 @@ const FooterStyles = styled.div`
     width: 90%;
     
   }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+  }
   li {
     list-style: none;
   }
   a {
     text-decoration: none;
     list-style: none;
+    color: white;
   }
   a:visited{
     color: white;

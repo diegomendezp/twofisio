@@ -43,7 +43,10 @@ const FisioterapiaStyles = styled.div`
     .techniques-img {
       height: 50vh;
     }
-   
+    .techniques-content {
+    width: 60%;
+    margin-left: 5%;
+  }
 
     .techniques {
       display: flex;
@@ -56,7 +59,10 @@ const FisioterapiaStyles = styled.div`
     .techniques-img {
       height: 50vh;
     }
-   
+    .techniques-content {
+    width: 60%;
+    margin-left: 5%;
+  }
 
     .techniques {
       display: flex;
