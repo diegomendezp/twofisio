@@ -18,6 +18,13 @@ const HomeStyles = styled.div`
     margin-bottom: 2%;
   }
 
+  a {
+    color: #740a64;
+  }
+  a:visited {
+    color: #740a64;
+  }
+
   @media only screen and (min-width: 415px) and (max-width: 768px) {
    
 
