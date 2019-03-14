@@ -1,5 +1,27 @@
 ((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
+/***/ "./PagesStyles/HomeStyles.js":
+/*!***********************************!*\
+  !*** ./PagesStyles/HomeStyles.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _static_imgEcografi_a2_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../static/imgEcografía2.jpg */ "./static/imgEcografía2.jpg");
+/* harmony import */ var _static_imgEcografi_a2_jpg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_static_imgEcografi_a2_jpg__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var HomeStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
+  displayName: "HomeStyles",
+  componentId: "b42jdq-0"
+})(["font-family:\"Monserrat-Regular\";h2{font-family:\"Monserrat-Semibold\";color:#740a64;letter-spacing:0.2px;}li{list-style:none;letter-spacing:0.2px;margin-top:2%;margin-bottom:2%;}@media only screen and (min-width:415px) and (max-width:768px){}@media only screen and (min-width:769px) and (max-width:1440px){}@media only screen and (min-width:1441px){}"]);
+/* harmony default export */ __webpack_exports__["default"] = (HomeStyles);
+
+/***/ }),
+
 /***/ "./components/Footer/Footer.js":
 /*!*************************************!*\
   !*** ./components/Footer/Footer.js ***!
@@ -279,6 +301,17 @@ var NavbarStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div
 /***/ (function(module) {
 
 module.exports = [{"name":"Teléfono","value":"917116205 | 609058398"},{"name":"Email","value":"centrodefisioterapia@twofisio.es"},{"name":"Dirección","value":"Avenida Padre Piquer 39, Madrid"},{"name":"Horario","value":"Lunes a jueves de 9 a 14 y de 15 a 21 horas. Viernes de 9 a 14 y de 16 a 21 horas"}];
+
+/***/ }),
+
+/***/ "./content/home.json":
+/*!***************************!*\
+  !*** ./content/home.json ***!
+  \***************************/
+/*! exports provided: 0, 1, 2, 3, default */
+/***/ (function(module) {
+
+module.exports = [{"name":"Pilates","description":"En grupos reducidos, (máximo 3 personas por grupo) y siempre dirigidas por fisioterapeutas colegiados.","photo":"../static/imgPilates.jpg","link":"/pilates"},{"name":"Tratamientos","description":"Diferentes lesiones y patologías ofreciendo un trato personalizado y específico para cada cliente.","photo":"../static/imgTratamientos.jpg","link":"/tratamientos"},{"name":"Ecografías","description":"En nuestro centro TwoFisio realizamos sesiones de Fisioterapia especializada, donde se utiliza la ecografía para conseguir una valoración y un tratamiento más específico.","photo":"../static/imgEcografía.jpg","link":"/ecografia"},{"name":"Fisioterapia","description":"En nuestro centro siempre será atendido por profesionales colegiados con amplia experiencia en el sector y en continua formación para ofrecerle el mejor tratamiento posible.","photo":"../static/imgFisioterapia.jpg","link":"/fisioterapia"}];
 
 /***/ }),
 
@@ -15337,6 +15370,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../static/fonts/Montserrat/Montserrat-Regular.ttf */ "./static/fonts/Montserrat/Montserrat-Regular.ttf");
 /* harmony import */ var _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _content_home_json__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../content/home.json */ "./content/home.json");
+var _content_home_json__WEBPACK_IMPORTED_MODULE_7___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../content/home.json */ "./content/home.json", 1);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _PagesStyles_HomeStyles__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../PagesStyles/HomeStyles */ "./PagesStyles/HomeStyles.js");
 var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/pages/index.js";
 
 
@@ -15345,17 +15383,59 @@ var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/pages/index.js";
 
 
 
+
+
+
+
+var displayHomeContent = function displayHomeContent() {
+  return _content_home_json__WEBPACK_IMPORTED_MODULE_7__.map(function (homeItem, i) {
+    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      key: i,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }, homeItem.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
+      },
+      __self: this
+    }, homeItem.description), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
+      href: homeItem.link,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 15
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 16
+      },
+      __self: this
+    }, "+ M\xE1s info")));
+  });
+};
+
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 22
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 23
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
@@ -15364,7 +15444,7 @@ var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/pages/index.js";
     className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["2080611246", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a]]]),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 24
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
@@ -15372,30 +15452,36 @@ var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/pages/index.js";
     className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["2080611246", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a]]]),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 25
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "2080611246",
     dynamic: [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a],
     __self: this
-  }, "@font-face{font-family:\"Monserrat-Semibold\";src:url(".concat(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}@font-face{font-family:\"Monserrat-Regular\";src:url(").concat(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}body{margin:0;padding:0;max-width:100%;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9EaWVnb21lbmRlejE5OTcvVGFpbG9yL3R3b2Zpc2lvL3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQVl1QixBQUcwQyxBQU1ELEFBT3ZCLFNBQ0MsVUFDSyxhQVIwQyxDQU5BLENBZTNELHVEQVJxQixDQU5BLGtCQU9ELENBTkEsaUJBT3BCLENBTkEiLCJmaWxlIjoiL1VzZXJzL0RpZWdvbWVuZGV6MTk5Ny9UYWlsb3IvdHdvZmlzaW8vcGFnZXMvaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSGVhZCBmcm9tIFwibmV4dC9oZWFkXCI7XG5pbXBvcnQgTmF2YmFyIGZyb20gJy4uL2NvbXBvbmVudHMvTmF2YmFyL05hdmJhcic7XG5pbXBvcnQgRm9vdGVyIGZyb20gJy4uL2NvbXBvbmVudHMvRm9vdGVyL0Zvb3Rlcic7XG5pbXBvcnQgTW9uc2VycmF0U2VtaUJvbGQgZnJvbSAnLi4vc3RhdGljL2ZvbnRzL01vbnRzZXJyYXQvTW9udHNlcnJhdC1TZW1pQm9sZC50dGYnO1xuaW1wb3J0IE1vbnNlcnJhdFJlZ3VsYXIgZnJvbSAnLi4vc3RhdGljL2ZvbnRzL01vbnRzZXJyYXQvTW9udHNlcnJhdC1SZWd1bGFyLnR0Zic7XG5cbmV4cG9ydCBkZWZhdWx0ICgpID0+IChcbiAgPFJlYWN0LkZyYWdtZW50PlxuICAgIDxIZWFkPlxuICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xXCIgLz5cbiAgICAgIDxtZXRhIGNoYXJTZXQ9XCJ1dGYtOFwiIC8+XG4gICAgPC9IZWFkPlxuICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICBAZm9udC1mYWNlIHtcbiAgICAgICAgZm9udC1mYW1pbHk6IFwiTW9uc2VycmF0LVNlbWlib2xkXCI7XG4gICAgICAgIHNyYzogdXJsKCR7TW9uc2VycmF0U2VtaUJvbGR9KSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbiAgICAgICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgICAgfVxuICAgICAgQGZvbnQtZmFjZSB7XG4gICAgICAgIGZvbnQtZmFtaWx5OiBcIk1vbnNlcnJhdC1SZWd1bGFyXCI7XG4gICAgICAgIHNyYzogdXJsKCR7TW9uc2VycmF0UmVndWxhcn0pIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICAgICAgICBmb250LXdlaWdodDogbm9ybWFsO1xuICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgICB9XG5cbiAgICAgIGJvZHkge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIG1heC13aWR0aDogMTAwJTtcbiAgICAgIH1cbiAgICBgfTwvc3R5bGU+XG4gICAgPFJlYWN0LkZyYWdtZW50PlxuICAgIDxOYXZiYXIgbGluaz1cIk5vc290cm9zXCIvPlxuICAgIDxGb290ZXI+PC9Gb290ZXI+XG4gIDwvUmVhY3QuRnJhZ21lbnQ+XG4gIDwvUmVhY3QuRnJhZ21lbnQ+XG5cbilcbiJdfQ== */\n/*@ sourceURL=/Users/Diegomendez1997/Tailor/twofisio/pages/index.js */")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
+  }, "@font-face{font-family:\"Monserrat-Semibold\";src:url(".concat(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}@font-face{font-family:\"Monserrat-Regular\";src:url(").concat(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}body{margin:0;padding:0;max-width:100%;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9EaWVnb21lbmRlejE5OTcvVGFpbG9yL3R3b2Zpc2lvL3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTBCdUIsQUFHMEMsQUFNRCxBQU92QixTQUNDLFVBQ0ssYUFSMEMsQ0FOQSxDQWUzRCx1REFScUIsQ0FOQSxrQkFPRCxDQU5BLGlCQU9wQixDQU5BIiwiZmlsZSI6Ii9Vc2Vycy9EaWVnb21lbmRlejE5OTcvVGFpbG9yL3R3b2Zpc2lvL3BhZ2VzL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWQgZnJvbSBcIm5leHQvaGVhZFwiO1xuaW1wb3J0IE5hdmJhciBmcm9tIFwiLi4vY29tcG9uZW50cy9OYXZiYXIvTmF2YmFyXCI7XG5pbXBvcnQgRm9vdGVyIGZyb20gXCIuLi9jb21wb25lbnRzL0Zvb3Rlci9Gb290ZXJcIjtcbmltcG9ydCBNb25zZXJyYXRTZW1pQm9sZCBmcm9tIFwiLi4vc3RhdGljL2ZvbnRzL01vbnRzZXJyYXQvTW9udHNlcnJhdC1TZW1pQm9sZC50dGZcIjtcbmltcG9ydCBNb25zZXJyYXRSZWd1bGFyIGZyb20gXCIuLi9zdGF0aWMvZm9udHMvTW9udHNlcnJhdC9Nb250c2VycmF0LVJlZ3VsYXIudHRmXCI7XG5pbXBvcnQgaG9tZUNvbnRlbnQgZnJvbSBcIi4uL2NvbnRlbnQvaG9tZS5qc29uXCI7XG5pbXBvcnQgTGluayBmcm9tIFwibmV4dC9saW5rXCI7XG5pbXBvcnQgSG9tZVN0eWxlcyBmcm9tIFwiLi4vUGFnZXNTdHlsZXMvSG9tZVN0eWxlc1wiO1xuXG5jb25zdCBkaXNwbGF5SG9tZUNvbnRlbnQgPSAoKSA9PiB7XG4gIHJldHVybiBob21lQ29udGVudC5tYXAoKGhvbWVJdGVtLCBpKSA9PiAoXG4gICAgPGRpdiBrZXk9e2l9PlxuICAgICAgPGgyPntob21lSXRlbS5uYW1lfTwvaDI+XG4gICAgICA8cD57aG9tZUl0ZW0uZGVzY3JpcHRpb259PC9wPlxuICAgICAgPExpbmsgaHJlZj17aG9tZUl0ZW0ubGlua30+XG4gICAgICAgIDxhPisgTcOhcyBpbmZvPC9hPlxuICAgICAgPC9MaW5rPlxuICAgIDwvZGl2PlxuICApKTtcbn07XG5leHBvcnQgZGVmYXVsdCAoKSA9PiAoXG4gIDxSZWFjdC5GcmFnbWVudD5cbiAgICA8SGVhZD5cbiAgICAgIDxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MVwiIC8+XG4gICAgICA8bWV0YSBjaGFyU2V0PVwidXRmLThcIiAvPlxuICAgIDwvSGVhZD5cbiAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgQGZvbnQtZmFjZSB7XG4gICAgICAgIGZvbnQtZmFtaWx5OiBcIk1vbnNlcnJhdC1TZW1pYm9sZFwiO1xuICAgICAgICBzcmM6IHVybCgke01vbnNlcnJhdFNlbWlCb2xkfSkgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gICAgICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgICAgIH1cbiAgICAgIEBmb250LWZhY2Uge1xuICAgICAgICBmb250LWZhbWlseTogXCJNb25zZXJyYXQtUmVndWxhclwiO1xuICAgICAgICBzcmM6IHVybCgke01vbnNlcnJhdFJlZ3VsYXJ9KSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbiAgICAgICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgICAgfVxuXG4gICAgICBib2R5IHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBtYXgtd2lkdGg6IDEwMCU7XG4gICAgICB9XG4gICAgYH08L3N0eWxlPlxuICAgIDxSZWFjdC5GcmFnbWVudD5cbiAgICAgIDxOYXZiYXIgbGluaz1cIk5vc290cm9zXCIgLz5cbiAgICAgIDxIb21lU3R5bGVzPntkaXNwbGF5SG9tZUNvbnRlbnQoKX08L0hvbWVTdHlsZXM+XG4gICAgICA8Rm9vdGVyIC8+XG4gICAgPC9SZWFjdC5GcmFnbWVudD5cbiAgPC9SZWFjdC5GcmFnbWVudD5cbik7XG4iXX0= */\n/*@ sourceURL=/Users/Diegomendez1997/Tailor/twofisio/pages/index.js */")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 47
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
     link: "Nosotros",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 48
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_PagesStyles_HomeStyles__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 49
+    },
+    __self: this
+  }, displayHomeContent()), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
     },
     __self: this
   })));
@@ -15422,6 +15508,17 @@ module.exports = "/_next/static/fonts/Montserrat-Regular-9c46095118380d38f12e67c
 /***/ (function(module, exports) {
 
 module.exports = "/_next/static/fonts/Montserrat-SemiBold-c88cecbffad6d8e731fd95de49561ebd.ttf";
+
+/***/ }),
+
+/***/ "./static/imgEcografía2.jpg":
+/*!***********************************!*\
+  !*** ./static/imgEcografía2.jpg ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/_next/static/images/imgEcografía2-5554231b02bdeaed1323c23ea0a99bb8.jpg";
 
 /***/ }),
 

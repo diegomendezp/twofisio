@@ -1,9 +1,23 @@
 import Head from "next/head";
-import Navbar from '../components/Navbar/Navbar';
-import Footer from '../components/Footer/Footer';
-import MonserratSemiBold from '../static/fonts/Montserrat/Montserrat-SemiBold.ttf';
-import MonserratRegular from '../static/fonts/Montserrat/Montserrat-Regular.ttf';
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
+import MonserratSemiBold from "../static/fonts/Montserrat/Montserrat-SemiBold.ttf";
+import MonserratRegular from "../static/fonts/Montserrat/Montserrat-Regular.ttf";
+import homeContent from "../content/home.json";
+import Link from "next/link";
+import HomeStyles from "../PagesStyles/HomeStyles";
 
+const displayHomeContent = () => {
+  return homeContent.map((homeItem, i) => (
+    <div key={i}>
+      <h2>{homeItem.name}</h2>
+      <p>{homeItem.description}</p>
+      <Link href={homeItem.link}>
+        <a>+ Más info</a>
+      </Link>
+    </div>
+  ));
+};
 export default () => (
   <React.Fragment>
     <Head>
@@ -31,9 +45,9 @@ export default () => (
       }
     `}</style>
     <React.Fragment>
-    <Navbar link="Nosotros"/>
-    <Footer></Footer>
+      <Navbar link="Nosotros" />
+      <HomeStyles>{displayHomeContent()}</HomeStyles>
+      <Footer />
+    </React.Fragment>
   </React.Fragment>
-  </React.Fragment>
-
-)
+);
