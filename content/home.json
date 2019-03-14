@@ -1,1 +1,26 @@
-
+[
+  {
+    "name": "Pilates",
+    "description": "En grupos reducidos, (máximo 3 personas por grupo) y siempre dirigidas por fisioterapeutas colegiados.",
+    "photo": "../static/imgPilates.jpg",
+    "link": "/pilates"
+  },
+  {
+    "name": "Tratamientos",
+    "description": "Diferentes lesiones y patologías ofreciendo un trato personalizado y específico para cada cliente.",
+    "photo": "../static/imgTratamientos.jpg",
+    "link": "/tratamientos"
+  },
+  {
+    "name": "Ecografías",
+    "description": "En nuestro centro TwoFisio realizamos sesiones de Fisioterapia especializada, donde se utiliza la ecografía para conseguir una valoración y un tratamiento más específico.",
+    "photo": "../static/imgEcografía.jpg",
+    "link": "/ecografia"
+  },
+  {
+    "name": "Fisioterapia",
+    "description": "En nuestro centro siempre será atendido por profesionales colegiados con amplia experiencia en el sector y en continua formación para ofrecerle el mejor tratamiento posible.",
+    "photo": "../static/imgFisioterapia.jpg",
+    "link": "/fisioterapia"
+  }
+]
