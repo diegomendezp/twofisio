@@ -7,6 +7,8 @@ import MonserratRegular from "../static/fonts/Montserrat/Montserrat-Regular.ttf"
 import Head from "next/head";
 import Technique from "../components/Technique.js";
 import FisioterapiaStyles from "../PagesStyles/FisioterapiaStyles.js";
+import FontBold from "../PagesStyles/FontStyle/FontBold.js";
+import FontRegular from "../PagesStyles/FontStyle/FontRegular.js"
 
 
 const displayTechniques = techniques => {
@@ -43,8 +45,8 @@ const fisioterapia = () => {
     <FisioterapiaStyles>
       <img className="techniques-img" src="../static/imgFisioterapia.jpg" alt="fisioterapia-img"/>
       <div className="techniques-content">
-        <h2>Fisioterapia</h2>
-        <p>{description}</p>
+        <FontBold>Fisioterapia</FontBold>
+        <FontRegular>{description}</FontRegular>
         <div className="techniques">
           {displayTechniques(techniques)}
         </div>

@@ -6,19 +6,28 @@ const FisioterapiaStyles = styled.div`
     width: 100%;
     object-fit: cover;
   }
-
-  h2 {
-    font-family: "Monserrat-Semibold";
-    color: #740a64;
-    letter-spacing: 0.2px;
+  .technique {
+    font-family: "Monserrat-regular";
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 0.03rem;
+    line-height: 1.45rem;
   }
+
   .treatment-name{
     font-family: "Monserrat-Semibold";
-    color: #740a64;
+    color: #740a64;;
+    font-size: 1rem;
+    letter-spacing: 0.03rem;
+    line-height: 1.45rem;
+    
   }
   .techniques-content {
     width: 90%;
     margin: 0 auto;
+    margin-left: 5.5%;
+    margin-top: 20%;
+    margin-bottom: 30%;
   }
 
   li {
@@ -36,16 +45,25 @@ const FisioterapiaStyles = styled.div`
       flex-wrap: wrap;
       justify-content: space-between;
     }
+    .techniques-content {
+      width: 90%;
+      margin: 0 auto;
+      margin-left: 5.5%;
+      margin-top: 10%;
+      margin-bottom: 20%;
+    }
    
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1440px) {
     .techniques-img {
-      height: 50vh;
+      height: 25vh;
     }
     .techniques-content {
-    width: 60%;
-    margin-left: 5%;
+    width: 60vw;
+    margin-left: 5.5%;
+    margin-top: 8%;
+    margin-bottom: 10%;
   }
 
     .techniques {
@@ -57,11 +75,13 @@ const FisioterapiaStyles = styled.div`
 
   @media only screen and (min-width: 1441px) {
     .techniques-img {
-      height: 50vh;
+      height: 48vh;
     }
     .techniques-content {
-    width: 60%;
-    margin-left: 5%;
+    width: 60vw;
+    margin-left: 5.5%;
+    margin-top: 8%;
+    margin-bottom: 10%;
   }
 
     .techniques {

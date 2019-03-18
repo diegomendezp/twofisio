@@ -6,19 +6,15 @@ const PilatesStyles = styled.div`
     width: 100%;
     object-fit: cover;
   }
-
-  h2 {
-    font-family: "Monserrat-Semibold";
-    color: #740a64;
-    letter-spacing: 0.2px;
-  }
   .treatment-name{
     font-family: "Monserrat-Semibold";
     color: #740a64;
   }
   .pilates-content {
     width: 90%;
-    margin: 0 auto;
+    margin-left: 5%;
+    margin-top: 15%;
+    margin-bottom: 30%;
   }
 
   li {
@@ -36,16 +32,25 @@ const PilatesStyles = styled.div`
       flex-wrap: wrap;
       justify-content: space-between;
     }
+
+    .pilates-content {
+      width: 60%;
+      margin-left: 5%;
+      margin-top: 8%;
+      margin-bottom: 10%;
+    }
    
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1440px) {
     .pilates-img {
-      height: 50vh;
+      height: 33vh;
     }
     .pilates-content {
-    width: 60%;
-    margin-left: 5%;
+      width: 60%;
+      margin-left: 5%;
+      margin-top: 8%;
+      margin-bottom: 10%;
   }
 
     .pilates {
@@ -57,12 +62,14 @@ const PilatesStyles = styled.div`
 
   @media only screen and (min-width: 1441px) {
     .pilates-img {
-      height: 50vh;
+      height: 48vh;
     }
     .pilates-content {
-    width: 60%;
-    margin-left: 5%;
-  }
+      width: 60%;
+      margin-left: 5%;
+      margin-top: 8%;
+      margin-bottom: 10%;
+    }
 
     .pilates {
       display: flex;

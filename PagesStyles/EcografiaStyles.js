@@ -68,11 +68,14 @@ const EcographyStyles = styled.div`
 
   @media only screen and (min-width: 1441px) {
     .ecography-img {
-      height: 50vh;
+      height: 48vh;
     }
     .ecography-content {
     width: 60%;
     margin-left: 5%;
+    margin-top: 8%;
+    margin-bottom: 10%;
+
   }
 
     .ecography {

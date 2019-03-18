@@ -6,11 +6,12 @@ import MonserratRegular from "../static/fonts/Montserrat/Montserrat-Regular.ttf"
 import homeContent from "../content/home.json";
 import Link from "next/link";
 import HomeStyles from "../PagesStyles/HomeStyles";
+import FontBold from "../PagesStyles/FontStyle/FontBold";
 
 const displayHomeContent = () => {
   return homeContent.map((homeItem, i) => (
     <div key={i}>
-      <h2>{homeItem.name}</h2>
+      <FontBold>{homeItem.name}</FontBold>
       <p>{homeItem.description}</p>
       <Link href={homeItem.link}>
         <a>+ Más info</a>
