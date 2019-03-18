@@ -5,6 +5,9 @@ import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import PilatesStyles from "../PagesStyles/PilatesStyles.js";
+
+import FontRegular from "../PagesStyles/FontStyle/FontRegular.js"
+import FontBold from "../PagesStyles/FontStyle/FontBold.js"
 const pilates = () => {
   return (
     <React.Fragment>
@@ -40,26 +43,26 @@ const pilates = () => {
           alt="pilates-img"
         />
         <div className="pilates-content">
-          <h2>Pilates</h2>
+          <FontBold>Pilates</FontBold>
           <div className="pilates">
-            <p>
+            <FontRegular>
               El método pilates es una técnica utilizada para el entrenamiento
               físico y mental del cuerpo mediante una serie de ejercicios que se
               realizan de forma fluida manteniendo un control exhaustivo de la
               respiración.
-            </p>
-            <p>
+            </FontRegular>
+            <FontRegular>
               Lo pueden realizar, tanto aquellos que se introducen por primera
               en la actividad física, como los que ya hacen algún tipo de
               ejercicio, ya sean jóvenes o mayores. También es muy recomendable
               para las personas que se encuentran en un proceso de recuperación
               de una lesión, embarazadas, deportistas de alto rendimiento…
-            </p>
-            <p>
+            </FontRegular>
+            <FontRegular>
               Las clases de pilates se imparten en grupos reducidos, (máximo 3
               personas por grupo), o individualmente y siempre serán impartidas
               por fisioterapeutas colegiados.
-            </p>
+            </FontRegular>
           </div>
         </div>
       </PilatesStyles>

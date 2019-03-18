@@ -1,6 +1,6 @@
 {
   "devFiles": [
-    "static/development/dll/dll_cb22fc475a2445b0c199.js"
+    "static/development/dll/dll_1536b40011a7791f5d92.js"
   ],
   "pages": {
     "/_app": [
@@ -11,15 +11,15 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/fisioterapia": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/ecografia": [
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
     "/nosotros": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

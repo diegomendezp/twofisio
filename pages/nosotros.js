@@ -8,7 +8,7 @@ import Head from "next/head";
 import MonserratSemiBold from "../static/fonts/Montserrat/Montserrat-SemiBold.ttf";
 import MonserratRegular from "../static/fonts/Montserrat/Montserrat-Regular.ttf";
 
-
+import FontRegular from "../PagesStyles/FontStyle/FontRegular"
 const displayTeam = () => {
   return team.map((member, i) => <Member key={i} {...member} />);
 };
@@ -42,11 +42,11 @@ const nosotros = props => {
       `}</style>
       <Navbar link="Cerrar"/>
       <NosotrosStyles>
-        <p className="member-description">
+        <FontRegular className="member-description">
           En nuestro centro de fisioterapia siempre será atendido por
           profesionales colegiados con amplia experiencia en el sector y en
           continua formación para ofrecerle el mejor tratamiento posible.
-        </p>
+        </FontRegular>
 
         <div className="team">{displayTeam()}</div>
       </NosotrosStyles>

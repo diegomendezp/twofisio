@@ -1,5 +1,24 @@
 ((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/nosotros.js"],{
 
+/***/ "./PagesStyles/FontStyle/FontRegular.js":
+/*!**********************************************!*\
+  !*** ./PagesStyles/FontStyle/FontRegular.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+
+var FontRegular = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].p.withConfig({
+  displayName: "FontRegular",
+  componentId: "sc-1rq8xai-0"
+})(["font-family:\"Monserrat-Regular\";color:black;font-size:1rem;letter-spacing:0.04rem;line-height:1.45rem;"]);
+/* harmony default export */ __webpack_exports__["default"] = (FontRegular);
+
+/***/ }),
+
 /***/ "./PagesStyles/NosotrosStyles.js":
 /*!***************************************!*\
   !*** ./PagesStyles/NosotrosStyles.js ***!
@@ -14,7 +33,7 @@ __webpack_require__.r(__webpack_exports__);
 var NosotrosStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "NosotrosStyles",
   componentId: "ak83kl-0"
-})(["max-width:100vw;padding-top:100px;font-family:\"Monserrat-Regular\";.accordion__body--hidden{display:none;opacity:0;animation:fadein 0.35s ease-in;}@keyframes fadein{0%{opacity:0;}100%{opacity:1;}}.member-img{width:100%;height:200px;object-fit:cover;}.member-description{width:90%;letter-spacing:0.2px;margin:0 auto;margin-bottom:50px;margin-top:25px;}p{width:100%;letter-spacing:0.2px;margin:0 auto;}.accordion{border:0;border-radius:0;max-width:100vw;}.member-info{justify-content:center;display:flex;flex-direction:column;align-items:center;width:90%;margin:0 auto;}.accordion__title{background-color:white;color:#444;cursor:pointer;outline:none;padding:0px;width:100%;text-align:left;border:none;height:80px;display:flex;justify-content:space-evenly;width:90%;margin:0 auto;}.member-name{color:#740a64;font-family:Monserrat-Semibold;letter-spacing:0.6px;}.accordion__body{margin:0 auto;margin-bottom:5%;padding:0px;animation:fadein 0.35s ease-in;width:90%;}.team{width:100%;}@media only screen and (min-width:415px) and (max-width:768px){.member{width:40%;}.team{display:flex;flex-wrap:wrap;justify-content:space-around;}.member-description{width:80%;letter-spacing:0.2px;margin:0 auto;margin-bottom:50px;margin-top:25px;}}@media only screen and (min-width:769px) and (max-width:1440px){.member{width:40%;}.team{display:flex;flex-wrap:wrap;justify-content:space-around;}.member-description{width:80%;letter-spacing:0.2px;margin:0 auto;margin-bottom:50px;margin-top:25px;}}@media only screen and (min-width:1441px){.member{width:40%;}.team{display:flex;flex-wrap:wrap;justify-content:space-around;}.member-description{width:80%;letter-spacing:0.2px;margin:0 auto;margin-bottom:50px;margin-top:25px;}}"]);
+})(["max-width:100vw;margin-bottom:15%;padding-top:100px;font-family:\"Monserrat-Regular\";color:black;font-size:1rem;letter-spacing:0.03rem;line-height:1.45rem;.accordion__body--hidden{display:none;opacity:0;animation:fadein 0.35s ease-in;}@keyframes fadein{0%{opacity:0;}100%{opacity:1;}}.member-img{width:100%;height:200px;object-fit:cover;}.member-description{width:90%;margin:0 auto;margin-bottom:30%;margin-top:15%;}.accordion{border:0;border-radius:0;max-width:100vw;}.member-info{width:90%;margin:0 auto;}.accordion__title{background-color:white;color:black;cursor:pointer;outline:none;padding:0px;width:100%;text-align:left;border:none;height:80px;display:flex;justify-content:space-evenly;width:90%;margin:0 auto;}.member-name{font-family:\"Monserrat-Semibold\";color:#740a64;font-size:1rem;letter-spacing:0.03rem;margin-bottom:0;}.member-cole{margin-top:0%;font-family:\"Monserrat-Regular\";color:black;font-size:1rem;letter-spacing:0.03rem;line-height:1.45rem;}.accordion__body{margin:0 auto;margin-bottom:5%;padding:0px;animation:fadein 0.35s ease-in;width:90%;}.team{width:100%;}@media only screen and (min-width:415px) and (max-width:768px){.member{width:40%;}.team{display:flex;flex-wrap:wrap;justify-content:space-around;}.member-description{width:60%;margin-left:5%;margin-top:8%;margin-bottom:10%;}}@media only screen and (min-width:769px) and (max-width:1440px){.member{width:40%;}.team{display:flex;flex-wrap:wrap;justify-content:space-around;}.member-description{width:60%;margin-left:5%;margin-top:8%;margin-bottom:10%;}}@media only screen and (min-width:1441px){.member{width:40%;}.team{display:flex;flex-wrap:wrap;justify-content:space-around;}.member-description{width:60%;margin-left:5%;margin-top:8%;margin-bottom:10%;}.member-img{height:250px;}}"]);
 /* harmony default export */ __webpack_exports__["default"] = (NosotrosStyles);
 
 /***/ }),
@@ -33,7 +52,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _FooterStyles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FooterStyles */ "./components/Footer/FooterStyles.js");
 /* harmony import */ var _content_contact_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../content/contact.json */ "./content/contact.json");
 var _content_contact_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../content/contact.json */ "./content/contact.json", 1);
-var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/components/Footer/Footer.js";
+var _jsxFileName = "/Users/simongnegrete/Desktop/Tailor/Twofisio/twofisio/components/Footer/Footer.js";
 
 
 
@@ -49,7 +68,7 @@ var displayContactElements = function displayContactElements(contactList) {
         lineNumber: 8
       },
       __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 9
@@ -67,7 +86,7 @@ var displayContactElements = function displayContactElements(contactList) {
         lineNumber: 11
       },
       __self: this
-    }, element.value))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    }, element.value))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       key: i,
       __source: {
         fileName: _jsxFileName,
@@ -131,6 +150,7 @@ var Footer = function Footer() {
     },
     __self: this
   }, "\xA9 2019 by tailor "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "footerLogo",
     src: "../../static/iconWhite.svg",
     alt: "logo-tailor",
     __source: {
@@ -163,11 +183,11 @@ __webpack_require__.r(__webpack_exports__);
 var FooterStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "FooterStyles",
   componentId: "sc-41nnwu-0"
-})(["font-family:\"Monserrat-Regular\";width:100%;color:white;background-position:center;background-size:cover;background-image:url(", ");.contact{font-family:\"Monserrat-Semibold\"}.footer-content{width:90%;}.copyright{display:flex;align-items:center;}li{list-style:none;}a{text-decoration:none;list-style:none;color:white;}a:visited{color:white;}"], _map_png__WEBPACK_IMPORTED_MODULE_1___default.a);
+})(["font-family:\"Monserrat-Regular\";width:100%;color:white;background-position:center;background-size:cover;background-image:url(", ");.contact{font-family:\"Monserrat-Semibold\"}.footer-content{width:90%;margin-top:30%;margin-bottom:5%;}.footerLogo{width:10%;margin-left:2%;}.copyright{display:flex;align-items:center;margin-top:10%;}li{list-style:none;}a{text-decoration:none;list-style:none;color:white;}a:visited{color:white;}@media only screen and (min-width:769px) and (max-width:1440px){.footerLogo{width:5%;margin-left:2%;}.footer-content{margin-bottom:2%;margin-top:9%;}.copyright{margin-top:5%}}@media only screen and (min-width:1441px){.footer-content{width:90%;margin-top:8%;margin-bottom:1%;}.footerLogo{width:4%;margin-left:2%;}.copyright{margin-top:5%;}}"], _map_png__WEBPACK_IMPORTED_MODULE_1___default.a);
 var FooterWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "FooterStyles__FooterWrapper",
   componentId: "sc-41nnwu-1"
-})(["width:100%;background-color:rgba(116,10,100,0.8);display:flex;justify-content:center;"]);
+})(["width:100%;background-color:rgba(116,10,100,89%);display:flex;justify-content:center;"]);
 /* harmony default export */ __webpack_exports__["default"] = (FooterStyles);
 
 /***/ }),
@@ -205,6 +225,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-accessible-accordion */ "./node_modules/react-accessible-accordion/dist/umd/index.js");
 /* harmony import */ var react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _PagesStyles_FontStyle_FontRegular_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../PagesStyles/FontStyle/FontRegular.js */ "./PagesStyles/FontStyle/FontRegular.js");
 
 
 
@@ -213,7 +234,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/components/Member.js";
+var _jsxFileName = "/Users/simongnegrete/Desktop/Tailor/Twofisio/twofisio/components/Member.js";
+
 
 
 var Member =
@@ -243,7 +265,7 @@ function (_React$Component) {
           key: i,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 25
+            lineNumber: 27
           },
           __self: this
         }, "- ", element);
@@ -269,7 +291,7 @@ function (_React$Component) {
         className: "member",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 34
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -278,13 +300,13 @@ function (_React$Component) {
         alt: "".concat(name, "-photo"),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 35
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__["Accordion"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 40
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__["AccordionItem"], {
@@ -293,33 +315,34 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 41
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__["AccordionItemTitle"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 46
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "member-info",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 47
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
         className: "member-name",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 48
         },
         __self: this
-      }, name), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+      }, name), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_PagesStyles_FontStyle_FontRegular_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        className: "member-cole",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 49
         },
         __self: this
       }, "N\xBAColegiado: ", number)), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -328,7 +351,7 @@ function (_React$Component) {
         id: "up-down-icon-".concat(name),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 51
         },
         __self: this
       })), this.displayCurriculum(curriculum))));
@@ -354,7 +377,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _NavbarStyles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavbarStyles */ "./components/Navbar/NavbarStyles.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/components/Navbar/Navbar.js";
+var _jsxFileName = "/Users/simongnegrete/Desktop/Tailor/Twofisio/twofisio/components/Navbar/Navbar.js";
 
 
 
@@ -5645,7 +5668,7 @@ function index (resultFn, isEqual) {
   var calledOnce = false;
 
   var isNewArgEqualToLast = function isNewArgEqualToLast(newArg, index) {
-    return isEqual(newArg, lastArgs[index], index);
+    return isEqual(newArg, lastArgs[index]);
   };
 
   var result = function result() {
@@ -7104,10 +7127,10 @@ module.exports = __webpack_require__(/*! ./dist/lib/head */ "./node_modules/next
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnosotros&absolutePagePath=%2FUsers%2FDiegomendez1997%2FTailor%2Ftwofisio%2Fpages%2Fnosotros.js!./":
-/*!*****************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnosotros&absolutePagePath=%2FUsers%2FDiegomendez1997%2FTailor%2Ftwofisio%2Fpages%2Fnosotros.js ***!
-  \*****************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnosotros&absolutePagePath=%2FUsers%2Fsimongnegrete%2FDesktop%2FTailor%2FTwofisio%2Ftwofisio%2Fpages%2Fnosotros.js!./":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnosotros&absolutePagePath=%2FUsers%2Fsimongnegrete%2FDesktop%2FTailor%2FTwofisio%2Ftwofisio%2Fpages%2Fnosotros.js ***!
+  \************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7178,7 +7201,7 @@ var url_1 = __webpack_require__(/*! url */ "./node_modules/url/url.js");
 
 var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
-var prop_types_1 = __importDefault(__webpack_require__(/*! prop-types */ "./node_modules/next/node_modules/prop-types/index.js"));
+var prop_types_1 = __importDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
 
 var router_1 = __importStar(__webpack_require__(/*! next/router */ "./node_modules/next/router.js"));
 
@@ -7589,7 +7612,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
-var prop_types_1 = __importDefault(__webpack_require__(/*! prop-types */ "./node_modules/next/node_modules/prop-types/index.js"));
+var prop_types_1 = __importDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
 
 var hoist_non_react_statics_1 = __importDefault(__webpack_require__(/*! hoist-non-react-statics */ "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js"));
 
@@ -7638,735 +7661,6 @@ exports.default = withRouter;
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/next/dist/client/link.js")
-
-
-/***/ }),
-
-/***/ "./node_modules/next/node_modules/prop-types/checkPropTypes.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/next/node_modules/prop-types/checkPropTypes.js ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var printWarning = function() {};
-
-if (true) {
-  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js");
-  var loggedTypeFailures = {};
-
-  printWarning = function(text) {
-    var message = 'Warning: ' + text;
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-}
-
-/**
- * Assert that the values match with the type specs.
- * Error messages are memorized and will only be shown once.
- *
- * @param {object} typeSpecs Map of name to a ReactPropType
- * @param {object} values Runtime values that need to be type-checked
- * @param {string} location e.g. "prop", "context", "child context"
- * @param {string} componentName Name of the component for error messages.
- * @param {?Function} getStack Returns the component stack.
- * @private
- */
-function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
-  if (true) {
-    for (var typeSpecName in typeSpecs) {
-      if (typeSpecs.hasOwnProperty(typeSpecName)) {
-        var error;
-        // Prop type validation may throw. In case they do, we don't want to
-        // fail the render phase where it didn't fail before. So we log it.
-        // After these have been cleaned up, we'll let them throw.
-        try {
-          // This is intentionally an invariant that gets caught. It's the same
-          // behavior as without this statement except with a better message.
-          if (typeof typeSpecs[typeSpecName] !== 'function') {
-            var err = Error(
-              (componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' +
-              'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.'
-            );
-            err.name = 'Invariant Violation';
-            throw err;
-          }
-          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
-        } catch (ex) {
-          error = ex;
-        }
-        if (error && !(error instanceof Error)) {
-          printWarning(
-            (componentName || 'React class') + ': type specification of ' +
-            location + ' `' + typeSpecName + '` is invalid; the type checker ' +
-            'function must return `null` or an `Error` but returned a ' + typeof error + '. ' +
-            'You may have forgotten to pass an argument to the type checker ' +
-            'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' +
-            'shape all require an argument).'
-          )
-
-        }
-        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
-          // Only monitor this failure once because there tends to be a lot of the
-          // same error.
-          loggedTypeFailures[error.message] = true;
-
-          var stack = getStack ? getStack() : '';
-
-          printWarning(
-            'Failed ' + location + ' type: ' + error.message + (stack != null ? stack : '')
-          );
-        }
-      }
-    }
-  }
-}
-
-module.exports = checkPropTypes;
-
-
-/***/ }),
-
-/***/ "./node_modules/next/node_modules/prop-types/factoryWithTypeCheckers.js":
-/*!******************************************************************************!*\
-  !*** ./node_modules/next/node_modules/prop-types/factoryWithTypeCheckers.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
-
-var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js");
-var checkPropTypes = __webpack_require__(/*! ./checkPropTypes */ "./node_modules/next/node_modules/prop-types/checkPropTypes.js");
-
-var printWarning = function() {};
-
-if (true) {
-  printWarning = function(text) {
-    var message = 'Warning: ' + text;
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-}
-
-function emptyFunctionThatReturnsNull() {
-  return null;
-}
-
-module.exports = function(isValidElement, throwOnDirectAccess) {
-  /* global Symbol */
-  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
-  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
-
-  /**
-   * Returns the iterator method function contained on the iterable object.
-   *
-   * Be sure to invoke the function with the iterable as context:
-   *
-   *     var iteratorFn = getIteratorFn(myIterable);
-   *     if (iteratorFn) {
-   *       var iterator = iteratorFn.call(myIterable);
-   *       ...
-   *     }
-   *
-   * @param {?object} maybeIterable
-   * @return {?function}
-   */
-  function getIteratorFn(maybeIterable) {
-    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
-    if (typeof iteratorFn === 'function') {
-      return iteratorFn;
-    }
-  }
-
-  /**
-   * Collection of methods that allow declaration and validation of props that are
-   * supplied to React components. Example usage:
-   *
-   *   var Props = require('ReactPropTypes');
-   *   var MyArticle = React.createClass({
-   *     propTypes: {
-   *       // An optional string prop named "description".
-   *       description: Props.string,
-   *
-   *       // A required enum prop named "category".
-   *       category: Props.oneOf(['News','Photos']).isRequired,
-   *
-   *       // A prop named "dialog" that requires an instance of Dialog.
-   *       dialog: Props.instanceOf(Dialog).isRequired
-   *     },
-   *     render: function() { ... }
-   *   });
-   *
-   * A more formal specification of how these methods are used:
-   *
-   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
-   *   decl := ReactPropTypes.{type}(.isRequired)?
-   *
-   * Each and every declaration produces a function with the same signature. This
-   * allows the creation of custom validation functions. For example:
-   *
-   *  var MyLink = React.createClass({
-   *    propTypes: {
-   *      // An optional string or URI prop named "href".
-   *      href: function(props, propName, componentName) {
-   *        var propValue = props[propName];
-   *        if (propValue != null && typeof propValue !== 'string' &&
-   *            !(propValue instanceof URI)) {
-   *          return new Error(
-   *            'Expected a string or an URI for ' + propName + ' in ' +
-   *            componentName
-   *          );
-   *        }
-   *      }
-   *    },
-   *    render: function() {...}
-   *  });
-   *
-   * @internal
-   */
-
-  var ANONYMOUS = '<<anonymous>>';
-
-  // Important!
-  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
-  var ReactPropTypes = {
-    array: createPrimitiveTypeChecker('array'),
-    bool: createPrimitiveTypeChecker('boolean'),
-    func: createPrimitiveTypeChecker('function'),
-    number: createPrimitiveTypeChecker('number'),
-    object: createPrimitiveTypeChecker('object'),
-    string: createPrimitiveTypeChecker('string'),
-    symbol: createPrimitiveTypeChecker('symbol'),
-
-    any: createAnyTypeChecker(),
-    arrayOf: createArrayOfTypeChecker,
-    element: createElementTypeChecker(),
-    instanceOf: createInstanceTypeChecker,
-    node: createNodeChecker(),
-    objectOf: createObjectOfTypeChecker,
-    oneOf: createEnumTypeChecker,
-    oneOfType: createUnionTypeChecker,
-    shape: createShapeTypeChecker,
-    exact: createStrictShapeTypeChecker,
-  };
-
-  /**
-   * inlined Object.is polyfill to avoid requiring consumers ship their own
-   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
-   */
-  /*eslint-disable no-self-compare*/
-  function is(x, y) {
-    // SameValue algorithm
-    if (x === y) {
-      // Steps 1-5, 7-10
-      // Steps 6.b-6.e: +0 != -0
-      return x !== 0 || 1 / x === 1 / y;
-    } else {
-      // Step 6.a: NaN == NaN
-      return x !== x && y !== y;
-    }
-  }
-  /*eslint-enable no-self-compare*/
-
-  /**
-   * We use an Error-like object for backward compatibility as people may call
-   * PropTypes directly and inspect their output. However, we don't use real
-   * Errors anymore. We don't inspect their stack anyway, and creating them
-   * is prohibitively expensive if they are created too often, such as what
-   * happens in oneOfType() for any type before the one that matched.
-   */
-  function PropTypeError(message) {
-    this.message = message;
-    this.stack = '';
-  }
-  // Make `instanceof Error` still work for returned errors.
-  PropTypeError.prototype = Error.prototype;
-
-  function createChainableTypeChecker(validate) {
-    if (true) {
-      var manualPropTypeCallCache = {};
-      var manualPropTypeWarningCount = 0;
-    }
-    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
-      componentName = componentName || ANONYMOUS;
-      propFullName = propFullName || propName;
-
-      if (secret !== ReactPropTypesSecret) {
-        if (throwOnDirectAccess) {
-          // New behavior only for users of `prop-types` package
-          var err = new Error(
-            'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
-            'Use `PropTypes.checkPropTypes()` to call them. ' +
-            'Read more at http://fb.me/use-check-prop-types'
-          );
-          err.name = 'Invariant Violation';
-          throw err;
-        } else if ( true && typeof console !== 'undefined') {
-          // Old behavior for people using React.PropTypes
-          var cacheKey = componentName + ':' + propName;
-          if (
-            !manualPropTypeCallCache[cacheKey] &&
-            // Avoid spamming the console because they are often not actionable except for lib authors
-            manualPropTypeWarningCount < 3
-          ) {
-            printWarning(
-              'You are manually calling a React.PropTypes validation ' +
-              'function for the `' + propFullName + '` prop on `' + componentName  + '`. This is deprecated ' +
-              'and will throw in the standalone `prop-types` package. ' +
-              'You may be seeing this warning due to a third-party PropTypes ' +
-              'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.'
-            );
-            manualPropTypeCallCache[cacheKey] = true;
-            manualPropTypeWarningCount++;
-          }
-        }
-      }
-      if (props[propName] == null) {
-        if (isRequired) {
-          if (props[propName] === null) {
-            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
-          }
-          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
-        }
-        return null;
-      } else {
-        return validate(props, propName, componentName, location, propFullName);
-      }
-    }
-
-    var chainedCheckType = checkType.bind(null, false);
-    chainedCheckType.isRequired = checkType.bind(null, true);
-
-    return chainedCheckType;
-  }
-
-  function createPrimitiveTypeChecker(expectedType) {
-    function validate(props, propName, componentName, location, propFullName, secret) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== expectedType) {
-        // `propValue` being instance of, say, date/regexp, pass the 'object'
-        // check, but we can offer a more precise error message here rather than
-        // 'of type `object`'.
-        var preciseType = getPreciseType(propValue);
-
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createAnyTypeChecker() {
-    return createChainableTypeChecker(emptyFunctionThatReturnsNull);
-  }
-
-  function createArrayOfTypeChecker(typeChecker) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (typeof typeChecker !== 'function') {
-        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
-      }
-      var propValue = props[propName];
-      if (!Array.isArray(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
-      }
-      for (var i = 0; i < propValue.length; i++) {
-        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
-        if (error instanceof Error) {
-          return error;
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createElementTypeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      if (!isValidElement(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createInstanceTypeChecker(expectedClass) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (!(props[propName] instanceof expectedClass)) {
-        var expectedClassName = expectedClass.name || ANONYMOUS;
-        var actualClassName = getClassName(props[propName]);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createEnumTypeChecker(expectedValues) {
-    if (!Array.isArray(expectedValues)) {
-       true ? printWarning('Invalid argument supplied to oneOf, expected an instance of array.') : undefined;
-      return emptyFunctionThatReturnsNull;
-    }
-
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      for (var i = 0; i < expectedValues.length; i++) {
-        if (is(propValue, expectedValues[i])) {
-          return null;
-        }
-      }
-
-      var valuesString = JSON.stringify(expectedValues);
-      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + propValue + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createObjectOfTypeChecker(typeChecker) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (typeof typeChecker !== 'function') {
-        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
-      }
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
-      }
-      for (var key in propValue) {
-        if (propValue.hasOwnProperty(key)) {
-          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-          if (error instanceof Error) {
-            return error;
-          }
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createUnionTypeChecker(arrayOfTypeCheckers) {
-    if (!Array.isArray(arrayOfTypeCheckers)) {
-       true ? printWarning('Invalid argument supplied to oneOfType, expected an instance of array.') : undefined;
-      return emptyFunctionThatReturnsNull;
-    }
-
-    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
-      var checker = arrayOfTypeCheckers[i];
-      if (typeof checker !== 'function') {
-        printWarning(
-          'Invalid argument supplied to oneOfType. Expected an array of check functions, but ' +
-          'received ' + getPostfixForTypeWarning(checker) + ' at index ' + i + '.'
-        );
-        return emptyFunctionThatReturnsNull;
-      }
-    }
-
-    function validate(props, propName, componentName, location, propFullName) {
-      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
-        var checker = arrayOfTypeCheckers[i];
-        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {
-          return null;
-        }
-      }
-
-      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createNodeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (!isNode(props[propName])) {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createShapeTypeChecker(shapeTypes) {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
-      }
-      for (var key in shapeTypes) {
-        var checker = shapeTypes[key];
-        if (!checker) {
-          continue;
-        }
-        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-        if (error) {
-          return error;
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createStrictShapeTypeChecker(shapeTypes) {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
-      }
-      // We need to check all keys in case some are required but missing from
-      // props.
-      var allKeys = assign({}, props[propName], shapeTypes);
-      for (var key in allKeys) {
-        var checker = shapeTypes[key];
-        if (!checker) {
-          return new PropTypeError(
-            'Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' +
-            '\nBad object: ' + JSON.stringify(props[propName], null, '  ') +
-            '\nValid keys: ' +  JSON.stringify(Object.keys(shapeTypes), null, '  ')
-          );
-        }
-        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-        if (error) {
-          return error;
-        }
-      }
-      return null;
-    }
-
-    return createChainableTypeChecker(validate);
-  }
-
-  function isNode(propValue) {
-    switch (typeof propValue) {
-      case 'number':
-      case 'string':
-      case 'undefined':
-        return true;
-      case 'boolean':
-        return !propValue;
-      case 'object':
-        if (Array.isArray(propValue)) {
-          return propValue.every(isNode);
-        }
-        if (propValue === null || isValidElement(propValue)) {
-          return true;
-        }
-
-        var iteratorFn = getIteratorFn(propValue);
-        if (iteratorFn) {
-          var iterator = iteratorFn.call(propValue);
-          var step;
-          if (iteratorFn !== propValue.entries) {
-            while (!(step = iterator.next()).done) {
-              if (!isNode(step.value)) {
-                return false;
-              }
-            }
-          } else {
-            // Iterator will provide entry [k,v] tuples rather than values.
-            while (!(step = iterator.next()).done) {
-              var entry = step.value;
-              if (entry) {
-                if (!isNode(entry[1])) {
-                  return false;
-                }
-              }
-            }
-          }
-        } else {
-          return false;
-        }
-
-        return true;
-      default:
-        return false;
-    }
-  }
-
-  function isSymbol(propType, propValue) {
-    // Native Symbol.
-    if (propType === 'symbol') {
-      return true;
-    }
-
-    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
-    if (propValue['@@toStringTag'] === 'Symbol') {
-      return true;
-    }
-
-    // Fallback for non-spec compliant Symbols which are polyfilled.
-    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
-      return true;
-    }
-
-    return false;
-  }
-
-  // Equivalent of `typeof` but with special handling for array and regexp.
-  function getPropType(propValue) {
-    var propType = typeof propValue;
-    if (Array.isArray(propValue)) {
-      return 'array';
-    }
-    if (propValue instanceof RegExp) {
-      // Old webkits (at least until Android 4.0) return 'function' rather than
-      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
-      // passes PropTypes.object.
-      return 'object';
-    }
-    if (isSymbol(propType, propValue)) {
-      return 'symbol';
-    }
-    return propType;
-  }
-
-  // This handles more types than `getPropType`. Only used for error messages.
-  // See `createPrimitiveTypeChecker`.
-  function getPreciseType(propValue) {
-    if (typeof propValue === 'undefined' || propValue === null) {
-      return '' + propValue;
-    }
-    var propType = getPropType(propValue);
-    if (propType === 'object') {
-      if (propValue instanceof Date) {
-        return 'date';
-      } else if (propValue instanceof RegExp) {
-        return 'regexp';
-      }
-    }
-    return propType;
-  }
-
-  // Returns a string that is postfixed to a warning about an invalid type.
-  // For example, "undefined" or "of type array"
-  function getPostfixForTypeWarning(value) {
-    var type = getPreciseType(value);
-    switch (type) {
-      case 'array':
-      case 'object':
-        return 'an ' + type;
-      case 'boolean':
-      case 'date':
-      case 'regexp':
-        return 'a ' + type;
-      default:
-        return type;
-    }
-  }
-
-  // Returns class name of the object, if any.
-  function getClassName(propValue) {
-    if (!propValue.constructor || !propValue.constructor.name) {
-      return ANONYMOUS;
-    }
-    return propValue.constructor.name;
-  }
-
-  ReactPropTypes.checkPropTypes = checkPropTypes;
-  ReactPropTypes.PropTypes = ReactPropTypes;
-
-  return ReactPropTypes;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/next/node_modules/prop-types/index.js":
-/*!************************************************************!*\
-  !*** ./node_modules/next/node_modules/prop-types/index.js ***!
-  \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-if (true) {
-  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
-    Symbol.for &&
-    Symbol.for('react.element')) ||
-    0xeac7;
-
-  var isValidElement = function(object) {
-    return typeof object === 'object' &&
-      object !== null &&
-      object.$$typeof === REACT_ELEMENT_TYPE;
-  };
-
-  // By explicitly using `prop-types` you are opting into new development behavior.
-  // http://fb.me/prop-types-in-prod
-  var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ "./node_modules/next/node_modules/prop-types/factoryWithTypeCheckers.js")(isValidElement, throwOnDirectAccess);
-} else {}
-
-
-/***/ }),
-
-/***/ "./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/next/node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
-
-module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
@@ -8916,12 +8210,12 @@ module.exports = __webpack_require__(/*! ./dist/client/router */ "./node_modules
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_9d2e7eb3ce4bb71fa337 ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_55dc4e2ecf7824085104 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_9d2e7eb3ce4bb71fa337 */ "dll-reference dll_9d2e7eb3ce4bb71fa337"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -9587,12 +8881,12 @@ module.exports = exports['default'];
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_9d2e7eb3ce4bb71fa337 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_55dc4e2ecf7824085104 ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_9d2e7eb3ce4bb71fa337 */ "dll-reference dll_9d2e7eb3ce4bb71fa337"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -9613,13 +8907,11 @@ module.exports = (__webpack_require__(/*! dll-reference dll_9d2e7eb3ce4bb71fa337
 
 
 
-var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
 var assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
 
 var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 var checkPropTypes = __webpack_require__(/*! ./checkPropTypes */ "./node_modules/prop-types/checkPropTypes.js");
 
-var has = Function.call.bind(Object.prototype.hasOwnProperty);
 var printWarning = function() {};
 
 if (true) {
@@ -9730,7 +9022,6 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
     any: createAnyTypeChecker(),
     arrayOf: createArrayOfTypeChecker,
     element: createElementTypeChecker(),
-    elementType: createElementTypeTypeChecker(),
     instanceOf: createInstanceTypeChecker,
     node: createNodeChecker(),
     objectOf: createObjectOfTypeChecker,
@@ -9884,18 +9175,6 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
     return createChainableTypeChecker(validate);
   }
 
-  function createElementTypeTypeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      if (!ReactIs.isValidElementType(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement type.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
   function createInstanceTypeChecker(expectedClass) {
     function validate(props, propName, componentName, location, propFullName) {
       if (!(props[propName] instanceof expectedClass)) {
@@ -9910,16 +9189,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
   function createEnumTypeChecker(expectedValues) {
     if (!Array.isArray(expectedValues)) {
-      if (true) {
-        if (arguments.length > 1) {
-          printWarning(
-            'Invalid arguments supplied to oneOf, expected an array, got ' + arguments.length + ' arguments. ' +
-            'A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).'
-          );
-        } else {
-          printWarning('Invalid argument supplied to oneOf, expected an array.');
-        }
-      }
+       true ? printWarning('Invalid argument supplied to oneOf, expected an instance of array.') : undefined;
       return emptyFunctionThatReturnsNull;
     }
 
@@ -9931,14 +9201,8 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
         }
       }
 
-      var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
-        var type = getPreciseType(value);
-        if (type === 'symbol') {
-          return String(value);
-        }
-        return value;
-      });
-      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + String(propValue) + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
+      var valuesString = JSON.stringify(expectedValues);
+      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + propValue + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
     }
     return createChainableTypeChecker(validate);
   }
@@ -9954,7 +9218,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
         return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
       }
       for (var key in propValue) {
-        if (has(propValue, key)) {
+        if (propValue.hasOwnProperty(key)) {
           var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
           if (error instanceof Error) {
             return error;
@@ -10111,11 +9375,6 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
       return true;
     }
 
-    // falsy value can't be a Symbol
-    if (!propValue) {
-      return false;
-    }
-
     // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
     if (propValue['@@toStringTag'] === 'Symbol') {
       return true;
@@ -10190,7 +9449,6 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
   }
 
   ReactPropTypes.checkPropTypes = checkPropTypes;
-  ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
   ReactPropTypes.PropTypes = ReactPropTypes;
 
   return ReactPropTypes;
@@ -10214,12 +9472,21 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
  */
 
 if (true) {
-  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
+    Symbol.for &&
+    Symbol.for('react.element')) ||
+    0xeac7;
+
+  var isValidElement = function(object) {
+    return typeof object === 'object' &&
+      object !== null &&
+      object.$$typeof === REACT_ELEMENT_TYPE;
+  };
 
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ "./node_modules/prop-types/factoryWithTypeCheckers.js")(ReactIs.isElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ "./node_modules/prop-types/factoryWithTypeCheckers.js")(isValidElement, throwOnDirectAccess);
 } else {}
 
 
@@ -10227,12 +9494,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_9d2e7eb3ce4bb71fa337 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_55dc4e2ecf7824085104 ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_9d2e7eb3ce4bb71fa337 */ "dll-reference dll_9d2e7eb3ce4bb71fa337"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -11538,12 +10805,12 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_9d2e7eb3ce4bb71fa337 ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_55dc4e2ecf7824085104 ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_9d2e7eb3ce4bb71fa337 */ "dll-reference dll_9d2e7eb3ce4bb71fa337"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -11555,7 +10822,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_9d2e7eb3ce4bb71fa337
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/** @license React v16.8.4
+/** @license React v16.6.1
  * react-is.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -11654,6 +10921,7 @@ var lowPriorityWarning$1 = lowPriorityWarning;
 function typeOf(object) {
   if (typeof object === 'object' && object !== null) {
     var $$typeof = object.$$typeof;
+
     switch ($$typeof) {
       case REACT_ELEMENT_TYPE:
         var type = object.type;
@@ -11664,7 +10932,6 @@ function typeOf(object) {
           case REACT_FRAGMENT_TYPE:
           case REACT_PROFILER_TYPE:
           case REACT_STRICT_MODE_TYPE:
-          case REACT_SUSPENSE_TYPE:
             return type;
           default:
             var $$typeofType = type && type.$$typeof;
@@ -11678,8 +10945,6 @@ function typeOf(object) {
                 return $$typeof;
             }
         }
-      case REACT_LAZY_TYPE:
-      case REACT_MEMO_TYPE:
       case REACT_PORTAL_TYPE:
         return $$typeof;
     }
@@ -11696,12 +10961,9 @@ var ContextProvider = REACT_PROVIDER_TYPE;
 var Element = REACT_ELEMENT_TYPE;
 var ForwardRef = REACT_FORWARD_REF_TYPE;
 var Fragment = REACT_FRAGMENT_TYPE;
-var Lazy = REACT_LAZY_TYPE;
-var Memo = REACT_MEMO_TYPE;
-var Portal = REACT_PORTAL_TYPE;
 var Profiler = REACT_PROFILER_TYPE;
+var Portal = REACT_PORTAL_TYPE;
 var StrictMode = REACT_STRICT_MODE_TYPE;
-var Suspense = REACT_SUSPENSE_TYPE;
 
 var hasWarnedAboutDeprecatedIsAsyncMode = false;
 
@@ -11733,23 +10995,14 @@ function isForwardRef(object) {
 function isFragment(object) {
   return typeOf(object) === REACT_FRAGMENT_TYPE;
 }
-function isLazy(object) {
-  return typeOf(object) === REACT_LAZY_TYPE;
-}
-function isMemo(object) {
-  return typeOf(object) === REACT_MEMO_TYPE;
+function isProfiler(object) {
+  return typeOf(object) === REACT_PROFILER_TYPE;
 }
 function isPortal(object) {
   return typeOf(object) === REACT_PORTAL_TYPE;
 }
-function isProfiler(object) {
-  return typeOf(object) === REACT_PROFILER_TYPE;
-}
 function isStrictMode(object) {
   return typeOf(object) === REACT_STRICT_MODE_TYPE;
-}
-function isSuspense(object) {
-  return typeOf(object) === REACT_SUSPENSE_TYPE;
 }
 
 exports.typeOf = typeOf;
@@ -11760,12 +11013,9 @@ exports.ContextProvider = ContextProvider;
 exports.Element = Element;
 exports.ForwardRef = ForwardRef;
 exports.Fragment = Fragment;
-exports.Lazy = Lazy;
-exports.Memo = Memo;
-exports.Portal = Portal;
 exports.Profiler = Profiler;
+exports.Portal = Portal;
 exports.StrictMode = StrictMode;
-exports.Suspense = Suspense;
 exports.isValidElementType = isValidElementType;
 exports.isAsyncMode = isAsyncMode;
 exports.isConcurrentMode = isConcurrentMode;
@@ -11774,12 +11024,9 @@ exports.isContextProvider = isContextProvider;
 exports.isElement = isElement;
 exports.isForwardRef = isForwardRef;
 exports.isFragment = isFragment;
-exports.isLazy = isLazy;
-exports.isMemo = isMemo;
-exports.isPortal = isPortal;
 exports.isProfiler = isProfiler;
+exports.isPortal = isPortal;
 exports.isStrictMode = isStrictMode;
-exports.isSuspense = isSuspense;
   })();
 }
 
@@ -11805,12 +11052,12 @@ if (false) {} else {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_9d2e7eb3ce4bb71fa337 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_55dc4e2ecf7824085104 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_9d2e7eb3ce4bb71fa337 */ "dll-reference dll_9d2e7eb3ce4bb71fa337"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -16729,12 +15976,12 @@ module.exports = {
 
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!******************************************************************************************************!*\
-  !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_9d2e7eb3ce4bb71fa337 ***!
+  !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_55dc4e2ecf7824085104 ***!
   \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_9d2e7eb3ce4bb71fa337 */ "dll-reference dll_9d2e7eb3ce4bb71fa337"))("./node_modules/webpack/buildin/global.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_55dc4e2ecf7824085104 */ "dll-reference dll_55dc4e2ecf7824085104"))("./node_modules/webpack/buildin/global.js");
 
 /***/ }),
 
@@ -16797,8 +16044,10 @@ var _content_team_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__w
 /* harmony import */ var _static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../static/fonts/Montserrat/Montserrat-Regular.ttf */ "./static/fonts/Montserrat/Montserrat-Regular.ttf");
 /* harmony import */ var _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _PagesStyles_FontStyle_FontRegular__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../PagesStyles/FontStyle/FontRegular */ "./PagesStyles/FontStyle/FontRegular.js");
 
-var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/pages/nosotros.js";
+var _jsxFileName = "/Users/simongnegrete/Desktop/Tailor/Twofisio/twofisio/pages/nosotros.js";
+
 
 
 
@@ -16858,7 +16107,7 @@ var nosotros = function nosotros(props) {
     id: "3898954932",
     dynamic: [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a],
     __self: this
-  }, "@font-face{font-family:\"Monserrat-Semibold\";src:url(".concat(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}@font-face{font-family:\"Monserrat-Regular\";src:url(").concat(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}body{margin:0;padding:0;max-width:100%;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9EaWVnb21lbmRlejE5OTcvVGFpbG9yL3R3b2Zpc2lvL3BhZ2VzL25vc290cm9zLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXNCeUIsQUFHNEMsQUFNRCxBQU92QixTQUNDLFVBQ0ssYUFSMEMsQ0FOQSxDQWUzRCx1REFScUIsQ0FOQSxrQkFPRCxDQU5BLGlCQU9wQixDQU5BIiwiZmlsZSI6Ii9Vc2Vycy9EaWVnb21lbmRlejE5OTcvVGFpbG9yL3R3b2Zpc2lvL3BhZ2VzL25vc290cm9zLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gXCJyZWFjdFwiO1xuaW1wb3J0IHRlYW0gZnJvbSBcIi4uL2NvbnRlbnQvdGVhbS5qc29uXCI7XG5pbXBvcnQgeyBNZW1iZXIgfSBmcm9tIFwiLi4vY29tcG9uZW50cy9NZW1iZXIuanNcIjtcbmltcG9ydCBOYXZiYXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvTmF2YmFyL05hdmJhclwiO1xuaW1wb3J0IEZvb3RlciBmcm9tIFwiLi4vY29tcG9uZW50cy9Gb290ZXIvRm9vdGVyLmpzXCI7XG5pbXBvcnQgTm9zb3Ryb3NTdHlsZXMgZnJvbSBcIi4uL1BhZ2VzU3R5bGVzL05vc290cm9zU3R5bGVzLmpzXCI7XG5pbXBvcnQgSGVhZCBmcm9tIFwibmV4dC9oZWFkXCI7XG5pbXBvcnQgTW9uc2VycmF0U2VtaUJvbGQgZnJvbSBcIi4uL3N0YXRpYy9mb250cy9Nb250c2VycmF0L01vbnRzZXJyYXQtU2VtaUJvbGQudHRmXCI7XG5pbXBvcnQgTW9uc2VycmF0UmVndWxhciBmcm9tIFwiLi4vc3RhdGljL2ZvbnRzL01vbnRzZXJyYXQvTW9udHNlcnJhdC1SZWd1bGFyLnR0ZlwiO1xuXG5cbmNvbnN0IGRpc3BsYXlUZWFtID0gKCkgPT4ge1xuICByZXR1cm4gdGVhbS5tYXAoKG1lbWJlciwgaSkgPT4gPE1lbWJlciBrZXk9e2l9IHsuLi5tZW1iZXJ9IC8+KTtcbn07XG5cbmNvbnN0IG5vc290cm9zID0gcHJvcHMgPT4ge1xuICByZXR1cm4gKFxuICAgIDxSZWFjdC5GcmFnbWVudD5cbiAgICAgIDxIZWFkPlxuICAgICAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTFcIiAvPlxuICAgICAgICA8bWV0YSBjaGFyU2V0PVwidXRmLThcIiAvPlxuICAgICAgPC9IZWFkPlxuICAgICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgICAgQGZvbnQtZmFjZSB7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiTW9uc2VycmF0LVNlbWlib2xkXCI7XG4gICAgICAgICAgc3JjOiB1cmwoJHtNb25zZXJyYXRTZW1pQm9sZH0pIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICAgICAgICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gICAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgICAgICB9XG4gICAgICAgIEBmb250LWZhY2Uge1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIk1vbnNlcnJhdC1SZWd1bGFyXCI7XG4gICAgICAgICAgc3JjOiB1cmwoJHtNb25zZXJyYXRSZWd1bGFyfSkgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgICAgIH1cblxuICAgICAgICBib2R5IHtcbiAgICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgICAgcGFkZGluZzogMDtcbiAgICAgICAgICBtYXgtd2lkdGg6IDEwMCU7XG4gICAgICAgIH1cbiAgICAgIGB9PC9zdHlsZT5cbiAgICAgIDxOYXZiYXIgbGluaz1cIkNlcnJhclwiLz5cbiAgICAgIDxOb3NvdHJvc1N0eWxlcz5cbiAgICAgICAgPHAgY2xhc3NOYW1lPVwibWVtYmVyLWRlc2NyaXB0aW9uXCI+XG4gICAgICAgICAgRW4gbnVlc3RybyBjZW50cm8gZGUgZmlzaW90ZXJhcGlhIHNpZW1wcmUgc2Vyw6EgYXRlbmRpZG8gcG9yXG4gICAgICAgICAgcHJvZmVzaW9uYWxlcyBjb2xlZ2lhZG9zIGNvbiBhbXBsaWEgZXhwZXJpZW5jaWEgZW4gZWwgc2VjdG9yIHkgZW5cbiAgICAgICAgICBjb250aW51YSBmb3JtYWNpw7NuIHBhcmEgb2ZyZWNlcmxlIGVsIG1lam9yIHRyYXRhbWllbnRvIHBvc2libGUuXG4gICAgICAgIDwvcD5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRlYW1cIj57ZGlzcGxheVRlYW0oKX08L2Rpdj5cbiAgICAgIDwvTm9zb3Ryb3NTdHlsZXM+XG4gICAgICA8Rm9vdGVyIC8+XG4gICAgPC9SZWFjdC5GcmFnbWVudD5cbiAgKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IG5vc290cm9zO1xuIl19 */\n/*@ sourceURL=/Users/Diegomendez1997/Tailor/twofisio/pages/nosotros.js */")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "@font-face{font-family:\"Monserrat-Semibold\";src:url(".concat(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}@font-face{font-family:\"Monserrat-Regular\";src:url(").concat(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}body{margin:0;padding:0;max-width:100%;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9zaW1vbmduZWdyZXRlL0Rlc2t0b3AvVGFpbG9yL1R3b2Zpc2lvL3R3b2Zpc2lvL3BhZ2VzL25vc290cm9zLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXNCeUIsQUFHNEMsQUFNRCxBQU92QixTQUNDLFVBQ0ssYUFSMEMsQ0FOQSxDQWUzRCx1REFScUIsQ0FOQSxrQkFPRCxDQU5BLGlCQU9wQixDQU5BIiwiZmlsZSI6Ii9Vc2Vycy9zaW1vbmduZWdyZXRlL0Rlc2t0b3AvVGFpbG9yL1R3b2Zpc2lvL3R3b2Zpc2lvL3BhZ2VzL25vc290cm9zLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gXCJyZWFjdFwiO1xuaW1wb3J0IHRlYW0gZnJvbSBcIi4uL2NvbnRlbnQvdGVhbS5qc29uXCI7XG5pbXBvcnQgeyBNZW1iZXIgfSBmcm9tIFwiLi4vY29tcG9uZW50cy9NZW1iZXIuanNcIjtcbmltcG9ydCBOYXZiYXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvTmF2YmFyL05hdmJhclwiO1xuaW1wb3J0IEZvb3RlciBmcm9tIFwiLi4vY29tcG9uZW50cy9Gb290ZXIvRm9vdGVyLmpzXCI7XG5pbXBvcnQgTm9zb3Ryb3NTdHlsZXMgZnJvbSBcIi4uL1BhZ2VzU3R5bGVzL05vc290cm9zU3R5bGVzLmpzXCI7XG5pbXBvcnQgSGVhZCBmcm9tIFwibmV4dC9oZWFkXCI7XG5pbXBvcnQgTW9uc2VycmF0U2VtaUJvbGQgZnJvbSBcIi4uL3N0YXRpYy9mb250cy9Nb250c2VycmF0L01vbnRzZXJyYXQtU2VtaUJvbGQudHRmXCI7XG5pbXBvcnQgTW9uc2VycmF0UmVndWxhciBmcm9tIFwiLi4vc3RhdGljL2ZvbnRzL01vbnRzZXJyYXQvTW9udHNlcnJhdC1SZWd1bGFyLnR0ZlwiO1xuXG5pbXBvcnQgRm9udFJlZ3VsYXIgZnJvbSBcIi4uL1BhZ2VzU3R5bGVzL0ZvbnRTdHlsZS9Gb250UmVndWxhclwiXG5jb25zdCBkaXNwbGF5VGVhbSA9ICgpID0+IHtcbiAgcmV0dXJuIHRlYW0ubWFwKChtZW1iZXIsIGkpID0+IDxNZW1iZXIga2V5PXtpfSB7Li4ubWVtYmVyfSAvPik7XG59O1xuXG5jb25zdCBub3NvdHJvcyA9IHByb3BzID0+IHtcbiAgcmV0dXJuIChcbiAgICA8UmVhY3QuRnJhZ21lbnQ+XG4gICAgICA8SGVhZD5cbiAgICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xXCIgLz5cbiAgICAgICAgPG1ldGEgY2hhclNldD1cInV0Zi04XCIgLz5cbiAgICAgIDwvSGVhZD5cbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICAgIEBmb250LWZhY2Uge1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIk1vbnNlcnJhdC1TZW1pYm9sZFwiO1xuICAgICAgICAgIHNyYzogdXJsKCR7TW9uc2VycmF0U2VtaUJvbGR9KSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbiAgICAgICAgICBmb250LXdlaWdodDogbm9ybWFsO1xuICAgICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgICAgICAgfVxuICAgICAgICBAZm9udC1mYWNlIHtcbiAgICAgICAgICBmb250LWZhbWlseTogXCJNb25zZXJyYXQtUmVndWxhclwiO1xuICAgICAgICAgIHNyYzogdXJsKCR7TW9uc2VycmF0UmVndWxhcn0pIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICAgICAgICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gICAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgICAgICB9XG5cbiAgICAgICAgYm9keSB7XG4gICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgICAgbWF4LXdpZHRoOiAxMDAlO1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgICA8TmF2YmFyIGxpbms9XCJDZXJyYXJcIi8+XG4gICAgICA8Tm9zb3Ryb3NTdHlsZXM+XG4gICAgICAgIDxGb250UmVndWxhciBjbGFzc05hbWU9XCJtZW1iZXItZGVzY3JpcHRpb25cIj5cbiAgICAgICAgICBFbiBudWVzdHJvIGNlbnRybyBkZSBmaXNpb3RlcmFwaWEgc2llbXByZSBzZXLDoSBhdGVuZGlkbyBwb3JcbiAgICAgICAgICBwcm9mZXNpb25hbGVzIGNvbGVnaWFkb3MgY29uIGFtcGxpYSBleHBlcmllbmNpYSBlbiBlbCBzZWN0b3IgeSBlblxuICAgICAgICAgIGNvbnRpbnVhIGZvcm1hY2nDs24gcGFyYSBvZnJlY2VybGUgZWwgbWVqb3IgdHJhdGFtaWVudG8gcG9zaWJsZS5cbiAgICAgICAgPC9Gb250UmVndWxhcj5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRlYW1cIj57ZGlzcGxheVRlYW0oKX08L2Rpdj5cbiAgICAgIDwvTm9zb3Ryb3NTdHlsZXM+XG4gICAgICA8Rm9vdGVyIC8+XG4gICAgPC9SZWFjdC5GcmFnbWVudD5cbiAgKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IG5vc290cm9zO1xuIl19 */\n/*@ sourceURL=/Users/simongnegrete/Desktop/Tailor/Twofisio/twofisio/pages/nosotros.js */")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"], {
     link: "Cerrar",
     __source: {
       fileName: _jsxFileName,
@@ -16871,8 +16120,8 @@ var nosotros = function nosotros(props) {
       lineNumber: 44
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", {
-    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a]]]) + " " + "member-description",
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_PagesStyles_FontStyle_FontRegular__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    className: "member-description",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45
@@ -16920,28 +16169,28 @@ module.exports = "/_next/static/fonts/Montserrat-SemiBold-c88cecbffad6d8e731fd95
 
 /***/ }),
 
-/***/ 3:
-/*!*********************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fnosotros&absolutePagePath=%2FUsers%2FDiegomendez1997%2FTailor%2Ftwofisio%2Fpages%2Fnosotros.js ***!
-  \*********************************************************************************************************************************************/
+/***/ 1:
+/*!****************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fnosotros&absolutePagePath=%2FUsers%2Fsimongnegrete%2FDesktop%2FTailor%2FTwofisio%2Ftwofisio%2Fpages%2Fnosotros.js ***!
+  \****************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fnosotros&absolutePagePath=%2FUsers%2FDiegomendez1997%2FTailor%2Ftwofisio%2Fpages%2Fnosotros.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnosotros&absolutePagePath=%2FUsers%2FDiegomendez1997%2FTailor%2Ftwofisio%2Fpages%2Fnosotros.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fnosotros&absolutePagePath=%2FUsers%2Fsimongnegrete%2FDesktop%2FTailor%2FTwofisio%2Ftwofisio%2Fpages%2Fnosotros.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fnosotros&absolutePagePath=%2FUsers%2Fsimongnegrete%2FDesktop%2FTailor%2FTwofisio%2Ftwofisio%2Fpages%2Fnosotros.js!./");
 
 
 /***/ }),
 
-/***/ "dll-reference dll_9d2e7eb3ce4bb71fa337":
+/***/ "dll-reference dll_55dc4e2ecf7824085104":
 /*!*******************************************!*\
-  !*** external "dll_9d2e7eb3ce4bb71fa337" ***!
+  !*** external "dll_55dc4e2ecf7824085104" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_9d2e7eb3ce4bb71fa337;
+module.exports = dll_55dc4e2ecf7824085104;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]));;
+},[[1,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=nosotros.js.map

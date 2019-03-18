@@ -58,7 +58,11 @@ const TratamientosStyles = styled.div`
 
   @media only screen and (min-width: 1441px) {
     .treatments-img {
-      height: 50vh;
+      height: 48vh;
+    }
+    .treatments-content{
+      margin-top: 8%;
+      margin-bottom: 10%;
     }
     .treatment {
       width: 48%;

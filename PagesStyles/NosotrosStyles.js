@@ -2,8 +2,15 @@ import styled from 'styled-components';
 
 const NosotrosStyles = styled.div`
   max-width: 100vw;
+  margin-bottom: 15%;
   padding-top: 100px;
+
   font-family: "Monserrat-Regular";
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 0.03rem;
+    line-height: 1.45rem;
+
   .accordion__body--hidden {
     display: none;
     opacity: 0;
@@ -26,16 +33,9 @@ const NosotrosStyles = styled.div`
 
   .member-description {
     width: 90%;
-    letter-spacing: 0.2px;
     margin: 0 auto;
-    margin-bottom: 50px;
-    margin-top: 25px;
-  }
-
-  p {
-    width: 100%;
-    letter-spacing: 0.2px;
-    margin: 0 auto;
+    margin-bottom: 30%;
+    margin-top: 15%;
   }
 
   .accordion {
@@ -45,17 +45,13 @@ const NosotrosStyles = styled.div`
   }
 
   .member-info {
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 90%;
     margin: 0 auto;
   }
 
   .accordion__title {
     background-color: white;
-    color: #444;
+    color: black;
     cursor: pointer;
     outline: none;
     padding: 0px;
@@ -70,9 +66,19 @@ const NosotrosStyles = styled.div`
   }
 
   .member-name {
+    font-family: "Monserrat-Semibold";
     color: #740a64;
-    font-family: Monserrat-Semibold;
-    letter-spacing: 0.6px;
+    font-size: 1rem;
+    letter-spacing: 0.03rem;
+    margin-bottom:0;
+  }
+  .member-cole{
+    margin-top: 0%;
+    font-family: "Monserrat-Regular";
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 0.03rem;
+    line-height: 1.45rem;
   }
 
   .accordion__body {
@@ -101,11 +107,10 @@ const NosotrosStyles = styled.div`
     }
 
     .member-description {
-      width: 80%;
-      letter-spacing: 0.2px;
-      margin: 0 auto;
-      margin-bottom: 50px;
-      margin-top: 25px;
+      width: 60%;
+      margin-left: 5%;
+      margin-top: 8%;
+      margin-bottom: 10%;
     }
   }
 
@@ -121,11 +126,10 @@ const NosotrosStyles = styled.div`
     }
 
     .member-description {
-      width: 80%;
-      letter-spacing: 0.2px;
-      margin: 0 auto;
-      margin-bottom: 50px;
-      margin-top: 25px;
+      width: 60%;
+      margin-left: 5%;
+      margin-top: 8%;
+      margin-bottom: 10%;
     }
   }
 
@@ -141,12 +145,14 @@ const NosotrosStyles = styled.div`
       justify-content: space-around;
     }
 
-    .member-description {
-      width: 80%;
-      letter-spacing: 0.2px;
-      margin: 0 auto;
-      margin-bottom: 50px;
-      margin-top: 25px;
+    .member-description {  
+      width: 60%;
+      margin-left: 5%;
+      margin-top: 8%;
+      margin-bottom: 10%;
+    }
+    .member-img{
+      height: 250px;
     }
   }
 `;

@@ -6,6 +6,8 @@ import {
   AccordionItemBody
 } from "react-accessible-accordion";
 
+import FontRegular from "../PagesStyles/FontStyle/FontRegular.js"
+
 
 export class Member extends React.Component {
   constructor(props) {
@@ -44,7 +46,7 @@ export class Member extends React.Component {
             <AccordionItemTitle>
               <div className="member-info">
                 <p className="member-name">{name}</p>
-                <p>NºColegiado: {number}</p>
+                <FontRegular className="member-cole">NºColegiado: {number}</FontRegular>
               </div>
               <img
                 src="../../static/iconUpdown.svg"
