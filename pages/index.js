@@ -1,8 +1,9 @@
 import Head from "next/head";
-import Navbar from '../components/Navbar/Navbar';
-import Footer from '../components/Footer/Footer';
-import MonserratSemiBold from '../static/fonts/Montserrat/Montserrat-SemiBold.ttf';
-import MonserratRegular from '../static/fonts/Montserrat/Montserrat-Regular.ttf';
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
+import Home from "../components/Home/Home";
+import MonserratSemiBold from "../static/fonts/Montserrat/Montserrat-SemiBold.ttf";
+import MonserratRegular from "../static/fonts/Montserrat/Montserrat-Regular.ttf";
 export default () => (
   <React.Fragment>
     <Head>
@@ -27,12 +28,13 @@ export default () => (
         margin: 0;
         padding: 0;
         max-width: 100%;
+        overflow: hidden;
       }
     `}</style>
     <React.Fragment>
-    <Navbar link="Nosotros"/>
-    <Footer></Footer>
+      <Navbar link="Nosotros" />
+      <Home />
+      <Footer />
+    </React.Fragment>
   </React.Fragment>
-  </React.Fragment>
-
-)
+);

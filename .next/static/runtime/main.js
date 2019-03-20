@@ -7911,7 +7911,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      source_map_support_1.rewriteStacktrace(error, "/Users/Diegomendez1997/Tailor/twofisio/.next");
+      source_map_support_1.rewriteStacktrace(error, "/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/.next");
       return error;
     }
   };
@@ -19093,7 +19093,7 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/Diegomendez1997/Tailor/twofisio/node_modules/next/dist/client/next-dev */"./node_modules/next/dist/client/next-dev.js");
+module.exports = __webpack_require__(/*! /home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/node_modules/next/dist/client/next-dev */"./node_modules/next/dist/client/next-dev.js");
 
 
 /***/ }),
