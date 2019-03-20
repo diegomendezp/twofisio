@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import ecographyPhoto from '../static/imgEcografía2.jpg';
 
-const TratamientosStyles = styled.div`
+const EcographyStyles = styled.div`
   font-family: "Monserrat-Regular";
-  .treatments-img {
+  .ecography-img {
     width: 100%;
     object-fit: cover;
   }
@@ -16,11 +17,21 @@ const TratamientosStyles = styled.div`
     font-family: "Monserrat-Semibold";
     color: #740a64;
   }
-  .treatments-content {
+/*   
+  .back-photo{
+
+    background-image: url(${ecographyPhoto});
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  } */
+  .ecography-content {
     width: 90%;
     margin: 0 auto;
+    opacity: 1;
   }
-
   li {
     list-style: none;
     letter-spacing: 0.2px;
@@ -29,11 +40,9 @@ const TratamientosStyles = styled.div`
   }
 
   @media only screen and (min-width: 415px) and (max-width: 768px) {
-    .treatment {
-      width: 48%;
-    }
+   
 
-    .treatments {
+    .ecography {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -42,14 +51,15 @@ const TratamientosStyles = styled.div`
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1440px) {
-    .treatments-img {
+    .ecography-img {
       height: 50vh;
     }
-    .treatment {
-      width: 48%;
-    }
+    .ecography-content {
+    width: 60%;
+    margin-left: 5%;
+  }
 
-    .treatments {
+    .ecography {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -57,18 +67,18 @@ const TratamientosStyles = styled.div`
   }
 
   @media only screen and (min-width: 1441px) {
-    .treatments-img {
+    .ecography-img {
       height: 48vh;
     }
-    .treatments-content{
-      margin-top: 8%;
-      margin-bottom: 10%;
-    }
-    .treatment {
-      width: 48%;
-    }
+    .ecography-content {
+    width: 60%;
+    margin-left: 5%;
+    margin-top: 8%;
+    margin-bottom: 10%;
 
-    .treatments {
+  }
+
+    .ecography {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -78,4 +88,4 @@ const TratamientosStyles = styled.div`
   }
 `;
 
-export default TratamientosStyles;
+export default EcographyStyles;

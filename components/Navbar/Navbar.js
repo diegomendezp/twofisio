@@ -1,7 +1,7 @@
 import React from "react";
 import { NavbarStyles, NavbarWrapper } from "./NavbarStyles";
 import Link from "next/link";
-import {withRouter} from 'next/router'
+
 
 
 const Navbar = ({ link }) => {
@@ -14,11 +14,13 @@ const Navbar = ({ link }) => {
   return (
     <NavbarStyles>
       <NavbarWrapper>
+      <Link href="/">
         <img src="/static/logo.png" alt="two-fisio-logo" />
+        </Link>
         <ul>
           <Link href={url}>
             <a>{link}</a>
-          </Link>
+            </Link>
         </ul>
       </NavbarWrapper>
     </NavbarStyles>

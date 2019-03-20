@@ -7,7 +7,6 @@ import HomeText from "../../content/home.json";
 import CrossfadeImage from "../CrossFadeImage";
 import $ from "jquery";
 import Bubbles from "./Bubles";
-import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 const images = [
   "../../static/imgPilates.jpg",
@@ -36,7 +35,7 @@ export default class Home extends Component {
         "M 154 -190.7 C 194.1 -150 217.2 -96.2 216.5 -46.1 C 215.9 3.9 191.5 50.2 159.7 80 C 128 109.8 88.8 123 50.1 136.5 C 11.5 150 -26.6 163.8 -66.3 159.3 C -106 154.7 -147.4 131.9 -169.6 96.4 C -191.8 61 -194.9 13.1 -183.1 -28.6 C -171.4 -70.3 -144.8 -105.6 -111.8 -147.6 C -78.8 -189.6 -39.4 -238.3 8.8 -248.8 C 57 -259.3 114 -231.5 154 -190.7 Z"
       ],
       form: [
-        "M 150.9 -224.2 C 196.3 -205.7 234.1 -165 246.2 -118.4 C 258.2 -71.8 244.4 -19.3 234.1 31.7 C 223.8 82.8 216.9 132.4 189.6 164.8 C 162.3 197.2 114.5 212.3 66.4 226.7 C 18.2 241.2 -30.3 254.9 -72.7 244.1 C -115.1 233.2 -151.2 197.8 -173.1 158.1 C -194.9 118.3 -202.4 74.2 -209.2 29.8 C -216 -14.6 -222.2 -59.5 -211 -101.5 C -199.8 -143.5 -171.3 -182.8 -133.2 -204.6 C -95.2 -226.4 -47.6 -230.7 2.6 -234.8 C 52.8 -238.8 105.6 -242.7 150.9 -224.2 Z",
+        "M 200 200m -75 0a 75 75 0 1 0 150 0a 75 75 0 1 0 -150 0",
         "M 43.5703 34 C 115.977 -36.9719 237.588 40.7602 338.504 34 C 436.992 27.4024 584.269 -28.7116 623.167 20.0936 C 662.065 68.8988 600.451 177.68 602.012 281.32 C 603.64 389.403 654.491 511.401 602.012 586 C 532.926 586 158.625 587 31 586 C -29.2288 527.147 17.9491 394.039 22 296.215 C 26.729 182.016 -33.4904 109.534 43.5703 34 Z",
         "M 38.5019 1.25884 C 115.393 0.436572 625.908 0.436572 666.768 1.25884 C 715.694 33.433 593.213 169.259 625.908 284.539 C 658.603 399.82 691.917 519.258 625.908 568.437 C 520.525 568.437 205.291 568.437 86.3925 568.437 C 10.636 529.638 75.791 397.259 68.291 284.539 C 58.2447 133.551 -58.4261 51.0534 38.5019 1.25884 Z",
         "M 75.1844 1 C 170.356 -1.99840e-15 579.113 1.44444 655.384 1 C 702.032 52.9773 670.102 148.623 671.974 259 C 673.927 374.107 734.909 489.73 671.974 569.178 C 577.486 569.178 151.391 569.178 38.9624 569.178 C -33.2669 506.499 17.1678 392.724 22.0259 288.541 C 27.6971 166.92 -17.2306 81.443 75.1844 1 Z",
@@ -143,48 +142,52 @@ export default class Home extends Component {
     );
   };
 
-  _positioningSVG() {
-    document.getElementById("target").style.transform = `translate(${this.state
-      .vw / 2}px, ${this.state.vh / 2}px) scale(2.4)`;
-  }
-
-  _startAnimation() {
+  _startAnimation(target) {
     this.state.animation.start(
-      styler(document.querySelector("#target")).set("d")
+      styler(document.querySelector(target)).set("d")
     );
   }
 
   _manageResize = () => {
-    console.log(window.innerWidth)
+    console.log(window.innerWidth);
     if (window.innerWidth < 768) {
       tween({
-        from: { scaleY: 2.1, scaleX: 1.8  },
-        to: { scaleY: 2.5, scaleX: 2  },
+        from: { scaleY: 2.1, scaleX: 1.8 },
+        to: { scaleY: 2.5, scaleX: 2 },
         duration: 1800,
         ease: easing.easeInOut,
         flip: Infinity
       }).start(v => {
-        document.getElementById("target").style.transform = `translate(150px, -100px) scaleY(${v.scaleY}) scaleX(${v.scaleX})`;
+        document.getElementById(
+          "target"
+        ).style.transform = `translate(150px, -100px) scaleY(${
+          v.scaleY
+        }) scaleX(${v.scaleX})`;
       });
     } else {
       tween({
-        from: { scaleY: 2.1, scaleX: 1.8  },
-        to: { scaleY: 2.2, scaleX: 1.85  },
+        from: { scaleY: 2.1, scaleX: 1.8 },
+        to: { scaleY: 2.2, scaleX: 1.85 },
         duration: 1800,
         ease: easing.easeInOut,
         flip: Infinity
       }).start(v => {
-        document.getElementById("target").style.transform = `translate(500px, -100px) scaleY(${v.scaleY}) scaleX(${v.scaleX})`;
+        if (document.getElementById("target") !== null) {
+          document.getElementById(
+            "target"
+          ).style.transform = `translate(500px, -100px) scaleY(${
+            v.scaleY
+          }) scaleX(${v.scaleX})`;
+        }
       });
     }
-  }
+  };
 
   componentDidMount() {
     this._listenSliderButtons();
     this._mouseWheel();
     this._manageResize();
     window.addEventListener("resize", this._manageResize);
-
 
     // interval = setInterval(() => {
     //   this._changeSVGForm("down");
@@ -207,7 +210,7 @@ export default class Home extends Component {
           )
         )
       },
-      this._startAnimation
+      () => this._startAnimation("#target")
     );
   }
 
@@ -217,12 +220,12 @@ export default class Home extends Component {
         <Bubbles />
         <CrossfadeImage
           src={images[this.state.formPosition - 1]}
-          duration={3000}
+          duration={1500}
           timingFunction={"ease-out"}
         />
         <svg id="container">
           <clipPath id="svgPath">
-            <path id="target"/>
+            <path id="target" />
           </clipPath>
         </svg>
         <SectionTitle {...HomeText[this.state.formPosition - 1]} />

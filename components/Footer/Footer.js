@@ -1,21 +1,23 @@
 import React from "react";
 import FooterStyles, { FooterWrapper } from "./FooterStyles";
 import contactList from "../../content/contact.json";
+import FontBold from "../../PagesStyles/FontStyle/FontBold"
+import FontRegular from "../../PagesStyles/FontStyle/FontRegular";
 
 const displayContactElements = contactList => {
   return contactList.map((element, i) => {
     return element.name === "Dirección" ? (
       <a key={i} href="https://goo.gl/maps/K6zbJ39jVTn" target="_blank">
-        <li>
-          <p>{element.name}:</p>
-          <p>{element.value}</p>
-        </li>
+        <div>
+          <FontRegular color="white" className="contact-name">{element.name}:</FontRegular>
+          <FontRegular color="white" className="contact-value">{element.value}</FontRegular>
+        </div>
       </a>
     ) : (
-      <li key={i}>
-        <p>{element.name}:</p>
-        <p>{element.value}</p>
-      </li>
+      <div key={i}>
+        <FontRegular color="white" className="contact-name">{element.name}:</FontRegular>
+        <FontRegular color="white" className="contact-value">{element.value}</FontRegular>
+      </div>
     );
   });
 };
@@ -25,8 +27,11 @@ const Footer = () => {
     <FooterStyles>
       <FooterWrapper>
         <div className="footer-content">
-          <h3 className="contact">Contacto</h3>
+          <FontBold className="contact" color="white">Contacto</FontBold>
           {displayContactElements(contactList)}
+          <div className="copyright">
+            <span>© 2019 by tailor </span><img className="footerLogo" src="../../static/iconWhite.svg" alt="logo-tailor"/>
+          </div> 
         </div>
       </FooterWrapper>
     </FooterStyles>

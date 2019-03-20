@@ -1,24 +1,20 @@
 import styled from 'styled-components';
 
-const TratamientosStyles = styled.div`
+const PilatesStyles = styled.div`
   font-family: "Monserrat-Regular";
-  .treatments-img {
+  .pilates-img {
     width: 100%;
     object-fit: cover;
-  }
-
-  h2 {
-    font-family: "Monserrat-Semibold";
-    color: #740a64;
-    letter-spacing: 0.2px;
   }
   .treatment-name{
     font-family: "Monserrat-Semibold";
     color: #740a64;
   }
-  .treatments-content {
+  .pilates-content {
     width: 90%;
-    margin: 0 auto;
+    margin-left: 5%;
+    margin-top: 15%;
+    margin-bottom: 30%;
   }
 
   li {
@@ -29,27 +25,35 @@ const TratamientosStyles = styled.div`
   }
 
   @media only screen and (min-width: 415px) and (max-width: 768px) {
-    .treatment {
-      width: 48%;
-    }
+   
 
-    .treatments {
+    .pilates {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+    }
+
+    .pilates-content {
+      width: 60%;
+      margin-left: 5%;
+      margin-top: 8%;
+      margin-bottom: 10%;
     }
    
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1440px) {
-    .treatments-img {
-      height: 50vh;
+    .pilates-img {
+      height: 33vh;
     }
-    .treatment {
-      width: 48%;
-    }
+    .pilates-content {
+      width: 60%;
+      margin-left: 5%;
+      margin-top: 8%;
+      margin-bottom: 10%;
+  }
 
-    .treatments {
+    .pilates {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -57,18 +61,17 @@ const TratamientosStyles = styled.div`
   }
 
   @media only screen and (min-width: 1441px) {
-    .treatments-img {
+    .pilates-img {
       height: 48vh;
     }
-    .treatments-content{
+    .pilates-content {
+      width: 60%;
+      margin-left: 5%;
       margin-top: 8%;
       margin-bottom: 10%;
     }
-    .treatment {
-      width: 48%;
-    }
 
-    .treatments {
+    .pilates {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -78,4 +81,4 @@ const TratamientosStyles = styled.div`
   }
 `;
 
-export default TratamientosStyles;
+export default PilatesStyles;
