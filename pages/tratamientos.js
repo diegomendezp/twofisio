@@ -7,7 +7,8 @@ import MonserratRegular from '../static/fonts/Montserrat/Montserrat-Regular.ttf'
 import Head from "next/head";
 import Navbar from '../components/Navbar/Navbar.js';
 import Footer from '../components/Footer/Footer.js';
-
+import imgTrata from "../static/imgTratamientos.jpg"
+import HeaderAnimated from "../components/HeaderAnimated/HeaderAnimated"
 const displayTreatments = () => {
   return treatments.map((treatment, i) => <Treatment key={i} {...treatment}/>)
 }
@@ -41,7 +42,7 @@ const tratamientos = (props) => {
     `}</style>
     <Navbar link="Nosotros"/>
       <TratamientosStyles>
-        <img className="treatments-img" src="../static/imgTratamientos.jpg" alt="tratamientos-img"/>
+      <HeaderAnimated img={imgTrata} positionY={13}/>
         <div className="treatments-content">
           <h2>Tratamientos</h2>
           <div className="treatments">

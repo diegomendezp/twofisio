@@ -1,16 +1,16 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 const Bubbles = props => {
-
-return (
+  return (
     <ul className="bubbleGroup">
-        <li className="bubble active"></li>
-        <li className="bubble"></li>
-        <li className="bubble"></li>
-        <li className="bubble"></li>
+      <li className="position">{props.position}</li>
+      <li className="bubble active" />
+      <li className="bubble" />
+      <li className="bubble" />
+      <li className="bubble" />
+      <li className="bubble" />
     </ul>
-)
+  );
+};
 
-}
-
-export default Bubbles
+export default Bubbles;

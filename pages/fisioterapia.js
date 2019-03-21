@@ -6,6 +6,7 @@ import HeaderAnimated from "../components/HeaderAnimated/HeaderAnimated.js";
 import MonserratSemiBold from "../static/fonts/Montserrat/Montserrat-SemiBold.ttf";
 import MonserratRegular from "../static/fonts/Montserrat/Montserrat-Regular.ttf";
 import Head from "next/head";
+import imgFisio from "../static/imgFisioterapia.jpg"
 import Technique from "../components/Technique.js";
 import FisioterapiaStyles from "../PagesStyles/FisioterapiaStyles.js";
 import FontBold from "../PagesStyles/FontStyle/FontBold.js";
@@ -20,19 +21,7 @@ const displayTechniques = techniques => {
 class fisioterapia extends React.Component {
   
   componentDidMount() {
-    tween({
-      from: { scaleY: 2, scaleX: 6 },
-      to: { scaleY: 2.18, scaleX: 7 },
-      duration: 1800,
-      ease: easing.easeInOut,
-      flip: Infinity
-    }).start(v => {
-      if (document.getElementById("target") !== null) {
-        document.getElementById(
-          "target"
-        ).style.transform = `translate(1000px, -300px) scaleY(${v.scaleY}) scaleX(${v.scaleX})`;
-      }
-    })
+
   }
 
   render() {
@@ -65,7 +54,7 @@ class fisioterapia extends React.Component {
         `}</style>
         <Navbar link="Nosotros" />
         <FisioterapiaStyles>
-        <HeaderAnimated/>
+        <HeaderAnimated img={imgFisio} positionY={40}/>
           <div className="techniques-content">
             <FontBold>Fisioterapia</FontBold>
             <FontRegular>{description}</FontRegular>

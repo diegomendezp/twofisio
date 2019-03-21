@@ -5,6 +5,8 @@ import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import EcographyStyles from "../PagesStyles/EcografiaStyles";
+import imgEco from "../static/imgEcografía.jpg"
+import HeaderAnimated from "../components/HeaderAnimated/HeaderAnimated"
 
 const ecografia = () => {
   return (
@@ -35,11 +37,7 @@ const ecografia = () => {
       `}</style>
       <Navbar link="Nosotros" />
       <EcographyStyles>
-        <img
-          className="ecography-img"
-          src="../static/imgEcografía.jpg"
-          alt="ecography-img"
-        />
+      <HeaderAnimated img={imgEco} positionY={40}/>
         <div className="back-photo">
           <div className="ecography-content">
             <h2>Ecografía y fisioterapía invasiva</h2>

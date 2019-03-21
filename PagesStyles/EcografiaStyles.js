@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ecographyPhoto from '../static/imgEcografía2.jpg';
+// import ecographyPhoto from '../static/imgEcografía2.jpg';
 
 const EcographyStyles = styled.div`
   font-family: "Monserrat-Regular";

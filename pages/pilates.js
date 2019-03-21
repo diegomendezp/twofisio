@@ -5,9 +5,10 @@ import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import PilatesStyles from "../PagesStyles/PilatesStyles.js";
-
-import FontRegular from "../PagesStyles/FontStyle/FontRegular.js"
-import FontBold from "../PagesStyles/FontStyle/FontBold.js"
+import HeaderAnimated from "../components/HeaderAnimated/HeaderAnimated.js";
+import imgPilates from "../static/imgPilates.jpg"
+import FontRegular from "../PagesStyles/FontStyle/FontRegular.js";
+import FontBold from "../PagesStyles/FontStyle/FontBold.js";
 const pilates = () => {
   return (
     <React.Fragment>
@@ -37,11 +38,7 @@ const pilates = () => {
       `}</style>
       <Navbar link="Nosotros" />
       <PilatesStyles>
-        <img
-          className="pilates-img"
-          src="../static/imgPilates.jpg"
-          alt="pilates-img"
-        />
+      <HeaderAnimated img={imgPilates} positionY={13}/>
         <div className="pilates-content">
           <FontBold>Pilates</FontBold>
           <div className="pilates">

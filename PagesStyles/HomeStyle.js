@@ -64,31 +64,42 @@ const HomeWrapperStyle = styled.div`
     right: 5%;
     display: flex;
     flex-direction: column;
+    text-align: center;
+
+    li {
+      list-style-type: none;
+    }
+  }
+
+  .position {
+    color: rgb(116, 10, 100);
   }
 
   .bubble {
     z-index: 10;
-    list-style-type: none;
-    width: 15px;
-    height: 15px;
-    background: white;
-    border: 1px solid rgb(116, 10, 100);
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
     border-radius: 50%;
     margin: 20% 0%;
+    box-shadow: 0px 0px 2px rgb(116, 10, 100);
   }
 
   .active {
     background: rgb(116, 10, 100);
+    border: 1px solid rgb(116, 10, 100);
   }
 
   @media only screen and (max-width: 415px) {
+    overflow: hidden;
+
     .sectionTitle {
       width: 80vw;
     }
 
-    .bubbleGroup {
+    /* .bubbleGroup {
       display: none;
-    }
+    } */
 
     #imgSlider {
       padding-left: 38%;
@@ -97,6 +108,19 @@ const HomeWrapperStyle = styled.div`
 
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     color: red;
+    .sectionTitle {
+      top: calc(100vh / 2 - 15%);
+      width: 40vw;
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1.8rem;
+      }
+      a {
+        font-size: 1.8rem;
+      }
+    }
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1440px) {

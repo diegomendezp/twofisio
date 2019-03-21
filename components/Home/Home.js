@@ -26,6 +26,7 @@ export default class Home extends Component {
       vh: undefined,
       animation: undefined,
       formPosition: 1,
+      bubblePosition: 1,
       count: 0,
       form2: [
         "M 150.9 -224.2 C 196.3 -205.7 234.1 -165 246.2 -118.4 C 258.2 -71.8 244.4 -19.3 234.1 31.7 C 223.8 82.8 216.9 132.4 189.6 164.8 C 162.3 197.2 114.5 212.3 66.4 226.7 C 18.2 241.2 -30.3 254.9 -72.7 244.1 C -115.1 233.2 -151.2 197.8 -173.1 158.1 C -194.9 118.3 -202.4 74.2 -209.2 29.8 C -216 -14.6 -222.2 -59.5 -211 -101.5 C -199.8 -143.5 -171.3 -182.8 -133.2 -204.6 C -95.2 -226.4 -47.6 -230.7 2.6 -234.8 C 52.8 -238.8 105.6 -242.7 150.9 -224.2 Z",
@@ -46,7 +47,7 @@ export default class Home extends Component {
 
   _makeAnimation = (from, to) => {
     tween({
-      duration: 1000,
+      duration: 500,
       ease: easing.easeInOut
     })
       .pipe(
@@ -67,8 +68,19 @@ export default class Home extends Component {
 
     listItems.forEach((item, i) => {
       item.onclick = e => {
-        this._changeSVGForm("down", "slider", i);
-        this.setState({ ...this.state, formPosition: i + 1 });
+        if (i !== 5) {
+          this._changeSVGForm("down", "slider", i - 1);
+          this.setState({ ...this.state, formPosition: i, bubblePosition: i });
+        } else {
+          this._changeSVGForm("down", "slider", i - 2);
+          this.setState(
+            { ...this.state, formPosition: 4, bubblePosition: 5 },
+            () => {
+              this._changeBubble(4);
+              window.scrollTo({ top: 1000, left: 0, behavior: "smooth" });
+            }
+          );
+        }
       };
     });
   };
@@ -85,28 +97,36 @@ export default class Home extends Component {
 
     $(window).on(wheelEvent, e => {
       if (e.originalEvent.wheelDelta > 0) {
-        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-        document.getElementsByTagName("body")[0].style.overflowY = "hidden";
+        // document.getElementsByTagName("body")[0].style.overflowY = "hidden";
         delta++;
-        if (delta >= 15) {
+        if (delta >= 20) {
           delta = 0;
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          if (this.state.bubblePosition === 5) {
+            this._changeBubble(3);
+          }
+
           if (this.state.formPosition > 1) {
-            if (
-              (document.getElementsByTagName("body")[0].style.overflowY =
-                "hidden")
-            ) {
+            if (this.state.bubblePosition !== 5) {
               this._changeSVGForm("up");
+            } else {
+              this.setState({ ...this.state, bubblePosition: 4 }, () => {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              });
             }
           }
         }
       } else {
         delta--;
-        if (delta <= -15) {
+        if (delta <= -20) {
           delta = 0;
           if (this.state.formPosition < 4) {
             this._changeSVGForm("down");
           } else {
-            window.scrollTo({ top: 1000, left: 0, behavior: "smooth" });
+            this.setState({ ...this.state, bubblePosition: 5 }, () => {
+              this._changeBubble(4);
+              window.scrollTo({ top: 1000, left: 0, behavior: "smooth" });
+            });
           }
         }
       }
@@ -133,6 +153,12 @@ export default class Home extends Component {
             ? direction === "down"
               ? this.state.formPosition + 1
               : this.state.formPosition - 1
+            : fromTo + 1,
+        bubblePosition:
+          type === "default"
+            ? direction === "down"
+              ? this.state.bubblePosition + 1
+              : this.state.bubblePosition - 1
             : fromTo + 1
       },
       () => {
@@ -143,43 +169,33 @@ export default class Home extends Component {
   };
 
   _startAnimation(target) {
-    this.state.animation.start(
-      styler(document.querySelector(target)).set("d")
-    );
+    this.state.animation.start(styler(document.querySelector(target)).set("d"));
+  }
+
+  _bubleAnimation(posX, posY, fromScaleY, toScaleY, fromScaleX, toScaleX) {
+    tween({
+      from: { scaleY: fromScaleY, scaleX: fromScaleX },
+      to: { scaleY: toScaleY, scaleX: toScaleX },
+      duration: 1800,
+      ease: easing.easeInOut,
+      flip: Infinity
+    }).start(v => {
+      document.getElementById(
+        "target"
+      ).style.transform = `translate(${posX}px, ${posY}px) scaleY(${v.scaleY}) scaleX(${v.scaleX})`;
+    });
   }
 
   _manageResize = () => {
-    console.log(window.innerWidth);
-    if (window.innerWidth < 768) {
-      tween({
-        from: { scaleY: 2.1, scaleX: 1.8 },
-        to: { scaleY: 2.5, scaleX: 2 },
-        duration: 1800,
-        ease: easing.easeInOut,
-        flip: Infinity
-      }).start(v => {
-        document.getElementById(
-          "target"
-        ).style.transform = `translate(150px, -100px) scaleY(${
-          v.scaleY
-        }) scaleX(${v.scaleX})`;
-      });
-    } else {
-      tween({
-        from: { scaleY: 2.1, scaleX: 1.8 },
-        to: { scaleY: 2.2, scaleX: 1.85 },
-        duration: 1800,
-        ease: easing.easeInOut,
-        flip: Infinity
-      }).start(v => {
-        if (document.getElementById("target") !== null) {
-          document.getElementById(
-            "target"
-          ).style.transform = `translate(500px, -100px) scaleY(${
-            v.scaleY
-          }) scaleX(${v.scaleX})`;
-        }
-      });
+    switch(true) {
+      case window.innerWidth <= 375:
+      this._bubleAnimation(150, -100, 2.3,2.5,1.8,2)
+      break;
+      case window.innerWidth <= 768:
+      this._bubleAnimation(350, -100, 2.9,3,1.8,2)
+      break;
+      default:
+      this._bubleAnimation(500, -200, 3.1,3.2,1.8,1.85)
     }
   };
 
@@ -217,9 +233,11 @@ export default class Home extends Component {
   render() {
     return (
       <HomeWrapperStyle>
-        <Bubbles />
+        <Bubbles position={this.state.bubblePosition} />
         <CrossfadeImage
-          src={images[this.state.formPosition - 1]}
+          src={
+            images[this.state.formPosition < 5 && this.state.formPosition - 1]
+          }
           duration={1500}
           timingFunction={"ease-out"}
         />
@@ -228,7 +246,11 @@ export default class Home extends Component {
             <path id="target" />
           </clipPath>
         </svg>
-        <SectionTitle {...HomeText[this.state.formPosition - 1]} />
+        <SectionTitle
+          {...HomeText[
+            this.state.formPosition < 5 && this.state.formPosition - 1
+          ]}
+        />
       </HomeWrapperStyle>
     );
   }

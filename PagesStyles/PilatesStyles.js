@@ -34,10 +34,11 @@ const PilatesStyles = styled.div`
     }
 
     .pilates-content {
-      width: 60%;
+      width: 90%;
       margin-left: 5%;
       margin-top: 8%;
       margin-bottom: 10%;
+      font-size: 17px;
     }
    
   }
