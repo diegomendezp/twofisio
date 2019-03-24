@@ -498,7 +498,7 @@ var FooterStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.
 var FooterWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "FooterStyles__FooterWrapper",
   componentId: "sc-41nnwu-1"
-})(["width:100%;background-color:rgba(116,10,100,89%);display:flex;justify-content:center;"]);
+})(["width:100%;background-color:#740A64E6;display:flex;justify-content:center;"]);
 /* harmony default export */ __webpack_exports__["default"] = (FooterStyles);
 
 /***/ }),
