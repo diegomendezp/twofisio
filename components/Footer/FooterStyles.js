@@ -81,7 +81,8 @@ const FooterStyles = styled.div`
 
 export const FooterWrapper = styled.div`
   width: 100%;
-  background-color: rgba(116,10,100,89%);
+  background-color: #740A64E6;
+  
   display: flex;
     justify-content: center;
 `;
