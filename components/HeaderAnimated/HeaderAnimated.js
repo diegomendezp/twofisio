@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderAnimatedStyles from "../../PagesStyles/HeaderAnimatedStyles";
 import { tween, styler, easing } from "popmotion";
-
+import {_bubleAnimation} from '../../utils/animations'
 
 class HeaderAnimated extends React.Component {
 
@@ -9,22 +9,24 @@ constructor(props) {
     super(props)
     this.props = props
 }
+
+_manageResize = () => {
+  switch (true) {
+    case window.innerWidth <= 375:
+      _bubleAnimation(500, -250, 2, 2.05, 6, 6.2);
+      break;
+    case window.innerWidth <= 768:
+      // _bubleAnimation(350, -100, 2.9, 3, 1.8, 2);
+      break;
+    default:
+    _bubleAnimation(500, -250, 2, 2.05, 6, 6.2);
+  }
+};
+
   
   componentDidMount() {
-    console.log(this.props)
-    tween({
-      from: { scaleY: 2, scaleX: 6 },
-      to: { scaleY: 2.1, scaleX: 8 },
-      duration: 1800,
-      ease: easing.easeInOut,
-      flip: Infinity
-    }).start(v => {
-      if (document.getElementById("target") !== null) {
-        document.getElementById(
-          "target"
-        ).style.transform = `translate(900px, -150px) scaleY(${v.scaleY}) scaleX(${v.scaleX})`;
-      }
-    })
+    this._manageResize();
+    window.addEventListener("resize", this._manageResize);
   }
 
   render() {

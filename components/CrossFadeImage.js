@@ -37,7 +37,7 @@ export default class CrossfadeImage extends Component {
     const { duration, timingFunction, delay, style, alt } = this.props;
     const { topSrc, bottomOpacity, bottomSrc } = this.state;
     return (
-      <div style={{ ...defaultStyle, ...{ position: "relative" } }}>
+      <div className="imagenHome" style={{ ...defaultStyle, ...{ position: "relative" } }}>
         {topSrc &&
           <img id="imgSlider"
             style={{ ...defaultStyle, ...style, ...{ position: "absolute" } }}

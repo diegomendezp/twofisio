@@ -19,9 +19,15 @@ const HeaderAnimatedStyles = styled.div`
     object-fit: cover;
   } */
 
+  @media only screen and (max-width: 415px) {
+    background-position-x: 28%;
+    background-size: 196%;  
+  }
+
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     height: 33vh;
     background-position-y: 0%;
+
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1440px) {

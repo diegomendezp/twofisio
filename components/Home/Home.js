@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import { HomeWrapperStyle } from "../../PagesStyles/HomeStyle";
 import { tween, styler, easing } from "popmotion";
 import { interpolate } from "flubber"; // ES6
-import { SectionTitle } from "./SectionTitle";
+import SectionTitle from "./SectionTitle";
 import HomeText from "../../content/home.json";
 import CrossfadeImage from "../CrossFadeImage";
 import $ from "jquery";
 import Bubbles from "./Bubles";
+import {_bubleAnimation} from '../../utils/animations'
 
 const images = [
   "../../static/imgPilates.jpg",
@@ -172,30 +173,16 @@ export default class Home extends Component {
     this.state.animation.start(styler(document.querySelector(target)).set("d"));
   }
 
-  _bubleAnimation(posX, posY, fromScaleY, toScaleY, fromScaleX, toScaleX) {
-    tween({
-      from: { scaleY: fromScaleY, scaleX: fromScaleX },
-      to: { scaleY: toScaleY, scaleX: toScaleX },
-      duration: 1800,
-      ease: easing.easeInOut,
-      flip: Infinity
-    }).start(v => {
-      document.getElementById(
-        "target"
-      ).style.transform = `translate(${posX}px, ${posY}px) scaleY(${v.scaleY}) scaleX(${v.scaleX})`;
-    });
-  }
-
   _manageResize = () => {
-    switch(true) {
+    switch (true) {
       case window.innerWidth <= 375:
-      this._bubleAnimation(150, -100, 2.3,2.5,1.8,2)
-      break;
+        _bubleAnimation(150, -100, 2.3, 2.5, 1.8, 2);
+        break;
       case window.innerWidth <= 768:
-      this._bubleAnimation(350, -100, 2.9,3,1.8,2)
-      break;
+        _bubleAnimation(350, -100, 2.9, 3, 1.8, 2);
+        break;
       default:
-      this._bubleAnimation(500, -200, 3.1,3.2,1.8,1.85)
+        _bubleAnimation(500, -200, 3.1, 3.2, 1.8, 1.85);
     }
   };
 
@@ -247,6 +234,8 @@ export default class Home extends Component {
           </clipPath>
         </svg>
         <SectionTitle
+          duration={500}
+          timingFunction={"ease"}
           {...HomeText[
             this.state.formPosition < 5 && this.state.formPosition - 1
           ]}

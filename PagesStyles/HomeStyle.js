@@ -72,6 +72,7 @@ const HomeWrapperStyle = styled.div`
   }
 
   .position {
+    z-index:10;
     color: rgb(116, 10, 100);
   }
 
