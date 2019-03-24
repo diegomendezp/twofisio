@@ -50,11 +50,9 @@ class SectionTitle extends Component {
     }
   }
   render() {
-    const { duration, timingFunction, delay, style, alt } = this.props;
+    const { duration, timingFunction} = this.props;
     const { topSrc, bottomOpacity, bottomSrc, topOpacity } = this.state;
 
-    console.log(topSrc)
-    console.log(bottomSrc)
 
     return (
       <div>
@@ -93,7 +91,6 @@ class SectionTitle extends Component {
 // const defaultStyle = { width: "100vw", height: "100vh" };
 
 SectionTitle.propTypes = {
-  src: PropTypes.string.isRequired,
   alt: PropTypes.string,
   duration: PropTypes.number,
   timingFunction: PropTypes.string,
