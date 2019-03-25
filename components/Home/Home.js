@@ -7,7 +7,7 @@ import HomeText from "../../content/home.json";
 import CrossfadeImage from "../CrossFadeImage";
 import $ from "jquery";
 import Bubbles from "./Bubles";
-import {_bubleAnimation} from '../../utils/animations'
+import { _bubleAnimation } from "../../utils/animations";
 
 const images = [
   "../../static/imgPilates.jpg",
@@ -190,6 +190,7 @@ export default class Home extends Component {
     this._listenSliderButtons();
     this._mouseWheel();
     this._manageResize();
+
     window.addEventListener("resize", this._manageResize);
 
     // interval = setInterval(() => {
@@ -218,6 +219,7 @@ export default class Home extends Component {
   }
 
   render() {
+    
     return (
       <HomeWrapperStyle>
         <Bubbles position={this.state.bubblePosition} />
@@ -228,10 +230,12 @@ export default class Home extends Component {
           duration={1500}
           timingFunction={"ease-out"}
         />
-        <svg id="container">
-          <clipPath id="svgPath">
-            <path id="target" />
-          </clipPath>
+        
+        <svg  id="container" viewBox="300 300 400 400">
+            <clipPath id="svgPath">
+              <path id="target"  />
+            </clipPath>
+      
         </svg>
         <SectionTitle
           duration={500}

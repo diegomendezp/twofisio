@@ -864,14 +864,14 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_PagesStyles_HomeStyle__WEBPACK_IMPORTED_MODULE_10__["HomeWrapperStyle"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 222
+          lineNumber: 224
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_Bubles__WEBPACK_IMPORTED_MODULE_17__["default"], {
         position: this.state.bubblePosition,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 223
+          lineNumber: 225
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_CrossFadeImage__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -880,28 +880,29 @@ function (_Component) {
         timingFunction: "ease-out",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 224
+          lineNumber: 226
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("svg", {
         id: "container",
+        viewBox: "300 300 400 400",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 231
+          lineNumber: 234
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("clipPath", {
         id: "svgPath",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 232
+          lineNumber: 235
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("path", {
         id: "target",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 233
+          lineNumber: 236
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_SectionTitle__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
@@ -910,7 +911,7 @@ function (_Component) {
       }, _content_home_json__WEBPACK_IMPORTED_MODULE_14__[this.state.formPosition < 5 && this.state.formPosition - 1], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 236
+          lineNumber: 240
         },
         __self: this
       })));
@@ -1021,21 +1022,16 @@ function (_Component) {
     value: function render() {
       var _this$props = this.props,
           duration = _this$props.duration,
-          timingFunction = _this$props.timingFunction,
-          delay = _this$props.delay,
-          style = _this$props.style,
-          alt = _this$props.alt;
+          timingFunction = _this$props.timingFunction;
       var _this$state = this.state,
           topSrc = _this$state.topSrc,
           bottomOpacity = _this$state.bottomOpacity,
           bottomSrc = _this$state.bottomSrc,
           topOpacity = _this$state.topOpacity;
-      console.log(topSrc);
-      console.log(bottomSrc);
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 58
         },
         __self: this
       }, topSrc && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -1046,26 +1042,26 @@ function (_Component) {
         }),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 60
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 68
         },
         __self: this
       }, topSrc.title), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 69
         },
         __self: this
       }, topSrc.body), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
         href: topSrc.link,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 70
         },
         __self: this
       }, "+ Mas Info")), bottomSrc && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -1076,26 +1072,26 @@ function (_Component) {
         }),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 74
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 82
         },
         __self: this
       }, bottomSrc.title), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 83
         },
         __self: this
       }, bottomSrc.body), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
         href: bottomSrc.link,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 84
         },
         __self: this
       }, "+ Mas Info")));
@@ -1107,7 +1103,6 @@ function (_Component) {
 
 
 SectionTitle.propTypes = {
-  src: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string.isRequired,
   alt: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
   duration: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.number,
   timingFunction: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
@@ -3521,8 +3516,9 @@ var _bubleAnimation = function _bubleAnimation(posX, posY, fromScaleY, toScaleY,
     ease: popmotion__WEBPACK_IMPORTED_MODULE_0__["easing"].easeInOut,
     flip: Infinity
   }).start(function (v) {
-    if (document.getElementById("target") !== null) {
-      document.getElementById("target").style.transform = "translate(".concat(posX, "px, ").concat(posY, "px) scaleY(").concat(v.scaleY, ") scaleX(").concat(v.scaleX, ")");
+    if (document.getElementById('target') !== null) {
+      document.getElementById('target').style.webkitTransform = "translate3d(".concat(posX, "px, ").concat(posY, "px,0) scaleY(").concat(v.scaleY, ") scaleX(").concat(v.scaleX, ")");
+      document.getElementById('target').setAttribute('transform', "translate3d(".concat(posX, "px, ").concat(posY, "px,0) scaleY(").concat(v.scaleY, ") scaleX(").concat(v.scaleX, ")"));
     }
   });
 };

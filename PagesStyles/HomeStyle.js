@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const HomeWrapperStyle = styled.div`
   width: 100vw;
@@ -38,6 +38,7 @@ const HomeWrapperStyle = styled.div`
     left: 0;
   }
 
+ 
   .sectionTitle {
     position: absolute;
     width: 20vw;
