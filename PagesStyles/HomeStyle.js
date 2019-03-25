@@ -36,6 +36,8 @@ const HomeWrapperStyle = styled.div`
   #container {
     position: absolute;
     left: 0;
+    width: 100vw;
+    height: 100vh;
   }
 
   .sectionTitle {
@@ -52,7 +54,7 @@ const HomeWrapperStyle = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    clip-path: url(#svgPath);
+    -webkit-clip-path: url(#svgPath);
     width: 100%;
     height: 100%;
     object-fit: cover;

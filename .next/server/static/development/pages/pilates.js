@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -152,7 +152,7 @@ __webpack_require__.r(__webpack_exports__);
 var HeaderAnimatedStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "HeaderAnimatedStyles",
   componentId: "sc-11m3be6-0"
-})(["background-image:url(", ");width:100vw;height:50vh;clip-path:url(#svgPath);background-position-y:", "%;background-size:100%;font-family:\"Monserrat-Regular\";#container{position:absolute;}@media only screen and (max-width:415px){background-position-x:28%;background-size:196%;}@media only screen and (min-width:415px) and (max-width:768px){height:33vh;background-position-y:0%;}@media only screen and (min-width:769px) and (max-width:1440px){}@media only screen and (min-width:1441px){}"], function (props) {
+})(["position:relative;width:100vw;height:50vh;background-image:url(", ");-webkit-clip-path:url(#svgPath);background-position-y:", "%;background-size:100%;font-family:\"Monserrat-Regular\";#container{position:absolute;top:0;left:0;width:100%;height:100vh;}@media only screen and (max-width:415px){background-position-x:28%;background-size:196%;}@media only screen and (min-width:415px) and (max-width:768px){height:33vh;background-position-y:0%;}@media only screen and (min-width:769px) and (max-width:1440px){}@media only screen and (min-width:1441px){}"], function (props) {
   return props.backImage;
 }, function (props) {
   return props.backPositionY;
@@ -161,10 +161,10 @@ var HeaderAnimatedStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___defaul
 
 /***/ }),
 
-/***/ "./PagesStyles/TratamientosStyles.js":
-/*!*******************************************!*\
-  !*** ./PagesStyles/TratamientosStyles.js ***!
-  \*******************************************/
+/***/ "./PagesStyles/PilatesStyles.js":
+/*!**************************************!*\
+  !*** ./PagesStyles/PilatesStyles.js ***!
+  \**************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -173,11 +173,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
-var TratamientosStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
-  displayName: "TratamientosStyles",
-  componentId: "sc-1i0q5f0-0"
-})(["font-family:\"Monserrat-Regular\";.treatments-img{width:100%;object-fit:cover;}h2{font-family:\"Monserrat-Semibold\";color:#740a64;letter-spacing:0.2px;}.treatment-name{font-family:\"Monserrat-Semibold\";color:#740a64;}.treatments-content{width:90%;margin:0 auto;}li{list-style:none;letter-spacing:0.2px;margin-top:2%;margin-bottom:2%;}@media only screen and (min-width:415px) and (max-width:768px){.treatment{width:48%;}.treatments{display:flex;flex-wrap:wrap;justify-content:space-between;}}@media only screen and (min-width:769px) and (max-width:1440px){.treatments-img{height:50vh;}.treatment{width:48%;}.treatments{display:flex;flex-wrap:wrap;justify-content:space-between;}}@media only screen and (min-width:1441px){.treatments-img{height:48vh;}.treatments-content{margin-top:8%;margin-bottom:10%;}.treatment{width:48%;}.treatments{display:flex;flex-wrap:wrap;justify-content:space-between;}}"]);
-/* harmony default export */ __webpack_exports__["default"] = (TratamientosStyles);
+var PilatesStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "PilatesStyles",
+  componentId: "ilc0el-0"
+})(["font-family:\"Monserrat-Regular\";.pilates-img{width:100%;object-fit:cover;}.treatment-name{font-family:\"Monserrat-Semibold\";color:#740a64;}.pilates-content{width:90%;margin-left:5%;margin-top:15%;margin-bottom:30%;}li{list-style:none;letter-spacing:0.2px;margin-top:2%;margin-bottom:2%;}@media only screen and (min-width:415px) and (max-width:768px){.pilates{display:flex;flex-wrap:wrap;justify-content:space-between;}.pilates-content{width:90%;margin-left:5%;margin-top:8%;margin-bottom:10%;font-size:17px;}}@media only screen and (min-width:769px) and (max-width:1440px){.pilates-img{height:33vh;}.pilates-content{width:60%;margin-left:5%;margin-top:8%;margin-bottom:10%;}.pilates{display:flex;flex-wrap:wrap;justify-content:space-between;}}@media only screen and (min-width:1441px){.pilates-img{height:48vh;}.pilates-content{width:60%;margin-left:5%;margin-top:8%;margin-bottom:10%;}.pilates{display:flex;flex-wrap:wrap;justify-content:space-between;}}"]);
+/* harmony default export */ __webpack_exports__["default"] = (PilatesStyles);
 
 /***/ }),
 
@@ -381,7 +381,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _PagesStyles_HeaderAnimatedStyles__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../PagesStyles/HeaderAnimatedStyles */ "./PagesStyles/HeaderAnimatedStyles.js");
 /* harmony import */ var popmotion__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! popmotion */ "popmotion");
 /* harmony import */ var popmotion__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(popmotion__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _utils_animations__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../utils/animations */ "./utils/animations.js");
+/* harmony import */ var flubber__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! flubber */ "flubber");
+/* harmony import */ var flubber__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(flubber__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _utils_animations__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../utils/animations */ "./utils/animations.js");
 
 
 
@@ -393,7 +395,11 @@ var _jsxFileName = "/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofis
 
 
 
+ // ES6
 
+
+var star = "M 200 200m -75 0a 75 75 0 1 0 150 0a 75 75 0 1 0 -150 0";
+var circle = "M 43.5703 34 C 115.977 -36.9719 237.588 40.7602 338.504 34 C 436.992 27.4024 584.269 -28.7116 623.167 20.0936 C 662.065 68.8988 600.451 177.68 602.012 281.32 C 603.64 389.403 654.491 511.401 602.012 586 C 532.926 586 158.625 587 31 586 C -29.2288 527.147 17.9491 394.039 22 296.215 C 26.729 182.016 -33.4904 109.534 43.5703 34 Z";
 
 var HeaderAnimated =
 /*#__PURE__*/
@@ -407,21 +413,17 @@ function (_React$Component) {
 
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(HeaderAnimated).call(this, props));
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "_manageResize", function () {
-      switch (true) {
-        case window.innerWidth <= 375:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_10__["_bubleAnimation"])(500, -250, 2, 2.05, 6, 6.2);
-
-          break;
-
-        case window.innerWidth <= 768:
-          // _bubleAnimation(350, -100, 2.9, 3, 1.8, 2);
-          break;
-
-        default:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_10__["_bubleAnimation"])(500, -250, 2, 2.05, 6, 6.2);
-
-      }
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "_manageResize", function () {// _bubleAnimation(-100, 0, 5, 5.2);
+      // switch (true) {
+      //   case window.innerWidth <= 375:
+      //     _bubleAnimation(500, -250, 2, 2.05, 6, 6.2);
+      //     break;
+      //   case window.innerWidth <= 768:
+      //     // _bubleAnimation(350, -100, 2.9, 3, 1.8, 2);
+      //     break;
+      //   default:
+      //   _bubleAnimation(500, -250, 2, 2.05, 6, 6.2);
+      // }
     });
 
     _this.props = props;
@@ -431,9 +433,28 @@ function (_React$Component) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(HeaderAnimated, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      this._manageResize();
-
-      window.addEventListener("resize", this._manageResize);
+      // this._manageResize();
+      Object(popmotion__WEBPACK_IMPORTED_MODULE_9__["tween"])({
+        duration: 700,
+        ease: popmotion__WEBPACK_IMPORTED_MODULE_9__["easing"].easeInOut,
+        flip: Infinity
+      }).pipe(Object(flubber__WEBPACK_IMPORTED_MODULE_10__["interpolate"])(circle, star, {
+        maxSegmentLength: 2
+      })).start(Object(popmotion__WEBPACK_IMPORTED_MODULE_9__["styler"])(document.querySelector("#target")).set("d")); // tween({
+      //   from: { transalteX: -100, scale: 5 },
+      //   to: { transalteX: 0, scale: 5.2 },
+      //   duration: 1800,
+      //   ease: easing.easeInOut,
+      //   flip: Infinity
+      // }).start(v => {
+      //   if (document.getElementById("target") !== null) {
+      //     document.getElementById("target").style.webkitTransform = `translate(${v.transalteX}px, -300px) scale(${v.scale})`;
+      //     // document.getElementById("target").style.webkitTransform = `scaleY(${v.scaleY})`;
+      //     // document.getElementById("target").style.MozTransform = `translate(${500}px, ${-250}px) scale(${v.scaleX})`;
+      //   }
+      // });
+      // this._manageResize();
+      // window.addEventListener("resize", this._manageResize);
     }
   }, {
     key: "render",
@@ -443,29 +464,28 @@ function (_React$Component) {
         backPositionY: this.props.positionY,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 74
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("svg", {
         id: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 80
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("clipPath", {
         id: "svgPath",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 81
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("path", {
         id: "target",
-        d: "M 115.7 -186.7 C 150 -158 177.8 -126 192.7 -89.2 C 207.7 -52.4 209.7 -11 207.2 32.2 C 204.7 75.3 197.6 120.2 174.7 157.3 C 151.8 194.5 113.1 223.9 67.7 242.9 C 22.3 261.9 -29.9 270.6 -74 255.9 C -118.1 241.1 -154.3 203.1 -189.1 163.5 C -224 124 -257.5 82.9 -258.3 40.5 C -259.2 -1.9 -227.4 -45.6 -203.5 -90.8 C -179.6 -136.1 -163.6 -182.9 -131 -212.3 C -98.4 -241.8 -49.2 -253.9 -4.2 -247.3 C 40.7 -240.7 81.5 -215.4 115.7 -186.7 Z",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 82
         },
         __self: this
       }))));
@@ -588,57 +608,6 @@ var NavbarStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.
 
 /***/ }),
 
-/***/ "./components/Treatment.js":
-/*!*********************************!*\
-  !*** ./components/Treatment.js ***!
-  \*********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/components/Treatment.js";
-
-
-var displayDescription = function displayDescription(description) {
-  return description.map(function (element, i) {
-    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-      key: i,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 4
-      },
-      __self: this
-    }, "- ", element);
-  });
-};
-
-var Treatment = function Treatment(_ref) {
-  var name = _ref.name,
-      description = _ref.description;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "treatment",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "treatment-name",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, name), displayDescription(description));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Treatment);
-
-/***/ }),
-
 /***/ "./content/contact.json":
 /*!******************************!*\
   !*** ./content/contact.json ***!
@@ -647,17 +616,6 @@ var Treatment = function Treatment(_ref) {
 /***/ (function(module) {
 
 module.exports = [{"name":"Teléfono","value":"917116205 | 609058398"},{"name":"Email","value":"centrodefisioterapia@twofisio.es"},{"name":"Dirección","value":"Avenida Padre Piquer 39, Madrid"},{"name":"Horario","value":"Lunes a jueves de 9 a 14 y de 15 a 21 horas. Viernes de 9 a 14 y de 16 a 21 horas"}];
-
-/***/ }),
-
-/***/ "./content/treatments.json":
-/*!*********************************!*\
-  !*** ./content/treatments.json ***!
-  \*********************************/
-/*! exports provided: 0, 1, 2, 3, 4, default */
-/***/ (function(module) {
-
-module.exports = [{"name":"Traumatología","description":["Patologías de columna vertebral (esguinces cervicales, dorsalgias, lumbalgias, escoliosis, ciáticas…)","Patologías músculo-tendinosas (contracturas, roturas fibrilares, tendinosis…)","Patologías articulares (artrosis, artritis, debilidad articular…)","Lesiones deportivas (esguinces, luxaciones, fracturas, distensiones…)","Lesiones mandibulares"]},{"name":"Circulatorio","description":["Piernas cansadas (por insuficiencia venosa crónica)","Cirugías con extirpación de ganglios linfáticos","Edemas y linfedemas","Varices"]},{"name":"Pre y post-cirugía","description":[" Preparación del paciente para conseguir una total recuperación funcional tras la cirugía","Reeducación","Equilibrio","Marcha","Coordinación","Musculación","Propiocepción"]},{"name":"Neurología","description":["Cefaleas","Migrañas","Vértigos","Hemiplejías","Parkinson","Ictus"]},{"name":"Tratamiento visceral","description":["Digestiones pesadas","Colon irritable","Menstruaciones dolorosas"]}];
 
 /***/ }),
 
@@ -968,39 +926,6 @@ function _defineProperty(obj, key, value) {
   }
 
   return obj;
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js ***!
-  \********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
-/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
-/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
-
-function _extends() {
-  _extends = _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default.a || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
 }
 
 /***/ }),
@@ -2660,37 +2585,34 @@ module.exports = __webpack_require__(/*! ./dist/style */ "./node_modules/styled-
 
 /***/ }),
 
-/***/ "./pages/tratamientos.js":
-/*!*******************************!*\
-  !*** ./pages/tratamientos.js ***!
-  \*******************************/
+/***/ "./pages/pilates.js":
+/*!**************************!*\
+  !*** ./pages/pilates.js ***!
+  \**************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _content_treatments_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../content/treatments.json */ "./content/treatments.json");
-var _content_treatments_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../content/treatments.json */ "./content/treatments.json", 1);
-/* harmony import */ var _components_Treatment_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Treatment.js */ "./components/Treatment.js");
-/* harmony import */ var _PagesStyles_TratamientosStyles_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../PagesStyles/TratamientosStyles.js */ "./PagesStyles/TratamientosStyles.js");
-/* harmony import */ var _static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../static/fonts/Montserrat/Montserrat-SemiBold.ttf */ "./static/fonts/Montserrat/Montserrat-SemiBold.ttf");
-/* harmony import */ var _static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../static/fonts/Montserrat/Montserrat-Regular.ttf */ "./static/fonts/Montserrat/Montserrat-Regular.ttf");
-/* harmony import */ var _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next-server/head */ "next-server/head");
-/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_server_head__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _components_Navbar_Navbar_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Navbar/Navbar.js */ "./components/Navbar/Navbar.js");
-/* harmony import */ var _components_Footer_Footer_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Footer/Footer.js */ "./components/Footer/Footer.js");
-/* harmony import */ var _static_imgTratamientos_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../static/imgTratamientos.jpg */ "./static/imgTratamientos.jpg");
-/* harmony import */ var _static_imgTratamientos_jpg__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_static_imgTratamientos_jpg__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _components_HeaderAnimated_HeaderAnimated__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/HeaderAnimated/HeaderAnimated */ "./components/HeaderAnimated/HeaderAnimated.js");
-
-var _jsxFileName = "/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/pages/tratamientos.js";
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../static/fonts/Montserrat/Montserrat-SemiBold.ttf */ "./static/fonts/Montserrat/Montserrat-SemiBold.ttf");
+/* harmony import */ var _static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../static/fonts/Montserrat/Montserrat-Regular.ttf */ "./static/fonts/Montserrat/Montserrat-Regular.ttf");
+/* harmony import */ var _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next-server/head */ "next-server/head");
+/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_server_head__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Navbar/Navbar */ "./components/Navbar/Navbar.js");
+/* harmony import */ var _components_Footer_Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Footer/Footer */ "./components/Footer/Footer.js");
+/* harmony import */ var _PagesStyles_PilatesStyles_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../PagesStyles/PilatesStyles.js */ "./PagesStyles/PilatesStyles.js");
+/* harmony import */ var _components_HeaderAnimated_HeaderAnimated_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/HeaderAnimated/HeaderAnimated.js */ "./components/HeaderAnimated/HeaderAnimated.js");
+/* harmony import */ var _static_imgPilates_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/imgPilates.jpg */ "./static/imgPilates.jpg");
+/* harmony import */ var _static_imgPilates_jpg__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_static_imgPilates_jpg__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _PagesStyles_FontStyle_FontRegular_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../PagesStyles/FontStyle/FontRegular.js */ "./PagesStyles/FontStyle/FontRegular.js");
+/* harmony import */ var _PagesStyles_FontStyle_FontBold_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../PagesStyles/FontStyle/FontBold.js */ "./PagesStyles/FontStyle/FontBold.js");
+var _jsxFileName = "/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/pages/pilates.js";
 
 
 
@@ -2704,106 +2626,109 @@ var _jsxFileName = "/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofis
 
 
 
-var displayTreatments = function displayTreatments() {
-  return _content_treatments_json__WEBPACK_IMPORTED_MODULE_3__.map(function (treatment, i) {
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Treatment_js__WEBPACK_IMPORTED_MODULE_4__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-      key: i
-    }, treatment, {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: this
-    }));
-  });
-};
-
-var tratamientos = function tratamientos(props) {
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, {
+var pilates = function pilates() {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 14
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_8___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 15
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
     name: "viewport",
     content: "width=device-width, initial-scale=1",
-    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a.dynamic([["434473200", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_6___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_7___default.a]]]),
+    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_2___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3___default.a]]]),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 16
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
     charSet: "utf-8",
-    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a.dynamic([["434473200", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_6___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_7___default.a]]]),
+    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_2___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3___default.a]]]),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 17
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    id: "434473200",
-    dynamic: [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_6___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_7___default.a],
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "3898954932",
+    dynamic: [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_2___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3___default.a],
     __self: this
-  }, "@font-face{font-family:\"Monserrat-Semibold\";src:url(".concat(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_6___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}@font-face{font-family:\"Monserrat-Regular\";src:url(").concat(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_7___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}body{margin:0;padding:0;max-width:100%;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2FsYmVydG8vRXNjcml0b3Jpby9UYXlsb3JIVUIvUHJveWVjdG9zL0NsaWVudGVzL3R3b2Zpc2lvL3BhZ2VzL3RyYXRhbWllbnRvcy5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFzQnVCLEFBRzBDLEFBTUQsQUFPdkIsU0FDQyxVQUNLLGFBUjBDLENBTkEsQ0FlM0QsdURBUnFCLENBTkEsa0JBT0QsQ0FOQSxpQkFPcEIsQ0FOQSIsImZpbGUiOiIvaG9tZS9hbGJlcnRvL0VzY3JpdG9yaW8vVGF5bG9ySFVCL1Byb3llY3Rvcy9DbGllbnRlcy90d29maXNpby9wYWdlcy90cmF0YW1pZW50b3MuanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXG5pbXBvcnQgdHJlYXRtZW50cyBmcm9tICcuLi9jb250ZW50L3RyZWF0bWVudHMuanNvbidcbmltcG9ydCBUcmVhdG1lbnQgZnJvbSAnLi4vY29tcG9uZW50cy9UcmVhdG1lbnQuanMnO1xuaW1wb3J0IFRyYXRhbWllbnRvc1N0eWxlcyBmcm9tICcuLi9QYWdlc1N0eWxlcy9UcmF0YW1pZW50b3NTdHlsZXMuanMnO1xuaW1wb3J0IE1vbnNlcnJhdFNlbWlCb2xkIGZyb20gJy4uL3N0YXRpYy9mb250cy9Nb250c2VycmF0L01vbnRzZXJyYXQtU2VtaUJvbGQudHRmJztcbmltcG9ydCBNb25zZXJyYXRSZWd1bGFyIGZyb20gJy4uL3N0YXRpYy9mb250cy9Nb250c2VycmF0L01vbnRzZXJyYXQtUmVndWxhci50dGYnO1xuaW1wb3J0IEhlYWQgZnJvbSBcIm5leHQvaGVhZFwiO1xuaW1wb3J0IE5hdmJhciBmcm9tICcuLi9jb21wb25lbnRzL05hdmJhci9OYXZiYXIuanMnO1xuaW1wb3J0IEZvb3RlciBmcm9tICcuLi9jb21wb25lbnRzL0Zvb3Rlci9Gb290ZXIuanMnO1xuaW1wb3J0IGltZ1RyYXRhIGZyb20gXCIuLi9zdGF0aWMvaW1nVHJhdGFtaWVudG9zLmpwZ1wiXG5pbXBvcnQgSGVhZGVyQW5pbWF0ZWQgZnJvbSBcIi4uL2NvbXBvbmVudHMvSGVhZGVyQW5pbWF0ZWQvSGVhZGVyQW5pbWF0ZWRcIlxuY29uc3QgZGlzcGxheVRyZWF0bWVudHMgPSAoKSA9PiB7XG4gIHJldHVybiB0cmVhdG1lbnRzLm1hcCgodHJlYXRtZW50LCBpKSA9PiA8VHJlYXRtZW50IGtleT17aX0gey4uLnRyZWF0bWVudH0vPilcbn1cblxuY29uc3QgdHJhdGFtaWVudG9zID0gKHByb3BzKSA9PiB7XG4gIHJldHVybiAoXG4gICAgPFJlYWN0LkZyYWdtZW50PlxuICAgICAgPEhlYWQ+XG4gICAgICA8bWV0YSBuYW1lPVwidmlld3BvcnRcIiBjb250ZW50PVwid2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTFcIiAvPlxuICAgICAgPG1ldGEgY2hhclNldD1cInV0Zi04XCIgLz5cbiAgICA8L0hlYWQ+XG4gICAgPHN0eWxlIGpzeCBnbG9iYWw+e2BcbiAgICAgIEBmb250LWZhY2Uge1xuICAgICAgICBmb250LWZhbWlseTogXCJNb25zZXJyYXQtU2VtaWJvbGRcIjtcbiAgICAgICAgc3JjOiB1cmwoJHtNb25zZXJyYXRTZW1pQm9sZH0pIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICAgICAgICBmb250LXdlaWdodDogbm9ybWFsO1xuICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgICB9XG4gICAgICBAZm9udC1mYWNlIHtcbiAgICAgICAgZm9udC1mYW1pbHk6IFwiTW9uc2VycmF0LVJlZ3VsYXJcIjtcbiAgICAgICAgc3JjOiB1cmwoJHtNb25zZXJyYXRSZWd1bGFyfSkgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gICAgICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgICAgIH1cbiAgXG4gICAgICBib2R5IHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBtYXgtd2lkdGg6IDEwMCU7XG4gICAgICB9XG4gICAgYH08L3N0eWxlPlxuICAgIDxOYXZiYXIgbGluaz1cIk5vc290cm9zXCIvPlxuICAgICAgPFRyYXRhbWllbnRvc1N0eWxlcz5cbiAgICAgIDxIZWFkZXJBbmltYXRlZCBpbWc9e2ltZ1RyYXRhfSBwb3NpdGlvblk9ezEzfS8+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwidHJlYXRtZW50cy1jb250ZW50XCI+XG4gICAgICAgICAgPGgyPlRyYXRhbWllbnRvczwvaDI+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ0cmVhdG1lbnRzXCI+XG4gICAgICAgICAgICB7ZGlzcGxheVRyZWF0bWVudHMoKX1cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L1RyYXRhbWllbnRvc1N0eWxlcz5cbiAgICAgIDxGb290ZXIgLz5cbiAgICA8L1JlYWN0LkZyYWdtZW50PlxuICApXG59XG5cblxuXG5leHBvcnQgZGVmYXVsdCB0cmF0YW1pZW50b3NcblxuIl19 */\n/*@ sourceURL=/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/pages/tratamientos.js */")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Navbar_Navbar_js__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  }, "@font-face{font-family:\"Monserrat-Semibold\";src:url(".concat(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_2___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}@font-face{font-family:\"Monserrat-Regular\";src:url(").concat(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}body{margin:0;padding:0;max-width:100%;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2FsYmVydG8vRXNjcml0b3Jpby9UYXlsb3JIVUIvUHJveWVjdG9zL0NsaWVudGVzL3R3b2Zpc2lvL3BhZ2VzL3BpbGF0ZXMuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBa0J5QixBQUc0QyxBQU1ELEFBT3ZCLFNBQ0MsVUFDSyxhQVIwQyxDQU5BLENBZTNELHVEQVJxQixDQU5BLGtCQU9ELENBTkEsaUJBT3BCLENBTkEiLCJmaWxlIjoiL2hvbWUvYWxiZXJ0by9Fc2NyaXRvcmlvL1RheWxvckhVQi9Qcm95ZWN0b3MvQ2xpZW50ZXMvdHdvZmlzaW8vcGFnZXMvcGlsYXRlcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCBNb25zZXJyYXRTZW1pQm9sZCBmcm9tIFwiLi4vc3RhdGljL2ZvbnRzL01vbnRzZXJyYXQvTW9udHNlcnJhdC1TZW1pQm9sZC50dGZcIjtcbmltcG9ydCBNb25zZXJyYXRSZWd1bGFyIGZyb20gXCIuLi9zdGF0aWMvZm9udHMvTW9udHNlcnJhdC9Nb250c2VycmF0LVJlZ3VsYXIudHRmXCI7XG5pbXBvcnQgSGVhZCBmcm9tIFwibmV4dC9oZWFkXCI7XG5pbXBvcnQgTmF2YmFyIGZyb20gXCIuLi9jb21wb25lbnRzL05hdmJhci9OYXZiYXJcIjtcbmltcG9ydCBGb290ZXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvRm9vdGVyL0Zvb3RlclwiO1xuaW1wb3J0IFBpbGF0ZXNTdHlsZXMgZnJvbSBcIi4uL1BhZ2VzU3R5bGVzL1BpbGF0ZXNTdHlsZXMuanNcIjtcbmltcG9ydCBIZWFkZXJBbmltYXRlZCBmcm9tIFwiLi4vY29tcG9uZW50cy9IZWFkZXJBbmltYXRlZC9IZWFkZXJBbmltYXRlZC5qc1wiO1xuaW1wb3J0IGltZ1BpbGF0ZXMgZnJvbSBcIi4uL3N0YXRpYy9pbWdQaWxhdGVzLmpwZ1wiXG5pbXBvcnQgRm9udFJlZ3VsYXIgZnJvbSBcIi4uL1BhZ2VzU3R5bGVzL0ZvbnRTdHlsZS9Gb250UmVndWxhci5qc1wiO1xuaW1wb3J0IEZvbnRCb2xkIGZyb20gXCIuLi9QYWdlc1N0eWxlcy9Gb250U3R5bGUvRm9udEJvbGQuanNcIjtcbmNvbnN0IHBpbGF0ZXMgPSAoKSA9PiB7XG4gIHJldHVybiAoXG4gICAgPFJlYWN0LkZyYWdtZW50PlxuICAgICAgPEhlYWQ+XG4gICAgICAgIDxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MVwiIC8+XG4gICAgICAgIDxtZXRhIGNoYXJTZXQ9XCJ1dGYtOFwiIC8+XG4gICAgICA8L0hlYWQ+XG4gICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICBAZm9udC1mYWNlIHtcbiAgICAgICAgICBmb250LWZhbWlseTogXCJNb25zZXJyYXQtU2VtaWJvbGRcIjtcbiAgICAgICAgICBzcmM6IHVybCgke01vbnNlcnJhdFNlbWlCb2xkfSkgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgICAgIH1cbiAgICAgICAgQGZvbnQtZmFjZSB7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiTW9uc2VycmF0LVJlZ3VsYXJcIjtcbiAgICAgICAgICBzcmM6IHVybCgke01vbnNlcnJhdFJlZ3VsYXJ9KSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbiAgICAgICAgICBmb250LXdlaWdodDogbm9ybWFsO1xuICAgICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgICAgICAgfVxuXG4gICAgICAgIGJvZHkge1xuICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICAgIG1heC13aWR0aDogMTAwJTtcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgICAgPE5hdmJhciBsaW5rPVwiTm9zb3Ryb3NcIiAvPlxuICAgICAgPFBpbGF0ZXNTdHlsZXM+XG4gICAgICA8SGVhZGVyQW5pbWF0ZWQgaW1nPXtpbWdQaWxhdGVzfSBwb3NpdGlvblk9ezEzfS8+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGlsYXRlcy1jb250ZW50XCI+XG4gICAgICAgICAgPEZvbnRCb2xkPlBpbGF0ZXM8L0ZvbnRCb2xkPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGlsYXRlc1wiPlxuICAgICAgICAgICAgPEZvbnRSZWd1bGFyPlxuICAgICAgICAgICAgICBFbCBtw6l0b2RvIHBpbGF0ZXMgZXMgdW5hIHTDqWNuaWNhIHV0aWxpemFkYSBwYXJhIGVsIGVudHJlbmFtaWVudG9cbiAgICAgICAgICAgICAgZsOtc2ljbyB5IG1lbnRhbCBkZWwgY3VlcnBvIG1lZGlhbnRlIHVuYSBzZXJpZSBkZSBlamVyY2ljaW9zIHF1ZSBzZVxuICAgICAgICAgICAgICByZWFsaXphbiBkZSBmb3JtYSBmbHVpZGEgbWFudGVuaWVuZG8gdW4gY29udHJvbCBleGhhdXN0aXZvIGRlIGxhXG4gICAgICAgICAgICAgIHJlc3BpcmFjacOzbi5cbiAgICAgICAgICAgIDwvRm9udFJlZ3VsYXI+XG4gICAgICAgICAgICA8Rm9udFJlZ3VsYXI+XG4gICAgICAgICAgICAgIExvIHB1ZWRlbiByZWFsaXphciwgdGFudG8gYXF1ZWxsb3MgcXVlIHNlIGludHJvZHVjZW4gcG9yIHByaW1lcmFcbiAgICAgICAgICAgICAgZW4gbGEgYWN0aXZpZGFkIGbDrXNpY2EsIGNvbW8gbG9zIHF1ZSB5YSBoYWNlbiBhbGfDum4gdGlwbyBkZVxuICAgICAgICAgICAgICBlamVyY2ljaW8sIHlhIHNlYW4gasOzdmVuZXMgbyBtYXlvcmVzLiBUYW1iacOpbiBlcyBtdXkgcmVjb21lbmRhYmxlXG4gICAgICAgICAgICAgIHBhcmEgbGFzIHBlcnNvbmFzIHF1ZSBzZSBlbmN1ZW50cmFuIGVuIHVuIHByb2Nlc28gZGUgcmVjdXBlcmFjacOzblxuICAgICAgICAgICAgICBkZSB1bmEgbGVzacOzbiwgZW1iYXJhemFkYXMsIGRlcG9ydGlzdGFzIGRlIGFsdG8gcmVuZGltaWVudG/igKZcbiAgICAgICAgICAgIDwvRm9udFJlZ3VsYXI+XG4gICAgICAgICAgICA8Rm9udFJlZ3VsYXI+XG4gICAgICAgICAgICAgIExhcyBjbGFzZXMgZGUgcGlsYXRlcyBzZSBpbXBhcnRlbiBlbiBncnVwb3MgcmVkdWNpZG9zLCAobcOheGltbyAzXG4gICAgICAgICAgICAgIHBlcnNvbmFzIHBvciBncnVwbyksIG8gaW5kaXZpZHVhbG1lbnRlIHkgc2llbXByZSBzZXLDoW4gaW1wYXJ0aWRhc1xuICAgICAgICAgICAgICBwb3IgZmlzaW90ZXJhcGV1dGFzIGNvbGVnaWFkb3MuXG4gICAgICAgICAgICA8L0ZvbnRSZWd1bGFyPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvUGlsYXRlc1N0eWxlcz5cbiAgICAgIDxGb290ZXIgLz5cbiAgICA8L1JlYWN0LkZyYWdtZW50PlxuICApO1xufTtcblxuZXhwb3J0IGRlZmF1bHQgcGlsYXRlcztcbiJdfQ== */\n/*@ sourceURL=/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/pages/pilates.js */")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"], {
     link: "Nosotros",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_PagesStyles_PilatesStyles_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_HeaderAnimated_HeaderAnimated_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    img: _static_imgPilates_jpg__WEBPACK_IMPORTED_MODULE_9___default.a,
+    positionY: 13,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_2___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3___default.a]]]) + " " + "pilates-content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_PagesStyles_FontStyle_FontBold_js__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 43
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_PagesStyles_TratamientosStyles_js__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "Pilates"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_2___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3___default.a]]]) + " " + "pilates",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 44
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_HeaderAnimated_HeaderAnimated__WEBPACK_IMPORTED_MODULE_12__["default"], {
-    img: _static_imgTratamientos_jpg__WEBPACK_IMPORTED_MODULE_11___default.a,
-    positionY: 13,
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_PagesStyles_FontStyle_FontRegular_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a.dynamic([["434473200", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_6___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_7___default.a]]]) + " " + "treatments-content",
+  }, "El m\xE9todo pilates es una t\xE9cnica utilizada para el entrenamiento f\xEDsico y mental del cuerpo mediante una serie de ejercicios que se realizan de forma fluida manteniendo un control exhaustivo de la respiraci\xF3n."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_PagesStyles_FontStyle_FontRegular_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 51
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", {
-    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a.dynamic([["434473200", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_6___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_7___default.a]]]),
+  }, "Lo pueden realizar, tanto aquellos que se introducen por primera en la actividad f\xEDsica, como los que ya hacen alg\xFAn tipo de ejercicio, ya sean j\xF3venes o mayores. Tambi\xE9n es muy recomendable para las personas que se encuentran en un proceso de recuperaci\xF3n de una lesi\xF3n, embarazadas, deportistas de alto rendimiento\u2026"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_PagesStyles_FontStyle_FontRegular_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 58
     },
     __self: this
-  }, "Tratamientos"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a.dynamic([["434473200", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_6___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_7___default.a]]]) + " " + "treatments",
+  }, "Las clases de pilates se imparten en grupos reducidos, (m\xE1ximo 3 personas por grupo), o individualmente y siempre ser\xE1n impartidas por fisioterapeutas colegiados.")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
-    },
-    __self: this
-  }, displayTreatments()))), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Footer_Footer_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 66
     },
     __self: this
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (tratamientos);
+/* harmony default export */ __webpack_exports__["default"] = (pilates);
 
 /***/ }),
 
@@ -2829,14 +2754,14 @@ module.exports = "/_next/static/fonts/Montserrat-SemiBold-c88cecbffad6d8e731fd95
 
 /***/ }),
 
-/***/ "./static/imgTratamientos.jpg":
-/*!************************************!*\
-  !*** ./static/imgTratamientos.jpg ***!
-  \************************************/
+/***/ "./static/imgPilates.jpg":
+/*!*******************************!*\
+  !*** ./static/imgPilates.jpg ***!
+  \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/imgTratamientos-f6eac46609b7e9eb62a8a3798d5bc53e.jpg";
+module.exports = "/_next/static/images/imgPilates-a9835f1a23bec54428e35050dec55265.jpg";
 
 /***/ }),
 
@@ -2853,36 +2778,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var popmotion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! popmotion */ "popmotion");
 /* harmony import */ var popmotion__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(popmotion__WEBPACK_IMPORTED_MODULE_0__);
 
-var _bubleAnimation = function _bubleAnimation(posX, posY, fromScaleY, toScaleY, fromScaleX, toScaleX) {
+var _bubleAnimation = function _bubleAnimation(posX, posX2, fromScaleX, toScaleX, posY, fromScaleY, toScaleY) {
   Object(popmotion__WEBPACK_IMPORTED_MODULE_0__["tween"])({
     from: {
-      scaleY: fromScaleY,
-      scaleX: fromScaleX
+      transalteX: posX,
+      scale: fromScaleX
     },
     to: {
-      scaleY: toScaleY,
-      scaleX: toScaleX
+      transalteX: posX2,
+      scale: toScaleX
     },
     duration: 1800,
     ease: popmotion__WEBPACK_IMPORTED_MODULE_0__["easing"].easeInOut,
     flip: Infinity
   }).start(function (v) {
     if (document.getElementById("target") !== null) {
-      document.getElementById("target").style.transform = "translate(".concat(posX, "px, ").concat(posY, "px) scaleY(").concat(v.scaleY, ") scaleX(").concat(v.scaleX, ")");
+      document.getElementById("target").style.webkitTransform = "translate(".concat(v.transalteX, "px, -300px) scale(").concat(v.scale, ")"); // document.getElementById("target").style.webkitTransform = `scaleY(${v.scaleY})`;
+      // document.getElementById("target").style.MozTransform = `translate(${500}px, ${-250}px) scale(${v.scaleX})`;
     }
   });
 };
 
 /***/ }),
 
-/***/ 3:
-/*!*************************************!*\
-  !*** multi ./pages/tratamientos.js ***!
-  \*************************************/
+/***/ 4:
+/*!********************************!*\
+  !*** multi ./pages/pilates.js ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/pages/tratamientos.js */"./pages/tratamientos.js");
+module.exports = __webpack_require__(/*! /home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/pages/pilates.js */"./pages/pilates.js");
 
 
 /***/ }),
@@ -2983,6 +2909,17 @@ module.exports = require("core-js/library/fn/symbol");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/symbol/iterator");
+
+/***/ }),
+
+/***/ "flubber":
+/*!**************************!*\
+  !*** external "flubber" ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("flubber");
 
 /***/ }),
 
@@ -3097,4 +3034,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=tratamientos.js.map
+//# sourceMappingURL=pilates.js.map

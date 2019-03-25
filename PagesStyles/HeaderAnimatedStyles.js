@@ -1,17 +1,21 @@
 import styled from "styled-components";
 
 const HeaderAnimatedStyles = styled.div`
-
-  background-image: url(${props => props.backImage});
+  position: relative;
   width: 100vw;
   height: 50vh;
-  clip-path: url(#svgPath);
+  background-image: url(${props => props.backImage});
+  -webkit-clip-path: url(#svgPath);
   background-position-y: ${props => props.backPositionY}%;
   background-size: 100%;
 
   font-family: "Monserrat-Regular";
   #container {
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
   }
   /* .techniques-img {
     width: 100%;
