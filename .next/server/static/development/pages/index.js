@@ -153,7 +153,7 @@ __webpack_require__.r(__webpack_exports__);
 var HomeWrapperStyle = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "HomeStyle__HomeWrapperStyle",
   componentId: "eo7vzf-0"
-})(["width:100vw;height:100vh;background:white;position:relative;font-family:\"Monserrat-Semibold\";font-weight:lighter;-webkit-overflow-scrolling:touch;#bodyHome{}h1{color:rgb(116,10,100);}p{color:rgb(37,37,37);}a{color:rgb(116,10,100);text-decoration:underline;}CrossfadeImage{widows:100vw;height:100vh;}#canvas{background:white;position:fixed;top:0;left:0;}#container{position:absolute;left:0;width:100vw;height:100vh;}.sectionTitle{position:absolute;width:20vw;top:calc(100vh / 2 - 5%);left:10%;h1{color:rgb(116,10,100);}}img{position:absolute;top:0;left:0;-webkit-clip-path:url(#svgPath);width:100%;height:100%;object-fit:cover;}.bubbleGroup{position:absolute;top:50%;right:5%;display:flex;flex-direction:column;text-align:center;li{list-style-type:none;}}.position{z-index:10;color:rgb(116,10,100);}.bubble{z-index:10;width:10px;height:10px;border:1px solid white;border-radius:50%;margin:20% 0%;box-shadow:0px 0px 2px rgb(116,10,100);}.active{background:rgb(116,10,100);border:1px solid rgb(116,10,100);}@media only screen and (max-width:415px){overflow:hidden;.sectionTitle{width:80vw;}.bubbleGroup{}#imgSlider{padding-left:38%;}}@media only screen and (min-width:415px) and (max-width:768px){color:red;.sectionTitle{top:calc(100vh / 2 - 15%);width:40vw;h1{font-size:2.2rem;}p{font-size:1.8rem;}a{font-size:1.8rem;}}}@media only screen and (min-width:769px) and (max-width:1440px){}@media only screen and (min-width:1441px){}"]);
+})(["width:100vw;height:100vh;background:white;position:relative;font-family:\"Monserrat-Semibold\";font-weight:lighter;-webkit-overflow-scrolling:touch;#bodyHome{}h1{color:rgb(116,10,100);}p{color:rgb(37,37,37);}a{color:rgb(116,10,100);text-decoration:underline;}CrossfadeImage{widows:100vw;height:100vh;}#canvas{background:white;position:fixed;top:0;left:0;}#container{position:absolute;left:0;width:100vw;height:100vh;}.sectionTitle{position:absolute;width:20vw;top:calc(100vh / 2 - 5%);left:10%;h1{color:rgb(116,10,100);}}img{position:absolute;top:0;left:0;-webkit-clip-path:url(#svgPath);width:100%;height:100%;object-fit:cover;}.bubbleGroup{position:absolute;top:50%;right:5%;display:flex;flex-direction:column;text-align:center;li{list-style-type:none;}}.position{z-index:10;color:rgb(116,10,100);}.bubble{z-index:10;width:10px;height:10px;border:1px solid white;border-radius:50%;margin:20% 0%;box-shadow:0px 0px 2px rgb(116,10,100);}.active{background:rgb(116,10,100);border:1px solid rgb(116,10,100);}@media only screen and (max-width:415px){overflow:hidden;.sectionTitle{width:80vw;top:calc(100vh / 2 - 16%);}.bubbleGroup{top:calc(40%);}#bubbleFooter{display:none;}#imgSlider{padding-left:38%;}}@media only screen and (min-width:415px) and (max-width:768px){color:red;#bubbleFooter{display:none;}.sectionTitle{top:calc(100vh / 2 - 25%);width:40vw;h1{font-size:2.2rem;}p{font-size:1.8rem;}a{font-size:1.8rem;}}}@media only screen and (min-width:769px) and (max-width:1023px){}@media only screen and (min-width:1024px) and (max-width:1440px){}@media only screen and (min-width:1441px){}"]);
 
 
 /***/ }),
@@ -565,6 +565,7 @@ var Bubbles = function Bubbles(props) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    id: "bubbleFooter",
     className: "bubble",
     __source: {
       fileName: _jsxFileName,
@@ -704,15 +705,18 @@ function (_Component) {
       if (Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["detectmob"])()) {
         var scrollPos = 0;
         var timerId;
-        jquery__WEBPACK_IMPORTED_MODULE_16___default()(window).bind('scroll', function () {
+        jquery__WEBPACK_IMPORTED_MODULE_16___default()(window).bind("scroll", function () {
           clearTimeout(timerId);
           timerId = setTimeout(function () {
             if (_this.state.formPosition < 4) {
               _this._changeSVGForm("down");
             } else {
               _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _this.state, {
-                formPosition: 1
-              }));
+                formPosition: 1,
+                bubblePosition: 1
+              }), function () {
+                return _this._changeBubble(0);
+              });
             }
           }, 200);
         });
@@ -800,12 +804,17 @@ function (_Component) {
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "_manageResize", function () {
       switch (true) {
         case window.innerWidth <= 375:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(150, -100, 2.3, 2.5, 1.8, 2, 0, 0);
+          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(190, 200, 2, 2.2, 1.8, 2, -100, -200);
+
+          break;
+
+        case window.innerWidth <= 414:
+          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(200, 210, 2.3, 3, 3.1, 3.2, -200, -400);
 
           break;
 
         case window.innerWidth <= 768:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(200, 210, 2.3, 3, 3.1, 3.2, -200, -400);
+          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(400, 410, 2.3, 3, 3.1, 3.2, -200, -400);
 
           break;
 
@@ -870,7 +879,7 @@ function (_Component) {
         shape: Object(popmotion__WEBPACK_IMPORTED_MODULE_11__["styler"])(document.querySelector("#target")),
         vw: window.innerWidth,
         vh: window.innerHeight,
-        bodyHome: document.querySelector('#bodyHome'),
+        bodyHome: document.querySelector("#bodyHome"),
         animation: Object(popmotion__WEBPACK_IMPORTED_MODULE_11__["tween"])({
           duration: 1000,
           ease: popmotion__WEBPACK_IMPORTED_MODULE_11__["easing"].easeInOut
@@ -889,42 +898,42 @@ function (_Component) {
         id: "bodyHome",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 259
+          lineNumber: 266
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_Bubles__WEBPACK_IMPORTED_MODULE_17__["default"], {
         position: this.state.bubblePosition,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 260
+          lineNumber: 267
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
         src: images[this.state.formPosition < 5 && this.state.formPosition - 1],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 268
+          lineNumber: 275
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("svg", {
         id: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 273
+          lineNumber: 280
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("clipPath", {
         id: "svgPath",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 274
+          lineNumber: 281
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("path", {
         id: "target",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 275
+          lineNumber: 282
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_SectionTitle__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
@@ -933,7 +942,7 @@ function (_Component) {
       }, _content_home_json__WEBPACK_IMPORTED_MODULE_14__[this.state.formPosition < 5 && this.state.formPosition - 1], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 279
+          lineNumber: 286
         },
         __self: this
       })));

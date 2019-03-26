@@ -55,7 +55,7 @@ const FisioterapiaStyles = styled.div`
       margin: 0 auto;
       margin-left: 5.5%;
       margin-top: 10%;
-      margin-bottom: 20%;
+      margin-bottom: 10%;
     }
    
   }

@@ -7,7 +7,7 @@ const Bubbles = props => {
       <li className="bubble" />
       <li className="bubble" />
       <li className="bubble" />
-      <li className="bubble" />
+      <li id="bubbleFooter" className="bubble" />
     </ul>
   );
 };
