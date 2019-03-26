@@ -57,7 +57,7 @@ __webpack_require__.r(__webpack_exports__);
 var HomeWrapperStyle = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "HomeStyle__HomeWrapperStyle",
   componentId: "eo7vzf-0"
-})(["width:100vw;height:100vh;background:white;position:relative;font-family:\"Monserrat-Semibold\";font-weight:lighter;h1{color:rgb(116,10,100);}p{color:rgb(37,37,37);}a{color:rgb(116,10,100);text-decoration:underline;}CrossfadeImage{widows:100vw;height:100vh;}#canvas{background:white;position:fixed;top:0;left:0;}#container{position:absolute;left:0;width:100vw;height:100vh;}.sectionTitle{position:absolute;width:20vw;top:calc(100vh / 2 - 5%);left:10%;h1{color:rgb(116,10,100);}}img{position:absolute;top:0;left:0;-webkit-clip-path:url(#svgPath);width:100%;height:100%;object-fit:cover;}.bubbleGroup{position:absolute;top:50%;right:5%;display:flex;flex-direction:column;text-align:center;li{list-style-type:none;}}.position{z-index:10;color:rgb(116,10,100);}.bubble{z-index:10;width:10px;height:10px;border:1px solid white;border-radius:50%;margin:20% 0%;box-shadow:0px 0px 2px rgb(116,10,100);}.active{background:rgb(116,10,100);border:1px solid rgb(116,10,100);}@media only screen and (max-width:415px){overflow:hidden;.sectionTitle{width:80vw;}#imgSlider{padding-left:38%;}}@media only screen and (min-width:415px) and (max-width:768px){color:red;.sectionTitle{top:calc(100vh / 2 - 15%);width:40vw;h1{font-size:2.2rem;}p{font-size:1.8rem;}a{font-size:1.8rem;}}}@media only screen and (min-width:769px) and (max-width:1440px){}@media only screen and (min-width:1441px){}"]);
+})(["width:100vw;height:100vh;background:white;position:relative;font-family:\"Monserrat-Semibold\";font-weight:lighter;-webkit-overflow-scrolling:touch;#bodyHome{}h1{color:rgb(116,10,100);}p{color:rgb(37,37,37);}a{color:rgb(116,10,100);text-decoration:underline;}CrossfadeImage{widows:100vw;height:100vh;}#canvas{background:white;position:fixed;top:0;left:0;}#container{position:absolute;left:0;width:100vw;height:100vh;}.sectionTitle{position:absolute;width:20vw;top:calc(100vh / 2 - 5%);left:10%;h1{color:rgb(116,10,100);}}img{position:absolute;top:0;left:0;-webkit-clip-path:url(#svgPath);width:100%;height:100%;object-fit:cover;}.bubbleGroup{position:absolute;top:50%;right:5%;display:flex;flex-direction:column;text-align:center;li{list-style-type:none;}}.position{z-index:10;color:rgb(116,10,100);}.bubble{z-index:10;width:10px;height:10px;border:1px solid white;border-radius:50%;margin:20% 0%;box-shadow:0px 0px 2px rgb(116,10,100);}.active{background:rgb(116,10,100);border:1px solid rgb(116,10,100);}@media only screen and (max-width:415px){overflow:hidden;.sectionTitle{width:80vw;}.bubbleGroup{}#imgSlider{padding-left:38%;}}@media only screen and (min-width:415px) and (max-width:768px){color:red;.sectionTitle{top:calc(100vh / 2 - 15%);width:40vw;h1{font-size:2.2rem;}p{font-size:1.8rem;}a{font-size:1.8rem;}}}@media only screen and (min-width:769px) and (max-width:1440px){}@media only screen and (min-width:1441px){}"]);
 
 
 /***/ }),
@@ -202,7 +202,7 @@ function (_Component) {
       }), bottomSrc && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
         style: Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, defaultStyle, style, {
           opacity: bottomOpacity,
-          transition: "opacity ".concat(duration / 1000, "s ").concat(timingFunction, " ").concat(delay / 1000, "s")
+          transition: "-webkit-opacity ".concat(duration / 1000, "s ").concat(timingFunction, " ").concat(delay / 1000, "s")
         }),
         src: bottomSrc,
         __source: {
@@ -439,14 +439,14 @@ var Bubbles = function Bubbles(props) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "position",
+    className: "bubble active",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
-  }, props.position), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "bubble active",
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: "bubble",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -471,13 +471,6 @@ var Bubbles = function Bubbles(props) {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "bubble",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
     },
     __self: this
   }));
@@ -520,6 +513,8 @@ var _content_home_json__WEBPACK_IMPORTED_MODULE_14___namespace = /*#__PURE__*/__
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_16__);
 /* harmony import */ var _Bubles__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./Bubles */ "./components/Home/Bubles.js");
 /* harmony import */ var _utils_animations__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../utils/animations */ "./utils/animations.js");
+/* harmony import */ var body_scroll_lock__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! body-scroll-lock */ "./node_modules/body-scroll-lock/lib/bodyScrollLock.min.js");
+/* harmony import */ var body_scroll_lock__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(body_scroll_lock__WEBPACK_IMPORTED_MODULE_19__);
 
 
 
@@ -534,6 +529,7 @@ var _jsxFileName = "/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofis
 
 
  // ES6
+
 
 
 
@@ -558,7 +554,7 @@ function (_Component) {
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "_makeAnimation", function (from, to) {
       Object(popmotion__WEBPACK_IMPORTED_MODULE_11__["tween"])({
-        duration: 500,
+        duration: 1500,
         ease: popmotion__WEBPACK_IMPORTED_MODULE_11__["easing"].easeInOut
       }).pipe(Object(flubber__WEBPACK_IMPORTED_MODULE_12__["interpolate"])(_this.state.form[from], _this.state.form[to], {
         maxSegmentLength: 2
@@ -588,13 +584,11 @@ function (_Component) {
               formPosition: 4,
               bubblePosition: 5
             }), function () {
+              document.getElementsByTagName("body")[0].style.position = "relative";
+
               _this._changeBubble(4);
 
-              window.scrollTo({
-                top: 1000,
-                left: 0,
-                behavior: "smooth"
-              });
+              window.scrollTo(0, 800);
             });
           }
         };
@@ -608,32 +602,76 @@ function (_Component) {
       : document.onmousewheel !== undefined ? "mousewheel" // Webkit and IE support at least "mousewheel"
       : "DOMMouseScroll"; // let's assume that remaining browsers are older Firefox
 
-      jquery__WEBPACK_IMPORTED_MODULE_16___default()(window).on(wheelEvent, function (e) {
-        if (e.originalEvent.wheelDelta > 0) {
-          // document.getElementsByTagName("body")[0].style.overflowY = "hidden";
-          delta++;
-
-          if (delta >= 20) {
-            delta = 0;
-            window.scrollTo({
-              top: 0,
-              left: 0,
-              behavior: "smooth"
-            });
-
-            if (_this.state.bubblePosition === 5) {
-              _this._changeBubble(3);
+      if (Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["detectmob"])()) {
+        var scrollPos = 0;
+        var timerId;
+        jquery__WEBPACK_IMPORTED_MODULE_16___default()(window).bind('scroll', function () {
+          clearTimeout(timerId);
+          timerId = setTimeout(function () {
+            if (_this.state.formPosition < 4) {
+              _this._changeSVGForm("down");
+            } else {
+              _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _this.state, {
+                formPosition: 1
+              }));
             }
+          }, 200);
+        });
+      } else {
+        jquery__WEBPACK_IMPORTED_MODULE_16___default()(window).on(wheelEvent, function (e) {
+          if (e.originalEvent.wheelDelta > 0) {
+            // document.getElementsByTagName("body")[0].style.overflowY = "hidden";
+            delta++;
 
-            if (_this.state.formPosition > 1) {
-              if (_this.state.bubblePosition !== 5) {
-                _this._changeSVGForm("up");
+            if (delta >= 20) {
+              delta = 0;
+              window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+              });
+
+              if (_this.state.bubblePosition === 5) {
+                _this._changeBubble(3);
+              }
+
+              if (_this.state.formPosition > 1) {
+                if (_this.state.bubblePosition !== 5) {
+                  _this._changeSVGForm("up");
+                } else {
+                  _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _this.state, {
+                    bubblePosition: 4
+                  }), function () {
+                    window.scrollTo({
+                      top: 0,
+                      left: 0,
+                      behavior: "smooth"
+                    });
+                    setTimeout(function () {
+                      document.getElementsByTagName("body")[0].style.position = "fixed";
+                    }, 1000);
+                  });
+                }
+              }
+            }
+          } else {
+            delta--;
+
+            if (delta <= -20) {
+              delta = 0;
+
+              if (_this.state.formPosition < 4) {
+                _this._changeSVGForm("down");
               } else {
                 _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _this.state, {
-                  bubblePosition: 4
+                  bubblePosition: 5
                 }), function () {
+                  document.getElementsByTagName("body")[0].style.position = "relative";
+
+                  _this._changeBubble(4);
+
                   window.scrollTo({
-                    top: 0,
+                    top: 1000,
                     left: 0,
                     behavior: "smooth"
                   });
@@ -641,30 +679,8 @@ function (_Component) {
               }
             }
           }
-        } else {
-          delta--;
-
-          if (delta <= -20) {
-            delta = 0;
-
-            if (_this.state.formPosition < 4) {
-              _this._changeSVGForm("down");
-            } else {
-              _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _this.state, {
-                bubblePosition: 5
-              }), function () {
-                _this._changeBubble(4);
-
-                window.scrollTo({
-                  top: 1000,
-                  left: 0,
-                  behavior: "smooth"
-                });
-              });
-            }
-          }
-        }
-      });
+        });
+      }
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "_changeSVGForm", function (direction) {
@@ -685,17 +701,17 @@ function (_Component) {
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "_manageResize", function () {
       switch (true) {
         case window.innerWidth <= 375:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(150, -100, 2.3, 2.5, 1.8, 2);
+          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(150, -100, 2.3, 2.5, 1.8, 2, 0, 0);
 
           break;
 
         case window.innerWidth <= 768:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(350, -100, 2.9, 3, 1.8, 2);
+          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(200, 210, 2.3, 3, 3.1, 3.2, -200, -400);
 
           break;
 
         default:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(500, -200, 3.1, 3.2, 1.8, 1.85);
+          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(500, 480, 1.8, 1.85, 3, 3, -100, -150);
 
       }
     });
@@ -741,15 +757,21 @@ function (_Component) {
 
       this._manageResize();
 
-      window.addEventListener("resize", this._manageResize);
-      console.log(document.querySelector("#target")); // interval = setInterval(() => {
-      //   this._changeSVGForm("down");
-      // }, 9000);
+      window.addEventListener("resize", this._manageResize); // if (window.innerWidth <= 768) {
+      //   interval = setInterval(() => {
+      //     if (this.state.formPosition < 4) {
+      //       this._changeSVGForm("down");
+      //     } else {
+      //       this.setState({...this.state, formPosition:1})
+      //     }
+      //   }, 5000);
+      // }
 
       this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, this.state, {
         shape: Object(popmotion__WEBPACK_IMPORTED_MODULE_11__["styler"])(document.querySelector("#target")),
         vw: window.innerWidth,
         vh: window.innerHeight,
+        bodyHome: document.querySelector('#bodyHome'),
         animation: Object(popmotion__WEBPACK_IMPORTED_MODULE_11__["tween"])({
           duration: 1000,
           ease: popmotion__WEBPACK_IMPORTED_MODULE_11__["easing"].easeInOut
@@ -757,51 +779,53 @@ function (_Component) {
           maxSegmentLength: 2
         }))
       }), function () {
-        return _this2._startAnimation("#target");
+        // disableBodyScroll(this.state.bodyHome);
+        _this2._startAnimation("#target");
       });
     }
   }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_PagesStyles_HomeStyle__WEBPACK_IMPORTED_MODULE_10__["HomeWrapperStyle"], {
+        id: "bodyHome",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 223
+          lineNumber: 259
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_Bubles__WEBPACK_IMPORTED_MODULE_17__["default"], {
         position: this.state.bubblePosition,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 224
+          lineNumber: 260
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
         src: images[this.state.formPosition < 5 && this.state.formPosition - 1],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 225
+          lineNumber: 268
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("svg", {
         id: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 230
+          lineNumber: 273
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("clipPath", {
         id: "svgPath",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 231
+          lineNumber: 274
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("path", {
         id: "target",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 232
+          lineNumber: 275
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_SectionTitle__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
@@ -810,7 +834,7 @@ function (_Component) {
       }, _content_home_json__WEBPACK_IMPORTED_MODULE_14__[this.state.formPosition < 5 && this.state.formPosition - 1], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 236
+          lineNumber: 279
         },
         __self: this
       })));
@@ -2898,6 +2922,21 @@ var steps = (function (steps, direction) {
 });
 
 
+
+
+/***/ }),
+
+/***/ "./node_modules/body-scroll-lock/lib/bodyScrollLock.min.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/body-scroll-lock/lib/bodyScrollLock.min.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!function(e,t){if(true)!(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports], __WEBPACK_AMD_DEFINE_FACTORY__ = (t),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));else { var o; }}(this,function(exports){"use strict";function r(e){if(Array.isArray(e)){for(var t=0,o=Array(e.length);t<e.length;t++)o[t]=e[t];return o}return Array.from(e)}Object.defineProperty(exports,"__esModule",{value:!0});var l=!1;if("undefined"!=typeof window){var e={get passive(){l=!0}};window.addEventListener("testPassive",null,e),window.removeEventListener("testPassive",null,e)}var d="undefined"!=typeof window&&window.navigator&&window.navigator.platform&&/iP(ad|hone|od)/.test(window.navigator.platform),c=[],u=!1,a=-1,s=void 0,v=void 0,f=function(t){return c.some(function(e){return!(!e.options.allowTouchMove||!e.options.allowTouchMove(t))})},m=function(e){var t=e||window.event;return!!f(t.target)||(1<t.touches.length||(t.preventDefault&&t.preventDefault(),!1))},o=function(){setTimeout(function(){void 0!==v&&(document.body.style.paddingRight=v,v=void 0),void 0!==s&&(document.body.style.overflow=s,s=void 0)})};exports.disableBodyScroll=function(i,e){if(d){if(!i)return void console.error("disableBodyScroll unsuccessful - targetElement must be provided when calling disableBodyScroll on IOS devices.");if(i&&!c.some(function(e){return e.targetElement===i})){var t={targetElement:i,options:e||{}};c=[].concat(r(c),[t]),i.ontouchstart=function(e){1===e.targetTouches.length&&(a=e.targetTouches[0].clientY)},i.ontouchmove=function(e){var t,o,n,r;1===e.targetTouches.length&&(o=i,r=(t=e).targetTouches[0].clientY-a,!f(t.target)&&(o&&0===o.scrollTop&&0<r?m(t):(n=o)&&n.scrollHeight-n.scrollTop<=n.clientHeight&&r<0?m(t):t.stopPropagation()))},u||(document.addEventListener("touchmove",m,l?{passive:!1}:void 0),u=!0)}}else{n=e,setTimeout(function(){if(void 0===v){var e=!!n&&!0===n.reserveScrollBarGap,t=window.innerWidth-document.documentElement.clientWidth;e&&0<t&&(v=document.body.style.paddingRight,document.body.style.paddingRight=t+"px")}void 0===s&&(s=document.body.style.overflow,document.body.style.overflow="hidden")});var o={targetElement:i,options:e||{}};c=[].concat(r(c),[o])}var n},exports.clearAllBodyScrollLocks=function(){d?(c.forEach(function(e){e.targetElement.ontouchstart=null,e.targetElement.ontouchmove=null}),u&&(document.removeEventListener("touchmove",m,l?{passive:!1}:void 0),u=!1),c=[],a=-1):(o(),c=[])},exports.enableBodyScroll=function(t){if(d){if(!t)return void console.error("enableBodyScroll unsuccessful - targetElement must be provided when calling enableBodyScroll on IOS devices.");t.ontouchstart=null,t.ontouchmove=null,c=c.filter(function(e){return e.targetElement!==t}),u&&0===c.length&&(document.removeEventListener("touchmove",m,l?{passive:!1}:void 0),u=!1)}else 1===c.length&&c[0].targetElement===t?(o(),c=[]):c=c.filter(function(e){return e.targetElement!==t})}});
 
 
 /***/ }),
@@ -30248,7 +30287,7 @@ var displayHomeContent = function displayHomeContent() {
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
     name: "viewport",
     content: "width=device-width, initial-scale=1",
-    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["1411606625", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a]]]),
+    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["4260789035", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a]]]),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
@@ -30256,39 +30295,39 @@ var displayHomeContent = function displayHomeContent() {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
     charSet: "utf-8",
-    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["1411606625", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a]]]),
+    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["4260789035", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a]]]),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "1411606625",
+    id: "4260789035",
     dynamic: [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a],
     __self: this
-  }, "@font-face{font-family:\"Monserrat-Semibold\";src:url(".concat(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}@font-face{font-family:\"Monserrat-Regular\";src:url(").concat(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}body{margin:0;padding:0;max-width:100%;overflow:hidden;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2FsYmVydG8vRXNjcml0b3Jpby9UYXlsb3JIVUIvUHJveWVjdG9zL0NsaWVudGVzL3R3b2Zpc2lvL3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTZCdUIsQUFHMEMsQUFNRCxBQU92QixTQUNDLFVBQ0ssYUFSMEMsQ0FOQSxDQWV6QyxnQkFDbEIsdUNBVHFCLENBTkEsa0JBT0QsQ0FOQSxpQkFPcEIsQ0FOQSIsImZpbGUiOiIvaG9tZS9hbGJlcnRvL0VzY3JpdG9yaW8vVGF5bG9ySFVCL1Byb3llY3Rvcy9DbGllbnRlcy90d29maXNpby9wYWdlcy9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkIGZyb20gXCJuZXh0L2hlYWRcIjtcbmltcG9ydCBOYXZiYXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvTmF2YmFyL05hdmJhclwiO1xuaW1wb3J0IEZvb3RlciBmcm9tIFwiLi4vY29tcG9uZW50cy9Gb290ZXIvRm9vdGVyXCI7XG5pbXBvcnQgTW9uc2VycmF0U2VtaUJvbGQgZnJvbSBcIi4uL3N0YXRpYy9mb250cy9Nb250c2VycmF0L01vbnRzZXJyYXQtU2VtaUJvbGQudHRmXCI7XG5pbXBvcnQgTW9uc2VycmF0UmVndWxhciBmcm9tIFwiLi4vc3RhdGljL2ZvbnRzL01vbnRzZXJyYXQvTW9udHNlcnJhdC1SZWd1bGFyLnR0ZlwiO1xuaW1wb3J0IGhvbWVDb250ZW50IGZyb20gXCIuLi9jb250ZW50L2hvbWUuanNvblwiO1xuaW1wb3J0IExpbmsgZnJvbSBcIm5leHQvbGlua1wiO1xuaW1wb3J0IEhvbWVTdHlsZXMgZnJvbSBcIi4uL1BhZ2VzU3R5bGVzL0hvbWVTdHlsZXNcIjtcbmltcG9ydCBGb250Qm9sZCBmcm9tIFwiLi4vUGFnZXNTdHlsZXMvRm9udFN0eWxlL0ZvbnRCb2xkXCI7XG5pbXBvcnQgSG9tZSBmcm9tIFwiLi4vY29tcG9uZW50cy9Ib21lL0hvbWVcIjtcblxuY29uc3QgZGlzcGxheUhvbWVDb250ZW50ID0gKCkgPT4ge1xuICByZXR1cm4gaG9tZUNvbnRlbnQubWFwKChob21lSXRlbSwgaSkgPT4gKFxuICAgIDxkaXYga2V5PXtpfT5cbiAgICAgIDxGb250Qm9sZD57aG9tZUl0ZW0ubmFtZX08L0ZvbnRCb2xkPlxuICAgICAgPHA+e2hvbWVJdGVtLmRlc2NyaXB0aW9ufTwvcD5cbiAgICAgIDxMaW5rIGhyZWY9e2hvbWVJdGVtLmxpbmt9PlxuICAgICAgICA8YT4rIE3DoXMgaW5mbzwvYT5cbiAgICAgIDwvTGluaz5cbiAgICA8L2Rpdj5cbiAgKSk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCAoKSA9PiAoXG4gIDxSZWFjdC5GcmFnbWVudD5cbiAgICA8SGVhZD5cbiAgICAgIDxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MVwiIC8+XG4gICAgICA8bWV0YSBjaGFyU2V0PVwidXRmLThcIiAvPlxuICAgIDwvSGVhZD5cbiAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgQGZvbnQtZmFjZSB7XG4gICAgICAgIGZvbnQtZmFtaWx5OiBcIk1vbnNlcnJhdC1TZW1pYm9sZFwiO1xuICAgICAgICBzcmM6IHVybCgke01vbnNlcnJhdFNlbWlCb2xkfSkgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gICAgICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgICAgIH1cbiAgICAgIEBmb250LWZhY2Uge1xuICAgICAgICBmb250LWZhbWlseTogXCJNb25zZXJyYXQtUmVndWxhclwiO1xuICAgICAgICBzcmM6IHVybCgke01vbnNlcnJhdFJlZ3VsYXJ9KSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbiAgICAgICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgICAgfVxuXG4gICAgICBib2R5IHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBtYXgtd2lkdGg6IDEwMCU7XG4gICAgICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgICB9XG4gICAgYH08L3N0eWxlPlxuICAgIDxSZWFjdC5GcmFnbWVudD5cbiAgICAgIDxOYXZiYXIgbGluaz1cIk5vc290cm9zXCIgLz5cbiAgICAgIDxIb21lPjwvSG9tZT5cbiAgICAgIHsvKiA8SG9tZVN0eWxlcz57ZGlzcGxheUhvbWVDb250ZW50KCl9PC9Ib21lU3R5bGVzPiAqL31cbiAgICAgIDxGb290ZXIgLz5cbiAgICA8L1JlYWN0LkZyYWdtZW50PlxuICA8L1JlYWN0LkZyYWdtZW50PlxuKTtcbiJdfQ== */\n/*@ sourceURL=/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/pages/index.js */")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
+  }, "@font-face{font-family:\"Monserrat-Semibold\";src:url(".concat(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}@font-face{font-family:\"Monserrat-Regular\";src:url(").concat(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}body{margin:0;padding:0;max-width:100%;position:fixed;overflow:hidden;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2FsYmVydG8vRXNjcml0b3Jpby9UYXlsb3JIVUIvUHJveWVjdG9zL0NsaWVudGVzL3R3b2Zpc2lvL3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTZCdUIsQUFHMEMsQUFNRCxBQU92QixTQUNDLFVBQ0ssYUFSMEMsQ0FOQSxDQWUxQyxlQUNDLGdCQUNsQix3QkFWcUIsQ0FOQSxrQkFPRCxDQU5BLGlCQU9wQixDQU5BIiwiZmlsZSI6Ii9ob21lL2FsYmVydG8vRXNjcml0b3Jpby9UYXlsb3JIVUIvUHJveWVjdG9zL0NsaWVudGVzL3R3b2Zpc2lvL3BhZ2VzL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWQgZnJvbSBcIm5leHQvaGVhZFwiO1xuaW1wb3J0IE5hdmJhciBmcm9tIFwiLi4vY29tcG9uZW50cy9OYXZiYXIvTmF2YmFyXCI7XG5pbXBvcnQgRm9vdGVyIGZyb20gXCIuLi9jb21wb25lbnRzL0Zvb3Rlci9Gb290ZXJcIjtcbmltcG9ydCBNb25zZXJyYXRTZW1pQm9sZCBmcm9tIFwiLi4vc3RhdGljL2ZvbnRzL01vbnRzZXJyYXQvTW9udHNlcnJhdC1TZW1pQm9sZC50dGZcIjtcbmltcG9ydCBNb25zZXJyYXRSZWd1bGFyIGZyb20gXCIuLi9zdGF0aWMvZm9udHMvTW9udHNlcnJhdC9Nb250c2VycmF0LVJlZ3VsYXIudHRmXCI7XG5pbXBvcnQgaG9tZUNvbnRlbnQgZnJvbSBcIi4uL2NvbnRlbnQvaG9tZS5qc29uXCI7XG5pbXBvcnQgTGluayBmcm9tIFwibmV4dC9saW5rXCI7XG5pbXBvcnQgSG9tZVN0eWxlcyBmcm9tIFwiLi4vUGFnZXNTdHlsZXMvSG9tZVN0eWxlc1wiO1xuaW1wb3J0IEZvbnRCb2xkIGZyb20gXCIuLi9QYWdlc1N0eWxlcy9Gb250U3R5bGUvRm9udEJvbGRcIjtcbmltcG9ydCBIb21lIGZyb20gXCIuLi9jb21wb25lbnRzL0hvbWUvSG9tZVwiO1xuXG5jb25zdCBkaXNwbGF5SG9tZUNvbnRlbnQgPSAoKSA9PiB7XG4gIHJldHVybiBob21lQ29udGVudC5tYXAoKGhvbWVJdGVtLCBpKSA9PiAoXG4gICAgPGRpdiBrZXk9e2l9PlxuICAgICAgPEZvbnRCb2xkPntob21lSXRlbS5uYW1lfTwvRm9udEJvbGQ+XG4gICAgICA8cD57aG9tZUl0ZW0uZGVzY3JpcHRpb259PC9wPlxuICAgICAgPExpbmsgaHJlZj17aG9tZUl0ZW0ubGlua30+XG4gICAgICAgIDxhPisgTcOhcyBpbmZvPC9hPlxuICAgICAgPC9MaW5rPlxuICAgIDwvZGl2PlxuICApKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0ICgpID0+IChcbiAgPFJlYWN0LkZyYWdtZW50PlxuICAgIDxIZWFkPlxuICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xXCIgLz5cbiAgICAgIDxtZXRhIGNoYXJTZXQ9XCJ1dGYtOFwiIC8+XG4gICAgPC9IZWFkPlxuICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICBAZm9udC1mYWNlIHtcbiAgICAgICAgZm9udC1mYW1pbHk6IFwiTW9uc2VycmF0LVNlbWlib2xkXCI7XG4gICAgICAgIHNyYzogdXJsKCR7TW9uc2VycmF0U2VtaUJvbGR9KSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbiAgICAgICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgICAgfVxuICAgICAgQGZvbnQtZmFjZSB7XG4gICAgICAgIGZvbnQtZmFtaWx5OiBcIk1vbnNlcnJhdC1SZWd1bGFyXCI7XG4gICAgICAgIHNyYzogdXJsKCR7TW9uc2VycmF0UmVndWxhcn0pIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICAgICAgICBmb250LXdlaWdodDogbm9ybWFsO1xuICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgICB9XG5cbiAgICAgIGJvZHkge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIG1heC13aWR0aDogMTAwJTtcbiAgICAgICAgcG9zaXRpb246IGZpeGVkO1xuICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgICAgfVxuICAgIGB9PC9zdHlsZT5cbiAgICA8UmVhY3QuRnJhZ21lbnQ+XG4gICAgICA8TmF2YmFyIGxpbms9XCJOb3NvdHJvc1wiIC8+XG4gICAgICA8SG9tZT48L0hvbWU+XG4gICAgICB7LyogPEhvbWVTdHlsZXM+e2Rpc3BsYXlIb21lQ29udGVudCgpfTwvSG9tZVN0eWxlcz4gKi99XG4gICAgICA8Rm9vdGVyIC8+XG4gICAgPC9SZWFjdC5GcmFnbWVudD5cbiAgPC9SZWFjdC5GcmFnbWVudD5cbik7XG4iXX0= */\n/*@ sourceURL=/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/pages/index.js */")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 52
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
     link: "Nosotros",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 53
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Home_Home__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 54
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 56
     },
     __self: this
   })));
@@ -30322,33 +30361,44 @@ module.exports = "/_next/static/fonts/Montserrat-SemiBold-c88cecbffad6d8e731fd95
 /*!*****************************!*\
   !*** ./utils/animations.js ***!
   \*****************************/
-/*! exports provided: _bubleAnimation */
+/*! exports provided: _bubleAnimation, detectmob */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_bubleAnimation", function() { return _bubleAnimation; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "detectmob", function() { return detectmob; });
 /* harmony import */ var popmotion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! popmotion */ "./node_modules/popmotion/dist/popmotion.es.js");
 
-var _bubleAnimation = function _bubleAnimation(posX, posX2, fromScaleX, toScaleX, posY, fromScaleY, toScaleY) {
+var _bubleAnimation = function _bubleAnimation(posX, posX2, fromScaleX, toScaleX, fromScaleY, toScaleY, posY, posY2) {
   Object(popmotion__WEBPACK_IMPORTED_MODULE_0__["tween"])({
     from: {
       transalteX: posX,
-      scale: fromScaleX
+      transalteY: posY,
+      scaleX: fromScaleX,
+      scaleY: fromScaleY
     },
     to: {
       transalteX: posX2,
-      scale: toScaleX
+      transalteY: posY2,
+      scaleX: toScaleX,
+      scaleY: toScaleY
     },
     duration: 1800,
     ease: popmotion__WEBPACK_IMPORTED_MODULE_0__["easing"].easeInOut,
     flip: Infinity
   }).start(function (v) {
     if (document.getElementById("target") !== null) {
-      document.getElementById("target").style.webkitTransform = "translate(".concat(v.transalteX, "px, -300px) scale(").concat(v.scale, ")"); // document.getElementById("target").style.webkitTransform = `scaleY(${v.scaleY})`;
-      // document.getElementById("target").style.MozTransform = `translate(${500}px, ${-250}px) scale(${v.scaleX})`;
+      document.getElementById("target").style.webkitTransform = "translate(".concat(v.transalteX, "px, ").concat(v.transalteY, "px) scale(").concat(v.scaleX, ", ").concat(v.scaleY, ") ");
     }
   });
+};
+var detectmob = function detectmob() {
+  if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 /***/ }),

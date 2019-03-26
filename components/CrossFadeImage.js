@@ -51,7 +51,7 @@ export default class CrossfadeImage extends Component {
               ...style,
               ...{
                 opacity: bottomOpacity,
-                transition: `opacity ${duration / 1000}s ${timingFunction} ${delay / 1000}s`
+                transition: `-webkit-opacity ${duration / 1000}s ${timingFunction} ${delay / 1000}s`
               }
             }}
             src={bottomSrc}

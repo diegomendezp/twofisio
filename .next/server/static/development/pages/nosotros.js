@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -137,10 +137,10 @@ var FontRegular = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.p.wit
 
 /***/ }),
 
-/***/ "./PagesStyles/HeaderAnimatedStyles.js":
-/*!*********************************************!*\
-  !*** ./PagesStyles/HeaderAnimatedStyles.js ***!
-  \*********************************************/
+/***/ "./PagesStyles/NosotrosStyles.js":
+/*!***************************************!*\
+  !*** ./PagesStyles/NosotrosStyles.js ***!
+  \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -149,35 +149,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
 
-var HeaderAnimatedStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
-  displayName: "HeaderAnimatedStyles",
-  componentId: "sc-11m3be6-0"
-})(["position:relative;width:100vw;height:50vh;background-image:url(", ");-webkit-clip-path:url(#svgPath);background-position-y:", "%;background-size:100%;font-family:\"Monserrat-Regular\";#container{position:absolute;top:0;left:0;width:100%;height:100vh;}@media only screen and (max-width:415px){background-position-x:28%;background-size:196%;}@media only screen and (min-width:415px) and (max-width:768px){height:33vh;background-position-y:0%;}@media only screen and (min-width:769px) and (max-width:1440px){}@media only screen and (min-width:1441px){}"], function (props) {
-  return props.backImage;
-}, function (props) {
-  return props.backPositionY;
-});
-/* harmony default export */ __webpack_exports__["default"] = (HeaderAnimatedStyles);
-
-/***/ }),
-
-/***/ "./PagesStyles/PilatesStyles.js":
-/*!**************************************!*\
-  !*** ./PagesStyles/PilatesStyles.js ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
-
-var PilatesStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
-  displayName: "PilatesStyles",
-  componentId: "ilc0el-0"
-})(["font-family:\"Monserrat-Regular\";.pilates-img{width:100%;object-fit:cover;}.treatment-name{font-family:\"Monserrat-Semibold\";color:#740a64;}.pilates-content{width:90%;margin-left:5%;margin-top:15%;margin-bottom:30%;}li{list-style:none;letter-spacing:0.2px;margin-top:2%;margin-bottom:2%;}@media only screen and (min-width:415px) and (max-width:768px){.pilates{display:flex;flex-wrap:wrap;justify-content:space-between;}.pilates-content{width:90%;margin-left:5%;margin-top:8%;margin-bottom:10%;font-size:17px;}}@media only screen and (min-width:769px) and (max-width:1440px){.pilates-img{height:33vh;}.pilates-content{width:60%;margin-left:5%;margin-top:8%;margin-bottom:10%;}.pilates{display:flex;flex-wrap:wrap;justify-content:space-between;}}@media only screen and (min-width:1441px){.pilates-img{height:48vh;}.pilates-content{width:60%;margin-left:5%;margin-top:8%;margin-bottom:10%;}.pilates{display:flex;flex-wrap:wrap;justify-content:space-between;}}"]);
-/* harmony default export */ __webpack_exports__["default"] = (PilatesStyles);
+var NosotrosStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "NosotrosStyles",
+  componentId: "ak83kl-0"
+})(["max-width:100vw;margin-bottom:15%;padding-top:100px;font-family:\"Monserrat-Regular\";color:black;font-size:1rem;letter-spacing:0.03rem;line-height:1.45rem;.accordion__body--hidden{display:none;opacity:0;animation:fadein 0.35s ease-in;}@keyframes fadein{0%{opacity:0;}100%{opacity:1;}}.member-img{width:100%;height:200px;object-fit:cover;}.member-description{width:90%;margin:0 auto;margin-bottom:30%;margin-top:15%;}.accordion{border:0;border-radius:0;max-width:100vw;}.member-info{width:90%;margin:0 auto;}.accordion__title{background-color:white;color:black;cursor:pointer;outline:none;padding:0px;width:100%;text-align:left;border:none;height:80px;display:flex;justify-content:space-evenly;width:90%;margin:0 auto;}.member-name{font-family:\"Monserrat-Semibold\";color:#740a64;font-size:1rem;letter-spacing:0.03rem;margin-bottom:0;}.member-cole{margin-top:0%;font-family:\"Monserrat-Regular\";color:black;font-size:1rem;letter-spacing:0.03rem;line-height:1.45rem;}.accordion__body{margin:0 auto;margin-bottom:5%;padding:0px;animation:fadein 0.35s ease-in;width:90%;}.team{width:100%;}@media only screen and (min-width:415px) and (max-width:768px){.member{width:40%;}.team{display:flex;flex-wrap:wrap;justify-content:space-around;}.member-description{width:60%;margin-left:5%;margin-top:8%;margin-bottom:10%;}}@media only screen and (min-width:769px) and (max-width:1440px){.member{width:40%;}.team{display:flex;flex-wrap:wrap;justify-content:space-around;}.member-description{width:60%;margin-left:5%;margin-top:8%;margin-bottom:10%;}}@media only screen and (min-width:1441px){.member{width:40%;}.team{display:flex;flex-wrap:wrap;justify-content:space-around;}.member-description{width:60%;margin-left:5%;margin-top:8%;margin-bottom:10%;}.member-img{height:250px;}}"]);
+/* harmony default export */ __webpack_exports__["default"] = (NosotrosStyles);
 
 /***/ }),
 
@@ -360,30 +336,29 @@ module.exports = "/_next/static/images/map-32279e68d238c9f973d268d07146a7fd.png"
 
 /***/ }),
 
-/***/ "./components/HeaderAnimated/HeaderAnimated.js":
-/*!*****************************************************!*\
-  !*** ./components/HeaderAnimated/HeaderAnimated.js ***!
-  \*****************************************************/
-/*! exports provided: default */
+/***/ "./components/Member.js":
+/*!******************************!*\
+  !*** ./components/Member.js ***!
+  \******************************/
+/*! exports provided: Member */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _PagesStyles_HeaderAnimatedStyles__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../PagesStyles/HeaderAnimatedStyles */ "./PagesStyles/HeaderAnimatedStyles.js");
-/* harmony import */ var popmotion__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! popmotion */ "popmotion");
-/* harmony import */ var popmotion__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(popmotion__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var flubber__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! flubber */ "flubber");
-/* harmony import */ var flubber__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(flubber__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _utils_animations__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../utils/animations */ "./utils/animations.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Member", function() { return Member; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-accessible-accordion */ "react-accessible-accordion");
+/* harmony import */ var react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _PagesStyles_FontStyle_FontRegular_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../PagesStyles/FontStyle/FontRegular.js */ "./PagesStyles/FontStyle/FontRegular.js");
 
 
 
@@ -391,100 +366,133 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/components/HeaderAnimated/HeaderAnimated.js";
+
+var _jsxFileName = "/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/components/Member.js";
 
 
 
- // ES6
-
-
-var star = "M 200 200m -75 0a 75 75 0 1 0 150 0a 75 75 0 1 0 -150 0";
-var circle = "M 43.5703 34 C 115.977 -36.9719 237.588 40.7602 338.504 34 C 436.992 27.4024 584.269 -28.7116 623.167 20.0936 C 662.065 68.8988 600.451 177.68 602.012 281.32 C 603.64 389.403 654.491 511.401 602.012 586 C 532.926 586 158.625 587 31 586 C -29.2288 527.147 17.9491 394.039 22 296.215 C 26.729 182.016 -33.4904 109.534 43.5703 34 Z";
-
-var HeaderAnimated =
+var Member =
 /*#__PURE__*/
 function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(HeaderAnimated, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(Member, _React$Component);
 
-  function HeaderAnimated(props) {
+  function Member(props) {
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, HeaderAnimated);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Member);
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(HeaderAnimated).call(this, props));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Member).call(this, props));
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "_manageResize", function () {
-      Object(_utils_animations__WEBPACK_IMPORTED_MODULE_11__["_bubleAnimation"])(-100, 0, 5, 5.2, 3, 3, -50, -60);
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "rotateImage", function (id) {
+      !_this.state.open ? document.getElementById(id).style.webkitTransform = "rotate(180deg)" : document.getElementById(id).style.webkitTransform = "rotate(0deg)";
+      var open = !_this.state.open;
 
-      switch (true) {
-        case window.innerWidth <= 375:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_11__["_bubleAnimation"])(500, -250, 2, 2.05, 6, 6.2);
-
-          break;
-
-        case window.innerWidth <= 768:
-          // _bubleAnimation(350, -100, 2.9, 3, 1.8, 2);
-          break;
-
-        default:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_11__["_bubleAnimation"])(1500, 1500, 10, 10.2, 1.8, 2.05, 200, 200);
-
-      }
+      _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _this.state, {
+        open: open
+      }));
     });
 
-    _this.props = props;
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "displayCurriculum", function (curriculum) {
+      return curriculum.map(function (element, i) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__["AccordionItemBody"], {
+          key: i,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 27
+          },
+          __self: this
+        }, "- ", element);
+      });
+    });
+
+    _this.state = {
+      open: false
+    };
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(HeaderAnimated, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this._manageResize();
-
-      window.addEventListener("resize", this._manageResize);
-    }
-  }, {
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Member, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_PagesStyles_HeaderAnimatedStyles__WEBPACK_IMPORTED_MODULE_8__["default"], {
-        backImage: this.props.img,
-        backPositionY: this.props.positionY,
+      var _this2 = this;
+
+      var _this$props = this.props,
+          name = _this$props.name,
+          number = _this$props.number,
+          curriculum = _this$props.curriculum;
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "member",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
+        className: "member-img",
+        src: "https://images.unsplash.com/photo-1514672013381-c6d0df1c8b18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
+        alt: "".concat(name, "-photo"),
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__["Accordion"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__["AccordionItem"], {
+        onClick: function onClick() {
+          _this2.rotateImage("up-down-icon-".concat(name));
+        },
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__["AccordionItemTitle"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "member-info",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 47
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("svg", {
-        id: "container",
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        className: "member-name",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 48
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("clipPath", {
-        id: "svgPath",
+      }, name), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_PagesStyles_FontStyle_FontRegular_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        className: "member-cole",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 49
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("path", {
-        id: "target",
-        d: "M 93.9 -104.7 C 135.9 -76.6 194 -60.5 203.7 -32 C 213.4 -3.5 174.7 37.5 141.3 68.7 C 108 99.9 80 121.4 52 122.9 C 24.1 124.4 -3.9 105.9 -52.2 105 C -100.6 104.1 -169.4 120.8 -197.2 100.4 C -225.1 80 -212 22.4 -195.9 -28.6 C -179.8 -79.6 -160.6 -124 -127.4 -153.7 C -94.3 -183.4 -47.1 -198.2 -10.6 -185.5 C 25.9 -172.9 51.9 -132.8 93.9 -104.7 Z",
+      }, "N\xBAColegiado: ", number)), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
+        src: "../../static/iconUpdown.svg",
+        alt: "up-down-icon",
+        id: "up-down-icon-".concat(name),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 51
         },
         __self: this
-      }))));
+      })), this.displayCurriculum(curriculum))));
     }
   }]);
 
-  return HeaderAnimated;
-}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
-
-;
-/* harmony default export */ __webpack_exports__["default"] = (HeaderAnimated);
+  return Member;
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
 
 /***/ }),
 
@@ -607,6 +615,17 @@ module.exports = [{"name":"Teléfono","value":"917116205 | 609058398"},{"name":"
 
 /***/ }),
 
+/***/ "./content/team.json":
+/*!***************************!*\
+  !*** ./content/team.json ***!
+  \***************************/
+/*! exports provided: 0, 1, 2, 3, default */
+/***/ (function(module) {
+
+module.exports = [{"name":"Rebeca Poyatos","number":5474,"curriculum":["Grado en fisioterapia (Universidad San Pablo Ceu)","Experto en osteopatía (Universidad Alcalá de Henares)","Ecografía músculo esquelética (Universidad autónoma de Madrid ONCE y MVClinic)","Fisioterapia invasiva (MVClinic)","Integración clínica osteopática (Escuela Thuban)","Experta en terapia miofascial (Universidad Europea de Madrid y 1 er curso en la Escuela de Andreu Pilat)","Formación en drenaje linfático manual (Escuela de formación en terapias manulaes Kabat)","Terapia manual y punción seca en el Síndrome miofascial. Puntos gatillo miofasciales (Escuela de Osteopatía de Madrid)","Curso de terapia cráneo-sacral I (Instituto Upledger)","Tratamiento fisioterápico en disfunciones articulación témporo-mandibular (Fisioterapia Arguelles)","Monitora de pilates (Federación Madrileña de Gimnasia)"],"photo":""},{"name":"Clara Taboada","number":6184,"curriculum":["Diplomada en fisioterapia (Universidad Rey Juan Carlos)","Experto en terapia miofascial (Universidad Europea de Madrid)","Ecografía músculo esquelética (Universidad autónoma de Madrid ONCE y MVClinic)","Fisioterapia invasiva (MVClinic)","Monitor pilates suelo, aparatos estabilizadores nivel I y nivel II (Federación Madrileña de Gimnasia)","Terapia Manual y Punción Seca en el Síndrome de Dolor Miofascial. Puntos Gatillo Miofasciales (Escuela de Osteopatía de Madrid)","XXI Jornadas de Fisioterapia Deportiva. Actualizaciones en Regeneración Muscular y Tendinosa (Escuela de fisioterapia de la ONCE)","Terapia manual osteopática (Instituto Relater)","Integración clínica osteopática (Escuela Thuban)","Máster en fisioterapia deportiva (Universidad Europea de Madrid y Escuela de fisioterapia del Real Madrid)","Kinesiotaping nivel I y nivel II (Universidad Europea de Madrid)"],"photo":""},{"name":"Alejandro Méndez","number":9775,"curriculum":["Grado en fisioterapia (Universidad Pontificia de Comillas)","Especialista en Fisioterapia Deportiva (Universidad Complutense de Madrid)","Especialista en Nutrición Deportiva y Fisiología del ejercicio (Dietas, Deportes y Tecnología S.L)","Experto en pilates y su aplicación a la fisioterapia (AEFEP)"],"photo":""},{"name":"Lara González","number":12869,"curriculum":["Grado en fisioterapia (Universidad Rey Juan Carlos)","Certificado “Ejercicio terapéutico y control motor basado en el método pilates suelo por la Dirección General de Investigación y Gestión del Conocimiento de la Consejería de Salud de la Junta de Andalucía (20h).","Certificado “Kinesio Taping Fundamentals And Advanced (KT1 &amp; KT2)” por la Kinesio Taping International Association","Máster en fisioterapia deportiva (Universidad Pontificia de Salamanca y Clínica Cemtro)"],"photo":""}];
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js":
 /*!***********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js ***!
@@ -651,6 +670,28 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/define-proper
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js ***!
+  \*******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-descriptor */ "core-js/library/fn/object/get-own-property-descriptor");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-symbols */ "core-js/library/fn/object/get-own-property-symbols");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js":
 /*!********************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-prototype-of.js ***!
@@ -659,6 +700,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/define-proper
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/get-prototype-of */ "core-js/library/fn/object/get-prototype-of");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "core-js/library/fn/object/keys");
 
 /***/ }),
 
@@ -918,6 +970,39 @@ function _defineProperty(obj, key, value) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _extends; });
+/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
+/* harmony import */ var _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_assign__WEBPACK_IMPORTED_MODULE_0__);
+
+function _extends() {
+  _extends = _core_js_object_assign__WEBPACK_IMPORTED_MODULE_0___default.a || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js":
 /*!***************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js ***!
@@ -971,6 +1056,49 @@ function _inherits(subClass, superClass) {
     }
   });
   if (superClass) Object(_setPrototypeOf__WEBPACK_IMPORTED_MODULE_1__["default"])(subClass, superClass);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectSpread; });
+/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
+/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _defineProperty__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+
+
+
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    var ownKeys = _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default()(source);
+
+    if (typeof _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default.a === 'function') {
+      ownKeys = ownKeys.concat(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default()(source).filter(function (sym) {
+        return _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default()(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      Object(_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(target, key, source[key]);
+    });
+  }
+
+  return target;
 }
 
 /***/ }),
@@ -2573,34 +2701,35 @@ module.exports = __webpack_require__(/*! ./dist/style */ "./node_modules/styled-
 
 /***/ }),
 
-/***/ "./pages/pilates.js":
-/*!**************************!*\
-  !*** ./pages/pilates.js ***!
-  \**************************/
+/***/ "./pages/nosotros.js":
+/*!***************************!*\
+  !*** ./pages/nosotros.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../static/fonts/Montserrat/Montserrat-SemiBold.ttf */ "./static/fonts/Montserrat/Montserrat-SemiBold.ttf");
-/* harmony import */ var _static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../static/fonts/Montserrat/Montserrat-Regular.ttf */ "./static/fonts/Montserrat/Montserrat-Regular.ttf");
-/* harmony import */ var _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next-server/head */ "next-server/head");
-/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_server_head__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _content_team_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../content/team.json */ "./content/team.json");
+var _content_team_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../content/team.json */ "./content/team.json", 1);
+/* harmony import */ var _components_Member_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Member.js */ "./components/Member.js");
 /* harmony import */ var _components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Navbar/Navbar */ "./components/Navbar/Navbar.js");
-/* harmony import */ var _components_Footer_Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Footer/Footer */ "./components/Footer/Footer.js");
-/* harmony import */ var _PagesStyles_PilatesStyles_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../PagesStyles/PilatesStyles.js */ "./PagesStyles/PilatesStyles.js");
-/* harmony import */ var _components_HeaderAnimated_HeaderAnimated_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/HeaderAnimated/HeaderAnimated.js */ "./components/HeaderAnimated/HeaderAnimated.js");
-/* harmony import */ var _static_imgPilates_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/imgPilates.jpg */ "./static/imgPilates.jpg");
-/* harmony import */ var _static_imgPilates_jpg__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_static_imgPilates_jpg__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _PagesStyles_FontStyle_FontRegular_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../PagesStyles/FontStyle/FontRegular.js */ "./PagesStyles/FontStyle/FontRegular.js");
-/* harmony import */ var _PagesStyles_FontStyle_FontBold_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../PagesStyles/FontStyle/FontBold.js */ "./PagesStyles/FontStyle/FontBold.js");
-var _jsxFileName = "/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/pages/pilates.js";
+/* harmony import */ var _components_Footer_Footer_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Footer/Footer.js */ "./components/Footer/Footer.js");
+/* harmony import */ var _PagesStyles_NosotrosStyles_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../PagesStyles/NosotrosStyles.js */ "./PagesStyles/NosotrosStyles.js");
+/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next-server/head */ "next-server/head");
+/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_server_head__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/fonts/Montserrat/Montserrat-SemiBold.ttf */ "./static/fonts/Montserrat/Montserrat-SemiBold.ttf");
+/* harmony import */ var _static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../static/fonts/Montserrat/Montserrat-Regular.ttf */ "./static/fonts/Montserrat/Montserrat-Regular.ttf");
+/* harmony import */ var _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _PagesStyles_FontStyle_FontRegular__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../PagesStyles/FontStyle/FontRegular */ "./PagesStyles/FontStyle/FontRegular.js");
+
+var _jsxFileName = "/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/pages/nosotros.js";
 
 
 
@@ -2613,110 +2742,91 @@ var _jsxFileName = "/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofis
 
 
 
+var displayTeam = function displayTeam() {
+  return _content_team_json__WEBPACK_IMPORTED_MODULE_3__.map(function (member, i) {
+    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Member_js__WEBPACK_IMPORTED_MODULE_4__["Member"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      key: i
+    }, member, {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 13
+      },
+      __self: this
+    }));
+  });
+};
 
-var pilates = function pilates() {
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
+var nosotros = function nosotros(props) {
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 18
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_8___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 19
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
     name: "viewport",
     content: "width=device-width, initial-scale=1",
-    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_2___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3___default.a]]]),
+    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a]]]),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 20
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
     charSet: "utf-8",
-    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_2___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3___default.a]]]),
+    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a]]]),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 21
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
     id: "3898954932",
-    dynamic: [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_2___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3___default.a],
+    dynamic: [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a],
     __self: this
-  }, "@font-face{font-family:\"Monserrat-Semibold\";src:url(".concat(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_2___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}@font-face{font-family:\"Monserrat-Regular\";src:url(").concat(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}body{margin:0;padding:0;max-width:100%;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2FsYmVydG8vRXNjcml0b3Jpby9UYXlsb3JIVUIvUHJveWVjdG9zL0NsaWVudGVzL3R3b2Zpc2lvL3BhZ2VzL3BpbGF0ZXMuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBa0J5QixBQUc0QyxBQU1ELEFBT3ZCLFNBQ0MsVUFDSyxhQVIwQyxDQU5BLENBZTNELHVEQVJxQixDQU5BLGtCQU9ELENBTkEsaUJBT3BCLENBTkEiLCJmaWxlIjoiL2hvbWUvYWxiZXJ0by9Fc2NyaXRvcmlvL1RheWxvckhVQi9Qcm95ZWN0b3MvQ2xpZW50ZXMvdHdvZmlzaW8vcGFnZXMvcGlsYXRlcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCBNb25zZXJyYXRTZW1pQm9sZCBmcm9tIFwiLi4vc3RhdGljL2ZvbnRzL01vbnRzZXJyYXQvTW9udHNlcnJhdC1TZW1pQm9sZC50dGZcIjtcbmltcG9ydCBNb25zZXJyYXRSZWd1bGFyIGZyb20gXCIuLi9zdGF0aWMvZm9udHMvTW9udHNlcnJhdC9Nb250c2VycmF0LVJlZ3VsYXIudHRmXCI7XG5pbXBvcnQgSGVhZCBmcm9tIFwibmV4dC9oZWFkXCI7XG5pbXBvcnQgTmF2YmFyIGZyb20gXCIuLi9jb21wb25lbnRzL05hdmJhci9OYXZiYXJcIjtcbmltcG9ydCBGb290ZXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvRm9vdGVyL0Zvb3RlclwiO1xuaW1wb3J0IFBpbGF0ZXNTdHlsZXMgZnJvbSBcIi4uL1BhZ2VzU3R5bGVzL1BpbGF0ZXNTdHlsZXMuanNcIjtcbmltcG9ydCBIZWFkZXJBbmltYXRlZCBmcm9tIFwiLi4vY29tcG9uZW50cy9IZWFkZXJBbmltYXRlZC9IZWFkZXJBbmltYXRlZC5qc1wiO1xuaW1wb3J0IGltZ1BpbGF0ZXMgZnJvbSBcIi4uL3N0YXRpYy9pbWdQaWxhdGVzLmpwZ1wiXG5pbXBvcnQgRm9udFJlZ3VsYXIgZnJvbSBcIi4uL1BhZ2VzU3R5bGVzL0ZvbnRTdHlsZS9Gb250UmVndWxhci5qc1wiO1xuaW1wb3J0IEZvbnRCb2xkIGZyb20gXCIuLi9QYWdlc1N0eWxlcy9Gb250U3R5bGUvRm9udEJvbGQuanNcIjtcbmNvbnN0IHBpbGF0ZXMgPSAoKSA9PiB7XG4gIHJldHVybiAoXG4gICAgPFJlYWN0LkZyYWdtZW50PlxuICAgICAgPEhlYWQ+XG4gICAgICAgIDxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MVwiIC8+XG4gICAgICAgIDxtZXRhIGNoYXJTZXQ9XCJ1dGYtOFwiIC8+XG4gICAgICA8L0hlYWQ+XG4gICAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgICBAZm9udC1mYWNlIHtcbiAgICAgICAgICBmb250LWZhbWlseTogXCJNb25zZXJyYXQtU2VtaWJvbGRcIjtcbiAgICAgICAgICBzcmM6IHVybCgke01vbnNlcnJhdFNlbWlCb2xkfSkgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgICAgIH1cbiAgICAgICAgQGZvbnQtZmFjZSB7XG4gICAgICAgICAgZm9udC1mYW1pbHk6IFwiTW9uc2VycmF0LVJlZ3VsYXJcIjtcbiAgICAgICAgICBzcmM6IHVybCgke01vbnNlcnJhdFJlZ3VsYXJ9KSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbiAgICAgICAgICBmb250LXdlaWdodDogbm9ybWFsO1xuICAgICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgICAgICAgfVxuXG4gICAgICAgIGJvZHkge1xuICAgICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICAgIG1heC13aWR0aDogMTAwJTtcbiAgICAgICAgfVxuICAgICAgYH08L3N0eWxlPlxuICAgICAgPE5hdmJhciBsaW5rPVwiTm9zb3Ryb3NcIiAvPlxuICAgICAgPFBpbGF0ZXNTdHlsZXM+XG4gICAgICA8SGVhZGVyQW5pbWF0ZWQgaW1nPXtpbWdQaWxhdGVzfSBwb3NpdGlvblk9ezEzfS8+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGlsYXRlcy1jb250ZW50XCI+XG4gICAgICAgICAgPEZvbnRCb2xkPlBpbGF0ZXM8L0ZvbnRCb2xkPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicGlsYXRlc1wiPlxuICAgICAgICAgICAgPEZvbnRSZWd1bGFyPlxuICAgICAgICAgICAgICBFbCBtw6l0b2RvIHBpbGF0ZXMgZXMgdW5hIHTDqWNuaWNhIHV0aWxpemFkYSBwYXJhIGVsIGVudHJlbmFtaWVudG9cbiAgICAgICAgICAgICAgZsOtc2ljbyB5IG1lbnRhbCBkZWwgY3VlcnBvIG1lZGlhbnRlIHVuYSBzZXJpZSBkZSBlamVyY2ljaW9zIHF1ZSBzZVxuICAgICAgICAgICAgICByZWFsaXphbiBkZSBmb3JtYSBmbHVpZGEgbWFudGVuaWVuZG8gdW4gY29udHJvbCBleGhhdXN0aXZvIGRlIGxhXG4gICAgICAgICAgICAgIHJlc3BpcmFjacOzbi5cbiAgICAgICAgICAgIDwvRm9udFJlZ3VsYXI+XG4gICAgICAgICAgICA8Rm9udFJlZ3VsYXI+XG4gICAgICAgICAgICAgIExvIHB1ZWRlbiByZWFsaXphciwgdGFudG8gYXF1ZWxsb3MgcXVlIHNlIGludHJvZHVjZW4gcG9yIHByaW1lcmFcbiAgICAgICAgICAgICAgZW4gbGEgYWN0aXZpZGFkIGbDrXNpY2EsIGNvbW8gbG9zIHF1ZSB5YSBoYWNlbiBhbGfDum4gdGlwbyBkZVxuICAgICAgICAgICAgICBlamVyY2ljaW8sIHlhIHNlYW4gasOzdmVuZXMgbyBtYXlvcmVzLiBUYW1iacOpbiBlcyBtdXkgcmVjb21lbmRhYmxlXG4gICAgICAgICAgICAgIHBhcmEgbGFzIHBlcnNvbmFzIHF1ZSBzZSBlbmN1ZW50cmFuIGVuIHVuIHByb2Nlc28gZGUgcmVjdXBlcmFjacOzblxuICAgICAgICAgICAgICBkZSB1bmEgbGVzacOzbiwgZW1iYXJhemFkYXMsIGRlcG9ydGlzdGFzIGRlIGFsdG8gcmVuZGltaWVudG/igKZcbiAgICAgICAgICAgIDwvRm9udFJlZ3VsYXI+XG4gICAgICAgICAgICA8Rm9udFJlZ3VsYXI+XG4gICAgICAgICAgICAgIExhcyBjbGFzZXMgZGUgcGlsYXRlcyBzZSBpbXBhcnRlbiBlbiBncnVwb3MgcmVkdWNpZG9zLCAobcOheGltbyAzXG4gICAgICAgICAgICAgIHBlcnNvbmFzIHBvciBncnVwbyksIG8gaW5kaXZpZHVhbG1lbnRlIHkgc2llbXByZSBzZXLDoW4gaW1wYXJ0aWRhc1xuICAgICAgICAgICAgICBwb3IgZmlzaW90ZXJhcGV1dGFzIGNvbGVnaWFkb3MuXG4gICAgICAgICAgICA8L0ZvbnRSZWd1bGFyPlxuICAgICAgICAgIDwvZGl2PlxuICAgICAgICA8L2Rpdj5cbiAgICAgIDwvUGlsYXRlc1N0eWxlcz5cbiAgICAgIDxGb290ZXIgLz5cbiAgICA8L1JlYWN0LkZyYWdtZW50PlxuICApO1xufTtcblxuZXhwb3J0IGRlZmF1bHQgcGlsYXRlcztcbiJdfQ== */\n/*@ sourceURL=/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/pages/pilates.js */")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    link: "Nosotros",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_PagesStyles_PilatesStyles_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_HeaderAnimated_HeaderAnimated_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    img: _static_imgPilates_jpg__WEBPACK_IMPORTED_MODULE_9___default.a,
-    positionY: 13,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_2___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3___default.a]]]) + " " + "pilates-content",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_PagesStyles_FontStyle_FontBold_js__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  }, "@font-face{font-family:\"Monserrat-Semibold\";src:url(".concat(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}@font-face{font-family:\"Monserrat-Regular\";src:url(").concat(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}body{margin:0;padding:0;max-width:100%;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2FsYmVydG8vRXNjcml0b3Jpby9UYXlsb3JIVUIvUHJveWVjdG9zL0NsaWVudGVzL3R3b2Zpc2lvL3BhZ2VzL25vc290cm9zLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXNCeUIsQUFHNEMsQUFNRCxBQU92QixTQUNDLFVBQ0ssYUFSMEMsQ0FOQSxDQWUzRCx1REFScUIsQ0FOQSxrQkFPRCxDQU5BLGlCQU9wQixDQU5BIiwiZmlsZSI6Ii9ob21lL2FsYmVydG8vRXNjcml0b3Jpby9UYXlsb3JIVUIvUHJveWVjdG9zL0NsaWVudGVzL3R3b2Zpc2lvL3BhZ2VzL25vc290cm9zLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gXCJyZWFjdFwiO1xuaW1wb3J0IHRlYW0gZnJvbSBcIi4uL2NvbnRlbnQvdGVhbS5qc29uXCI7XG5pbXBvcnQgeyBNZW1iZXIgfSBmcm9tIFwiLi4vY29tcG9uZW50cy9NZW1iZXIuanNcIjtcbmltcG9ydCBOYXZiYXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvTmF2YmFyL05hdmJhclwiO1xuaW1wb3J0IEZvb3RlciBmcm9tIFwiLi4vY29tcG9uZW50cy9Gb290ZXIvRm9vdGVyLmpzXCI7XG5pbXBvcnQgTm9zb3Ryb3NTdHlsZXMgZnJvbSBcIi4uL1BhZ2VzU3R5bGVzL05vc290cm9zU3R5bGVzLmpzXCI7XG5pbXBvcnQgSGVhZCBmcm9tIFwibmV4dC9oZWFkXCI7XG5pbXBvcnQgTW9uc2VycmF0U2VtaUJvbGQgZnJvbSBcIi4uL3N0YXRpYy9mb250cy9Nb250c2VycmF0L01vbnRzZXJyYXQtU2VtaUJvbGQudHRmXCI7XG5pbXBvcnQgTW9uc2VycmF0UmVndWxhciBmcm9tIFwiLi4vc3RhdGljL2ZvbnRzL01vbnRzZXJyYXQvTW9udHNlcnJhdC1SZWd1bGFyLnR0ZlwiO1xuXG5pbXBvcnQgRm9udFJlZ3VsYXIgZnJvbSBcIi4uL1BhZ2VzU3R5bGVzL0ZvbnRTdHlsZS9Gb250UmVndWxhclwiXG5jb25zdCBkaXNwbGF5VGVhbSA9ICgpID0+IHtcbiAgcmV0dXJuIHRlYW0ubWFwKChtZW1iZXIsIGkpID0+IDxNZW1iZXIga2V5PXtpfSB7Li4ubWVtYmVyfSAvPik7XG59O1xuXG5jb25zdCBub3NvdHJvcyA9IHByb3BzID0+IHtcbiAgcmV0dXJuIChcbiAgICA8UmVhY3QuRnJhZ21lbnQ+XG4gICAgICA8SGVhZD5cbiAgICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xXCIgLz5cbiAgICAgICAgPG1ldGEgY2hhclNldD1cInV0Zi04XCIgLz5cbiAgICAgIDwvSGVhZD5cbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICAgIEBmb250LWZhY2Uge1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIk1vbnNlcnJhdC1TZW1pYm9sZFwiO1xuICAgICAgICAgIHNyYzogdXJsKCR7TW9uc2VycmF0U2VtaUJvbGR9KSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbiAgICAgICAgICBmb250LXdlaWdodDogbm9ybWFsO1xuICAgICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgICAgICAgfVxuICAgICAgICBAZm9udC1mYWNlIHtcbiAgICAgICAgICBmb250LWZhbWlseTogXCJNb25zZXJyYXQtUmVndWxhclwiO1xuICAgICAgICAgIHNyYzogdXJsKCR7TW9uc2VycmF0UmVndWxhcn0pIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICAgICAgICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gICAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgICAgICB9XG5cbiAgICAgICAgYm9keSB7XG4gICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgICAgbWF4LXdpZHRoOiAxMDAlO1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgICA8TmF2YmFyIGxpbms9XCJDZXJyYXJcIi8+XG4gICAgICA8Tm9zb3Ryb3NTdHlsZXM+XG4gICAgICAgIDxGb250UmVndWxhciBjbGFzc05hbWU9XCJtZW1iZXItZGVzY3JpcHRpb25cIj5cbiAgICAgICAgICBFbiBudWVzdHJvIGNlbnRybyBkZSBmaXNpb3RlcmFwaWEgc2llbXByZSBzZXLDoSBhdGVuZGlkbyBwb3JcbiAgICAgICAgICBwcm9mZXNpb25hbGVzIGNvbGVnaWFkb3MgY29uIGFtcGxpYSBleHBlcmllbmNpYSBlbiBlbCBzZWN0b3IgeSBlblxuICAgICAgICAgIGNvbnRpbnVhIGZvcm1hY2nDs24gcGFyYSBvZnJlY2VybGUgZWwgbWVqb3IgdHJhdGFtaWVudG8gcG9zaWJsZS5cbiAgICAgICAgPC9Gb250UmVndWxhcj5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRlYW1cIj57ZGlzcGxheVRlYW0oKX08L2Rpdj5cbiAgICAgIDwvTm9zb3Ryb3NTdHlsZXM+XG4gICAgICA8Rm9vdGVyIC8+XG4gICAgPC9SZWFjdC5GcmFnbWVudD5cbiAgKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IG5vc290cm9zO1xuIl19 */\n/*@ sourceURL=/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/pages/nosotros.js */")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    link: "Cerrar",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 43
     },
     __self: this
-  }, "Pilates"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_2___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_3___default.a]]]) + " " + "pilates",
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_PagesStyles_NosotrosStyles_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 44
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_PagesStyles_FontStyle_FontRegular_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_PagesStyles_FontStyle_FontRegular__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    className: "member-description",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 45
     },
     __self: this
-  }, "El m\xE9todo pilates es una t\xE9cnica utilizada para el entrenamiento f\xEDsico y mental del cuerpo mediante una serie de ejercicios que se realizan de forma fluida manteniendo un control exhaustivo de la respiraci\xF3n."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_PagesStyles_FontStyle_FontRegular_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  }, "En nuestro centro de fisioterapia siempre ser\xE1 atendido por profesionales colegiados con amplia experiencia en el sector y en continua formaci\xF3n para ofrecerle el mejor tratamiento posible."), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a]]]) + " " + "team",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 51
     },
     __self: this
-  }, "Lo pueden realizar, tanto aquellos que se introducen por primera en la actividad f\xEDsica, como los que ya hacen alg\xFAn tipo de ejercicio, ya sean j\xF3venes o mayores. Tambi\xE9n es muy recomendable para las personas que se encuentran en un proceso de recuperaci\xF3n de una lesi\xF3n, embarazadas, deportistas de alto rendimiento\u2026"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_PagesStyles_FontStyle_FontRegular_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  }, displayTeam())), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Footer_Footer_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
-    },
-    __self: this
-  }, "Las clases de pilates se imparten en grupos reducidos, (m\xE1ximo 3 personas por grupo), o individualmente y siempre ser\xE1n impartidas por fisioterapeutas colegiados.")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 53
     },
     __self: this
   }));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (pilates);
+/* harmony default export */ __webpack_exports__["default"] = (nosotros);
 
 /***/ }),
 
@@ -2742,72 +2852,14 @@ module.exports = "/_next/static/fonts/Montserrat-SemiBold-c88cecbffad6d8e731fd95
 
 /***/ }),
 
-/***/ "./static/imgPilates.jpg":
-/*!*******************************!*\
-  !*** ./static/imgPilates.jpg ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/imgPilates-a9835f1a23bec54428e35050dec55265.jpg";
-
-/***/ }),
-
-/***/ "./utils/animations.js":
-/*!*****************************!*\
-  !*** ./utils/animations.js ***!
-  \*****************************/
-/*! exports provided: _bubleAnimation, detectmob */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_bubleAnimation", function() { return _bubleAnimation; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "detectmob", function() { return detectmob; });
-/* harmony import */ var popmotion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! popmotion */ "popmotion");
-/* harmony import */ var popmotion__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(popmotion__WEBPACK_IMPORTED_MODULE_0__);
-
-var _bubleAnimation = function _bubleAnimation(posX, posX2, fromScaleX, toScaleX, fromScaleY, toScaleY, posY, posY2) {
-  Object(popmotion__WEBPACK_IMPORTED_MODULE_0__["tween"])({
-    from: {
-      transalteX: posX,
-      transalteY: posY,
-      scaleX: fromScaleX,
-      scaleY: fromScaleY
-    },
-    to: {
-      transalteX: posX2,
-      transalteY: posY2,
-      scaleX: toScaleX,
-      scaleY: toScaleY
-    },
-    duration: 1800,
-    ease: popmotion__WEBPACK_IMPORTED_MODULE_0__["easing"].easeInOut,
-    flip: Infinity
-  }).start(function (v) {
-    if (document.getElementById("target") !== null) {
-      document.getElementById("target").style.webkitTransform = "translate(".concat(v.transalteX, "px, ").concat(v.transalteY, "px) scale(").concat(v.scaleX, ", ").concat(v.scaleY, ") ");
-    }
-  });
-};
-var detectmob = function detectmob() {
-  if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
-    return true;
-  } else {
-    return false;
-  }
-};
-
-/***/ }),
-
-/***/ 5:
-/*!********************************!*\
-  !*** multi ./pages/pilates.js ***!
-  \********************************/
+/***/ 4:
+/*!*********************************!*\
+  !*** multi ./pages/nosotros.js ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/pages/pilates.js */"./pages/pilates.js");
+module.exports = __webpack_require__(/*! /home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofisio/pages/nosotros.js */"./pages/nosotros.js");
 
 
 /***/ }),
@@ -2856,6 +2908,28 @@ module.exports = require("core-js/library/fn/object/define-property");
 
 /***/ }),
 
+/***/ "core-js/library/fn/object/get-own-property-descriptor":
+/*!************************************************************************!*\
+  !*** external "core-js/library/fn/object/get-own-property-descriptor" ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/get-own-property-descriptor");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/get-own-property-symbols":
+/*!*********************************************************************!*\
+  !*** external "core-js/library/fn/object/get-own-property-symbols" ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/get-own-property-symbols");
+
+/***/ }),
+
 /***/ "core-js/library/fn/object/get-prototype-of":
 /*!*************************************************************!*\
   !*** external "core-js/library/fn/object/get-prototype-of" ***!
@@ -2864,6 +2938,17 @@ module.exports = require("core-js/library/fn/object/define-property");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/object/get-prototype-of");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/keys":
+/*!*************************************************!*\
+  !*** external "core-js/library/fn/object/keys" ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/keys");
 
 /***/ }),
 
@@ -2911,17 +2996,6 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 
 /***/ }),
 
-/***/ "flubber":
-/*!**************************!*\
-  !*** external "flubber" ***!
-  \**************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("flubber");
-
-/***/ }),
-
 /***/ "next-server/dist/lib/router/router":
 /*!*****************************************************!*\
   !*** external "next-server/dist/lib/router/router" ***!
@@ -2955,17 +3029,6 @@ module.exports = require("next-server/head");
 
 /***/ }),
 
-/***/ "popmotion":
-/*!****************************!*\
-  !*** external "popmotion" ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("popmotion");
-
-/***/ }),
-
 /***/ "prop-types":
 /*!*****************************!*\
   !*** external "prop-types" ***!
@@ -2996,6 +3059,17 @@ module.exports = require("prop-types-exact");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-accessible-accordion":
+/*!*********************************************!*\
+  !*** external "react-accessible-accordion" ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-accessible-accordion");
 
 /***/ }),
 
@@ -3033,4 +3107,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=pilates.js.map
+//# sourceMappingURL=nosotros.js.map

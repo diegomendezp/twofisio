@@ -7,6 +7,10 @@ const HomeWrapperStyle = styled.div`
   position: relative;
   font-family: "Monserrat-Semibold";
   font-weight: lighter;
+  -webkit-overflow-scrolling: touch;
+  
+  #bodyHome {
+  }
 
   h1 {
     color: rgb(116, 10, 100);
@@ -100,9 +104,9 @@ const HomeWrapperStyle = styled.div`
       width: 80vw;
     }
 
-    /* .bubbleGroup {
-      display: none;
-    } */
+    .bubbleGroup {
+      /* display: none; */
+    }
 
     #imgSlider {
       padding-left: 38%;

@@ -21,50 +21,23 @@ constructor(props) {
 
 _manageResize = () => {
 
-
-  
-
-  // _bubleAnimation(-100, 0, 5, 5.2);
-  // switch (true) {
-  //   case window.innerWidth <= 375:
-  //     _bubleAnimation(500, -250, 2, 2.05, 6, 6.2);
-  //     break;
-  //   case window.innerWidth <= 768:
-  //     // _bubleAnimation(350, -100, 2.9, 3, 1.8, 2);
-  //     break;
-  //   default:
-  //   _bubleAnimation(500, -250, 2, 2.05, 6, 6.2);
-  // }
+  _bubleAnimation(-100, 0, 5, 5.2, 3, 3, -50, -60);
+  switch (true) {
+    case window.innerWidth <= 375:
+      _bubleAnimation(500, -250, 2, 2.05, 6, 6.2);
+      break;
+    case window.innerWidth <= 768:
+      // _bubleAnimation(350, -100, 2.9, 3, 1.8, 2);
+      break;
+    default:
+    _bubleAnimation(1500, 1500, 10, 10.2, 1.8, 2.05, 200, 200);
+  }
 };
 
   
   componentDidMount() {
-
-    // this._manageResize();
-
-    tween({
-      duration: 700,
-      ease: easing.easeInOut,
-      flip: Infinity
-    }).pipe(interpolate(circle, star, { maxSegmentLength: 2 }))
-    .start(styler(document.querySelector("#target")).set("d"));
-
-    // tween({
-    //   from: { transalteX: -100, scale: 5 },
-    //   to: { transalteX: 0, scale: 5.2 },
-    //   duration: 1800,
-    //   ease: easing.easeInOut,
-    //   flip: Infinity
-    // }).start(v => {
-    //   if (document.getElementById("target") !== null) {
-    //     document.getElementById("target").style.webkitTransform = `translate(${v.transalteX}px, -300px) scale(${v.scale})`;
-    //     // document.getElementById("target").style.webkitTransform = `scaleY(${v.scaleY})`;
-    //     // document.getElementById("target").style.MozTransform = `translate(${500}px, ${-250}px) scale(${v.scaleX})`;
-    //   }
-    // });
-
-    // this._manageResize();
-    // window.addEventListener("resize", this._manageResize);
+    this._manageResize();
+    window.addEventListener("resize", this._manageResize);
   }
 
   render() {
@@ -72,21 +45,11 @@ _manageResize = () => {
     return (
 
       <HeaderAnimatedStyles backImage={this.props.img} backPositionY={this.props.positionY}>
-         {/* <img
-            className="techniques-img"
-            src={this.props.img}
-            alt="fisioterapia-img"
-          /> */}
-            <svg id="container">
-            <clipPath id="svgPath">
-              <path id="target" />
-              </clipPath>
-            </svg>
-          {/* <svg id="container">
+          <svg id="container">
             <clipPath id="svgPath">
             <path id="target" d= "M 93.9 -104.7 C 135.9 -76.6 194 -60.5 203.7 -32 C 213.4 -3.5 174.7 37.5 141.3 68.7 C 108 99.9 80 121.4 52 122.9 C 24.1 124.4 -3.9 105.9 -52.2 105 C -100.6 104.1 -169.4 120.8 -197.2 100.4 C -225.1 80 -212 22.4 -195.9 -28.6 C -179.8 -79.6 -160.6 -124 -127.4 -153.7 C -94.3 -183.4 -47.1 -198.2 -10.6 -185.5 C 25.9 -172.9 51.9 -132.8 93.9 -104.7 Z"/>
             </clipPath>
-          </svg> */}
+          </svg>
       </HeaderAnimatedStyles>
     );
   }

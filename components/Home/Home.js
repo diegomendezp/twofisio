@@ -7,7 +7,8 @@ import HomeText from "../../content/home.json";
 import CrossfadeImage from "../CrossFadeImage";
 import $ from "jquery";
 import Bubbles from "./Bubles";
-import { _bubleAnimation } from "../../utils/animations";
+import { _bubleAnimation, detectmob } from "../../utils/animations";
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 const images = [
   "../../static/imgPilates.jpg",
@@ -48,7 +49,7 @@ export default class Home extends Component {
 
   _makeAnimation = (from, to) => {
     tween({
-      duration: 500,
+      duration: 1500,
       ease: easing.easeInOut
     })
       .pipe(
@@ -77,8 +78,9 @@ export default class Home extends Component {
           this.setState(
             { ...this.state, formPosition: 4, bubblePosition: 5 },
             () => {
+              document.getElementsByTagName("body")[0].style.position = "relative"
               this._changeBubble(4);
-              window.scrollTo({ top: 1000, left: 0, behavior: "smooth" });
+              window.scrollTo(0,800);
             }
           );
         }
@@ -87,6 +89,7 @@ export default class Home extends Component {
   };
 
   _mouseWheel = () => {
+
     let delta = 0;
     // detect available wheel event
     const wheelEvent =
@@ -96,42 +99,61 @@ export default class Home extends Component {
         ? "mousewheel" // Webkit and IE support at least "mousewheel"
         : "DOMMouseScroll"; // let's assume that remaining browsers are older Firefox
 
-    $(window).on(wheelEvent, e => {
-      if (e.originalEvent.wheelDelta > 0) {
-        // document.getElementsByTagName("body")[0].style.overflowY = "hidden";
-        delta++;
-        if (delta >= 20) {
-          delta = 0;
-          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-          if (this.state.bubblePosition === 5) {
-            this._changeBubble(3);
-          }
-
-          if (this.state.formPosition > 1) {
-            if (this.state.bubblePosition !== 5) {
-              this._changeSVGForm("up");
-            } else {
-              this.setState({ ...this.state, bubblePosition: 4 }, () => {
+        if(detectmob()) {
+          var scrollPos = 0;
+          var timerId;
+          $(window).bind('scroll', () => {
+              clearTimeout(timerId)
+              timerId = setTimeout(() => {
+                if (this.state.formPosition < 4) {
+                  this._changeSVGForm("down");
+                } else {
+                  this.setState({ ...this.state, formPosition: 1 });
+                }
+              }, 200)
+          });
+        } else {
+          $(window).on(wheelEvent, e => {
+            if (e.originalEvent.wheelDelta > 0) {
+              // document.getElementsByTagName("body")[0].style.overflowY = "hidden";
+              delta++;
+              if (delta >= 20) {
+                delta = 0;
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-              });
+                if (this.state.bubblePosition === 5) {
+                  this._changeBubble(3);
+                }
+      
+                if (this.state.formPosition > 1) {
+                  if (this.state.bubblePosition !== 5) {
+                    this._changeSVGForm("up");
+                  } else {
+                    this.setState({ ...this.state, bubblePosition: 4 }, () => {
+                      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                      setTimeout(()=> {
+                        document.getElementsByTagName("body")[0].style.position = "fixed"
+                      },1000)
+                    });
+                  }
+                }
+              }
+            } else {
+              delta--;
+              if (delta <= -20) {
+                delta = 0;
+                if (this.state.formPosition < 4) {
+                  this._changeSVGForm("down");
+                } else {
+                  this.setState({ ...this.state, bubblePosition: 5 }, () => {
+                    document.getElementsByTagName("body")[0].style.position = "relative"
+                    this._changeBubble(4);
+                    window.scrollTo({ top: 1000, left: 0, behavior: "smooth" });
+                  });
+                }
+              }
             }
-          }
+          });
         }
-      } else {
-        delta--;
-        if (delta <= -20) {
-          delta = 0;
-          if (this.state.formPosition < 4) {
-            this._changeSVGForm("down");
-          } else {
-            this.setState({ ...this.state, bubblePosition: 5 }, () => {
-              this._changeBubble(4);
-              window.scrollTo({ top: 1000, left: 0, behavior: "smooth" });
-            });
-          }
-        }
-      }
-    });
   };
 
   _changeBubble(pos) {
@@ -176,26 +198,36 @@ export default class Home extends Component {
   _manageResize = () => {
     switch (true) {
       case window.innerWidth <= 375:
-        _bubleAnimation(150, -100, 2.3, 2.5, 1.8, 2);
+        _bubleAnimation(150, -100, 2.3, 2.5, 1.8, 2, 0, 0);
         break;
       case window.innerWidth <= 768:
-        _bubleAnimation(350, -100, 2.9, 3, 1.8, 2);
+        _bubleAnimation(200, 210, 2.3, 3,  3.1, 3.2, -200, -400);
         break;
       default:
-        _bubleAnimation(500, -200, 3.1, 3.2, 1.8, 1.85);
+        _bubleAnimation(500, 480, 1.8, 1.85, 3, 3, -100, -150);
     }
   };
 
   componentDidMount() {
+
+
+
     this._listenSliderButtons();
     this._mouseWheel();
     this._manageResize();
     window.addEventListener("resize", this._manageResize);
-    console.log(document.querySelector("#target"));
 
-    // interval = setInterval(() => {
-    //   this._changeSVGForm("down");
-    // }, 9000);
+
+    // if (window.innerWidth <= 768) {
+    //   interval = setInterval(() => {
+    //     if (this.state.formPosition < 4) {
+    //       this._changeSVGForm("down");
+    //     } else {
+    //       this.setState({...this.state, formPosition:1})
+    //     }
+    //   }, 5000);
+    // }
+
 
     this.setState(
       {
@@ -203,6 +235,7 @@ export default class Home extends Component {
         shape: styler(document.querySelector("#target")),
         vw: window.innerWidth,
         vh: window.innerHeight,
+        bodyHome: document.querySelector('#bodyHome'),
         animation: tween({
           duration: 1000,
           ease: easing.easeInOut
@@ -214,14 +247,24 @@ export default class Home extends Component {
           )
         )
       },
-      () => this._startAnimation("#target")
+      () => {
+        // disableBodyScroll(this.state.bodyHome);
+        this._startAnimation("#target")
+      }
     );
   }
 
   render() {
     return (
-      <HomeWrapperStyle>
+      <HomeWrapperStyle id="bodyHome">
         <Bubbles position={this.state.bubblePosition} />
+        {/* <CrossfadeImage
+          src={
+            images[this.state.formPosition < 5 && this.state.formPosition - 1]
+          }
+          duration={1500}
+          timingFunction={"ease-out"}
+        /> */}
         <img
           src={
             images[this.state.formPosition < 5 && this.state.formPosition - 1]
