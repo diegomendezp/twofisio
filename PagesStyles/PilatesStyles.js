@@ -1,20 +1,17 @@
 import styled from 'styled-components';
 
 const PilatesStyles = styled.div`
-  font-family: "Monserrat-Regular";
+
   .pilates-img {
     width: 100%;
     object-fit: cover;
+
   }
-  .treatment-name{
-    font-family: "Monserrat-Semibold";
-    color: #740a64;
-  }
+
   .pilates-content {
     width: 90%;
     margin-left: 5%;
-    margin-top: 15%;
-    margin-bottom: 30%;
+     margin-bottom: 30%;
   }
 
   li {
@@ -25,8 +22,6 @@ const PilatesStyles = styled.div`
   }
 
   @media only screen and (min-width: 415px) and (max-width: 768px) {
-   
-
     .pilates {
       display: flex;
       flex-wrap: wrap;
@@ -36,8 +31,7 @@ const PilatesStyles = styled.div`
     .pilates-content {
       width: 90%;
       margin-left: 5%;
-      margin-top: 8%;
-      margin-bottom: 10%;
+      margin-bottom: 30%;
       font-size: 17px;
     }
    
@@ -48,10 +42,10 @@ const PilatesStyles = styled.div`
       height: 33vh;
     }
     .pilates-content {
-      width: 60%;
+      width: 75%;
       margin-left: 5%;
-      margin-top: 8%;
-      margin-bottom: 10%;
+      margin-top:3%;
+      margin-bottom: 20%;
   }
 
     .pilates {

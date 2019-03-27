@@ -9,7 +9,6 @@ const HeaderAnimatedStyles = styled.div`
   background-position-y: ${props => props.backPositionY}%;
   background-size: 100%;
 
-  font-family: "Monserrat-Regular";
   #container {
     position: absolute;
     top: 0;
@@ -26,25 +25,24 @@ const HeaderAnimatedStyles = styled.div`
   @media only screen and (max-width: 415px) {
     background-position-x: 28%;
     background-size: 196%;  
-    height: 33vh;
-
+    height: 40vh;
   }
 
   @media only screen and (min-width: 415px) and (max-width: 768px) {
-    height: 33vh;
+    height: 40vh;
     background-position-y: 0%;
-
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    height: 60vh;
   }
 
   @media only screen and (min-width: 1024px) and (max-width: 1440px) {
-    height: 33vh;
+    height: 70vh;
   }
 
-
   @media only screen and (min-width: 1441px) {
+    height: 90vh;
   }
 `;
 
