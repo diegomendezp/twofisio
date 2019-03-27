@@ -35,11 +35,8 @@ const PilatesStyles = styled.div`
     }
 
     .pilates-content {
-      width: 90%;
-      margin-left: 5%;
       margin-top: 10%;
       margin-bottom: 30%;
-      font-size: 17px;
     }
    
   }
@@ -50,10 +47,8 @@ const PilatesStyles = styled.div`
     }
     .pilates-content {
       width: 75%;
-      margin-left: 5%;
-      margin-top:0%;
-      /*margin-top:-10%;*/
-      margin-bottom: 30%;
+      margin-top:3%;
+      margin-bottom: 20%;
   }
 
     .pilates {
@@ -62,14 +57,13 @@ const PilatesStyles = styled.div`
       justify-content: space-between;
     }
   }
-  @media only screen and (min-width: 1025px) and (max-width: 1441px) {
+  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
     .pilates-img {
       height: 48vh;
     }
     .pilates-content {
       width: 60%;
-      margin-left: 5%;
-      margin-top: 0%;
+      margin-top: 5%;
       margin-bottom: 10%;
     }
 
@@ -78,8 +72,16 @@ const PilatesStyles = styled.div`
       flex-wrap: wrap;
       justify-content: space-between;
     }
-
-   
+  }
+  @media only screen and (min-width: 1441px) {
+    .pilates-img {
+      height: 48vh;
+    }
+    .pilates-content { 
+      width: 60%;
+      margin-top: 8%;
+      margin-bottom: 20%;
+    }
   }
 `;
 

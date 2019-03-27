@@ -12,11 +12,11 @@ const NavbarWrapper = styled.div`
   position: fixed;
   top: 0;
   margin: 0 auto;
-  img {
-    height: 80px;
-    object-fit: contain;
 
-    
+  img {
+    margin-top:3%;
+    height: 50px;
+    object-fit: contain;  
   }
 
   ul {
@@ -24,7 +24,7 @@ const NavbarWrapper = styled.div`
     a {
       list-style: none;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 1rem;
       letter-spacing:0.6pt;
       color: rgb(116, 10, 100);
     }
@@ -33,6 +33,26 @@ const NavbarWrapper = styled.div`
       color: rgb(116, 10, 100);
     }
   }
+
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    img {
+      margin-top:3%;
+      height: 60px;
+      object-fit: contain;  
+    }
+  }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    img {
+      margin-top:3%;
+      height: 60px;
+      object-fit: contain;  
+    }
+  }
+
+
+  @media only screen and (min-width: 1441px) {}
+
 `;
 
 const NavbarStyles = styled.div`

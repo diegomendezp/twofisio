@@ -25,6 +25,10 @@ const HomeWrapperStyle = styled.div`
     text-decoration: underline;
   }
 
+  a:visited {
+    color: rgb(116, 10, 100);
+  }
+
   CrossfadeImage {
     widows: 100vw;
     height: 100vh;

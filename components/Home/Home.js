@@ -4,15 +4,10 @@ import { tween, styler, easing } from "popmotion";
 import { interpolate } from "flubber"; // ES6
 import SectionTitle from "./SectionTitle";
 import HomeText from "../../content/home.json";
-import CrossfadeImage from "../CrossFadeImage";
 import $ from "jquery";
 import Bubbles from "./Bubles";
 import { _bubleAnimation, detectmob } from "../../utils/animations";
-import {
-  disableBodyScroll,
-  enableBodyScroll,
-  clearAllBodyScrollLocks
-} from "body-scroll-lock";
+
 
 const images = [
   "../../static/imgPilates.jpg",
