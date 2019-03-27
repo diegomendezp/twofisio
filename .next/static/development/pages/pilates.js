@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 var HeaderAnimatedStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "HeaderAnimatedStyles",
   componentId: "sc-11m3be6-0"
-})(["position:relative;width:100vw;height:50vh;background-image:url(", ");-webkit-clip-path:url(#svgPath);background-position-y:", "%;background-size:100%;#container{position:absolute;top:0;left:0;width:100%;height:100vh;}@media only screen and (max-width:360px){background-position-x:28%;background-size:196%;height:55vh;}@media only screen and (min-width:361px) and (max-width:415px){background-position-x:28%;background-size:196%;height:48vh;}@media only screen and (min-width:415px) and (max-width:768px){height:40vh;background-position-y:0%;}@media only screen and (min-width:769px) and (max-width:1023px){height:60vh;}@media only screen and (min-width:1024px) and (max-width:1440px){height:70vh;}@media only screen and (min-width:1441px){height:90vh;}"], function (props) {
+})(["position:relative;width:100vw;height:50vh;background-image:url(", ");-webkit-clip-path:url(#svgPath);background-position-y:", "%;background-size:100%;#container{position:absolute;top:0;left:0;width:100%;height:100vh;}@media only screen and (max-width:360px){background-position-x:28%;background-size:196%;height:55vh;}@media only screen and (min-width:361px) and (max-width:415px){background-position-x:28%;background-size:196%;height:45vh;}@media only screen and (min-width:415px) and (max-width:768px){height:40vh;background-position-y:0%;}@media only screen and (min-width:769px) and (max-width:1024px){height:50vh;}@media only screen and (min-width:1025px) and (max-width:1440px){background-position-x:28%;background-size:196%;height:40vh;}@media only screen and (min-width:1441px){height:90vh;}"], function (props) {
   return props.backImage;
 }, function (props) {
   return props.backPositionY;
@@ -81,7 +81,7 @@ __webpack_require__.r(__webpack_exports__);
 var PilatesStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "PilatesStyles",
   componentId: "ilc0el-0"
-})([".pilates-img{width:100%;object-fit:cover;}.pilates-content{width:90%;margin-left:5%;margin-bottom:30%;}li{list-style:none;letter-spacing:0.2px;margin-top:2%;margin-bottom:2%;}@media only screen and (min-width:415px) and (max-width:768px){.pilates{display:flex;flex-wrap:wrap;justify-content:space-between;}.pilates-content{width:90%;margin-left:5%;margin-bottom:30%;font-size:17px;}}@media only screen and (min-width:769px) and (max-width:1440px){.pilates-img{height:33vh;}.pilates-content{width:75%;margin-left:5%;margin-top:3%;margin-bottom:20%;}.pilates{display:flex;flex-wrap:wrap;justify-content:space-between;}}@media only screen and (min-width:1441px){.pilates-img{height:48vh;}.pilates-content{width:60%;margin-left:5%;margin-top:8%;margin-bottom:10%;}.pilates{display:flex;flex-wrap:wrap;justify-content:space-between;}}"]);
+})([".pilates-img{width:100%;object-fit:cover;}.pilates-content{width:90%;margin-left:5%;margin-top:20%;margin-bottom:40%;}li{list-style:none;letter-spacing:0.2px;margin-top:2%;margin-bottom:2%;}@media only screen and (min-width:375px) and (max-width:414px){.pilates-content{margin-top:0%;}}@media only screen and (min-width:415px) and (max-width:768px){.pilates{display:flex;flex-wrap:wrap;justify-content:space-between;}.pilates-content{width:90%;margin-left:5%;margin-top:10%;margin-bottom:30%;font-size:17px;}}@media only screen and (min-width:769px) and (max-width:1024px){.pilates-img{height:33vh;}.pilates-content{width:75%;margin-left:5%;margin-top:0%;margin-bottom:30%;}.pilates{display:flex;flex-wrap:wrap;justify-content:space-between;}}@media only screen and (min-width:1025px) and (max-width:1441px){.pilates-img{height:48vh;}.pilates-content{width:60%;margin-left:5%;margin-top:0%;margin-bottom:10%;}.pilates{display:flex;flex-wrap:wrap;justify-content:space-between;}}"]);
 /* harmony default export */ __webpack_exports__["default"] = (PilatesStyles);
 
 /***/ }),
@@ -357,22 +357,22 @@ function (_React$Component) {
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "_manageResize", function () {
       switch (true) {
         case window.innerWidth <= 375:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_11__["_bubleAnimation"])(200, 210, 2.3, 3, 2.8, 3, -40, -40);
+          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_11__["_bubleAnimation"])(200, 210, 2.3, 3, 2.8, 3, -40, -51);
 
           break;
 
         case window.innerWidth <= 414:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_11__["_bubleAnimation"])(200, 210, 2.3, 3, 3.1, 3.2, -40, -40);
+          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_11__["_bubleAnimation"])(200, 210, 2.3, 3, 3.1, 3.2, -50, -60);
 
           break;
 
         case window.innerWidth <= 768:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_11__["_bubleAnimation"])(550, 560, 3, 3.4, 3.1, 3.2, -60, -60);
+          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_11__["_bubleAnimation"])(550, 560, 3, 3.4, 3.1, 3.2, 5, 10);
 
           break;
 
         case window.innerWidth <= 1024:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_11__["_bubleAnimation"])(550, 560, 10, 15, 3.1, 3.2, 90, 100);
+          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_11__["_bubleAnimation"])(550, 560, 10, 15, 3.1, 3.2, 70, 70);
 
           break;
 
