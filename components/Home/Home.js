@@ -224,6 +224,7 @@ export default class Home extends Component {
     this._listenSliderButtons();
     this._mouseWheel();
     this._manageResize();
+
     window.addEventListener("resize", this._manageResize);
 
     // if (window.innerWidth <= 768) {
@@ -262,6 +263,7 @@ export default class Home extends Component {
   }
 
   render() {
+    
     return (
       <HomeWrapperStyle id="bodyHome">
         <Bubbles position={this.state.bubblePosition} />
@@ -277,10 +279,12 @@ export default class Home extends Component {
             images[this.state.formPosition < 5 && this.state.formPosition - 1]
           }
         />
+
         <svg id="container">
           <clipPath id="svgPath">
             <path id="target" />
           </clipPath>
+
         </svg>
 
         <SectionTitle

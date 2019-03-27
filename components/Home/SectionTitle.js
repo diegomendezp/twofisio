@@ -1,6 +1,9 @@
 
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import FontBold from "../../PagesStyles/FontStyle/FontBold";
+import FontRegular from "../../PagesStyles/FontStyle/FontRegular";
+
 
 class SectionTitle extends Component {
   constructor(props) {
@@ -23,7 +26,7 @@ class SectionTitle extends Component {
       this.setState({ bottomSrc: false, topSrc: false }, () =>
         this.setState(
           // Opacity less than 1 takes precendence in stacking order
-          { bottomSrc: oldSrc, topSrc: newSrc, bottomOpacity: 1 },
+          { bottomSrc: newSrc, topSrc: newSrc, bottomOpacity: 1 },
           () => {
             // One of the few times setTimeout does wonders, this is for
             // getting fade out transition without css keyframe
@@ -40,7 +43,7 @@ class SectionTitle extends Component {
   render() {
     const { duration, timingFunction} = this.props;
     const { topSrc, bottomOpacity, bottomSrc, topOpacity } = this.state;
-
+    
 
     return (
       <div>
@@ -53,8 +56,8 @@ class SectionTitle extends Component {
                 }
               }}  
             >
-            <h1>{topSrc.title}</h1>
-            <p>{topSrc.body}</p>
+            <FontBold>{topSrc.title}</FontBold>
+            <FontRegular>{topSrc.body}</FontRegular>
             <a href={topSrc.link}>+ Mas Info</a>
           </div>
           }
@@ -67,8 +70,8 @@ class SectionTitle extends Component {
                 }
               }}  
               >
-              <h1>{bottomSrc.title}</h1>
-              <p>{bottomSrc.body}</p>
+              <FontBold>{bottomSrc.title}</FontBold>
+              <FontRegular>{bottomSrc.body}</FontRegular>
               <a href={bottomSrc.link}>+ Mas Info</a>
             </div>}
       </div>

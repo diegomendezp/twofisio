@@ -21,11 +21,17 @@ const HeaderAnimatedStyles = styled.div`
     clip-path: url(#svgPath);
     object-fit: cover;
   } */
-
-  @media only screen and (max-width: 415px) {
+  
+  @media only screen and (max-width: 360px) {
     background-position-x: 28%;
     background-size: 196%;  
-    height: 40vh;
+    height: 55vh;
+  }
+  
+  @media only screen and (min-width: 361px) and (max-width: 415px) {
+    background-position-x: 28%;
+    background-size: 196%;  
+    height: 48vh;
   }
 
   @media only screen and (min-width: 415px) and (max-width: 768px) {

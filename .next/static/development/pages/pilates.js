@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 var HeaderAnimatedStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "HeaderAnimatedStyles",
   componentId: "sc-11m3be6-0"
-})(["position:relative;width:100vw;height:50vh;background-image:url(", ");-webkit-clip-path:url(#svgPath);background-position-y:", "%;background-size:100%;#container{position:absolute;top:0;left:0;width:100%;height:100vh;}@media only screen and (max-width:415px){background-position-x:28%;background-size:196%;height:40vh;}@media only screen and (min-width:415px) and (max-width:768px){height:40vh;background-position-y:0%;}@media only screen and (min-width:769px) and (max-width:1023px){height:60vh;}@media only screen and (min-width:1024px) and (max-width:1440px){height:70vh;}@media only screen and (min-width:1441px){height:90vh;}"], function (props) {
+})(["position:relative;width:100vw;height:50vh;background-image:url(", ");-webkit-clip-path:url(#svgPath);background-position-y:", "%;background-size:100%;#container{position:absolute;top:0;left:0;width:100%;height:100vh;}@media only screen and (max-width:360px){background-position-x:28%;background-size:196%;height:55vh;}@media only screen and (min-width:361px) and (max-width:415px){background-position-x:28%;background-size:196%;height:48vh;}@media only screen and (min-width:415px) and (max-width:768px){height:40vh;background-position-y:0%;}@media only screen and (min-width:769px) and (max-width:1023px){height:60vh;}@media only screen and (min-width:1024px) and (max-width:1440px){height:70vh;}@media only screen and (min-width:1441px){height:90vh;}"], function (props) {
   return props.backImage;
 }, function (props) {
   return props.backPositionY;
@@ -142,11 +142,18 @@ var displayContactElements = function displayContactElements(contactList) {
         lineNumber: 13
       },
       __self: this
-    }, element.value))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    }, element.value))) : element.name == "Email" ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
       key: i,
+      href: "mailto:".concat(element.value),
       __source: {
         fileName: _jsxFileName,
         lineNumber: 17
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PagesStyles_FontStyle_FontRegular__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -154,7 +161,7 @@ var displayContactElements = function displayContactElements(contactList) {
       className: "contact-name",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18
+        lineNumber: 19
       },
       __self: this
     }, element.name, ":"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PagesStyles_FontStyle_FontRegular__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -162,7 +169,30 @@ var displayContactElements = function displayContactElements(contactList) {
       className: "contact-value",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 20
+      },
+      __self: this
+    }, element.value))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      key: i,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PagesStyles_FontStyle_FontRegular__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      color: "white",
+      className: "contact-name",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25
+      },
+      __self: this
+    }, element.name, ":"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PagesStyles_FontStyle_FontRegular__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      color: "white",
+      className: "contact-value",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26
       },
       __self: this
     }, element.value));
@@ -173,20 +203,20 @@ var Footer = function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FooterStyles__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 34
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FooterStyles__WEBPACK_IMPORTED_MODULE_1__["FooterWrapper"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 35
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer-content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 36
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PagesStyles_FontStyle_FontBold__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -194,29 +224,37 @@ var Footer = function Footer() {
     color: "white",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 37
     },
     __self: this
   }, "Contacto"), displayContactElements(_content_contact_json__WEBPACK_IMPORTED_MODULE_2__), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "copyright",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 39
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "http://tailor-hub.com",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 40
     },
     __self: this
-  }, "\xA9 2019 by tailor "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, "\xA9 2019 by tailor ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "footerLogo",
     src: "../../static/iconWhite.svg",
     alt: "logo-tailor",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 40
     },
     __self: this
   })))));
@@ -18435,22 +18473,22 @@ var _bubleAnimation = function _bubleAnimation(posX, posX2, fromScaleX, toScaleX
     ease: popmotion__WEBPACK_IMPORTED_MODULE_0__["easing"].easeInOut,
     flip: Infinity
   }).start(function (v) {
-    if (document.getElementById("target") !== null) {
-      document.getElementById("target").style.webkitTransform = "translate(".concat(v.transalteX, "px, ").concat(v.transalteY, "px) scale(").concat(v.scaleX, ", ").concat(v.scaleY, ") ");
+    if (document.getElementById('target') !== null) {
+      document.getElementById('target').style.webkitTransform = "translate(".concat(v.transalteX, "px, ").concat(v.transalteY, "px) scale(").concat(v.scaleX, ", ").concat(v.scaleY, ") ");
     }
   });
 };
 var detectmob = function detectmob() {
   if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
     return true;
-  } else {
-    return false;
   }
+
+  return false;
 };
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!**********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fpilates&absolutePagePath=%2FUsers%2Fsimon%2FDesktop%2Ftwofisio%2Fpages%2Fpilates.js ***!
   \**********************************************************************************************************************************/
@@ -18473,5 +18511,5 @@ module.exports = dll_2c2a52d81d538322a0ca;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]));;
+},[[1,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=pilates.js.map
