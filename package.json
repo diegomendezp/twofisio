@@ -11,7 +11,9 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "all": "^0.0.0",
+    "aos": "^2.3.4",
     "babel-plugin-styled-components": "^1.10.0",
+    "body-scroll-lock": "^2.6.1",
     "flubber": "^0.4.2",
     "global": "^4.3.2",
     "gsap": "^2.1.2",

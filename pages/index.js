@@ -20,6 +20,7 @@ const displayHomeContent = () => {
     </div>
   ));
 };
+
 export default () => (
   <React.Fragment>
     <Head>

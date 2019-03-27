@@ -192,6 +192,7 @@ export default class Home extends Component {
     this._manageResize();
 
     window.addEventListener("resize", this._manageResize);
+    console.log(document.querySelector("#target"));
 
     // interval = setInterval(() => {
     //   this._changeSVGForm("down");
@@ -223,20 +224,19 @@ export default class Home extends Component {
     return (
       <HomeWrapperStyle>
         <Bubbles position={this.state.bubblePosition} />
-        <CrossfadeImage
+        <img
           src={
             images[this.state.formPosition < 5 && this.state.formPosition - 1]
           }
-          duration={1500}
-          timingFunction={"ease-out"}
         />
-        
-        <svg  id="container" viewBox="300 300 400 400">
-            <clipPath id="svgPath">
-              <path id="target"  />
-            </clipPath>
-      
+
+        <svg id="container">
+          <clipPath id="svgPath">
+              <path id="target" />
+          </clipPath>
+
         </svg>
+
         <SectionTitle
           duration={500}
           timingFunction={"ease"}
