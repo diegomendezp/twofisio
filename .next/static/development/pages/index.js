@@ -914,6 +914,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _PagesStyles_FontStyle_FontBold__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../PagesStyles/FontStyle/FontBold */ "./PagesStyles/FontStyle/FontBold.js");
+/* harmony import */ var _PagesStyles_FontStyle_FontRegular__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../PagesStyles/FontStyle/FontRegular */ "./PagesStyles/FontStyle/FontRegular.js");
 
 
 
@@ -931,6 +933,8 @@ var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/components/Home/Secti
 //     </div>
 //   );
 // };
+
+
 
 
 
@@ -1001,7 +1005,7 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 61
         },
         __self: this
       }, topSrc && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -1012,26 +1016,26 @@ function (_Component) {
         }),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 63
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h1", {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_PagesStyles_FontStyle_FontBold__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 71
         },
         __self: this
-      }, topSrc.title), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
+      }, topSrc.title), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_PagesStyles_FontStyle_FontRegular__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 72
         },
         __self: this
       }, topSrc.body), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
         href: topSrc.link,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 73
         },
         __self: this
       }, "+ Mas Info")), bottomSrc && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -1042,26 +1046,26 @@ function (_Component) {
         }),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 77
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h1", {
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_PagesStyles_FontStyle_FontBold__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 85
         },
         __self: this
-      }, bottomSrc.title), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
+      }, bottomSrc.title), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_PagesStyles_FontStyle_FontRegular__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 86
         },
         __self: this
       }, bottomSrc.body), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
         href: bottomSrc.link,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 87
         },
         __self: this
       }, "+ Mas Info")));
