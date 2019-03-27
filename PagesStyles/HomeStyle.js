@@ -7,6 +7,10 @@ const HomeWrapperStyle = styled.div`
   position: relative;
   font-family: "Monserrat-Semibold";
   font-weight: lighter;
+  -webkit-overflow-scrolling: touch;
+
+  #bodyHome {
+  }
 
   h1 {
     color: rgb(116, 10, 100);
@@ -75,7 +79,7 @@ const HomeWrapperStyle = styled.div`
   }
 
   .position {
-    z-index:10;
+    z-index: 10;
     color: rgb(116, 10, 100);
   }
 
@@ -99,11 +103,17 @@ const HomeWrapperStyle = styled.div`
 
     .sectionTitle {
       width: 80vw;
+      top: calc(100vh / 2 - 16%);
     }
 
-    /* .bubbleGroup {
+    .bubbleGroup {
+      /* display: none; */
+      top: calc(40%);
+    }
+
+    #bubbleFooter {
       display: none;
-    } */
+    }
 
     #imgSlider {
       padding-left: 38%;
@@ -112,8 +122,11 @@ const HomeWrapperStyle = styled.div`
 
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     color: red;
+    #bubbleFooter {
+      display: none;
+    }
     .sectionTitle {
-      top: calc(100vh / 2 - 15%);
+      top: calc(100vh / 2 - 25%);
       width: 40vw;
       h1 {
         font-size: 2.2rem;
@@ -127,8 +140,12 @@ const HomeWrapperStyle = styled.div`
     }
   }
 
-  @media only screen and (min-width: 769px) and (max-width: 1440px) {
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
   }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  }
+
 
   @media only screen and (min-width: 1441px) {
   }

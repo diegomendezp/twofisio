@@ -13,7 +13,14 @@ const displayContactElements = contactList => {
           <FontRegular color="white" className="contact-value">{element.value}</FontRegular>
         </div>
       </a>
-    ) : (
+    ) : element.name == "Email"? 
+    <a key={i} href={`mailto:${element.value}`}>
+        <div>
+          <FontRegular color="white" className="contact-name">{element.name}:</FontRegular>
+          <FontRegular color="white" className="contact-value">{element.value}</FontRegular>
+        </div>
+      </a>
+    : (
       <div key={i}>
         <FontRegular color="white" className="contact-name">{element.name}:</FontRegular>
         <FontRegular color="white" className="contact-value">{element.value}</FontRegular>
@@ -30,7 +37,7 @@ const Footer = () => {
           <FontBold className="contact" color="white">Contacto</FontBold>
           {displayContactElements(contactList)}
           <div className="copyright">
-            <span>© 2019 by tailor </span><img className="footerLogo" src="../../static/iconWhite.svg" alt="logo-tailor"/>
+            <a href="http://tailor-hub.com" target="_blank" ><span>© 2019 by tailor </span></a><img className="footerLogo" src="../../static/iconWhite.svg" alt="logo-tailor"/>
           </div> 
         </div>
       </FooterWrapper>
