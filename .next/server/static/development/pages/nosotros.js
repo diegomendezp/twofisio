@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -137,31 +137,10 @@ var FontRegular = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.p.wit
 
 /***/ }),
 
-/***/ "./PagesStyles/HomeStyle.js":
-/*!**********************************!*\
-  !*** ./PagesStyles/HomeStyle.js ***!
-  \**********************************/
-/*! exports provided: HomeWrapperStyle */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeWrapperStyle", function() { return HomeWrapperStyle; });
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
-
-var HomeWrapperStyle = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
-  displayName: "HomeStyle__HomeWrapperStyle",
-  componentId: "eo7vzf-0"
-})(["width:100vw;height:100vh;background:white;position:relative;font-family:\"Monserrat-Semibold\";font-weight:lighter;-webkit-overflow-scrolling:touch;#bodyHome{}h1{color:rgb(116,10,100);}p{color:rgb(37,37,37);}a{color:rgb(116,10,100);text-decoration:underline;}CrossfadeImage{widows:100vw;height:100vh;}#canvas{background:white;position:fixed;top:0;left:0;}#container{position:absolute;left:0;width:100vw;height:100vh;}.sectionTitle{position:absolute;width:20vw;top:calc(100vh / 2 - 5%);left:10%;h1{color:rgb(116,10,100);}}img{position:absolute;top:0;left:0;-webkit-clip-path:url(#svgPath);width:100%;height:100%;object-fit:cover;}.bubbleGroup{position:absolute;top:50%;right:5%;display:flex;flex-direction:column;text-align:center;li{list-style-type:none;}}.position{z-index:10;color:rgb(116,10,100);}.bubble{z-index:10;width:10px;height:10px;border:1px solid white;border-radius:50%;margin:20% 0%;box-shadow:0px 0px 2px rgb(116,10,100);}.active{background:rgb(116,10,100);border:1px solid rgb(116,10,100);}@media only screen and (max-width:415px){overflow:hidden;.sectionTitle{width:80vw;top:calc(100vh / 2 - 16%);}.bubbleGroup{top:calc(40%);}#bubbleFooter{display:none;}#imgSlider{padding-left:38%;}}@media only screen and (min-width:415px) and (max-width:768px){color:red;#bubbleFooter{display:none;}.sectionTitle{top:calc(100vh / 2 - 25%);width:40vw;h1{font-size:2.2rem;}p{font-size:1.8rem;}a{font-size:1.8rem;}}}@media only screen and (min-width:769px) and (max-width:1023px){}@media only screen and (min-width:1024px) and (max-width:1440px){}@media only screen and (min-width:1441px){}"]);
-
-
-/***/ }),
-
-/***/ "./PagesStyles/HomeStyles.js":
-/*!***********************************!*\
-  !*** ./PagesStyles/HomeStyles.js ***!
-  \***********************************/
+/***/ "./PagesStyles/NosotrosStyles.js":
+/*!***************************************!*\
+  !*** ./PagesStyles/NosotrosStyles.js ***!
+  \***************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -169,169 +148,12 @@ var HomeWrapperStyle = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
- // import ecographyPhoto from '../static/imgEcografía2.jpg';
 
-var HomeStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
-  displayName: "HomeStyles",
-  componentId: "b42jdq-0"
-})([""]);
-/* harmony default export */ __webpack_exports__["default"] = (HomeStyles);
-
-/***/ }),
-
-/***/ "./components/CrossFadeImage.js":
-/*!**************************************!*\
-  !*** ./components/CrossFadeImage.js ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CrossfadeImage; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
-
-
-
-
-
-
-var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/components/CrossFadeImage.js";
-
-
-
-var CrossfadeImage =
-/*#__PURE__*/
-function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(CrossfadeImage, _Component);
-
-  function CrossfadeImage(props) {
-    var _this;
-
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, CrossfadeImage);
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(CrossfadeImage).call(this, props));
-    _this.state = {
-      topSrc: props.src,
-      bottomOpacity: 0,
-      bottomSrc: props.src
-    };
-    return _this;
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(CrossfadeImage, [{
-    key: "componentWillReceiveProps",
-    value: function componentWillReceiveProps(newProps) {
-      var _this2 = this;
-
-      var oldSrc = this.state.topSrc;
-      var newSrc = newProps.src;
-
-      if (newSrc !== oldSrc) {
-        // Reset the component everytime we receive new prop, to
-        // cancel out any animation that's still going on
-        this.setState({
-          bottomSrc: false,
-          topSrc: false
-        }, function () {
-          return _this2.setState( // Opacity less than 1 takes precendence in stacking order
-          {
-            bottomSrc: oldSrc,
-            topSrc: newSrc,
-            bottomOpacity: 0.99
-          }, function () {
-            // One of the few times setTimeout does wonders, this is for
-            // getting fade out transition without css keyframe
-            if (!_this2.timeout) clearTimeout(_this2.timeout);
-            _this2.timeout = setTimeout(function () {
-              return _this2.setState({
-                bottomOpacity: 0
-              });
-            }, 20);
-          });
-        });
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          duration = _this$props.duration,
-          timingFunction = _this$props.timingFunction,
-          delay = _this$props.delay,
-          style = _this$props.style,
-          alt = _this$props.alt;
-      var _this$state = this.state,
-          topSrc = _this$state.topSrc,
-          bottomOpacity = _this$state.bottomOpacity,
-          bottomSrc = _this$state.bottomSrc;
-      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "imagenHome",
-        style: Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, defaultStyle, {
-          position: "relative"
-        }),
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
-      }, topSrc && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-        id: "imgSlider",
-        style: Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, defaultStyle, style, {
-          position: "absolute"
-        }),
-        src: topSrc,
-        alt: alt,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 42
-        },
-        __self: this
-      }), bottomSrc && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-        style: Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, defaultStyle, style, {
-          opacity: bottomOpacity,
-          transition: "-webkit-opacity ".concat(duration / 1000, "s ").concat(timingFunction, " ").concat(delay / 1000, "s")
-        }),
-        src: bottomSrc,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 48
-        },
-        __self: this
-      }));
-    }
-  }]);
-
-  return CrossfadeImage;
-}(react__WEBPACK_IMPORTED_MODULE_6__["Component"]);
-
-
-var defaultStyle = {
-  width: "100vw",
-  height: "100vh"
-};
-CrossfadeImage.propTypes = {
-  src: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string.isRequired,
-  alt: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
-  duration: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.number,
-  timingFunction: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
-  delay: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.number,
-  style: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.object
-};
-CrossfadeImage.defaultProps = {
-  duration: 500,
-  timingFunction: "ease",
-  delay: 0
-};
+var NosotrosStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
+  displayName: "NosotrosStyles",
+  componentId: "ak83kl-0"
+})(["max-width:100vw;margin-bottom:15%;padding-top:100px;font-family:\"Monserrat-Regular\";color:black;font-size:1rem;letter-spacing:0.03rem;line-height:1.45rem;.accordion__body--hidden{display:none;opacity:0;animation:fadein 0.35s ease-in;}@keyframes fadein{0%{opacity:0;}100%{opacity:1;}}.member-img{width:100%;height:200px;object-fit:cover;}.member-description{width:90%;margin:0 auto;margin-bottom:30%;margin-top:15%;}.accordion{border:0;border-radius:0;max-width:100vw;}.member-info{width:90%;margin:0 auto;}.accordion__title{background-color:white;color:black;cursor:pointer;outline:none;padding:0px;width:100%;text-align:left;border:none;height:80px;display:flex;justify-content:space-evenly;width:90%;margin:0 auto;}.member-name{font-family:\"Monserrat-Semibold\";color:#740a64;font-size:1rem;letter-spacing:0.03rem;margin-bottom:0;}.member-cole{margin-top:0%;font-family:\"Monserrat-Regular\";color:black;font-size:1rem;letter-spacing:0.03rem;line-height:1.45rem;}.accordion__body{margin:0 auto;margin-bottom:5%;padding:0px;animation:fadein 0.35s ease-in;width:90%;}.team{width:100%;}@media only screen and (min-width:415px) and (max-width:768px){.member{width:40%;}.team{display:flex;flex-wrap:wrap;justify-content:space-around;}.member-description{width:60%;margin-left:5%;margin-top:8%;margin-bottom:10%;}}@media only screen and (min-width:769px) and (max-width:1440px){.member{width:40%;}.team{display:flex;flex-wrap:wrap;justify-content:space-around;}.member-description{width:60%;margin-left:5%;margin-top:8%;margin-bottom:10%;}}@media only screen and (min-width:1441px){.member{width:40%;}.team{display:flex;flex-wrap:wrap;justify-content:space-around;}.member-description{width:60%;margin-left:5%;margin-top:8%;margin-bottom:10%;}.member-img{height:250px;}}"]);
+/* harmony default export */ __webpack_exports__["default"] = (NosotrosStyles);
 
 /***/ }),
 
@@ -552,638 +374,163 @@ module.exports = "/_next/static/images/map-32279e68d238c9f973d268d07146a7fd.png"
 
 /***/ }),
 
-/***/ "./components/Home/Bubles.js":
-/*!***********************************!*\
-  !*** ./components/Home/Bubles.js ***!
-  \***********************************/
-/*! exports provided: default */
+/***/ "./components/Member.js":
+/*!******************************!*\
+  !*** ./components/Member.js ***!
+  \******************************/
+/*! exports provided: Member */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/components/Home/Bubles.js";
-
-
-var Bubbles = function Bubbles(props) {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "bubbleGroup",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "bubble active",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "bubble",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "bubble",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "bubble",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    id: "bubbleFooter",
-    className: "bubble",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Bubbles);
-
-/***/ }),
-
-/***/ "./components/Home/Home.js":
-/*!*********************************!*\
-  !*** ./components/Home/Home.js ***!
-  \*********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Home; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _PagesStyles_HomeStyle__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../PagesStyles/HomeStyle */ "./PagesStyles/HomeStyle.js");
-/* harmony import */ var popmotion__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! popmotion */ "popmotion");
-/* harmony import */ var popmotion__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(popmotion__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var flubber__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! flubber */ "flubber");
-/* harmony import */ var flubber__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(flubber__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _SectionTitle__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./SectionTitle */ "./components/Home/SectionTitle.js");
-/* harmony import */ var _content_home_json__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../content/home.json */ "./content/home.json");
-var _content_home_json__WEBPACK_IMPORTED_MODULE_14___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../content/home.json */ "./content/home.json", 1);
-/* harmony import */ var _CrossFadeImage__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../CrossFadeImage */ "./components/CrossFadeImage.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! jquery */ "jquery");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _Bubles__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./Bubles */ "./components/Home/Bubles.js");
-/* harmony import */ var _utils_animations__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../utils/animations */ "./utils/animations.js");
-/* harmony import */ var body_scroll_lock__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! body-scroll-lock */ "body-scroll-lock");
-/* harmony import */ var body_scroll_lock__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(body_scroll_lock__WEBPACK_IMPORTED_MODULE_19__);
-
-
-
-
-
-
-
-
-
-var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/components/Home/Home.js";
-
-
-
- // ES6
-
-
-
-
-
-
-
-
-var images = ["../../static/imgPilates.jpg", "../../static/imgTratamientos.jpg", "../../static/imgEcografía.jpg", "../../static/imgFisioterapia.jpg"];
-var interval;
-
-var Home =
-/*#__PURE__*/
-function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(Home, _Component);
-
-  function Home(props) {
-    var _this;
-
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Home);
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Home).call(this, props));
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "_makeAnimation", function (from, to) {
-      Object(popmotion__WEBPACK_IMPORTED_MODULE_11__["tween"])({
-        duration: 1500,
-        ease: popmotion__WEBPACK_IMPORTED_MODULE_11__["easing"].easeInOut
-      }).pipe(Object(flubber__WEBPACK_IMPORTED_MODULE_12__["interpolate"])(_this.state.form[from], _this.state.form[to], {
-        maxSegmentLength: 2
-      })).start(Object(popmotion__WEBPACK_IMPORTED_MODULE_11__["styler"])(document.querySelector("#target")).set("d"));
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "_getEventTarget", function (e) {
-      e = e || window.event;
-      return e.target || e.srcElement;
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "_listenSliderButtons", function () {
-      var listItems = document.querySelectorAll("ul li");
-      listItems.forEach(function (item, i) {
-        item.onclick = function (e) {
-          if (i !== 5) {
-            _this._changeSVGForm("down", "slider", i - 1);
-
-            _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _this.state, {
-              formPosition: i,
-              bubblePosition: i
-            }));
-          } else {
-            _this._changeSVGForm("down", "slider", i - 2);
-
-            _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _this.state, {
-              formPosition: 4,
-              bubblePosition: 5
-            }), function () {
-              document.getElementsByTagName("body")[0].style.position = "relative";
-
-              _this._changeBubble(4);
-
-              window.scrollTo(0, 800);
-            });
-          }
-        };
-      });
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "_mouseWheel", function () {
-      var delta = 0; // detect available wheel event
-
-      var wheelEvent = "onwheel" in document.createElement("div") ? "wheel" // Modern browsers support "wheel"
-      : document.onmousewheel !== undefined ? "mousewheel" // Webkit and IE support at least "mousewheel"
-      : "DOMMouseScroll"; // let's assume that remaining browsers are older Firefox
-
-      if (Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["detectmob"])()) {
-        var scrollPos = 0;
-        var timerId;
-        jquery__WEBPACK_IMPORTED_MODULE_16___default()(window).bind("scroll", function () {
-          clearTimeout(timerId);
-          timerId = setTimeout(function () {
-            if (_this.state.formPosition < 4) {
-              _this._changeSVGForm("down");
-            } else {
-              _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _this.state, {
-                formPosition: 1,
-                bubblePosition: 1
-              }), function () {
-                return _this._changeBubble(0);
-              });
-            }
-          }, 200);
-        });
-      } else {
-        jquery__WEBPACK_IMPORTED_MODULE_16___default()(window).on(wheelEvent, function (e) {
-          if (e.originalEvent.wheelDelta > 0) {
-            // document.getElementsByTagName("body")[0].style.overflowY = "hidden";
-            delta++;
-
-            if (delta >= 20) {
-              delta = 0;
-              window.scrollTo({
-                top: 0,
-                left: 0,
-                behavior: "smooth"
-              });
-
-              if (_this.state.bubblePosition === 5) {
-                _this._changeBubble(3);
-              }
-
-              if (_this.state.formPosition > 1) {
-                if (_this.state.bubblePosition !== 5) {
-                  _this._changeSVGForm("up");
-                } else {
-                  _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _this.state, {
-                    bubblePosition: 4
-                  }), function () {
-                    window.scrollTo({
-                      top: 0,
-                      left: 0,
-                      behavior: "smooth"
-                    });
-                    setTimeout(function () {
-                      document.getElementsByTagName("body")[0].style.position = "fixed";
-                    }, 1000);
-                  });
-                }
-              }
-            }
-          } else {
-            delta--;
-
-            if (delta <= -20) {
-              delta = 0;
-
-              if (_this.state.formPosition < 4) {
-                _this._changeSVGForm("down");
-              } else {
-                _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _this.state, {
-                  bubblePosition: 5
-                }), function () {
-                  document.getElementsByTagName("body")[0].style.position = "relative";
-
-                  _this._changeBubble(4);
-
-                  window.scrollTo({
-                    top: 1000,
-                    left: 0,
-                    behavior: "smooth"
-                  });
-                });
-              }
-            }
-          }
-        });
-      }
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "_changeSVGForm", function (direction) {
-      var type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "default";
-      var fromTo = arguments.length > 2 ? arguments[2] : undefined;
-
-      _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _this.state, {
-        prevPosition: _this.state.formPosition,
-        formPosition: type === "default" ? direction === "down" ? _this.state.formPosition + 1 : _this.state.formPosition - 1 : fromTo + 1,
-        bubblePosition: type === "default" ? direction === "down" ? _this.state.bubblePosition + 1 : _this.state.bubblePosition - 1 : fromTo + 1
-      }), function () {
-        _this._changeBubble(_this.state.formPosition - 1);
-
-        _this._makeAnimation(_this.state.prevPosition, _this.state.formPosition);
-      });
-    });
-
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "_manageResize", function () {
-      switch (true) {
-        case window.innerWidth <= 375:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(190, 200, 2, 2.2, 1.8, 2, -100, -200);
-
-          break;
-
-        case window.innerWidth <= 414:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(200, 210, 2.3, 3, 3.1, 3.2, -200, -400);
-
-          break;
-
-        case window.innerWidth <= 768:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(400, 410, 2.3, 3, 3.1, 3.2, -200, -400);
-
-          break;
-
-        default:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(500, 480, 1.8, 1.85, 3, 3, -100, -150);
-
-      }
-    });
-
-    _this.state = {
-      shape: undefined,
-      vw: undefined,
-      vh: undefined,
-      animation: undefined,
-      formPosition: 1,
-      bubblePosition: 1,
-      count: 0,
-      form2: ["M 150.9 -224.2 C 196.3 -205.7 234.1 -165 246.2 -118.4 C 258.2 -71.8 244.4 -19.3 234.1 31.7 C 223.8 82.8 216.9 132.4 189.6 164.8 C 162.3 197.2 114.5 212.3 66.4 226.7 C 18.2 241.2 -30.3 254.9 -72.7 244.1 C -115.1 233.2 -151.2 197.8 -173.1 158.1 C -194.9 118.3 -202.4 74.2 -209.2 29.8 C -216 -14.6 -222.2 -59.5 -211 -101.5 C -199.8 -143.5 -171.3 -182.8 -133.2 -204.6 C -95.2 -226.4 -47.6 -230.7 2.6 -234.8 C 52.8 -238.8 105.6 -242.7 150.9 -224.2 Z", "M 115.7 -186.7 C 150 -158 177.8 -126 192.7 -89.2 C 207.7 -52.4 209.7 -11 207.2 32.2 C 204.7 75.3 197.6 120.2 174.7 157.3 C 151.8 194.5 113.1 223.9 67.7 242.9 C 22.3 261.9 -29.9 270.6 -74 255.9 C -118.1 241.1 -154.3 203.1 -189.1 163.5 C -224 124 -257.5 82.9 -258.3 40.5 C -259.2 -1.9 -227.4 -45.6 -203.5 -90.8 C -179.6 -136.1 -163.6 -182.9 -131 -212.3 C -98.4 -241.8 -49.2 -253.9 -4.2 -247.3 C 40.7 -240.7 81.5 -215.4 115.7 -186.7 Z", "M 93.9 -104.7 C 135.9 -76.6 194 -60.5 203.7 -32 C 213.4 -3.5 174.7 37.5 141.3 68.7 C 108 99.9 80 121.4 52 122.9 C 24.1 124.4 -3.9 105.9 -52.2 105 C -100.6 104.1 -169.4 120.8 -197.2 100.4 C -225.1 80 -212 22.4 -195.9 -28.6 C -179.8 -79.6 -160.6 -124 -127.4 -153.7 C -94.3 -183.4 -47.1 -198.2 -10.6 -185.5 C 25.9 -172.9 51.9 -132.8 93.9 -104.7 Z", "M 183.6 -174.4 C 230.9 -136.2 257.5 -68.1 245.2 -12.3 C 232.9 43.6 181.9 87.2 134.5 127.5 C 87.2 167.9 43.6 204.9 -6.2 211.2 C -56.1 217.4 -112.2 192.9 -149.9 152.5 C -187.5 112.2 -206.8 56.1 -207.9 -1.2 C -209.1 -58.5 -192.2 -116.9 -154.6 -155.1 C -116.9 -193.2 -58.5 -211.1 4.8 -216 C 68.1 -220.8 136.2 -212.6 183.6 -174.4 Z", "M 154 -190.7 C 194.1 -150 217.2 -96.2 216.5 -46.1 C 215.9 3.9 191.5 50.2 159.7 80 C 128 109.8 88.8 123 50.1 136.5 C 11.5 150 -26.6 163.8 -66.3 159.3 C -106 154.7 -147.4 131.9 -169.6 96.4 C -191.8 61 -194.9 13.1 -183.1 -28.6 C -171.4 -70.3 -144.8 -105.6 -111.8 -147.6 C -78.8 -189.6 -39.4 -238.3 8.8 -248.8 C 57 -259.3 114 -231.5 154 -190.7 Z"],
-      form: ["M 200 200m -75 0a 75 75 0 1 0 150 0a 75 75 0 1 0 -150 0", "M 43.5703 34 C 115.977 -36.9719 237.588 40.7602 338.504 34 C 436.992 27.4024 584.269 -28.7116 623.167 20.0936 C 662.065 68.8988 600.451 177.68 602.012 281.32 C 603.64 389.403 654.491 511.401 602.012 586 C 532.926 586 158.625 587 31 586 C -29.2288 527.147 17.9491 394.039 22 296.215 C 26.729 182.016 -33.4904 109.534 43.5703 34 Z", "M 38.5019 1.25884 C 115.393 0.436572 625.908 0.436572 666.768 1.25884 C 715.694 33.433 593.213 169.259 625.908 284.539 C 658.603 399.82 691.917 519.258 625.908 568.437 C 520.525 568.437 205.291 568.437 86.3925 568.437 C 10.636 529.638 75.791 397.259 68.291 284.539 C 58.2447 133.551 -58.4261 51.0534 38.5019 1.25884 Z", "M 75.1844 1 C 170.356 -1.99840e-15 579.113 1.44444 655.384 1 C 702.032 52.9773 670.102 148.623 671.974 259 C 673.927 374.107 734.909 489.73 671.974 569.178 C 577.486 569.178 151.391 569.178 38.9624 569.178 C -33.2669 506.499 17.1678 392.724 22.0259 288.541 C 27.6971 166.92 -17.2306 81.443 75.1844 1 Z", "M 82.9297 0.177734 C 175.391 0.177734 514.086 0.177734 611.617 0.177734 C 705.69 58.498 705.581 197.178 707.544 265.501 C 709.592 336.753 744.92 430.818 678.912 479.996 C 599.359 539.265 468.354 519.324 360.813 525.922 C 197.377 535.949 112.529 548.1 35 479.996 C -34.375 419.055 23.1953 348.466 23.1953 266.966 C 23.1953 191.551 -13.9983 49.9723 82.9297 0.177734 Z"]
-    };
-    return _this;
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Home, [{
-    key: "_changeBubble",
-    value: function _changeBubble(pos) {
-      document.querySelectorAll(".bubble").forEach(function (div, i) {
-        if (i === pos) {
-          document.querySelectorAll(".bubble")[pos].className = "bubble active";
-        } else {
-          document.querySelectorAll(".bubble")[i].className = "bubble";
-        }
-      });
-    }
-  }, {
-    key: "_startAnimation",
-    value: function _startAnimation(target) {
-      this.state.animation.start(Object(popmotion__WEBPACK_IMPORTED_MODULE_11__["styler"])(document.querySelector(target)).set("d"));
-    }
-  }, {
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var _this2 = this;
-
-      this._listenSliderButtons();
-
-      this._mouseWheel();
-
-      this._manageResize();
-
-      window.addEventListener("resize", this._manageResize); // if (window.innerWidth <= 768) {
-      //   interval = setInterval(() => {
-      //     if (this.state.formPosition < 4) {
-      //       this._changeSVGForm("down");
-      //     } else {
-      //       this.setState({...this.state, formPosition:1})
-      //     }
-      //   }, 5000);
-      // }
-
-      this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, this.state, {
-        shape: Object(popmotion__WEBPACK_IMPORTED_MODULE_11__["styler"])(document.querySelector("#target")),
-        vw: window.innerWidth,
-        vh: window.innerHeight,
-        bodyHome: document.querySelector("#bodyHome"),
-        animation: Object(popmotion__WEBPACK_IMPORTED_MODULE_11__["tween"])({
-          duration: 1000,
-          ease: popmotion__WEBPACK_IMPORTED_MODULE_11__["easing"].easeInOut
-        }).pipe(Object(flubber__WEBPACK_IMPORTED_MODULE_12__["interpolate"])(this.state.form[this.state.formPosition - 1], this.state.form[this.state.formPosition], {
-          maxSegmentLength: 2
-        }))
-      }), function () {
-        // disableBodyScroll(this.state.bodyHome);
-        _this2._startAnimation("#target");
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_PagesStyles_HomeStyle__WEBPACK_IMPORTED_MODULE_10__["HomeWrapperStyle"], {
-        id: "bodyHome",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 268
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_Bubles__WEBPACK_IMPORTED_MODULE_17__["default"], {
-        position: this.state.bubblePosition,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 269
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
-        src: images[this.state.formPosition < 5 && this.state.formPosition - 1],
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 277
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("svg", {
-        id: "container",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 283
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("clipPath", {
-        id: "svgPath",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 284
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("path", {
-        id: "target",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 285
-        },
-        __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_SectionTitle__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-        duration: 500,
-        timingFunction: "ease"
-      }, _content_home_json__WEBPACK_IMPORTED_MODULE_14__[this.state.formPosition < 5 && this.state.formPosition - 1], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 290
-        },
-        __self: this
-      })));
-    }
-  }]);
-
-  return Home;
-}(react__WEBPACK_IMPORTED_MODULE_9__["Component"]);
-
-
-
-/***/ }),
-
-/***/ "./components/Home/SectionTitle.js":
-/*!*****************************************!*\
-  !*** ./components/Home/SectionTitle.js ***!
-  \*****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Member", function() { return Member; });
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-accessible-accordion */ "react-accessible-accordion");
+/* harmony import */ var react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _PagesStyles_FontStyle_FontRegular_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../PagesStyles/FontStyle/FontRegular.js */ "./PagesStyles/FontStyle/FontRegular.js");
 
 
 
 
 
 
-var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/components/Home/SectionTitle.js";
-// import React, { Component } from "react";
-// export const SectionTitle = props => {
-//   return (
-//     <div className="sectionTitle">
-//       <h1 onClick={props.changeForm}>{props.title}</h1>
-//       <p>{props.body}</p>
-//       <a href={props.link}>+ Mas Info</a>
-//     </div>
-//   );
-// };
+
+
+var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/components/Member.js";
 
 
 
-var SectionTitle =
+var Member =
 /*#__PURE__*/
-function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(SectionTitle, _Component);
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(Member, _React$Component);
 
-  function SectionTitle(props) {
+  function Member(props) {
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, SectionTitle);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Member);
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(SectionTitle).call(this, props));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Member).call(this, props));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "rotateImage", function (id) {
+      !_this.state.open ? document.getElementById(id).style.webkitTransform = "rotate(180deg)" : document.getElementById(id).style.webkitTransform = "rotate(0deg)";
+      var open = !_this.state.open;
+
+      _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _this.state, {
+        open: open
+      }));
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "displayCurriculum", function (curriculum) {
+      return curriculum.map(function (element, i) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__["AccordionItemBody"], {
+          key: i,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 27
+          },
+          __self: this
+        }, "- ", element);
+      });
+    });
+
     _this.state = {
-      topData: props,
-      bottomOpacity: 0,
-      topOpacity: 1,
-      bottomData: props
+      open: false
     };
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(SectionTitle, [{
-    key: "componentWillReceiveProps",
-    value: function componentWillReceiveProps(newProps) {
-      var _this2 = this;
-
-      var oldSrc = this.state.topSrc;
-      var newSrc = newProps;
-
-      if (newSrc !== oldSrc) {
-        // Reset the component everytime we receive new prop, to
-        // cancel out any animation that's still going on
-        this.setState({
-          bottomSrc: false,
-          topSrc: false
-        }, function () {
-          return _this2.setState( // Opacity less than 1 takes precendence in stacking order
-          {
-            bottomSrc: newSrc,
-            topSrc: newSrc,
-            bottomOpacity: 1
-          }, function () {
-            // One of the few times setTimeout does wonders, this is for
-            // getting fade out transition without css keyframe
-            if (!_this2.timeout) clearTimeout(_this2.timeout);
-            _this2.timeout = setTimeout(function () {
-              return _this2.setState({
-                bottomOpacity: 0
-              });
-            }, 20);
-          });
-        });
-      }
-    }
-  }, {
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Member, [{
     key: "render",
     value: function render() {
+      var _this2 = this;
+
       var _this$props = this.props,
-          duration = _this$props.duration,
-          timingFunction = _this$props.timingFunction;
-      var _this$state = this.state,
-          topSrc = _this$state.topSrc,
-          bottomOpacity = _this$state.bottomOpacity,
-          bottomSrc = _this$state.bottomSrc,
-          topOpacity = _this$state.topOpacity;
-      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+          name = _this$props.name,
+          number = _this$props.number,
+          curriculum = _this$props.curriculum;
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "member",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58
+          lineNumber: 34
         },
         __self: this
-      }, topSrc && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "sectionTitle",
-        style: Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, {
-          opacity: topOpacity,
-          transition: "opacity ".concat(duration / 1000, "s ").concat(timingFunction)
-        }),
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
+        className: "member-img",
+        src: "https://images.unsplash.com/photo-1514672013381-c6d0df1c8b18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
+        alt: "".concat(name, "-photo"),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 35
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h1", {
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__["Accordion"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 40
         },
         __self: this
-      }, topSrc.title), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__["AccordionItem"], {
+        onClick: function onClick() {
+          _this2.rotateImage("up-down-icon-".concat(name));
+        },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 41
         },
         __self: this
-      }, topSrc.body), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
-        href: topSrc.link,
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_accessible_accordion__WEBPACK_IMPORTED_MODULE_9__["AccordionItemTitle"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 46
         },
         __self: this
-      }, "+ Mas Info")), bottomSrc && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "sectionTitle",
-        style: Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, {
-          opacity: bottomOpacity,
-          transition: "opacity ".concat(duration / 1000, "s ").concat(timingFunction)
-        }),
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "member-info",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 47
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h1", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        className: "member-name",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 48
         },
         __self: this
-      }, bottomSrc.title), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
+      }, name), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_PagesStyles_FontStyle_FontRegular_js__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        className: "member-cole",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 49
         },
         __self: this
-      }, bottomSrc.body), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
-        href: bottomSrc.link,
+      }, "N\xBAColegiado: ", number)), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
+        src: "../../static/iconUpdown.svg",
+        alt: "up-down-icon",
+        id: "up-down-icon-".concat(name),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 51
         },
         __self: this
-      }, "+ Mas Info")));
+      })), this.displayCurriculum(curriculum))));
     }
   }]);
 
-  return SectionTitle;
-}(react__WEBPACK_IMPORTED_MODULE_6__["Component"]); // const defaultStyle = { width: "100vw", height: "100vh" };
-
-
-SectionTitle.propTypes = {
-  alt: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
-  duration: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.number,
-  timingFunction: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
-  delay: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.number,
-  style: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.object
-};
-SectionTitle.defaultProps = {
-  duration: 200,
-  timingFunction: "ease",
-  delay: 0
-};
-/* harmony default export */ __webpack_exports__["default"] = (SectionTitle);
+  return Member;
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
 
 /***/ }),
 
@@ -1306,14 +653,14 @@ module.exports = [{"name":"Teléfono","value":"917116205 | 609058398"},{"name":"
 
 /***/ }),
 
-/***/ "./content/home.json":
+/***/ "./content/team.json":
 /*!***************************!*\
-  !*** ./content/home.json ***!
+  !*** ./content/team.json ***!
   \***************************/
 /*! exports provided: 0, 1, 2, 3, default */
 /***/ (function(module) {
 
-module.exports = [{"title":"Pilates","body":"En grupos reducidos, (máximo 3 personas por grupo) y siempre dirigidas por fisioterapeutas colegiados.","link":"/pilates"},{"title":"Tratamientos","body":"Diferentes lesiones y patologías ofreciendo un trato personalizado y específico para cada  cliente.","link":"/tratamientos"},{"title":"Ecografías","body":"En nuestro centro TwoFisio realizamos sesiones de Fisioterapia especializada, donde se utiliza la ecografía para conseguir una valoración y un tratamiento más específico.","link":"/ecografia"},{"title":"Fisioterapia","body":"En nuestro centro siempre será atendido por profesionales colegiados con amplia experiencia en el sector y en continua formación para ofrecerle el mejor tratamiento posible.","link":"/fisioterapia"}];
+module.exports = [{"name":"Rebeca Poyatos","number":5474,"curriculum":["Grado en fisioterapia (Universidad San Pablo Ceu)","Experto en osteopatía (Universidad Alcalá de Henares)","Ecografía músculo esquelética (Universidad autónoma de Madrid ONCE y MVClinic)","Fisioterapia invasiva (MVClinic)","Integración clínica osteopática (Escuela Thuban)","Experta en terapia miofascial (Universidad Europea de Madrid y 1 er curso en la Escuela de Andreu Pilat)","Formación en drenaje linfático manual (Escuela de formación en terapias manulaes Kabat)","Terapia manual y punción seca en el Síndrome miofascial. Puntos gatillo miofasciales (Escuela de Osteopatía de Madrid)","Curso de terapia cráneo-sacral I (Instituto Upledger)","Tratamiento fisioterápico en disfunciones articulación témporo-mandibular (Fisioterapia Arguelles)","Monitora de pilates (Federación Madrileña de Gimnasia)"],"photo":""},{"name":"Clara Taboada","number":6184,"curriculum":["Diplomada en fisioterapia (Universidad Rey Juan Carlos)","Experto en terapia miofascial (Universidad Europea de Madrid)","Ecografía músculo esquelética (Universidad autónoma de Madrid ONCE y MVClinic)","Fisioterapia invasiva (MVClinic)","Monitor pilates suelo, aparatos estabilizadores nivel I y nivel II (Federación Madrileña de Gimnasia)","Terapia Manual y Punción Seca en el Síndrome de Dolor Miofascial. Puntos Gatillo Miofasciales (Escuela de Osteopatía de Madrid)","XXI Jornadas de Fisioterapia Deportiva. Actualizaciones en Regeneración Muscular y Tendinosa (Escuela de fisioterapia de la ONCE)","Terapia manual osteopática (Instituto Relater)","Integración clínica osteopática (Escuela Thuban)","Máster en fisioterapia deportiva (Universidad Europea de Madrid y Escuela de fisioterapia del Real Madrid)","Kinesiotaping nivel I y nivel II (Universidad Europea de Madrid)"],"photo":""},{"name":"Alejandro Méndez","number":9775,"curriculum":["Grado en fisioterapia (Universidad Pontificia de Comillas)","Especialista en Fisioterapia Deportiva (Universidad Complutense de Madrid)","Especialista en Nutrición Deportiva y Fisiología del ejercicio (Dietas, Deportes y Tecnología S.L)","Experto en pilates y su aplicación a la fisioterapia (AEFEP)"],"photo":""},{"name":"Lara González","number":12869,"curriculum":["Grado en fisioterapia (Universidad Rey Juan Carlos)","Certificado “Ejercicio terapéutico y control motor basado en el método pilates suelo por la Dirección General de Investigación y Gestión del Conocimiento de la Consejería de Salud de la Junta de Andalucía (20h).","Certificado “Kinesio Taping Fundamentals And Advanced (KT1 &amp; KT2)” por la Kinesio Taping International Association","Máster en fisioterapia deportiva (Universidad Pontificia de Salamanca y Clínica Cemtro)"],"photo":""}];
 
 /***/ }),
 
@@ -3392,35 +2739,35 @@ module.exports = __webpack_require__(/*! ./dist/style */ "./node_modules/styled-
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
+/***/ "./pages/nosotros.js":
+/*!***************************!*\
+  !*** ./pages/nosotros.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next-server/head */ "next-server/head");
-/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_server_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Navbar/Navbar */ "./components/Navbar/Navbar.js");
-/* harmony import */ var _components_Footer_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Footer/Footer */ "./components/Footer/Footer.js");
-/* harmony import */ var _static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../static/fonts/Montserrat/Montserrat-SemiBold.ttf */ "./static/fonts/Montserrat/Montserrat-SemiBold.ttf");
-/* harmony import */ var _static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../static/fonts/Montserrat/Montserrat-Regular.ttf */ "./static/fonts/Montserrat/Montserrat-Regular.ttf");
-/* harmony import */ var _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _content_home_json__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../content/home.json */ "./content/home.json");
-var _content_home_json__WEBPACK_IMPORTED_MODULE_7___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../content/home.json */ "./content/home.json", 1);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _PagesStyles_HomeStyles__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../PagesStyles/HomeStyles */ "./PagesStyles/HomeStyles.js");
-/* harmony import */ var _PagesStyles_FontStyle_FontBold__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../PagesStyles/FontStyle/FontBold */ "./PagesStyles/FontStyle/FontBold.js");
-/* harmony import */ var _components_Home_Home__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Home/Home */ "./components/Home/Home.js");
-var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/pages/index.js";
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _content_team_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../content/team.json */ "./content/team.json");
+var _content_team_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../content/team.json */ "./content/team.json", 1);
+/* harmony import */ var _components_Member_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Member.js */ "./components/Member.js");
+/* harmony import */ var _components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Navbar/Navbar */ "./components/Navbar/Navbar.js");
+/* harmony import */ var _components_Footer_Footer_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Footer/Footer.js */ "./components/Footer/Footer.js");
+/* harmony import */ var _PagesStyles_NosotrosStyles_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../PagesStyles/NosotrosStyles.js */ "./PagesStyles/NosotrosStyles.js");
+/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next-server/head */ "next-server/head");
+/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_server_head__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../static/fonts/Montserrat/Montserrat-SemiBold.ttf */ "./static/fonts/Montserrat/Montserrat-SemiBold.ttf");
+/* harmony import */ var _static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../static/fonts/Montserrat/Montserrat-Regular.ttf */ "./static/fonts/Montserrat/Montserrat-Regular.ttf");
+/* harmony import */ var _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _PagesStyles_FontStyle_FontRegular__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../PagesStyles/FontStyle/FontRegular */ "./PagesStyles/FontStyle/FontRegular.js");
+
+var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/pages/nosotros.js";
 
 
 
@@ -3433,106 +2780,91 @@ var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/pages/index.js";
 
 
 
-
-var displayHomeContent = function displayHomeContent() {
-  return _content_home_json__WEBPACK_IMPORTED_MODULE_7__.map(function (homeItem, i) {
-    return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-      key: i,
+var displayTeam = function displayTeam() {
+  return _content_team_json__WEBPACK_IMPORTED_MODULE_3__.map(function (member, i) {
+    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Member_js__WEBPACK_IMPORTED_MODULE_4__["Member"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      key: i
+    }, member, {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14
+        lineNumber: 13
       },
       __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_PagesStyles_FontStyle_FontBold__WEBPACK_IMPORTED_MODULE_10__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 15
-      },
-      __self: this
-    }, homeItem.name), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 16
-      },
-      __self: this
-    }, homeItem.description), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-      href: homeItem.link,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 17
-      },
-      __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18
-      },
-      __self: this
-    }, "+ M\xE1s info")));
+    }));
   });
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
+var nosotros = function nosotros(props) {
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 18
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_8___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 19
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
     name: "viewport",
     content: "width=device-width, initial-scale=1",
-    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["4260789035", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a]]]),
+    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a]]]),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 20
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
     charSet: "utf-8",
-    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a.dynamic([["4260789035", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a]]]),
+    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a]]]),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 21
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "4260789035",
-    dynamic: [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a],
+  })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    id: "3898954932",
+    dynamic: [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a],
     __self: this
-  }, "@font-face{font-family:\"Monserrat-Semibold\";src:url(".concat(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}@font-face{font-family:\"Monserrat-Regular\";src:url(").concat(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}body{margin:0;padding:0;max-width:100%;position:fixed;overflow:hidden;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9EaWVnb21lbmRlejE5OTcvVGFpbG9yL3R3b2Zpc2lvL3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTZCdUIsQUFHMEMsQUFNRCxBQU92QixTQUNDLFVBQ0ssYUFSMEMsQ0FOQSxDQWUxQyxlQUNDLGdCQUNsQix3QkFWcUIsQ0FOQSxrQkFPRCxDQU5BLGlCQU9wQixDQU5BIiwiZmlsZSI6Ii9Vc2Vycy9EaWVnb21lbmRlejE5OTcvVGFpbG9yL3R3b2Zpc2lvL3BhZ2VzL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWQgZnJvbSBcIm5leHQvaGVhZFwiO1xuaW1wb3J0IE5hdmJhciBmcm9tIFwiLi4vY29tcG9uZW50cy9OYXZiYXIvTmF2YmFyXCI7XG5pbXBvcnQgRm9vdGVyIGZyb20gXCIuLi9jb21wb25lbnRzL0Zvb3Rlci9Gb290ZXJcIjtcbmltcG9ydCBNb25zZXJyYXRTZW1pQm9sZCBmcm9tIFwiLi4vc3RhdGljL2ZvbnRzL01vbnRzZXJyYXQvTW9udHNlcnJhdC1TZW1pQm9sZC50dGZcIjtcbmltcG9ydCBNb25zZXJyYXRSZWd1bGFyIGZyb20gXCIuLi9zdGF0aWMvZm9udHMvTW9udHNlcnJhdC9Nb250c2VycmF0LVJlZ3VsYXIudHRmXCI7XG5pbXBvcnQgaG9tZUNvbnRlbnQgZnJvbSBcIi4uL2NvbnRlbnQvaG9tZS5qc29uXCI7XG5pbXBvcnQgTGluayBmcm9tIFwibmV4dC9saW5rXCI7XG5pbXBvcnQgSG9tZVN0eWxlcyBmcm9tIFwiLi4vUGFnZXNTdHlsZXMvSG9tZVN0eWxlc1wiO1xuaW1wb3J0IEZvbnRCb2xkIGZyb20gXCIuLi9QYWdlc1N0eWxlcy9Gb250U3R5bGUvRm9udEJvbGRcIjtcbmltcG9ydCBIb21lIGZyb20gXCIuLi9jb21wb25lbnRzL0hvbWUvSG9tZVwiO1xuXG5jb25zdCBkaXNwbGF5SG9tZUNvbnRlbnQgPSAoKSA9PiB7XG4gIHJldHVybiBob21lQ29udGVudC5tYXAoKGhvbWVJdGVtLCBpKSA9PiAoXG4gICAgPGRpdiBrZXk9e2l9PlxuICAgICAgPEZvbnRCb2xkPntob21lSXRlbS5uYW1lfTwvRm9udEJvbGQ+XG4gICAgICA8cD57aG9tZUl0ZW0uZGVzY3JpcHRpb259PC9wPlxuICAgICAgPExpbmsgaHJlZj17aG9tZUl0ZW0ubGlua30+XG4gICAgICAgIDxhPisgTcOhcyBpbmZvPC9hPlxuICAgICAgPC9MaW5rPlxuICAgIDwvZGl2PlxuICApKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0ICgpID0+IChcbiAgPFJlYWN0LkZyYWdtZW50PlxuICAgIDxIZWFkPlxuICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xXCIgLz5cbiAgICAgIDxtZXRhIGNoYXJTZXQ9XCJ1dGYtOFwiIC8+XG4gICAgPC9IZWFkPlxuICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICBAZm9udC1mYWNlIHtcbiAgICAgICAgZm9udC1mYW1pbHk6IFwiTW9uc2VycmF0LVNlbWlib2xkXCI7XG4gICAgICAgIHNyYzogdXJsKCR7TW9uc2VycmF0U2VtaUJvbGR9KSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbiAgICAgICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgICAgfVxuICAgICAgQGZvbnQtZmFjZSB7XG4gICAgICAgIGZvbnQtZmFtaWx5OiBcIk1vbnNlcnJhdC1SZWd1bGFyXCI7XG4gICAgICAgIHNyYzogdXJsKCR7TW9uc2VycmF0UmVndWxhcn0pIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICAgICAgICBmb250LXdlaWdodDogbm9ybWFsO1xuICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgICB9XG5cbiAgICAgIGJvZHkge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIG1heC13aWR0aDogMTAwJTtcbiAgICAgICAgcG9zaXRpb246IGZpeGVkO1xuICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgICAgfVxuICAgIGB9PC9zdHlsZT5cbiAgICA8UmVhY3QuRnJhZ21lbnQ+XG4gICAgICA8TmF2YmFyIGxpbms9XCJOb3NvdHJvc1wiIC8+XG4gICAgICA8SG9tZT48L0hvbWU+XG4gICAgICB7LyogPEhvbWVTdHlsZXM+e2Rpc3BsYXlIb21lQ29udGVudCgpfTwvSG9tZVN0eWxlcz4gKi99XG4gICAgICA8Rm9vdGVyIC8+XG4gICAgPC9SZWFjdC5GcmFnbWVudD5cbiAgPC9SZWFjdC5GcmFnbWVudD5cbik7XG4iXX0= */\n/*@ sourceURL=/Users/Diegomendez1997/Tailor/twofisio/pages/index.js */")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
+  }, "@font-face{font-family:\"Monserrat-Semibold\";src:url(".concat(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}@font-face{font-family:\"Monserrat-Regular\";src:url(").concat(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}body{margin:0;padding:0;max-width:100%;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9EaWVnb21lbmRlejE5OTcvVGFpbG9yL3R3b2Zpc2lvL3BhZ2VzL25vc290cm9zLmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQXNCeUIsQUFHNEMsQUFNRCxBQU92QixTQUNDLFVBQ0ssYUFSMEMsQ0FOQSxDQWUzRCx1REFScUIsQ0FOQSxrQkFPRCxDQU5BLGlCQU9wQixDQU5BIiwiZmlsZSI6Ii9Vc2Vycy9EaWVnb21lbmRlejE5OTcvVGFpbG9yL3R3b2Zpc2lvL3BhZ2VzL25vc290cm9zLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gXCJyZWFjdFwiO1xuaW1wb3J0IHRlYW0gZnJvbSBcIi4uL2NvbnRlbnQvdGVhbS5qc29uXCI7XG5pbXBvcnQgeyBNZW1iZXIgfSBmcm9tIFwiLi4vY29tcG9uZW50cy9NZW1iZXIuanNcIjtcbmltcG9ydCBOYXZiYXIgZnJvbSBcIi4uL2NvbXBvbmVudHMvTmF2YmFyL05hdmJhclwiO1xuaW1wb3J0IEZvb3RlciBmcm9tIFwiLi4vY29tcG9uZW50cy9Gb290ZXIvRm9vdGVyLmpzXCI7XG5pbXBvcnQgTm9zb3Ryb3NTdHlsZXMgZnJvbSBcIi4uL1BhZ2VzU3R5bGVzL05vc290cm9zU3R5bGVzLmpzXCI7XG5pbXBvcnQgSGVhZCBmcm9tIFwibmV4dC9oZWFkXCI7XG5pbXBvcnQgTW9uc2VycmF0U2VtaUJvbGQgZnJvbSBcIi4uL3N0YXRpYy9mb250cy9Nb250c2VycmF0L01vbnRzZXJyYXQtU2VtaUJvbGQudHRmXCI7XG5pbXBvcnQgTW9uc2VycmF0UmVndWxhciBmcm9tIFwiLi4vc3RhdGljL2ZvbnRzL01vbnRzZXJyYXQvTW9udHNlcnJhdC1SZWd1bGFyLnR0ZlwiO1xuXG5pbXBvcnQgRm9udFJlZ3VsYXIgZnJvbSBcIi4uL1BhZ2VzU3R5bGVzL0ZvbnRTdHlsZS9Gb250UmVndWxhclwiXG5jb25zdCBkaXNwbGF5VGVhbSA9ICgpID0+IHtcbiAgcmV0dXJuIHRlYW0ubWFwKChtZW1iZXIsIGkpID0+IDxNZW1iZXIga2V5PXtpfSB7Li4ubWVtYmVyfSAvPik7XG59O1xuXG5jb25zdCBub3NvdHJvcyA9IHByb3BzID0+IHtcbiAgcmV0dXJuIChcbiAgICA8UmVhY3QuRnJhZ21lbnQ+XG4gICAgICA8SGVhZD5cbiAgICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xXCIgLz5cbiAgICAgICAgPG1ldGEgY2hhclNldD1cInV0Zi04XCIgLz5cbiAgICAgIDwvSGVhZD5cbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICAgIEBmb250LWZhY2Uge1xuICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIk1vbnNlcnJhdC1TZW1pYm9sZFwiO1xuICAgICAgICAgIHNyYzogdXJsKCR7TW9uc2VycmF0U2VtaUJvbGR9KSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbiAgICAgICAgICBmb250LXdlaWdodDogbm9ybWFsO1xuICAgICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgICAgICAgfVxuICAgICAgICBAZm9udC1mYWNlIHtcbiAgICAgICAgICBmb250LWZhbWlseTogXCJNb25zZXJyYXQtUmVndWxhclwiO1xuICAgICAgICAgIHNyYzogdXJsKCR7TW9uc2VycmF0UmVndWxhcn0pIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICAgICAgICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gICAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgICAgICB9XG5cbiAgICAgICAgYm9keSB7XG4gICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgICAgbWF4LXdpZHRoOiAxMDAlO1xuICAgICAgICB9XG4gICAgICBgfTwvc3R5bGU+XG4gICAgICA8TmF2YmFyIGxpbms9XCJDZXJyYXJcIi8+XG4gICAgICA8Tm9zb3Ryb3NTdHlsZXM+XG4gICAgICAgIDxGb250UmVndWxhciBjbGFzc05hbWU9XCJtZW1iZXItZGVzY3JpcHRpb25cIj5cbiAgICAgICAgICBFbiBudWVzdHJvIGNlbnRybyBkZSBmaXNpb3RlcmFwaWEgc2llbXByZSBzZXLDoSBhdGVuZGlkbyBwb3JcbiAgICAgICAgICBwcm9mZXNpb25hbGVzIGNvbGVnaWFkb3MgY29uIGFtcGxpYSBleHBlcmllbmNpYSBlbiBlbCBzZWN0b3IgeSBlblxuICAgICAgICAgIGNvbnRpbnVhIGZvcm1hY2nDs24gcGFyYSBvZnJlY2VybGUgZWwgbWVqb3IgdHJhdGFtaWVudG8gcG9zaWJsZS5cbiAgICAgICAgPC9Gb250UmVndWxhcj5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInRlYW1cIj57ZGlzcGxheVRlYW0oKX08L2Rpdj5cbiAgICAgIDwvTm9zb3Ryb3NTdHlsZXM+XG4gICAgICA8Rm9vdGVyIC8+XG4gICAgPC9SZWFjdC5GcmFnbWVudD5cbiAgKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0IG5vc290cm9zO1xuIl19 */\n/*@ sourceURL=/Users/Diegomendez1997/Tailor/twofisio/pages/nosotros.js */")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    link: "Cerrar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 43
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Navbar_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    link: "Nosotros",
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_PagesStyles_NosotrosStyles_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_PagesStyles_FontStyle_FontRegular__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    className: "member-description",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
+  }, "En nuestro centro de fisioterapia siempre ser\xE1 atendido por profesionales colegiados con amplia experiencia en el sector y en continua formaci\xF3n para ofrecerle el mejor tratamiento posible."), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    className: styled_jsx_style__WEBPACK_IMPORTED_MODULE_1___default.a.dynamic([["3898954932", [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_9___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_10___default.a]]]) + " " + "team",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
+  }, displayTeam())), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Footer_Footer_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 53
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Home_Home__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56
-    },
-    __self: this
-  })));
-});
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (nosotros);
 
 /***/ }),
 
@@ -3558,73 +2890,15 @@ module.exports = "/_next/static/fonts/Montserrat-SemiBold-c88cecbffad6d8e731fd95
 
 /***/ }),
 
-/***/ "./utils/animations.js":
-/*!*****************************!*\
-  !*** ./utils/animations.js ***!
-  \*****************************/
-/*! exports provided: _bubleAnimation, detectmob */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_bubleAnimation", function() { return _bubleAnimation; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "detectmob", function() { return detectmob; });
-/* harmony import */ var popmotion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! popmotion */ "popmotion");
-/* harmony import */ var popmotion__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(popmotion__WEBPACK_IMPORTED_MODULE_0__);
-
-var _bubleAnimation = function _bubleAnimation(posX, posX2, fromScaleX, toScaleX, fromScaleY, toScaleY, posY, posY2) {
-  Object(popmotion__WEBPACK_IMPORTED_MODULE_0__["tween"])({
-    from: {
-      transalteX: posX,
-      transalteY: posY,
-      scaleX: fromScaleX,
-      scaleY: fromScaleY
-    },
-    to: {
-      transalteX: posX2,
-      transalteY: posY2,
-      scaleX: toScaleX,
-      scaleY: toScaleY
-    },
-    duration: 1800,
-    ease: popmotion__WEBPACK_IMPORTED_MODULE_0__["easing"].easeInOut,
-    flip: Infinity
-  }).start(function (v) {
-    if (document.getElementById('target') !== null) {
-      document.getElementById('target').style.webkitTransform = "translate(".concat(v.transalteX, "px, ").concat(v.transalteY, "px) scale(").concat(v.scaleX, ", ").concat(v.scaleY, ") ");
-    }
-  });
-};
-var detectmob = function detectmob() {
-  if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
-    return true;
-  }
-
-  return false;
-};
-
-/***/ }),
-
-/***/ 3:
-/*!******************************!*\
-  !*** multi ./pages/index.js ***!
-  \******************************/
+/***/ 4:
+/*!*********************************!*\
+  !*** multi ./pages/nosotros.js ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/Diegomendez1997/Tailor/twofisio/pages/index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! /Users/Diegomendez1997/Tailor/twofisio/pages/nosotros.js */"./pages/nosotros.js");
 
-
-/***/ }),
-
-/***/ "body-scroll-lock":
-/*!***********************************!*\
-  !*** external "body-scroll-lock" ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("body-scroll-lock");
 
 /***/ }),
 
@@ -3760,28 +3034,6 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 
 /***/ }),
 
-/***/ "flubber":
-/*!**************************!*\
-  !*** external "flubber" ***!
-  \**************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("flubber");
-
-/***/ }),
-
-/***/ "jquery":
-/*!*************************!*\
-  !*** external "jquery" ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("jquery");
-
-/***/ }),
-
 /***/ "next-server/dist/lib/router/router":
 /*!*****************************************************!*\
   !*** external "next-server/dist/lib/router/router" ***!
@@ -3815,17 +3067,6 @@ module.exports = require("next-server/head");
 
 /***/ }),
 
-/***/ "popmotion":
-/*!****************************!*\
-  !*** external "popmotion" ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("popmotion");
-
-/***/ }),
-
 /***/ "prop-types":
 /*!*****************************!*\
   !*** external "prop-types" ***!
@@ -3856,6 +3097,17 @@ module.exports = require("prop-types-exact");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-accessible-accordion":
+/*!*********************************************!*\
+  !*** external "react-accessible-accordion" ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-accessible-accordion");
 
 /***/ }),
 
@@ -3893,4 +3145,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=nosotros.js.map
