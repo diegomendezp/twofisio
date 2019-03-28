@@ -71,11 +71,10 @@ export default class Home extends Component {
 
   _listenSliderButtons = () => {
     let listItems = document.querySelectorAll("ul li");
-
     listItems.forEach((item, i) => {
       item.onclick = e => {
         if (i !== 5) {
-          this._changeSVGForm("down", "slider", i - 1);
+          this._changeSVGForm("down", "slider", i -1 );
           this.setState({ ...this.state, formPosition: i, bubblePosition: i });
         } else {
           this._changeSVGForm("down", "slider", i - 2);
@@ -194,7 +193,7 @@ export default class Home extends Component {
             : fromTo + 1
       },
       () => {
-        this._changeBubble(this.state.formPosition - 1);
+        this._changeBubble(this.state.formPosition -1 );
         this._makeAnimation(this.state.prevPosition, this.state.formPosition);
       }
     );

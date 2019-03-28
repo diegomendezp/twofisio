@@ -48,7 +48,7 @@ const HomeWrapperStyle = styled.div`
   .sectionTitle {
     position: absolute;
     width: 20vw;
-    top: calc(100vh / 2 - 5%);
+    top: calc(100vh / 2 - 15%);
     left: 10%;
     h1 {
       color: rgb(116, 10, 100);
@@ -67,7 +67,7 @@ const HomeWrapperStyle = styled.div`
 
   .bubbleGroup {
     position: absolute;
-    top: 50%;
+    top: calc(100vh / 2 - 15%);
     right: 5%;
     display: flex;
     flex-direction: column;
@@ -85,11 +85,11 @@ const HomeWrapperStyle = styled.div`
 
   .bubble {
     z-index: 10;
-    width: 10px;
-    height: 10px;
+    width: 0.5px;
+    height: 20px;
     border: 1px solid white;
     border-radius: 50%;
-    margin: 20% 0%;
+    margin: 100% 0%;
     box-shadow: 0px 0px 2px rgb(116, 10, 100);
   }
 
