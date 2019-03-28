@@ -5,7 +5,7 @@ import MonserratSemiBold from "../static/fonts/Montserrat/Montserrat-SemiBold.tt
 import MonserratRegular from "../static/fonts/Montserrat/Montserrat-Regular.ttf";
 import homeContent from "../content/home.json";
 import Link from "next/link";
-import HomeStyles from "../PagesStyles/HomeStyles";
+
 import FontBold from "../PagesStyles/FontStyle/FontBold";
 import Home from "../components/Home/Home";
 

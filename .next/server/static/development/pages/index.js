@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -115,6 +115,26 @@ var FontBold = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.h2.withC
 
 /***/ }),
 
+/***/ "./PagesStyles/FontStyle/FontLink.js":
+/*!*******************************************!*\
+  !*** ./PagesStyles/FontStyle/FontLink.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
+
+var FontLink = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.a.withConfig({
+  displayName: "FontLink",
+  componentId: "sc-4xd9yo-0"
+})(["font-family:\"Monserrat-Semibold\";font-size:0.8rem;letter-spacing:0.04rem;line-height:1.3rem;color:rgb(116,10,100);text-decoration:none;@media only screen and (min-width:414px) and (max-width:768px){font-size:0.8rem;}@media only screen and (min-width:769px) and (max-width:1024px){font-size:1rem;}@media only screen and (min-width:1025px) and (max-width:1440px){font-size:1rem;}@media only screen and (min-width:1441px){font-size:1rem;}"]);
+/* harmony default export */ __webpack_exports__["default"] = (FontLink);
+
+/***/ }),
+
 /***/ "./PagesStyles/FontStyle/FontRegular.js":
 /*!**********************************************!*\
   !*** ./PagesStyles/FontStyle/FontRegular.js ***!
@@ -130,7 +150,7 @@ __webpack_require__.r(__webpack_exports__);
 var FontRegular = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.p.withConfig({
   displayName: "FontRegular",
   componentId: "sc-1rq8xai-0"
-})(["font-family:\"Monserrat-Regular\";color:", ";font-size:1rem;letter-spacing:0.04rem;line-height:1.45rem;"], function (props) {
+})(["font-family:\"Monserrat-Regular\";color:", ";font-size:0.8rem;letter-spacing:0.04rem;line-height:1.3rem;@media only screen and (min-width:414px) and (max-width:768px){font-size:0.8rem;}@media only screen and (min-width:769px) and (max-width:1024px){font-size:1rem;}@media only screen and (min-width:1025px) and (max-width:1440px){font-size:1rem;}@media only screen and (min-width:1441px){font-size:1rem;}"], function (props) {
   return props.color === 'white' ? 'white' : 'black';
 });
 /* harmony default export */ __webpack_exports__["default"] = (FontRegular);
@@ -153,185 +173,8 @@ __webpack_require__.r(__webpack_exports__);
 var HomeWrapperStyle = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "HomeStyle__HomeWrapperStyle",
   componentId: "eo7vzf-0"
-})(["width:100vw;height:100vh;background:white;position:relative;font-family:\"Monserrat-Semibold\";font-weight:lighter;-webkit-overflow-scrolling:touch;#bodyHome{}h1{color:rgb(116,10,100);}p{color:rgb(37,37,37);}a{color:rgb(116,10,100);text-decoration:underline;}CrossfadeImage{widows:100vw;height:100vh;}#canvas{background:white;position:fixed;top:0;left:0;}#container{position:absolute;left:0;width:100vw;height:100vh;}.sectionTitle{position:absolute;width:20vw;top:calc(100vh / 2 - 15%);left:10%;h1{color:rgb(116,10,100);}}img{position:absolute;top:0;left:0;-webkit-clip-path:url(#svgPath);width:100%;height:100%;object-fit:cover;}.bubbleGroup{position:absolute;top:calc(100vh / 2 - 15%);right:5%;display:flex;flex-direction:column;text-align:center;li{list-style-type:none;}}.position{z-index:10;color:rgb(116,10,100);}.bubble{z-index:10;width:0.5px;height:20px;border:1px solid white;border-radius:50%;margin:100% 0%;box-shadow:0px 0px 2px rgb(116,10,100);}.active{background:rgb(116,10,100);border:1px solid rgb(116,10,100);}@media only screen and (max-width:415px){overflow:hidden;.sectionTitle{width:80vw;top:calc(100vh / 2 - 16%);}.bubbleGroup{top:calc(40%);}#bubbleFooter{display:none;}#imgSlider{padding-left:38%;}}@media only screen and (min-width:415px) and (max-width:768px){color:red;#bubbleFooter{display:none;}.sectionTitle{top:calc(100vh / 2 - 25%);width:40vw;h1{font-size:2.2rem;}p{font-size:1.8rem;}a{font-size:1.8rem;}}}@media only screen and (min-width:769px) and (max-width:1023px){}@media only screen and (min-width:1024px) and (max-width:1440px){}@media only screen and (min-width:1441px){}"]);
+})(["width:100vw;height:100vh;background:white;position:relative;font-weight:lighter;-webkit-overflow-scrolling:touch;#bodyHome{}CrossfadeImage{widows:100vw;height:100vh;}#canvas{background:white;position:fixed;top:0;left:0;}#container{position:absolute;left:0;width:100vw;height:100vh;}.sectionTitle{position:absolute;width:20vw;top:calc(100vh / 2 - 15%);left:5%;h1{color:rgb(116,10,100);}}img{position:absolute;top:0;left:0;-webkit-clip-path:url(#svgPath);width:100%;height:100%;object-fit:cover;}.bubbleGroup{position:absolute;top:calc(100vh / 2 - 15%);right:5%;display:flex;flex-direction:column;text-align:center;li{list-style-type:none;}}.position{z-index:10;color:rgb(116,10,100);}.bubble{z-index:10;width:0.5px;height:20px;border:1px solid white;border-radius:50%;margin:100% 0%;box-shadow:0px 0px 2px rgb(116,10,100);}.active{background:rgb(116,10,100);border:1px solid rgb(116,10,100);}@media only screen and (max-width:415px){overflow:hidden;.sectionTitle{width:60vw;justify-content:center;}.bubbleGroup{top:calc(40%);}#bubbleFooter{display:none;}#imgSlider{padding-left:38%;}}@media only screen and (min-width:415px) and (max-width:768px){.sectionTitle{justify-content:center;width:50vw;}}@media only screen and (min-width:769px) and (max-width:1023px){.sectionTitle{justify-content:center;width:50vw;}}@media only screen and (min-width:1024px) and (max-width:1440px){.sectionTitle{justify-content:center;width:30vw;}}@media only screen and (min-width:1441px){}"]);
 
-
-/***/ }),
-
-/***/ "./PagesStyles/HomeStyles.js":
-/*!***********************************!*\
-  !*** ./PagesStyles/HomeStyles.js ***!
-  \***********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_0__);
- // import ecographyPhoto from '../static/imgEcografía2.jpg';
-
-var HomeStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
-  displayName: "HomeStyles",
-  componentId: "b42jdq-0"
-})([""]);
-/* harmony default export */ __webpack_exports__["default"] = (HomeStyles);
-
-/***/ }),
-
-/***/ "./components/CrossFadeImage.js":
-/*!**************************************!*\
-  !*** ./components/CrossFadeImage.js ***!
-  \**************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CrossfadeImage; });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
-
-
-
-
-
-
-var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/components/CrossFadeImage.js";
-
-
-
-var CrossfadeImage =
-/*#__PURE__*/
-function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(CrossfadeImage, _Component);
-
-  function CrossfadeImage(props) {
-    var _this;
-
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, CrossfadeImage);
-
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(CrossfadeImage).call(this, props));
-    _this.state = {
-      topSrc: props.src,
-      bottomOpacity: 0,
-      bottomSrc: props.src
-    };
-    return _this;
-  }
-
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(CrossfadeImage, [{
-    key: "componentWillReceiveProps",
-    value: function componentWillReceiveProps(newProps) {
-      var _this2 = this;
-
-      var oldSrc = this.state.topSrc;
-      var newSrc = newProps.src;
-
-      if (newSrc !== oldSrc) {
-        // Reset the component everytime we receive new prop, to
-        // cancel out any animation that's still going on
-        this.setState({
-          bottomSrc: false,
-          topSrc: false
-        }, function () {
-          return _this2.setState( // Opacity less than 1 takes precendence in stacking order
-          {
-            bottomSrc: oldSrc,
-            topSrc: newSrc,
-            bottomOpacity: 0.99
-          }, function () {
-            // One of the few times setTimeout does wonders, this is for
-            // getting fade out transition without css keyframe
-            if (!_this2.timeout) clearTimeout(_this2.timeout);
-            _this2.timeout = setTimeout(function () {
-              return _this2.setState({
-                bottomOpacity: 0
-              });
-            }, 20);
-          });
-        });
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _this$props = this.props,
-          duration = _this$props.duration,
-          timingFunction = _this$props.timingFunction,
-          delay = _this$props.delay,
-          style = _this$props.style,
-          alt = _this$props.alt;
-      var _this$state = this.state,
-          topSrc = _this$state.topSrc,
-          bottomOpacity = _this$state.bottomOpacity,
-          bottomSrc = _this$state.bottomSrc;
-      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "imagenHome",
-        style: Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, defaultStyle, {
-          position: "relative"
-        }),
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
-      }, topSrc && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-        id: "imgSlider",
-        style: Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, defaultStyle, style, {
-          position: "absolute"
-        }),
-        src: topSrc,
-        alt: alt,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 42
-        },
-        __self: this
-      }), bottomSrc && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("img", {
-        style: Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, defaultStyle, style, {
-          opacity: bottomOpacity,
-          transition: "-webkit-opacity ".concat(duration / 1000, "s ").concat(timingFunction, " ").concat(delay / 1000, "s")
-        }),
-        src: bottomSrc,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 48
-        },
-        __self: this
-      }));
-    }
-  }]);
-
-  return CrossfadeImage;
-}(react__WEBPACK_IMPORTED_MODULE_6__["Component"]);
-
-
-var defaultStyle = {
-  width: "100vw",
-  height: "100vh"
-};
-CrossfadeImage.propTypes = {
-  src: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string.isRequired,
-  alt: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
-  duration: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.number,
-  timingFunction: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.string,
-  delay: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.number,
-  style: prop_types__WEBPACK_IMPORTED_MODULE_7___default.a.object
-};
-CrossfadeImage.defaultProps = {
-  duration: 500,
-  timingFunction: "ease",
-  delay: 0
-};
 
 /***/ }),
 
@@ -646,13 +489,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _SectionTitle__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./SectionTitle */ "./components/Home/SectionTitle.js");
 /* harmony import */ var _content_home_json__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../content/home.json */ "./content/home.json");
 var _content_home_json__WEBPACK_IMPORTED_MODULE_14___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../content/home.json */ "./content/home.json", 1);
-/* harmony import */ var _CrossFadeImage__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../CrossFadeImage */ "./components/CrossFadeImage.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! jquery */ "jquery");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _Bubles__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./Bubles */ "./components/Home/Bubles.js");
-/* harmony import */ var _utils_animations__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../utils/animations */ "./utils/animations.js");
-/* harmony import */ var body_scroll_lock__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! body-scroll-lock */ "body-scroll-lock");
-/* harmony import */ var body_scroll_lock__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(body_scroll_lock__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! jquery */ "jquery");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _Bubles__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./Bubles */ "./components/Home/Bubles.js");
+/* harmony import */ var _utils_animations__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../utils/animations */ "./utils/animations.js");
 
 
 
@@ -667,8 +507,6 @@ var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/components/Home/Home.
 
 
  // ES6
-
-
 
 
 
@@ -740,10 +578,10 @@ function (_Component) {
       : document.onmousewheel !== undefined ? "mousewheel" // Webkit and IE support at least "mousewheel"
       : "DOMMouseScroll"; // let's assume that remaining browsers are older Firefox
 
-      if (Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["detectmob"])()) {
+      if (Object(_utils_animations__WEBPACK_IMPORTED_MODULE_17__["detectmob"])()) {
         var scrollPos = 0;
         var timerId;
-        jquery__WEBPACK_IMPORTED_MODULE_16___default()(window).bind("scroll", function () {
+        jquery__WEBPACK_IMPORTED_MODULE_15___default()(window).bind("scroll", function () {
           clearTimeout(timerId);
           timerId = setTimeout(function () {
             if (_this.state.formPosition < 4) {
@@ -759,7 +597,7 @@ function (_Component) {
           }, 200);
         });
       } else {
-        jquery__WEBPACK_IMPORTED_MODULE_16___default()(window).on(wheelEvent, function (e) {
+        jquery__WEBPACK_IMPORTED_MODULE_15___default()(window).on(wheelEvent, function (e) {
           if (e.originalEvent.wheelDelta > 0) {
             // document.getElementsByTagName("body")[0].style.overflowY = "hidden";
             delta++;
@@ -842,22 +680,22 @@ function (_Component) {
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "_manageResize", function () {
       switch (true) {
         case window.innerWidth <= 375:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(190, 200, 2, 2.2, 1.8, 2, -100, -200);
+          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_17__["_bubleAnimation"])(190, 200, 2, 2.2, 1.8, 2, -100, -200);
 
           break;
 
         case window.innerWidth <= 414:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(200, 210, 2.3, 3, 3.1, 3.2, -200, -400);
+          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_17__["_bubleAnimation"])(200, 210, 2.3, 3, 3.1, 3.2, -200, -400);
 
           break;
 
         case window.innerWidth <= 768:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(400, 410, 2.3, 3, 3.1, 3.2, -200, -400);
+          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_17__["_bubleAnimation"])(400, 410, 2.3, 3, 3.1, 3.2, -200, -400);
 
           break;
 
         default:
-          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_18__["_bubleAnimation"])(500, 480, 1.8, 1.85, 3, 3, -100, -150);
+          Object(_utils_animations__WEBPACK_IMPORTED_MODULE_17__["_bubleAnimation"])(500, 480, 1.8, 1.85, 3, 3, -100, -150);
 
       }
     });
@@ -936,42 +774,42 @@ function (_Component) {
         id: "bodyHome",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 267
+          lineNumber: 262
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_Bubles__WEBPACK_IMPORTED_MODULE_17__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_Bubles__WEBPACK_IMPORTED_MODULE_16__["default"], {
         position: this.state.bubblePosition,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 268
+          lineNumber: 263
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
         src: images[this.state.formPosition < 5 && this.state.formPosition - 1],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 276
+          lineNumber: 271
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("svg", {
         id: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 282
+          lineNumber: 277
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("clipPath", {
         id: "svgPath",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 283
+          lineNumber: 278
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("path", {
         id: "target",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 284
+          lineNumber: 279
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_SectionTitle__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
@@ -980,7 +818,7 @@ function (_Component) {
       }, _content_home_json__WEBPACK_IMPORTED_MODULE_14__[this.state.formPosition < 5 && this.state.formPosition - 1], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 289
+          lineNumber: 284
         },
         __self: this
       })));
@@ -1015,6 +853,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _PagesStyles_FontStyle_FontBold__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../PagesStyles/FontStyle/FontBold */ "./PagesStyles/FontStyle/FontBold.js");
 /* harmony import */ var _PagesStyles_FontStyle_FontRegular__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../PagesStyles/FontStyle/FontRegular */ "./PagesStyles/FontStyle/FontRegular.js");
+/* harmony import */ var _PagesStyles_FontStyle_FontLink__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../PagesStyles/FontStyle/FontLink */ "./PagesStyles/FontStyle/FontLink.js");
 
 
 
@@ -1022,16 +861,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/components/Home/SectionTitle.js";
-// import React, { Component } from "react";
-// export const SectionTitle = props => {
-//   return (
-//     <div className="sectionTitle">
-//       <h1 onClick={props.changeForm}>{props.title}</h1>
-//       <p>{props.body}</p>
-//       <a href={props.link}>+ Mas Info</a>
-//     </div>
-//   );
-// };
+
 
 
 
@@ -1104,7 +934,7 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 50
         },
         __self: this
       }, topSrc && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -1115,26 +945,26 @@ function (_Component) {
         }),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 52
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_PagesStyles_FontStyle_FontBold__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 60
         },
         __self: this
       }, topSrc.title), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_PagesStyles_FontStyle_FontRegular__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 61
         },
         __self: this
-      }, topSrc.body), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
+      }, topSrc.body), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_PagesStyles_FontStyle_FontLink__WEBPACK_IMPORTED_MODULE_10__["default"], {
         href: topSrc.link,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 62
         },
         __self: this
       }, "+ Mas Info")), bottomSrc && react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
@@ -1145,26 +975,26 @@ function (_Component) {
         }),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 66
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_PagesStyles_FontStyle_FontBold__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 74
         },
         __self: this
       }, bottomSrc.title), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_PagesStyles_FontStyle_FontRegular__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 75
         },
         __self: this
       }, bottomSrc.body), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("a", {
         href: bottomSrc.link,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 76
         },
         __self: this
       }, "+ Mas Info")));
@@ -1290,7 +1120,7 @@ __webpack_require__.r(__webpack_exports__);
 var NavbarWrapper = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "NavbarStyles__NavbarWrapper",
   componentId: "sc-1p3za07-0"
-})(["z-index:100;font-family:\"Monserrat-Semibold\";display:flex;justify-content:space-between;align-items:center;color:rgb(116,10,100);width:90%;max-width:100vw;position:fixed;top:0;margin:0 auto;img{height:80px;object-fit:contain;}ul{a{list-style:none;text-decoration:none;font-size:20px;letter-spacing:0.6pt;color:rgb(116,10,100);}a:visited{color:rgb(116,10,100);}}"]);
+})(["z-index:100;font-family:\"Monserrat-Semibold\";display:flex;justify-content:space-between;align-items:center;color:rgb(116,10,100);width:95%;max-width:100vw;position:fixed;top:0;margin:0 auto;img{margin-top:0.5%;height:50px;object-fit:contain;}ul{a{list-style:none;text-decoration:none;font-size:1rem;letter-spacing:0.6pt;color:rgb(116,10,100);}a:visited{color:rgb(116,10,100);}}@media only screen and (min-width:769px) and (max-width:1023px){img{margin-top:1%;height:60px;object-fit:contain;}}"]);
 var NavbarStyles = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "NavbarStyles",
   componentId: "sc-1p3za07-1"
@@ -3421,11 +3251,9 @@ __webpack_require__.r(__webpack_exports__);
 var _content_home_json__WEBPACK_IMPORTED_MODULE_7___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../content/home.json */ "./content/home.json", 1);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _PagesStyles_HomeStyles__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../PagesStyles/HomeStyles */ "./PagesStyles/HomeStyles.js");
-/* harmony import */ var _PagesStyles_FontStyle_FontBold__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../PagesStyles/FontStyle/FontBold */ "./PagesStyles/FontStyle/FontBold.js");
-/* harmony import */ var _components_Home_Home__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Home/Home */ "./components/Home/Home.js");
+/* harmony import */ var _PagesStyles_FontStyle_FontBold__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../PagesStyles/FontStyle/FontBold */ "./PagesStyles/FontStyle/FontBold.js");
+/* harmony import */ var _components_Home_Home__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Home/Home */ "./components/Home/Home.js");
 var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/pages/index.js";
-
 
 
 
@@ -3447,7 +3275,7 @@ var displayHomeContent = function displayHomeContent() {
         lineNumber: 14
       },
       __self: this
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_PagesStyles_FontStyle_FontBold__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_PagesStyles_FontStyle_FontBold__WEBPACK_IMPORTED_MODULE_9__["default"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 15
@@ -3510,7 +3338,7 @@ var displayHomeContent = function displayHomeContent() {
     id: "4260789035",
     dynamic: [_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, _static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a],
     __self: this
-  }, "@font-face{font-family:\"Monserrat-Semibold\";src:url(".concat(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}@font-face{font-family:\"Monserrat-Regular\";src:url(").concat(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}body{margin:0;padding:0;max-width:100%;position:fixed;overflow:hidden;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9EaWVnb21lbmRlejE5OTcvVGFpbG9yL3R3b2Zpc2lvL3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTZCdUIsQUFHMEMsQUFNRCxBQU92QixTQUNDLFVBQ0ssYUFSMEMsQ0FOQSxDQWUxQyxlQUNDLGdCQUNsQix3QkFWcUIsQ0FOQSxrQkFPRCxDQU5BLGlCQU9wQixDQU5BIiwiZmlsZSI6Ii9Vc2Vycy9EaWVnb21lbmRlejE5OTcvVGFpbG9yL3R3b2Zpc2lvL3BhZ2VzL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWQgZnJvbSBcIm5leHQvaGVhZFwiO1xuaW1wb3J0IE5hdmJhciBmcm9tIFwiLi4vY29tcG9uZW50cy9OYXZiYXIvTmF2YmFyXCI7XG5pbXBvcnQgRm9vdGVyIGZyb20gXCIuLi9jb21wb25lbnRzL0Zvb3Rlci9Gb290ZXJcIjtcbmltcG9ydCBNb25zZXJyYXRTZW1pQm9sZCBmcm9tIFwiLi4vc3RhdGljL2ZvbnRzL01vbnRzZXJyYXQvTW9udHNlcnJhdC1TZW1pQm9sZC50dGZcIjtcbmltcG9ydCBNb25zZXJyYXRSZWd1bGFyIGZyb20gXCIuLi9zdGF0aWMvZm9udHMvTW9udHNlcnJhdC9Nb250c2VycmF0LVJlZ3VsYXIudHRmXCI7XG5pbXBvcnQgaG9tZUNvbnRlbnQgZnJvbSBcIi4uL2NvbnRlbnQvaG9tZS5qc29uXCI7XG5pbXBvcnQgTGluayBmcm9tIFwibmV4dC9saW5rXCI7XG5pbXBvcnQgSG9tZVN0eWxlcyBmcm9tIFwiLi4vUGFnZXNTdHlsZXMvSG9tZVN0eWxlc1wiO1xuaW1wb3J0IEZvbnRCb2xkIGZyb20gXCIuLi9QYWdlc1N0eWxlcy9Gb250U3R5bGUvRm9udEJvbGRcIjtcbmltcG9ydCBIb21lIGZyb20gXCIuLi9jb21wb25lbnRzL0hvbWUvSG9tZVwiO1xuXG5jb25zdCBkaXNwbGF5SG9tZUNvbnRlbnQgPSAoKSA9PiB7XG4gIHJldHVybiBob21lQ29udGVudC5tYXAoKGhvbWVJdGVtLCBpKSA9PiAoXG4gICAgPGRpdiBrZXk9e2l9PlxuICAgICAgPEZvbnRCb2xkPntob21lSXRlbS5uYW1lfTwvRm9udEJvbGQ+XG4gICAgICA8cD57aG9tZUl0ZW0uZGVzY3JpcHRpb259PC9wPlxuICAgICAgPExpbmsgaHJlZj17aG9tZUl0ZW0ubGlua30+XG4gICAgICAgIDxhPisgTcOhcyBpbmZvPC9hPlxuICAgICAgPC9MaW5rPlxuICAgIDwvZGl2PlxuICApKTtcbn07XG5cbmV4cG9ydCBkZWZhdWx0ICgpID0+IChcbiAgPFJlYWN0LkZyYWdtZW50PlxuICAgIDxIZWFkPlxuICAgICAgPG1ldGEgbmFtZT1cInZpZXdwb3J0XCIgY29udGVudD1cIndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xXCIgLz5cbiAgICAgIDxtZXRhIGNoYXJTZXQ9XCJ1dGYtOFwiIC8+XG4gICAgPC9IZWFkPlxuICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntgXG4gICAgICBAZm9udC1mYWNlIHtcbiAgICAgICAgZm9udC1mYW1pbHk6IFwiTW9uc2VycmF0LVNlbWlib2xkXCI7XG4gICAgICAgIHNyYzogdXJsKCR7TW9uc2VycmF0U2VtaUJvbGR9KSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbiAgICAgICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgICAgfVxuICAgICAgQGZvbnQtZmFjZSB7XG4gICAgICAgIGZvbnQtZmFtaWx5OiBcIk1vbnNlcnJhdC1SZWd1bGFyXCI7XG4gICAgICAgIHNyYzogdXJsKCR7TW9uc2VycmF0UmVndWxhcn0pIGZvcm1hdChcInRydWV0eXBlXCIpO1xuICAgICAgICBmb250LXdlaWdodDogbm9ybWFsO1xuICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgICB9XG5cbiAgICAgIGJvZHkge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIG1heC13aWR0aDogMTAwJTtcbiAgICAgICAgcG9zaXRpb246IGZpeGVkO1xuICAgICAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgICAgfVxuICAgIGB9PC9zdHlsZT5cbiAgICA8UmVhY3QuRnJhZ21lbnQ+XG4gICAgICA8TmF2YmFyIGxpbms9XCJOb3NvdHJvc1wiIC8+XG4gICAgICA8SG9tZT48L0hvbWU+XG4gICAgICB7LyogPEhvbWVTdHlsZXM+e2Rpc3BsYXlIb21lQ29udGVudCgpfTwvSG9tZVN0eWxlcz4gKi99XG4gICAgICA8Rm9vdGVyIC8+XG4gICAgPC9SZWFjdC5GcmFnbWVudD5cbiAgPC9SZWFjdC5GcmFnbWVudD5cbik7XG4iXX0= */\n/*@ sourceURL=/Users/Diegomendez1997/Tailor/twofisio/pages/index.js */")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
+  }, "@font-face{font-family:\"Monserrat-Semibold\";src:url(".concat(_static_fonts_Montserrat_Montserrat_SemiBold_ttf__WEBPACK_IMPORTED_MODULE_5___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}@font-face{font-family:\"Monserrat-Regular\";src:url(").concat(_static_fonts_Montserrat_Montserrat_Regular_ttf__WEBPACK_IMPORTED_MODULE_6___default.a, ") format(\"truetype\");font-weight:normal;font-style:normal;}body{margin:0;padding:0;max-width:100%;position:fixed;overflow:hidden;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9EaWVnb21lbmRlejE5OTcvVGFpbG9yL3R3b2Zpc2lvL3BhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQTZCdUIsQUFHMEMsQUFNRCxBQU92QixTQUNDLFVBQ0ssYUFSMEMsQ0FOQSxDQWUxQyxlQUNDLGdCQUNsQix3QkFWcUIsQ0FOQSxrQkFPRCxDQU5BLGlCQU9wQixDQU5BIiwiZmlsZSI6Ii9Vc2Vycy9EaWVnb21lbmRlejE5OTcvVGFpbG9yL3R3b2Zpc2lvL3BhZ2VzL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWQgZnJvbSBcIm5leHQvaGVhZFwiO1xuaW1wb3J0IE5hdmJhciBmcm9tIFwiLi4vY29tcG9uZW50cy9OYXZiYXIvTmF2YmFyXCI7XG5pbXBvcnQgRm9vdGVyIGZyb20gXCIuLi9jb21wb25lbnRzL0Zvb3Rlci9Gb290ZXJcIjtcbmltcG9ydCBNb25zZXJyYXRTZW1pQm9sZCBmcm9tIFwiLi4vc3RhdGljL2ZvbnRzL01vbnRzZXJyYXQvTW9udHNlcnJhdC1TZW1pQm9sZC50dGZcIjtcbmltcG9ydCBNb25zZXJyYXRSZWd1bGFyIGZyb20gXCIuLi9zdGF0aWMvZm9udHMvTW9udHNlcnJhdC9Nb250c2VycmF0LVJlZ3VsYXIudHRmXCI7XG5pbXBvcnQgaG9tZUNvbnRlbnQgZnJvbSBcIi4uL2NvbnRlbnQvaG9tZS5qc29uXCI7XG5pbXBvcnQgTGluayBmcm9tIFwibmV4dC9saW5rXCI7XG5cbmltcG9ydCBGb250Qm9sZCBmcm9tIFwiLi4vUGFnZXNTdHlsZXMvRm9udFN0eWxlL0ZvbnRCb2xkXCI7XG5pbXBvcnQgSG9tZSBmcm9tIFwiLi4vY29tcG9uZW50cy9Ib21lL0hvbWVcIjtcblxuY29uc3QgZGlzcGxheUhvbWVDb250ZW50ID0gKCkgPT4ge1xuICByZXR1cm4gaG9tZUNvbnRlbnQubWFwKChob21lSXRlbSwgaSkgPT4gKFxuICAgIDxkaXYga2V5PXtpfT5cbiAgICAgIDxGb250Qm9sZD57aG9tZUl0ZW0ubmFtZX08L0ZvbnRCb2xkPlxuICAgICAgPHA+e2hvbWVJdGVtLmRlc2NyaXB0aW9ufTwvcD5cbiAgICAgIDxMaW5rIGhyZWY9e2hvbWVJdGVtLmxpbmt9PlxuICAgICAgICA8YT4rIE3DoXMgaW5mbzwvYT5cbiAgICAgIDwvTGluaz5cbiAgICA8L2Rpdj5cbiAgKSk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCAoKSA9PiAoXG4gIDxSZWFjdC5GcmFnbWVudD5cbiAgICA8SGVhZD5cbiAgICAgIDxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MVwiIC8+XG4gICAgICA8bWV0YSBjaGFyU2V0PVwidXRmLThcIiAvPlxuICAgIDwvSGVhZD5cbiAgICA8c3R5bGUganN4IGdsb2JhbD57YFxuICAgICAgQGZvbnQtZmFjZSB7XG4gICAgICAgIGZvbnQtZmFtaWx5OiBcIk1vbnNlcnJhdC1TZW1pYm9sZFwiO1xuICAgICAgICBzcmM6IHVybCgke01vbnNlcnJhdFNlbWlCb2xkfSkgZm9ybWF0KFwidHJ1ZXR5cGVcIik7XG4gICAgICAgIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gICAgICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgICAgIH1cbiAgICAgIEBmb250LWZhY2Uge1xuICAgICAgICBmb250LWZhbWlseTogXCJNb25zZXJyYXQtUmVndWxhclwiO1xuICAgICAgICBzcmM6IHVybCgke01vbnNlcnJhdFJlZ3VsYXJ9KSBmb3JtYXQoXCJ0cnVldHlwZVwiKTtcbiAgICAgICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgICAgfVxuXG4gICAgICBib2R5IHtcbiAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBtYXgtd2lkdGg6IDEwMCU7XG4gICAgICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICAgICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICAgIH1cbiAgICBgfTwvc3R5bGU+XG4gICAgPFJlYWN0LkZyYWdtZW50PlxuICAgICAgPE5hdmJhciBsaW5rPVwiTm9zb3Ryb3NcIiAvPlxuICAgICAgPEhvbWU+PC9Ib21lPlxuICAgICAgey8qIDxIb21lU3R5bGVzPntkaXNwbGF5SG9tZUNvbnRlbnQoKX08L0hvbWVTdHlsZXM+ICovfVxuICAgICAgPEZvb3RlciAvPlxuICAgIDwvUmVhY3QuRnJhZ21lbnQ+XG4gIDwvUmVhY3QuRnJhZ21lbnQ+XG4pO1xuIl19 */\n/*@ sourceURL=/Users/Diegomendez1997/Tailor/twofisio/pages/index.js */")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 52
@@ -3523,7 +3351,7 @@ var displayHomeContent = function displayHomeContent() {
       lineNumber: 53
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Home_Home__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Home_Home__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 54
@@ -3609,7 +3437,7 @@ var detectmob = function detectmob() {
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -3618,17 +3446,6 @@ var detectmob = function detectmob() {
 
 module.exports = __webpack_require__(/*! /Users/Diegomendez1997/Tailor/twofisio/pages/index.js */"./pages/index.js");
 
-
-/***/ }),
-
-/***/ "body-scroll-lock":
-/*!***********************************!*\
-  !*** external "body-scroll-lock" ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("body-scroll-lock");
 
 /***/ }),
 
