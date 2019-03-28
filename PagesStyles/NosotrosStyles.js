@@ -98,7 +98,7 @@ const NosotrosStyles = styled.div`
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     .member-img {
       width: 100%;
-      height: 200px;
+      height: 250px;
       object-fit: cover;
     }
 
@@ -123,7 +123,7 @@ const NosotrosStyles = styled.div`
   @media only screen and (min-width: 769px) and (max-width: 1440px) {
     .member-img {
       width: 100%;
-      height: 200px;
+      height: 350px;
       object-fit: cover;
     }
     

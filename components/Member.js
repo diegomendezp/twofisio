@@ -29,12 +29,12 @@ export class Member extends React.Component {
   };
 
   render() {
-    const {name, number, curriculum} = this.props;
+    const {name, number, curriculum, photo} = this.props;
     return (
       <div className="member">
         <img
           className="member-img"
-          src="https://images.unsplash.com/photo-1514672013381-c6d0df1c8b18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+          src={photo}
           alt={`${name}-photo`}
         />
         <Accordion>
