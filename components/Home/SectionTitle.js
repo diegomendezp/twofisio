@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import FontBold from "../../PagesStyles/FontStyle/FontBold";
 import FontRegular from "../../PagesStyles/FontStyle/FontRegular";
+import FontLink from "../../PagesStyles/FontStyle/FontLink";
 
 
 class SectionTitle extends Component {
@@ -58,7 +59,7 @@ class SectionTitle extends Component {
             >
             <FontBold>{topSrc.title}</FontBold>
             <FontRegular>{topSrc.body}</FontRegular>
-            <a href={topSrc.link}>+ Mas Info</a>
+            <FontLink href={topSrc.link}>+ Mas Info</FontLink>
           </div>
           }
         {bottomSrc &&

@@ -7,14 +7,14 @@ const NavbarWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   color: rgb(116, 10, 100);
-  width: 90%;
+  width: 95%;
   max-width: 100vw;
   position: fixed;
   top: 0;
   margin: 0 auto;
 
   img {
-    margin-top:3%;
+    margin-top:0.5%;
     height: 50px;
     object-fit: contain;  
   }
@@ -36,22 +36,12 @@ const NavbarWrapper = styled.div`
 
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
     img {
-      margin-top:3%;
+      margin-top:1%;
       height: 60px;
       object-fit: contain;  
     }
   }
 
-  @media only screen and (min-width: 1024px) and (max-width: 1440px) {
-    img {
-      margin-top:3%;
-      height: 60px;
-      object-fit: contain;  
-    }
-  }
-
-
-  @media only screen and (min-width: 1441px) {}
 
 `;
 
