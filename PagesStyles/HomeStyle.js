@@ -8,8 +8,7 @@ const HomeWrapperStyle = styled.div`
   font-weight: lighter;
   -webkit-overflow-scrolling: touch;
 
-  #bodyHome {
-  }
+
 
 
   CrossfadeImage {

@@ -7,11 +7,6 @@ const TratamientosStyles = styled.div`
     object-fit: cover;
   }
 
-  h2 {
-    font-family: "Monserrat-Semibold";
-    color: #740a64;
-    letter-spacing: 0.2px;
-  }
   .treatment-name{
     font-family: "Monserrat-Semibold";
     color: #740a64;
@@ -19,6 +14,12 @@ const TratamientosStyles = styled.div`
   .treatments-content {
     width: 90%;
     margin: 0 auto;
+  }
+  .treatment {
+    margin-bottom: 20%;
+  }
+  .treatments{
+    margin-bottom: 50%;
   }
 
   li {
@@ -31,12 +32,14 @@ const TratamientosStyles = styled.div`
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     .treatment {
       width: 48%;
+      margin-bottom: 10%;
     }
 
     .treatments {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      margin-bottom: 15%;
     }
    
   }
@@ -47,12 +50,14 @@ const TratamientosStyles = styled.div`
     }
     .treatment {
       width: 48%;
+      margin-bottom: 8%;
     }
 
     .treatments {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      margin-bottom: 15%;
     }
   }
 
@@ -62,10 +67,11 @@ const TratamientosStyles = styled.div`
     }
     .treatments-content{
       margin-top: 8%;
-      margin-bottom: 10%;
+     
     }
     .treatment {
       width: 48%;
+      margin-bottom: 5%;
     }
 
     .treatments {

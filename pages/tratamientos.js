@@ -2,8 +2,12 @@ import React from 'react'
 import treatments from '../content/treatments.json'
 import Treatment from '../components/Treatment.js';
 import TratamientosStyles from '../PagesStyles/TratamientosStyles.js';
+
+import FontBold from "../PagesStyles/FontStyle/FontBold.js";
+
 import MonserratSemiBold from '../static/fonts/Montserrat/Montserrat-SemiBold.ttf';
 import MonserratRegular from '../static/fonts/Montserrat/Montserrat-Regular.ttf';
+
 import Head from "next/head";
 import Navbar from '../components/Navbar/Navbar.js';
 import Footer from '../components/Footer/Footer.js';
@@ -44,7 +48,7 @@ const tratamientos = (props) => {
       <TratamientosStyles>
       <HeaderAnimated img={imgTrata} positionY={13}/>
         <div className="treatments-content">
-          <h2>Tratamientos</h2>
+          <FontBold>Tratamientos</FontBold>
           <div className="treatments">
             {displayTreatments()}
           </div>
