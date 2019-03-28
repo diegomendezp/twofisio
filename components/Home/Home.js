@@ -15,10 +15,10 @@ import {
 } from "body-scroll-lock";
 
 const images = [
-  "../../static/imgPilates.jpg",
+  "../../static/imgFisioterapia.jpg",
   "../../static/imgTratamientos.jpg",
   "../../static/imgEcografía.jpg",
-  "../../static/imgFisioterapia.jpg"
+  "../../static/imgPilates.jpg",
 ];
 
 var interval;

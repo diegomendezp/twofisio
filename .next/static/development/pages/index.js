@@ -576,7 +576,7 @@ var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/components/Home/Home.
 
 
 
-var images = ["../../static/imgPilates.jpg", "../../static/imgTratamientos.jpg", "../../static/imgEcografía.jpg", "../../static/imgFisioterapia.jpg"];
+var images = ["../../static/imgFisioterapia.jpg", "../../static/imgTratamientos.jpg", "../../static/imgEcografía.jpg", "../../static/imgPilates.jpg"];
 var interval;
 
 var Home =
@@ -1217,7 +1217,7 @@ module.exports = [{"name":"Teléfono","value":"917116205 | 609058398"},{"name":"
 /*! exports provided: 0, 1, 2, 3, default */
 /***/ (function(module) {
 
-module.exports = [{"title":"Pilates","body":"En grupos reducidos, (máximo 3 personas por grupo) y siempre dirigidas por fisioterapeutas colegiados.","link":"/pilates"},{"title":"Tratamientos","body":"Diferentes lesiones y patologías ofreciendo un trato personalizado y específico para cada  cliente.","link":"/tratamientos"},{"title":"Ecografías","body":"En nuestro centro TwoFisio realizamos sesiones de Fisioterapia especializada, donde se utiliza la ecografía para conseguir una valoración y un tratamiento más específico.","link":"/ecografia"},{"title":"Fisioterapia","body":"En nuestro centro siempre será atendido por profesionales colegiados con amplia experiencia en el sector y en continua formación para ofrecerle el mejor tratamiento posible.","link":"/fisioterapia"}];
+module.exports = [{"title":"Fisioterapia","body":"En nuestro centro siempre será atendido por profesionales colegiados con amplia experiencia en el sector y en continua formación para ofrecerle el mejor tratamiento posible.","link":"/fisioterapia"},{"title":"Tratamientos","body":"Diferentes lesiones y patologías ofreciendo un trato personalizado y específico para cada  cliente.","link":"/tratamientos"},{"title":"Ecografías","body":"En nuestro centro TwoFisio realizamos sesiones de Fisioterapia especializada, donde se utiliza la ecografía para conseguir una valoración y un tratamiento más específico.","link":"/ecografia"},{"title":"Pilates","body":"En grupos reducidos, (máximo 3 personas por grupo) y siempre dirigidas por fisioterapeutas colegiados.","link":"/pilates"}];
 
 /***/ }),
 
