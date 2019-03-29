@@ -30267,7 +30267,7 @@ var detectmob = function detectmob() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!**********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2FDiegomendez1997%2FTailor%2Ftwofisio%2Fpages%2Findex.js ***!
   \**********************************************************************************************************************************/
@@ -30290,5 +30290,5 @@ module.exports = dll_9d2e7eb3ce4bb71fa337;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]));;
+},[[1,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map
