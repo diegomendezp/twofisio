@@ -1032,7 +1032,7 @@ function (_Component) {
         }, function () {
           return _this2.setState( // Opacity less than 1 takes precendence in stacking order
           {
-            bottomSrc: oldSrc,
+            bottomSrc: newSrc,
             topSrc: newSrc,
             bottomOpacity: 1
           }, function () {
