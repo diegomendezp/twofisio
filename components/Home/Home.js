@@ -210,7 +210,8 @@ export default class Home extends Component {
         _bubleAnimation(400, 410, 2.3, 3, 3.1, 3.2, -200, -400);
         break;
       default:
-        _bubleAnimation(500, 480, 1.8, 1.85, 3, 3, -100, -150);
+        const posX = window.innerWidth / 3;
+        _bubleAnimation(posX, posX +10 , 3, 3.1, 3.1, 3.2, -200, -400);
     }
   };
 
