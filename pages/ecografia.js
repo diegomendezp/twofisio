@@ -5,7 +5,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import EcographyStyles from "../PagesStyles/EcografiaStyles";
-import imgEco from "../static/imgEcografía.jpg"
+import imgEco from "../static/imgEcografia.jpg"
 import HeaderAnimated from "../components/HeaderAnimated/HeaderAnimated"
 
 const ecografia = () => {

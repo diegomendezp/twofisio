@@ -12,7 +12,7 @@ import { _bubleAnimation, detectmob } from "../../utils/animations";
 const images = [
   "../../static/imgFisioterapia.jpg",
   "../../static/imgTratamientos.jpg",
-  "../../static/imgEcografía.jpg",
+  "../../static/imgEcografia.jpg",
   "../../static/imgPilates.jpg",
 ];
 

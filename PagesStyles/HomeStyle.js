@@ -54,7 +54,7 @@ const HomeWrapperStyle = styled.div`
   .bubbleGroup {
     position: absolute;
     top: calc(100vh / 2 - 15%);
-    right: 5%;
+    right: 2.5%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -74,7 +74,7 @@ const HomeWrapperStyle = styled.div`
     width: 0.5px;
     height: 20px;
     border: 1px solid white;
-    border-radius: 50%;
+    border-radius: 2px;
     margin: 100% 0%;
     box-shadow: 0px 0px 2px rgb(116, 10, 100);
   }
