@@ -163,7 +163,7 @@ const NosotrosStyles = styled.div`
       margin-bottom: 10%;
     }
     .member-img{
-      height: 400px;
+      height: auto;
     }
   }
 `;

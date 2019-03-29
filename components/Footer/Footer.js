@@ -20,7 +20,12 @@ const displayContactElements = contactList => {
           <FontRegular color="white" className="contact-value">{element.value}</FontRegular>
         </div>
       </a>
-    : (
+    : element.name == "Teléfono" ? 
+    <div>
+          <FontRegular color="white" className="contact-name">{element.name}:</FontRegular>
+          <FontRegular color="white" className="contact-value"><a href={`tel:${element.value}`}>{element.value}</a> | <a href={`tel:${element.value2}`}>{element.value2}</a></FontRegular>
+        </div>
+    :(
       <div key={i}>
         <FontRegular color="white" className="contact-name">{element.name}:</FontRegular>
         <FontRegular color="white" className="contact-value">{element.value}</FontRegular>

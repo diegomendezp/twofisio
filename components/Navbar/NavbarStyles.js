@@ -13,6 +13,10 @@ const NavbarWrapper = styled.div`
   top: 0;
   margin: 0 auto;
 
+  img:hover{
+    cursor: pointer;
+  }
+
   img {
     margin-top:0.5%;
     height: 50px;
