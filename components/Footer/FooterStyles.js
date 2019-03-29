@@ -56,7 +56,7 @@ const FooterStyles = styled.div`
     }
     .footer-content {
       margin-bottom: 2%;
-      margin-top: 25%;
+      margin-top: 10%;
     }
     .copyright{
       margin-top:5%
