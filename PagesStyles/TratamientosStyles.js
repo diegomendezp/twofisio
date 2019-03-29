@@ -16,7 +16,7 @@ const TratamientosStyles = styled.div`
     margin: 0 auto;
   }
   .treatment {
-    margin-bottom: 20%;
+    margin-bottom:10%;
   }
   .treatments{
     margin-bottom: 50%;
@@ -32,7 +32,7 @@ const TratamientosStyles = styled.div`
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     .treatment {
       width: 48%;
-      margin-bottom: 10%;
+      margin-bottom:3%;
     }
 
     .treatments {
@@ -50,7 +50,7 @@ const TratamientosStyles = styled.div`
     }
     .treatment {
       width: 48%;
-      margin-bottom: 8%;
+      margin-bottom:1%;
     }
 
     .treatments {
@@ -66,7 +66,7 @@ const TratamientosStyles = styled.div`
       height: 48vh;
     }
     .treatments-content{
-      margin-top: 8%;
+      margin-top: 1%;
      
     }
     .treatment {
