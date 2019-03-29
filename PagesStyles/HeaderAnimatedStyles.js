@@ -35,8 +35,8 @@ const HeaderAnimatedStyles = styled.div`
  
   
   @media only screen and (min-width: 361px) and (max-width: 415px) {
-    background-position-x: 28%;
-    background-size: 196%;  
+    background-position-x: 100%;
+    background-size: 140%;  
     height: 45vh;
   }
 
