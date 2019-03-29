@@ -15,20 +15,20 @@ class HeaderAnimated extends React.Component {
   _manageResize = () => {
     switch (true) {
       case window.innerWidth <= 375:
-      _bubleAnimation(200, 210, 2.3, 3, 2.8, 3, -40,-51);
+        _bubleAnimation(200, 210, 2.3, 3, 2.8, 3, -40, -51);
         break;
       case window.innerWidth <= 414:
         _bubleAnimation(200, 210, 2.3, 3, 3.1, 3.2, -50, -60);
         break;
       case window.innerWidth <= 768:
-      _bubleAnimation(550, 560, 3, 3.4, 3.1, 3.2, 5, 10);
+        _bubleAnimation(550, 560, 3, 3.4, 3.1, 3.2, 5, 10);
         break;
-        case window.innerWidth <= 1024:
-      _bubleAnimation(550, 560, 10, 15, 3.1, 3.2, 25, 15);
+      case window.innerWidth <= 1024:
+        _bubleAnimation(550, 560, 10, 15, 3.1, 3.2, 25, 15);
         break;
-        case window.innerWidth <= 1280:
-        _bubleAnimation(550, 560, 10, 15, 3.1, 3.2, -110, -110);
-          break;
+      case window.innerWidth <= 1440:
+        _bubleAnimation(550, 560, 10, 15, 3.45 , 3.51, -110, -110);
+        break;
       default:
         _bubleAnimation(500, 500, 10, 10.2, 3.1, 3.2, 80, 80);
     }
