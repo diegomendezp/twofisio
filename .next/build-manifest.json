@@ -1,6 +1,6 @@
 {
   "devFiles": [
-    "static/development/dll/dll_cb22fc475a2445b0c199.js"
+    "static/development/dll/dll_a1332422834f747f7fe3.js"
   ],
   "pages": {
     "/_app": [
@@ -11,11 +11,23 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+<<<<<<< HEAD
     "/ecografia": [
+=======
+    "/index": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/nosotros": [
+>>>>>>> 42b6e0f8bdda300d0c1975419ef4f4e2332587d9
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
     "/index": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],

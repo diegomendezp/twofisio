@@ -3,13 +3,12 @@ import styled from 'styled-components';
 const NosotrosStyles = styled.div`
   max-width: 100vw;
   margin-bottom: 15%;
-  padding-top: 100px;
-
+  padding-top: 10%;
   font-family: "Monserrat-Regular";
-    color: black;
-    font-size: 1rem;
-    letter-spacing: 0.03rem;
-    line-height: 1.45rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.04rem;
+  line-height: 1.3rem;
+
 
   .accordion__body--hidden {
     display: none;
@@ -26,6 +25,7 @@ const NosotrosStyles = styled.div`
     }
 }
   .member-img {
+    margin-top:10%;
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -34,7 +34,7 @@ const NosotrosStyles = styled.div`
   .member-description {
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 30%;
+    margin-bottom: 20%;
     margin-top: 15%;
   }
 
@@ -66,20 +66,12 @@ const NosotrosStyles = styled.div`
   }
 
   .member-name {
-    font-family: "Monserrat-Semibold";
     color: #740a64;
-    font-size: 1rem;
-    letter-spacing: 0.03rem;
-    margin-bottom:0;
   }
   .member-cole{
-    margin-top: 0%;
-    font-family: "Monserrat-Regular";
-    color: black;
-    font-size: 1rem;
-    letter-spacing: 0.03rem;
-    line-height: 1.45rem;
+    margin-bottom:5%;
   }
+
 
   .accordion__body {
     margin: 0 auto;
@@ -96,10 +88,14 @@ const NosotrosStyles = styled.div`
   }
 
   @media only screen and (min-width: 415px) and (max-width: 768px) {
+
+    font-size: 0.8rem;
+
     .member-img {
       width: 100%;
       height: 250px;
       object-fit: cover;
+      margin-top:10%;
     }
 
     .member {
@@ -121,10 +117,13 @@ const NosotrosStyles = styled.div`
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1440px) {
+    font-size: 1rem;
+
     .member-img {
       width: 100%;
       height: 350px;
       object-fit: cover;
+      margin-top:10%;
     }
     
     .member {
@@ -146,6 +145,8 @@ const NosotrosStyles = styled.div`
   }
 
   @media only screen and (min-width: 1441px) {
+    font-size: 1rem;
+    
      .member {
       width: 40%;
     }
@@ -164,6 +165,7 @@ const NosotrosStyles = styled.div`
     }
     .member-img{
       height: auto;
+      margin-top:10%;
     }
   }
 `;

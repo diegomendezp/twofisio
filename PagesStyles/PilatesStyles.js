@@ -12,7 +12,7 @@ const PilatesStyles = styled.div`
     width: 90%;
     margin-left: 5%;
     margin-top:20%;
-     margin-bottom: 40%;
+    margin-bottom: 30%;
   }
 
   li {
@@ -22,11 +22,6 @@ const PilatesStyles = styled.div`
     margin-bottom: 2%;
   }
 
-  @media only screen and (min-width: 375px) and (max-width: 414px) {
-    .pilates-content {
-    margin-top: 0%;
-    }
-  }
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     .pilates {
       display: flex;
@@ -36,11 +31,10 @@ const PilatesStyles = styled.div`
 
     .pilates-content {
       margin-top: 10%;
-      margin-bottom: 30%;
+      margin-bottom: 10%;
     }
    
   }
-
 
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .pilates-img {
@@ -49,7 +43,7 @@ const PilatesStyles = styled.div`
     .pilates-content {
       width: 75%;
       margin-top:3%;
-      margin-bottom: 20%;
+      margin-bottom: 10%;
   }
 
     .pilates {
@@ -81,7 +75,7 @@ const PilatesStyles = styled.div`
     .pilates-content { 
       width: 60%;
       margin-top: 8%;
-      margin-bottom: 20%;
+      margin-bottom: 10%;
     }
   }
 `;
