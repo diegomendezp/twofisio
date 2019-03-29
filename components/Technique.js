@@ -1,9 +1,11 @@
+import FontRegular from "../PagesStyles/FontStyle/FontRegular.js";
+
 import React from 'react'
 
 const Technique = ({name, description}) => {
   return (
     <div className="technique">
-      <p>- <span className="treatment-name">{name}: </span>{description}</p>
+      <FontRegular>- <span className="treatment-name">{name}: </span>{description}</FontRegular>
     </div>
   )
 }
