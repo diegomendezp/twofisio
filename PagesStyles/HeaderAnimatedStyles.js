@@ -23,17 +23,25 @@ const HeaderAnimatedStyles = styled.div`
     clip-path: url(#svgPath);
     object-fit: cover;
   } */
+
+ 
   
   @media only screen and (max-width: 360px) {
     background-position-x: 28%;
     background-size: 196%;  
     height: 60vh;
   }
+
+ 
   
   @media only screen and (min-width: 361px) and (max-width: 415px) {
     background-position-x: 28%;
     background-size: 196%;  
     height: 45vh;
+  }
+
+  @media screen and (orientation: landscape) and (max-height: 414px){
+    height: 60vh;
   }
 
   @media only screen and (min-width: 415px) and (max-width: 768px) {
@@ -51,6 +59,10 @@ const HeaderAnimatedStyles = styled.div`
 
   @media only screen and (min-width: 1441px) {
     height: 50vh;
+  }
+
+  @media screen and (orientation: landscape) and (max-height: 414px){
+    height: 70vh;
   }
 `;
 

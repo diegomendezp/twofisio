@@ -41,6 +41,7 @@ const PilatesStyles = styled.div`
    
   }
 
+
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .pilates-img {
       height: 33vh;
