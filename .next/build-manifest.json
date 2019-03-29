@@ -11,7 +11,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/index": [
+    "/ecografia": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
@@ -23,11 +23,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/ecografia": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/nosotros": [
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
