@@ -1,7 +1,5 @@
 import React from "react";
 import HeaderAnimatedStyles from "../../PagesStyles/HeaderAnimatedStyles";
-import { tween, styler, easing } from "popmotion";
-import { interpolate } from "flubber"; // ES6
 import { _bubleAnimation } from "../../utils/animations";
 
 const star = "M 200 200m -75 0a 75 75 0 1 0 150 0a 75 75 0 1 0 -150 0";
@@ -17,16 +15,22 @@ class HeaderAnimated extends React.Component {
   _manageResize = () => {
     switch (true) {
       case window.innerWidth <= 375:
-      _bubleAnimation(200, 210, 2.3, 3, 2.8, 3, -150, -150);
+        _bubleAnimation(200, 210, 2.3, 3, 2.8, 3, -40, -51);
         break;
       case window.innerWidth <= 414:
-        _bubleAnimation(200, 210, 2.3, 3, 3.1, 3.2, -150, -150);
+        _bubleAnimation(200, 210, 2.3, 3, 3.1, 3.2, -50, -60);
         break;
       case window.innerWidth <= 768:
-      _bubleAnimation(550, 560, 3, 3.4, 3.1, 3.2, -50, -50);
+        _bubleAnimation(550, 560, 3, 3.4, 3.1, 3.2, 5, 10);
+        break;
+      case window.innerWidth <= 1024:
+        _bubleAnimation(550, 560, 10, 15, 3.1, 3.2, 25, 15);
+        break;
+      case window.innerWidth <= 1440:
+        _bubleAnimation(550, 560, 10, 15, 3.45 , 3.51, -110, -110);
         break;
       default:
-        _bubleAnimation(1500, 1500, 10, 10.2, 1.8, 2.05, 200, 200);
+        _bubleAnimation(500, 500, 10, 10.2, 3.1, 3.2, 80, 80);
     }
   };
 

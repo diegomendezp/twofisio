@@ -11,20 +11,12 @@ const FisioterapiaStyles = styled.div`
     clip-path: url(#svgPath);
     object-fit: cover;
   }
-  .technique {
-    font-family: "Monserrat-regular";
-    color: black;
-    font-size: 1rem;
-    letter-spacing: 0.03rem;
-    line-height: 1.45rem;
-  }
+
 
   .treatment-name{
     font-family: "Monserrat-Semibold";
     color: #740a64;;
-    font-size: 1rem;
-    letter-spacing: 0.03rem;
-    line-height: 1.45rem;
+  
     
   }
   .techniques-content {
@@ -40,6 +32,9 @@ const FisioterapiaStyles = styled.div`
     letter-spacing: 0.2px;
     margin-top: 2%;
     margin-bottom: 2%;
+  }
+  .technique{
+    margin-bottom:10%;
   }
 
   @media only screen and (min-width: 415px) and (max-width: 768px) {

@@ -4,21 +4,16 @@ import { tween, styler, easing } from "popmotion";
 import { interpolate } from "flubber"; // ES6
 import SectionTitle from "./SectionTitle";
 import HomeText from "../../content/home.json";
-import CrossfadeImage from "../CrossFadeImage";
 import $ from "jquery";
 import Bubbles from "./Bubles";
 import { _bubleAnimation, detectmob } from "../../utils/animations";
-import {
-  disableBodyScroll,
-  enableBodyScroll,
-  clearAllBodyScrollLocks
-} from "body-scroll-lock";
+
 
 const images = [
-  "../../static/imgPilates.jpg",
+  "../../static/imgFisioterapia.jpg",
   "../../static/imgTratamientos.jpg",
-  "../../static/imgEcografía.jpg",
-  "../../static/imgFisioterapia.jpg"
+  "../../static/imgEcografia.jpg",
+  "../../static/imgPilates.jpg",
 ];
 
 var interval;
@@ -71,11 +66,10 @@ export default class Home extends Component {
 
   _listenSliderButtons = () => {
     let listItems = document.querySelectorAll("ul li");
-
     listItems.forEach((item, i) => {
       item.onclick = e => {
         if (i !== 5) {
-          this._changeSVGForm("down", "slider", i - 1);
+          this._changeSVGForm("down", "slider", i -1 );
           this.setState({ ...this.state, formPosition: i, bubblePosition: i });
         } else {
           this._changeSVGForm("down", "slider", i - 2);
@@ -194,7 +188,7 @@ export default class Home extends Component {
             : fromTo + 1
       },
       () => {
-        this._changeBubble(this.state.formPosition - 1);
+        this._changeBubble(this.state.formPosition -1 );
         this._makeAnimation(this.state.prevPosition, this.state.formPosition);
       }
     );
@@ -216,7 +210,8 @@ export default class Home extends Component {
         _bubleAnimation(400, 410, 2.3, 3, 3.1, 3.2, -200, -400);
         break;
       default:
-        _bubleAnimation(500, 480, 1.8, 1.85, 3, 3, -100, -150);
+        const posX = window.innerWidth / 3;
+        _bubleAnimation(posX, posX +10 , 3, 3.1, 3.1, 3.2, -200, -400);
     }
   };
 
@@ -224,6 +219,7 @@ export default class Home extends Component {
     this._listenSliderButtons();
     this._mouseWheel();
     this._manageResize();
+
     window.addEventListener("resize", this._manageResize);
 
     // if (window.innerWidth <= 768) {
@@ -262,6 +258,7 @@ export default class Home extends Component {
   }
 
   render() {
+    
     return (
       <HomeWrapperStyle id="bodyHome">
         <Bubbles position={this.state.bubblePosition} />
@@ -277,10 +274,12 @@ export default class Home extends Component {
             images[this.state.formPosition < 5 && this.state.formPosition - 1]
           }
         />
+
         <svg id="container">
           <clipPath id="svgPath">
             <path id="target" />
           </clipPath>
+
         </svg>
 
         <SectionTitle

@@ -7,16 +7,20 @@ const NavbarWrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   color: rgb(116, 10, 100);
-  width: 90%;
+  width: 95%;
   max-width: 100vw;
   position: fixed;
   top: 0;
   margin: 0 auto;
-  img {
-    height: 80px;
-    object-fit: contain;
 
-    
+  img:hover{
+    cursor: pointer;
+  }
+
+  img {
+    margin-top:0.5%;
+    height: 50px;
+    object-fit: contain;  
   }
 
   ul {
@@ -24,7 +28,7 @@ const NavbarWrapper = styled.div`
     a {
       list-style: none;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 1rem;
       letter-spacing:0.6pt;
       color: rgb(116, 10, 100);
     }
@@ -33,6 +37,16 @@ const NavbarWrapper = styled.div`
       color: rgb(116, 10, 100);
     }
   }
+
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    img {
+      margin-top:1%;
+      height: 60px;
+      object-fit: contain;  
+    }
+  }
+
+
 `;
 
 const NavbarStyles = styled.div`

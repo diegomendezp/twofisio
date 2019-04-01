@@ -1,18 +1,10 @@
-// import React, { Component } from "react";
-
-// export const SectionTitle = props => {
-//   return (
-//     <div className="sectionTitle">
-//       <h1 onClick={props.changeForm}>{props.title}</h1>
-//       <p>{props.body}</p>
-//       <a href={props.link}>+ Mas Info</a>
-//     </div>
-//   );
-// };
-
 
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import FontBold from "../../PagesStyles/FontStyle/FontBold";
+import FontRegular from "../../PagesStyles/FontStyle/FontRegular";
+import FontLink from "../../PagesStyles/FontStyle/FontLink";
+
 
 class SectionTitle extends Component {
   constructor(props) {
@@ -52,7 +44,7 @@ class SectionTitle extends Component {
   render() {
     const { duration, timingFunction} = this.props;
     const { topSrc, bottomOpacity, bottomSrc, topOpacity } = this.state;
-
+    
 
     return (
       <div>
@@ -65,9 +57,9 @@ class SectionTitle extends Component {
                 }
               }}  
             >
-            <h1>{topSrc.title}</h1>
-            <p>{topSrc.body}</p>
-            <a href={topSrc.link}>+ Mas Info</a>
+            <FontBold>{topSrc.title}</FontBold>
+            <FontRegular>{topSrc.body}</FontRegular>
+            <FontLink href={topSrc.link}>+ Mas Info</FontLink>
           </div>
           }
         {bottomSrc &&
@@ -79,8 +71,8 @@ class SectionTitle extends Component {
                 }
               }}  
               >
-              <h1>{bottomSrc.title}</h1>
-              <p>{bottomSrc.body}</p>
+              <FontBold>{bottomSrc.title}</FontBold>
+              <FontRegular>{bottomSrc.body}</FontRegular>
               <a href={bottomSrc.link}>+ Mas Info</a>
             </div>}
       </div>

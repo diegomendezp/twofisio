@@ -27,7 +27,7 @@ const NosotrosStyles = styled.div`
 }
   .member-img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
   }
 
@@ -45,7 +45,7 @@ const NosotrosStyles = styled.div`
   }
 
   .member-info {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -96,6 +96,12 @@ const NosotrosStyles = styled.div`
   }
 
   @media only screen and (min-width: 415px) and (max-width: 768px) {
+    .member-img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
     .member {
       width: 40%;
     }
@@ -115,6 +121,12 @@ const NosotrosStyles = styled.div`
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1440px) {
+    .member-img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+    
     .member {
       width: 40%;
     }
@@ -134,8 +146,7 @@ const NosotrosStyles = styled.div`
   }
 
   @media only screen and (min-width: 1441px) {
-    
-    .member {
+     .member {
       width: 40%;
     }
 
@@ -152,7 +163,7 @@ const NosotrosStyles = styled.div`
       margin-bottom: 10%;
     }
     .member-img{
-      height: 250px;
+      height: auto;
     }
   }
 `;

@@ -1,29 +1,15 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const HomeWrapperStyle = styled.div`
   width: 100vw;
   height: 100vh;
   background: white;
   position: relative;
-  font-family: "Monserrat-Semibold";
   font-weight: lighter;
   -webkit-overflow-scrolling: touch;
 
-  #bodyHome {
-  }
 
-  h1 {
-    color: rgb(116, 10, 100);
-  }
 
-  p {
-    color: rgb(37, 37, 37);
-  }
-
-  a {
-    color: rgb(116, 10, 100);
-    text-decoration: underline;
-  }
 
   CrossfadeImage {
     widows: 100vw;
@@ -44,11 +30,12 @@ const HomeWrapperStyle = styled.div`
     height: 100vh;
   }
 
+ 
   .sectionTitle {
     position: absolute;
     width: 20vw;
-    top: calc(100vh / 2 - 5%);
-    left: 10%;
+    top: calc(100vh / 2 - 15%);
+    left: 5%;
     h1 {
       color: rgb(116, 10, 100);
     }
@@ -66,8 +53,8 @@ const HomeWrapperStyle = styled.div`
 
   .bubbleGroup {
     position: absolute;
-    top: 50%;
-    right: 5%;
+    top: calc(100vh / 2 - 15%);
+    right: 2.5%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -84,11 +71,11 @@ const HomeWrapperStyle = styled.div`
 
   .bubble {
     z-index: 10;
-    width: 10px;
-    height: 10px;
+    width: 0.5px;
+    height: 20px;
     border: 1px solid white;
-    border-radius: 50%;
-    margin: 20% 0%;
+    border-radius: 2px;
+    margin: 100% 0%;
     box-shadow: 0px 0px 2px rgb(116, 10, 100);
   }
 
@@ -101,8 +88,8 @@ const HomeWrapperStyle = styled.div`
     overflow: hidden;
 
     .sectionTitle {
-      width: 80vw;
-      top: calc(100vh / 2 - 16%);
+      width: 60vw;
+      justify-content:center;
     }
 
     .bubbleGroup {
@@ -120,29 +107,24 @@ const HomeWrapperStyle = styled.div`
   }
 
   @media only screen and (min-width: 415px) and (max-width: 768px) {
-    color: red;
-    #bubbleFooter {
-      display: none;
-    }
     .sectionTitle {
-      top: calc(100vh / 2 - 25%);
-      width: 40vw;
-      h1 {
-        font-size: 2.2rem;
-      }
-      p {
-        font-size: 1.8rem;
-      }
-      a {
-        font-size: 1.8rem;
-      }
+      justify-content:center;
+      width: 50vw;
     }
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    .sectionTitle {
+      justify-content:center;
+      width: 50vw;
+    }
   }
 
   @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .sectionTitle {
+      justify-content:center;
+      width: 30vw;
+    }
   }
 
 

@@ -56,7 +56,7 @@ const FooterStyles = styled.div`
     }
     .footer-content {
       margin-bottom: 2%;
-      margin-top: 9%;
+      margin-top: 10%;
     }
     .copyright{
       margin-top:5%
@@ -65,7 +65,7 @@ const FooterStyles = styled.div`
   @media only screen and (min-width: 1441px) {
     .footer-content {
       width: 90%;
-      margin-top: 8%;
+      margin-top: 6%;
       margin-bottom: 1%;
     }
     .footerLogo{
