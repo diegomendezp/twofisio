@@ -8,25 +8,17 @@ const EcographyStyles = styled.div`
     object-fit: cover;
   }
 
-  h2 {
+  .treatment-name{
     font-family: "Monserrat-Semibold";
     color: #740a64;
     letter-spacing: 0.2px;
   }
-  .treatment-name{
-    font-family: "Monserrat-Semibold";
-    color: #740a64;
+  .treatment-eco{
+    margin-bottom:3%;
   }
-/*   
   .back-photo{
-
-    background-image: url(${ecographyPhoto});
-    background-size: cover;
-    background-position: center;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-size: 100%;
-  } */
+    margin-bottom:30%;
+  }
   .ecography-content {
     width: 90%;
     margin: 0 auto;
@@ -40,7 +32,12 @@ const EcographyStyles = styled.div`
   }
 
   @media only screen and (min-width: 415px) and (max-width: 768px) {
-   
+    .back-photo{
+    margin-bottom:10%;
+    }
+    .treatment-eco{
+      margin-bottom:3%;
+    } 
 
     .ecography {
       display: flex;
@@ -51,6 +48,12 @@ const EcographyStyles = styled.div`
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1440px) {
+    .back-photo{
+    margin-bottom:10%;
+    }
+    .treatment-eco{
+      margin-bottom:1%;
+    } 
     .ecography-img {
       height: 50vh;
     }
@@ -67,24 +70,27 @@ const EcographyStyles = styled.div`
   }
 
   @media only screen and (min-width: 1441px) {
+    .back-photo{
+    margin-bottom:10%;
+    }
+    .treatment-eco{
+      margin-bottom:1%;
+    } 
     .ecography-img {
       height: 48vh;
     }
     .ecography-content {
-    width: 60%;
-    margin-left: 5%;
-    margin-top: 8%;
-    margin-bottom: 10%;
-
-  }
+      width: 60%;
+      margin-left: 5%;
+      margin-top: 8%;
+      margin-bottom: 10%;
+    }
 
     .ecography {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
     }
-
-   
   }
 `;
 

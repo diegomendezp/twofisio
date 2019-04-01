@@ -1,6 +1,6 @@
 {
   "devFiles": [
-    "static/development/dll/dll_cb22fc475a2445b0c199.js"
+    "static/development/dll/dll_aa8f31c0c93a8f34edc5.js"
   ],
   "pages": {
     "/_app": [
@@ -15,7 +15,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/next/dist/pages/_error": [
+    "/fisioterapia": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],

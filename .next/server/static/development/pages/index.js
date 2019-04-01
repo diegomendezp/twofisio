@@ -530,6 +530,8 @@ var _content_home_json__WEBPACK_IMPORTED_MODULE_14___namespace = /*#__PURE__*/__
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_15__);
 /* harmony import */ var _Bubles__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./Bubles */ "./components/Home/Bubles.js");
 /* harmony import */ var _utils_animations__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../utils/animations */ "./utils/animations.js");
+/* harmony import */ var react_page_scroller__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! react-page-scroller */ "react-page-scroller");
+/* harmony import */ var react_page_scroller__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(react_page_scroller__WEBPACK_IMPORTED_MODULE_18__);
 
 
 
@@ -544,6 +546,7 @@ var _jsxFileName = "/home/alberto/Escritorio/TaylorHUB/Proyectos/Clientes/twofis
 
 
  // ES6
+
 
 
 
@@ -608,94 +611,48 @@ function (_Component) {
       });
     });
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "_mouseWheel", function () {
-      var delta = 0; // detect available wheel event
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "pageOnChange", function (number) {
+      console.log(number, _this.state.bubblePosition);
 
-      var wheelEvent = "onwheel" in document.createElement("div") ? "wheel" // Modern browsers support "wheel"
-      : document.onmousewheel !== undefined ? "mousewheel" // Webkit and IE support at least "mousewheel"
-      : "DOMMouseScroll"; // let's assume that remaining browsers are older Firefox
+      if (number > _this.state.bubblePosition) {
+        if (number === 5) {
+          document.getElementsByTagName("body")[0].style.position = "relative";
+          window.scrollTo({
+            top: 450,
+            left: 0,
+            behavior: "smooth"
+          });
 
-      if (Object(_utils_animations__WEBPACK_IMPORTED_MODULE_17__["detectmob"])()) {
-        var scrollPos = 0;
-        var timerId;
-        jquery__WEBPACK_IMPORTED_MODULE_15___default()(window).bind("scroll", function () {
-          clearTimeout(timerId);
-          timerId = setTimeout(function () {
-            if (_this.state.formPosition < 4) {
-              _this._changeSVGForm("down");
-            } else {
-              _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _this.state, {
-                formPosition: 1,
-                bubblePosition: 1
-              }), function () {
-                return _this._changeBubble(0);
-              });
-            }
-          }, 200);
-        });
+          _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _this.state, {
+            bubblePosition: number
+          }));
+        } else {
+          _this._changeSVGForm("down");
+
+          _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _this.state, {
+            formPosition: number,
+            bubblePosition: number
+          }));
+        }
       } else {
-        jquery__WEBPACK_IMPORTED_MODULE_15___default()(window).on(wheelEvent, function (e) {
-          if (e.originalEvent.wheelDelta > 0) {
-            // document.getElementsByTagName("body")[0].style.overflowY = "hidden";
-            delta++;
+        if (number === 4) {
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+          });
 
-            if (delta >= 20) {
-              delta = 0;
-              window.scrollTo({
-                top: 0,
-                left: 0,
-                behavior: "smooth"
-              });
+          _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _this.state, {
+            bubblePosition: number
+          }));
+        } else {
+          _this._changeSVGForm("up");
 
-              if (_this.state.bubblePosition === 5) {
-                _this._changeBubble(3);
-              }
-
-              if (_this.state.formPosition > 1) {
-                if (_this.state.bubblePosition !== 5) {
-                  _this._changeSVGForm("up");
-                } else {
-                  _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _this.state, {
-                    bubblePosition: 4
-                  }), function () {
-                    window.scrollTo({
-                      top: 0,
-                      left: 0,
-                      behavior: "smooth"
-                    });
-                    setTimeout(function () {
-                      document.getElementsByTagName("body")[0].style.position = "fixed";
-                    }, 1000);
-                  });
-                }
-              }
-            }
-          } else {
-            delta--;
-
-            if (delta <= -20) {
-              delta = 0;
-
-              if (_this.state.formPosition < 4) {
-                _this._changeSVGForm("down");
-              } else {
-                _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _this.state, {
-                  bubblePosition: 5
-                }), function () {
-                  document.getElementsByTagName("body")[0].style.position = "relative";
-
-                  _this._changeBubble(4);
-
-                  window.scrollTo({
-                    top: 1000,
-                    left: 0,
-                    behavior: "smooth"
-                  });
-                });
-              }
-            }
-          }
-        });
+          _this.setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, _this.state, {
+            formPosition: number,
+            bubblePosition: number
+          }));
+        }
       }
     });
 
@@ -755,6 +712,75 @@ function (_Component) {
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Home, [{
     key: "_changeBubble",
+    // _mouseWheel = () => {
+    //   let delta = 0;
+    //   // detect available wheel event
+    //   const wheelEvent =
+    //     "onwheel" in document.createElement("div")
+    //       ? "wheel" // Modern browsers support "wheel"
+    //       : document.onmousewheel !== undefined
+    //       ? "mousewheel" // Webkit and IE support at least "mousewheel"
+    //       : "DOMMouseScroll"; // let's assume that remaining browsers are older Firefox
+    //   if (detectmob()) {
+    //     var scrollPos = 0;
+    //     var timerId;
+    //     $(window).bind("scroll", () => {
+    //       clearTimeout(timerId);
+    //       timerId = setTimeout(() => {
+    //         if (this.state.formPosition < 4) {
+    //           this._changeSVGForm("down");
+    //         } else {
+    //           this.setState(
+    //             { ...this.state, formPosition: 1, bubblePosition: 1 },
+    //             () => this._changeBubble(0)
+    //           );
+    //         }
+    //       }, 200);
+    //     });
+    //   } else {
+    //     $(window).on(wheelEvent, e => {
+    //       if (e.originalEvent.wheelDelta > 0) {
+    //         // document.getElementsByTagName("body")[0].style.overflowY = "hidden";
+    //         delta++;
+    //         if (delta >= 20) {
+    //           delta = 0;
+    //           window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    //           if (this.state.bubblePosition === 5) {
+    //             this._changeBubble(3);
+    //           }
+    //           if (this.state.formPosition > 1) {
+    //             if (this.state.bubblePosition !== 5) {
+    //               this._changeSVGForm("up");
+    //             } else {
+    //               this.setState({ ...this.state, bubblePosition: 4 }, () => {
+    //                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    //                 setTimeout(() => {
+    //                   document.getElementsByTagName("body")[0].style.position =
+    //                     "fixed";
+    //                 }, 1000);
+    //               });
+    //             }
+    //           }
+    //         }
+    //       } else {
+    //         delta--;
+    //         if (delta <= -20) {
+    //           delta = 0;
+    //           if (this.state.formPosition < 4) {
+    //             this._changeSVGForm("down");
+    //           } else {
+    //             this.setState({ ...this.state, bubblePosition: 5 }, () => {
+    //               document.getElementsByTagName("body")[0].style.position =
+    //                 "relative";
+    //               this._changeBubble(4);
+    //               window.scrollTo({ top: 1000, left: 0, behavior: "smooth" });
+    //             });
+    //           }
+    //         }
+    //       }
+    //     });
+    //   }
+    // };
     value: function _changeBubble(pos) {
       document.querySelectorAll(".bubble").forEach(function (div, i) {
         if (i === pos) {
@@ -774,9 +800,8 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      this._listenSliderButtons();
+      this._listenSliderButtons(); // this._mouseWheel();
 
-      this._mouseWheel();
 
       this._manageResize();
 
@@ -809,46 +834,88 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
+      var _this3 = this;
+
       return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_PagesStyles_HomeStyle__WEBPACK_IMPORTED_MODULE_10__["HomeWrapperStyle"], {
         id: "bodyHome",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 263
+          lineNumber: 300
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_Bubles__WEBPACK_IMPORTED_MODULE_16__["default"], {
         position: this.state.bubblePosition,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 264
+          lineNumber: 301
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("img", {
         src: images[this.state.formPosition < 5 && this.state.formPosition - 1],
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 272
+          lineNumber: 302
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("svg", {
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react_page_scroller__WEBPACK_IMPORTED_MODULE_18___default.a, {
+        ref: function ref(c) {
+          return _this3.reactPageScroller = c;
+        },
+        pageOnChange: this.pageOnChange,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 314
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 318
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 319
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 320
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 321
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_9___default.a.Fragment, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 322
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("svg", {
         id: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 278
+          lineNumber: 330
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("clipPath", {
         id: "svgPath",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 279
+          lineNumber: 331
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement("path", {
         id: "target",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 280
+          lineNumber: 332
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(_SectionTitle__WEBPACK_IMPORTED_MODULE_13__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
@@ -857,7 +924,7 @@ function (_Component) {
       }, _content_home_json__WEBPACK_IMPORTED_MODULE_14__[this.state.formPosition < 5 && this.state.formPosition - 1], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 285
+          lineNumber: 336
         },
         __self: this
       })));
@@ -1895,102 +1962,6 @@ module.exports = _typeof;
 
 /***/ }),
 
-/***/ "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js ***!
-  \**********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/**
- * Copyright 2015, Yahoo! Inc.
- * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
- */
-var ReactIs = __webpack_require__(/*! react-is */ "react-is");
-var REACT_STATICS = {
-    childContextTypes: true,
-    contextType: true,
-    contextTypes: true,
-    defaultProps: true,
-    displayName: true,
-    getDefaultProps: true,
-    getDerivedStateFromError: true,
-    getDerivedStateFromProps: true,
-    mixins: true,
-    propTypes: true,
-    type: true
-};
-
-var KNOWN_STATICS = {
-    name: true,
-    length: true,
-    prototype: true,
-    caller: true,
-    callee: true,
-    arguments: true,
-    arity: true
-};
-
-var FORWARD_REF_STATICS = {
-    '$$typeof': true,
-    render: true
-};
-
-var TYPE_STATICS = {};
-TYPE_STATICS[ReactIs.ForwardRef] = FORWARD_REF_STATICS;
-
-var defineProperty = Object.defineProperty;
-var getOwnPropertyNames = Object.getOwnPropertyNames;
-var getOwnPropertySymbols = Object.getOwnPropertySymbols;
-var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
-var getPrototypeOf = Object.getPrototypeOf;
-var objectPrototype = Object.prototype;
-
-function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
-    if (typeof sourceComponent !== 'string') {
-        // don't hoist over string (html) components
-
-        if (objectPrototype) {
-            var inheritedComponent = getPrototypeOf(sourceComponent);
-            if (inheritedComponent && inheritedComponent !== objectPrototype) {
-                hoistNonReactStatics(targetComponent, inheritedComponent, blacklist);
-            }
-        }
-
-        var keys = getOwnPropertyNames(sourceComponent);
-
-        if (getOwnPropertySymbols) {
-            keys = keys.concat(getOwnPropertySymbols(sourceComponent));
-        }
-
-        var targetStatics = TYPE_STATICS[targetComponent['$$typeof']] || REACT_STATICS;
-        var sourceStatics = TYPE_STATICS[sourceComponent['$$typeof']] || REACT_STATICS;
-
-        for (var i = 0; i < keys.length; ++i) {
-            var key = keys[i];
-            if (!KNOWN_STATICS[key] && !(blacklist && blacklist[key]) && !(sourceStatics && sourceStatics[key]) && !(targetStatics && targetStatics[key])) {
-                var descriptor = getOwnPropertyDescriptor(sourceComponent, key);
-                try {
-                    // Avoid failures from read-only properties
-                    defineProperty(targetComponent, key, descriptor);
-                } catch (e) {}
-            }
-        }
-
-        return targetComponent;
-    }
-
-    return targetComponent;
-}
-
-module.exports = hoistNonReactStatics;
-
-
-/***/ }),
-
 /***/ "./node_modules/next/dist/client/link.js":
 /*!***********************************************!*\
   !*** ./node_modules/next/dist/client/link.js ***!
@@ -2455,7 +2426,7 @@ var react_1 = __importStar(__webpack_require__(/*! react */ "react"));
 
 var prop_types_1 = __importDefault(__webpack_require__(/*! prop-types */ "prop-types"));
 
-var hoist_non_react_statics_1 = __importDefault(__webpack_require__(/*! hoist-non-react-statics */ "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js"));
+var hoist_non_react_statics_1 = __importDefault(__webpack_require__(/*! hoist-non-react-statics */ "./node_modules/next/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js"));
 
 var utils_1 = __webpack_require__(/*! next-server/dist/lib/utils */ "next-server/dist/lib/utils");
 
@@ -2502,6 +2473,102 @@ exports.default = withRouter;
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/next/dist/client/link.js")
+
+
+/***/ }),
+
+/***/ "./node_modules/next/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js":
+/*!****************************************************************************************************!*\
+  !*** ./node_modules/next/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * Copyright 2015, Yahoo! Inc.
+ * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
+ */
+var ReactIs = __webpack_require__(/*! react-is */ "react-is");
+var REACT_STATICS = {
+    childContextTypes: true,
+    contextType: true,
+    contextTypes: true,
+    defaultProps: true,
+    displayName: true,
+    getDefaultProps: true,
+    getDerivedStateFromError: true,
+    getDerivedStateFromProps: true,
+    mixins: true,
+    propTypes: true,
+    type: true
+};
+
+var KNOWN_STATICS = {
+    name: true,
+    length: true,
+    prototype: true,
+    caller: true,
+    callee: true,
+    arguments: true,
+    arity: true
+};
+
+var FORWARD_REF_STATICS = {
+    '$$typeof': true,
+    render: true
+};
+
+var TYPE_STATICS = {};
+TYPE_STATICS[ReactIs.ForwardRef] = FORWARD_REF_STATICS;
+
+var defineProperty = Object.defineProperty;
+var getOwnPropertyNames = Object.getOwnPropertyNames;
+var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+var getPrototypeOf = Object.getPrototypeOf;
+var objectPrototype = Object.prototype;
+
+function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
+    if (typeof sourceComponent !== 'string') {
+        // don't hoist over string (html) components
+
+        if (objectPrototype) {
+            var inheritedComponent = getPrototypeOf(sourceComponent);
+            if (inheritedComponent && inheritedComponent !== objectPrototype) {
+                hoistNonReactStatics(targetComponent, inheritedComponent, blacklist);
+            }
+        }
+
+        var keys = getOwnPropertyNames(sourceComponent);
+
+        if (getOwnPropertySymbols) {
+            keys = keys.concat(getOwnPropertySymbols(sourceComponent));
+        }
+
+        var targetStatics = TYPE_STATICS[targetComponent['$$typeof']] || REACT_STATICS;
+        var sourceStatics = TYPE_STATICS[sourceComponent['$$typeof']] || REACT_STATICS;
+
+        for (var i = 0; i < keys.length; ++i) {
+            var key = keys[i];
+            if (!KNOWN_STATICS[key] && !(blacklist && blacklist[key]) && !(sourceStatics && sourceStatics[key]) && !(targetStatics && targetStatics[key])) {
+                var descriptor = getOwnPropertyDescriptor(sourceComponent, key);
+                try {
+                    // Avoid failures from read-only properties
+                    defineProperty(targetComponent, key, descriptor);
+                } catch (e) {}
+            }
+        }
+
+        return targetComponent;
+    }
+
+    return targetComponent;
+}
+
+module.exports = hoistNonReactStatics;
 
 
 /***/ }),
@@ -3778,6 +3845,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-is");
+
+/***/ }),
+
+/***/ "react-page-scroller":
+/*!**************************************!*\
+  !*** external "react-page-scroller" ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-page-scroller");
 
 /***/ }),
 

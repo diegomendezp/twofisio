@@ -39,7 +39,9 @@ const FisioterapiaStyles = styled.div`
 
   @media only screen and (min-width: 415px) and (max-width: 768px) {
    
-
+    .technique{
+      margin-bottom:3%;
+    }
     .techniques {
       display: flex;
       flex-wrap: wrap;
@@ -56,6 +58,9 @@ const FisioterapiaStyles = styled.div`
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1440px) {
+    .technique{
+      margin-bottom:1%;
+    }
     .techniques-img {
       height: 30vh;
     }
@@ -74,7 +79,10 @@ const FisioterapiaStyles = styled.div`
   }
 
   @media only screen and (min-width: 1441px) {
-    .techniques-img {
+    .technique{
+      margin-bottom:1%;
+    }
+     .techniques-img {
       height: 48vh;
     }
     .techniques-content {
