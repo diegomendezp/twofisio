@@ -1,15 +1,31 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const HomeWrapperStyle = styled.div`
   width: 100vw;
   height: 100vh;
   background: white;
-  position: relative;
+  /* position: relative; */
   font-weight: lighter;
-  -webkit-overflow-scrolling: touch;
+  /* -webkit-overflow-scrolling: touch; */
 
-
-
+  .sectionTitle {
+    a {
+      font-family: "Monserrat-Semibold";
+      font-size: 0.8rem;
+      letter-spacing: 0.04rem;
+      line-height: 1.3rem;
+      color: rgb(116, 10, 100);
+      text-decoration: none;
+    }
+    a:visited {
+      font-family: "Monserrat-Semibold";
+      font-size: 0.8rem;
+      letter-spacing: 0.04rem;
+      line-height: 1.3rem;
+      color: rgb(116, 10, 100);
+      text-decoration: none;
+    }
+  }
 
   CrossfadeImage {
     widows: 100vw;
@@ -30,7 +46,6 @@ const HomeWrapperStyle = styled.div`
     height: 100vh;
   }
 
- 
   .sectionTitle {
     position: absolute;
     width: 20vw;
@@ -89,7 +104,7 @@ const HomeWrapperStyle = styled.div`
 
     .sectionTitle {
       width: 60vw;
-      justify-content:center;
+      justify-content: center;
     }
 
     .bubbleGroup {
@@ -108,25 +123,24 @@ const HomeWrapperStyle = styled.div`
 
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     .sectionTitle {
-      justify-content:center;
+      justify-content: center;
       width: 50vw;
     }
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
     .sectionTitle {
-      justify-content:center;
+      justify-content: center;
       width: 50vw;
     }
   }
 
   @media only screen and (min-width: 1024px) and (max-width: 1440px) {
     .sectionTitle {
-      justify-content:center;
+      justify-content: center;
       width: 30vw;
     }
   }
-
 
   @media only screen and (min-width: 1441px) {
   }

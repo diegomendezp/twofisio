@@ -18,7 +18,7 @@ class HeaderAnimated extends React.Component {
         _bubleAnimation(200, 210, 2.3, 3, 2.8, 3, -40, -51);
         break;
       case window.innerWidth <= 414:
-        _bubleAnimation(200, 210, 2.3, 3, 3.1, 3.2, -50, -60);
+        _bubleAnimation(200, 210, 2.3, 3, 3.1, 3.2, -100, -100);
         break;
       case window.innerWidth <= 768:
         _bubleAnimation(550, 560, 3, 3.4, 3.1, 3.2, 5, 10);
