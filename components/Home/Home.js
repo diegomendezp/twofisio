@@ -302,7 +302,7 @@ export default class Home extends Component {
   };
 
   componentDidMount() {
-    this._listenSliderButtons();
+    //this._listenSliderButtons();
     this._scrollEvent();
     this._manageResize();
 
