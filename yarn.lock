@@ -755,10 +755,17 @@
   resolved "https://registry.yarnpkg.com/@popmotion/easing/-/easing-1.0.2.tgz#17d925c45b4bf44189e5a38038d149df42d8c0b4"
   integrity sha512-IkdW0TNmRnWTeWI7aGQIVDbKXPWHVEYdGgd5ZR4SH/Ty/61p63jCjrPxX1XrR7IGkl08bjhJROStD7j+RKgoIw==
 
+<<<<<<< HEAD
 "@popmotion/popcorn@^0.3.3":
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/@popmotion/popcorn/-/popcorn-0.3.4.tgz#afbf70cbe2d729a24dcd88c64eb8c7e902ca6cfb"
   integrity sha512-pAp8qZT7Mjoutt3eH+wIyb0P8fINO1JNU16OdYcgST6FgX7+AG7vNic4SDDLnkSt60BuEYkZ9V0IQq3PnItx0Q==
+=======
+"@popmotion/popcorn@^0.3.5":
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/@popmotion/popcorn/-/popcorn-0.3.5.tgz#7bbe1bfbdabfcde352043762bf8417d61eeee1ce"
+  integrity sha512-2TRfMzsZnVj1JjPS+A7VvUBbSgaNuXn8jWn5C6kPN4hvpDH7pgvj3/sea8xH4JncGe4YW6usg1uGH5xePLM5Tw==
+>>>>>>> 8dffe5b0b161cfede3d8a4617b513bf92918f0d1
   dependencies:
     "@popmotion/easing" "^1.0.1"
     framesync "^4.0.1"
@@ -4005,12 +4012,21 @@ pkg-dir@^3.0.0:
     find-up "^3.0.0"
 
 popmotion@^8.6.4:
+<<<<<<< HEAD
   version "8.6.5"
   resolved "https://registry.yarnpkg.com/popmotion/-/popmotion-8.6.5.tgz#79e3fb0197ef66f50120d11c2270f077d65aed46"
   integrity sha512-qhRUD7GDuSHQdBWulm3JOeKLxE/WyiIpQWNKZUzdglaFrfQB+lW+N2aEM72a7mOtvyhlJaIcUxMlTxVqfkBV3g==
   dependencies:
     "@popmotion/easing" "^1.0.1"
     "@popmotion/popcorn" "^0.3.3"
+=======
+  version "8.6.7"
+  resolved "https://registry.yarnpkg.com/popmotion/-/popmotion-8.6.7.tgz#b143017f510516de9aa1e98486e9ee3867351566"
+  integrity sha512-IyyAYSVQNukkXlJ5gpJf/2byGhqKa5iswMR3/vi1PFTSYOqvcV9C+tS8IReXw21InAd98wKgo5OZ9ZoPW2cNGw==
+  dependencies:
+    "@popmotion/easing" "^1.0.1"
+    "@popmotion/popcorn" "^0.3.5"
+>>>>>>> 8dffe5b0b161cfede3d8a4617b513bf92918f0d1
     framesync "^4.0.0"
     hey-listen "^1.0.5"
     style-value-types "^3.1.0"

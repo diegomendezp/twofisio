@@ -7,13 +7,13 @@ import HomeText from "../../content/home.json";
 import $ from "jquery";
 import Bubbles from "./Bubles";
 import { _bubleAnimation, detectmob } from "../../utils/animations";
-
+import ReactPageScroller from "react-page-scroller";
 
 const images = [
   "../../static/imgFisioterapia.jpg",
   "../../static/imgTratamientos.jpg",
   "../../static/imgEcografia.jpg",
-  "../../static/imgPilates.jpg",
+  "../../static/imgPilates.jpg"
 ];
 
 var interval;
@@ -69,7 +69,7 @@ export default class Home extends Component {
     listItems.forEach((item, i) => {
       item.onclick = e => {
         if (i !== 5) {
-          this._changeSVGForm("down", "slider", i -1 );
+          this._changeSVGForm("down", "slider", i - 1);
           this.setState({ ...this.state, formPosition: i, bubblePosition: i });
         } else {
           this._changeSVGForm("down", "slider", i - 2);
@@ -87,77 +87,115 @@ export default class Home extends Component {
     });
   };
 
-  _mouseWheel = () => {
-    let delta = 0;
-    // detect available wheel event
-    const wheelEvent =
-      "onwheel" in document.createElement("div")
-        ? "wheel" // Modern browsers support "wheel"
-        : document.onmousewheel !== undefined
-        ? "mousewheel" // Webkit and IE support at least "mousewheel"
-        : "DOMMouseScroll"; // let's assume that remaining browsers are older Firefox
+  pageOnChange = number => {
+    console.log(number, this.state.bubblePosition);
 
-    if (detectmob()) {
-      var scrollPos = 0;
-      var timerId;
-      $(window).bind("scroll", () => {
-        clearTimeout(timerId);
-        timerId = setTimeout(() => {
-          if (this.state.formPosition < 4) {
-            this._changeSVGForm("down");
-          } else {
-            this.setState(
-              { ...this.state, formPosition: 1, bubblePosition: 1 },
-              () => this._changeBubble(0)
-            );
-          }
-        }, 200);
-      });
+    if (number > this.state.bubblePosition) {
+      if (number === 5) {
+        document.getElementsByTagName("body")[0].style.position = "relative";
+        window.scrollTo({ top: 450, left: 0, behavior: "smooth" });
+        this.setState({
+          ...this.state,
+          bubblePosition: number
+        });
+      } else {
+        this._changeSVGForm("down");
+        this.setState({
+          ...this.state,
+          formPosition: number,
+          bubblePosition: number
+        });
+      }
     } else {
-      $(window).on(wheelEvent, e => {
-        if (e.originalEvent.wheelDelta > 0) {
-          // document.getElementsByTagName("body")[0].style.overflowY = "hidden";
-          delta++;
-          if (delta >= 20) {
-            delta = 0;
-            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-            if (this.state.bubblePosition === 5) {
-              this._changeBubble(3);
-            }
+      if (number === 4) {
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        this.setState({
+          ...this.state,
+          bubblePosition: number
+        });
+      } else {
+        this._changeSVGForm("up");
 
-            if (this.state.formPosition > 1) {
-              if (this.state.bubblePosition !== 5) {
-                this._changeSVGForm("up");
-              } else {
-                this.setState({ ...this.state, bubblePosition: 4 }, () => {
-                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-                  setTimeout(() => {
-                    document.getElementsByTagName("body")[0].style.position =
-                      "fixed";
-                  }, 1000);
-                });
-              }
-            }
-          }
-        } else {
-          delta--;
-          if (delta <= -20) {
-            delta = 0;
-            if (this.state.formPosition < 4) {
-              this._changeSVGForm("down");
-            } else {
-              this.setState({ ...this.state, bubblePosition: 5 }, () => {
-                document.getElementsByTagName("body")[0].style.position =
-                  "relative";
-                this._changeBubble(4);
-                window.scrollTo({ top: 1000, left: 0, behavior: "smooth" });
-              });
-            }
-          }
-        }
-      });
+        this.setState({
+          ...this.state,
+          formPosition: number,
+          bubblePosition: number
+        });
+      }
     }
   };
+
+  // _mouseWheel = () => {
+  //   let delta = 0;
+  //   // detect available wheel event
+  //   const wheelEvent =
+  //     "onwheel" in document.createElement("div")
+  //       ? "wheel" // Modern browsers support "wheel"
+  //       : document.onmousewheel !== undefined
+  //       ? "mousewheel" // Webkit and IE support at least "mousewheel"
+  //       : "DOMMouseScroll"; // let's assume that remaining browsers are older Firefox
+
+  //   if (detectmob()) {
+  //     var scrollPos = 0;
+  //     var timerId;
+  //     $(window).bind("scroll", () => {
+  //       clearTimeout(timerId);
+  //       timerId = setTimeout(() => {
+  //         if (this.state.formPosition < 4) {
+  //           this._changeSVGForm("down");
+  //         } else {
+  //           this.setState(
+  //             { ...this.state, formPosition: 1, bubblePosition: 1 },
+  //             () => this._changeBubble(0)
+  //           );
+  //         }
+  //       }, 200);
+  //     });
+  //   } else {
+  //     $(window).on(wheelEvent, e => {
+  //       if (e.originalEvent.wheelDelta > 0) {
+  //         // document.getElementsByTagName("body")[0].style.overflowY = "hidden";
+  //         delta++;
+  //         if (delta >= 20) {
+  //           delta = 0;
+  //           window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  //           if (this.state.bubblePosition === 5) {
+  //             this._changeBubble(3);
+  //           }
+
+  //           if (this.state.formPosition > 1) {
+  //             if (this.state.bubblePosition !== 5) {
+  //               this._changeSVGForm("up");
+  //             } else {
+  //               this.setState({ ...this.state, bubblePosition: 4 }, () => {
+  //                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  //                 setTimeout(() => {
+  //                   document.getElementsByTagName("body")[0].style.position =
+  //                     "fixed";
+  //                 }, 1000);
+  //               });
+  //             }
+  //           }
+  //         }
+  //       } else {
+  //         delta--;
+  //         if (delta <= -20) {
+  //           delta = 0;
+  //           if (this.state.formPosition < 4) {
+  //             this._changeSVGForm("down");
+  //           } else {
+  //             this.setState({ ...this.state, bubblePosition: 5 }, () => {
+  //               document.getElementsByTagName("body")[0].style.position =
+  //                 "relative";
+  //               this._changeBubble(4);
+  //               window.scrollTo({ top: 1000, left: 0, behavior: "smooth" });
+  //             });
+  //           }
+  //         }
+  //       }
+  //     });
+  //   }
+  // };
 
   _changeBubble(pos) {
     document.querySelectorAll(".bubble").forEach((div, i) => {
@@ -188,7 +226,7 @@ export default class Home extends Component {
             : fromTo + 1
       },
       () => {
-        this._changeBubble(this.state.formPosition -1 );
+        this._changeBubble(this.state.formPosition - 1);
         this._makeAnimation(this.state.prevPosition, this.state.formPosition);
       }
     );
@@ -206,18 +244,18 @@ export default class Home extends Component {
       case window.innerWidth <= 414:
         _bubleAnimation(200, 210, 2.3, 3, 3.1, 3.2, -200, -400);
         break;
-        case window.innerWidth <= 768:
+      case window.innerWidth <= 768:
         _bubleAnimation(400, 410, 2.3, 3, 3.1, 3.2, -200, -400);
         break;
       default:
         const posX = window.innerWidth / 3;
-        _bubleAnimation(posX, posX +10 , 3, 3.1, 3.1, 3.2, -200, -400);
+        _bubleAnimation(posX, posX + 10, 3, 3.1, 3.1, 3.2, -200, -400);
     }
   };
 
   componentDidMount() {
     this._listenSliderButtons();
-    this._mouseWheel();
+    // this._mouseWheel();
     this._manageResize();
 
     window.addEventListener("resize", this._manageResize);
@@ -258,10 +296,14 @@ export default class Home extends Component {
   }
 
   render() {
-    
     return (
       <HomeWrapperStyle id="bodyHome">
         <Bubbles position={this.state.bubblePosition} />
+        <img
+          src={
+            images[this.state.formPosition < 5 && this.state.formPosition - 1]
+          }
+        />
         {/* <CrossfadeImage
           src={
             images[this.state.formPosition < 5 && this.state.formPosition - 1]
@@ -269,17 +311,26 @@ export default class Home extends Component {
           duration={1500}
           timingFunction={"ease-out"}
         /> */}
-        <img
+        <ReactPageScroller
+          ref={c => (this.reactPageScroller = c)}
+          pageOnChange={this.pageOnChange}
+        >
+          <React.Fragment />
+          <React.Fragment />
+          <React.Fragment />
+          <React.Fragment />
+          <React.Fragment />
+        </ReactPageScroller>
+        {/* <img
           src={
             images[this.state.formPosition < 5 && this.state.formPosition - 1]
           }
-        />
+        /> */}
 
         <svg id="container">
           <clipPath id="svgPath">
             <path id="target" />
           </clipPath>
-
         </svg>
 
         <SectionTitle
