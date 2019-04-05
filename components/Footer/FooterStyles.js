@@ -6,6 +6,7 @@ const FooterStyles = styled.div`
 
   font-family: "Monserrat-Regular";
   width: 100%;
+  position: absolute;
 
   color: white;
  
