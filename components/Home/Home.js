@@ -29,13 +29,6 @@ export default class Home extends Component {
       formPosition: 1,
       bubblePosition: 1,
       count: 0,
-      form2: [
-        "M 150.9 -224.2 C 196.3 -205.7 234.1 -165 246.2 -118.4 C 258.2 -71.8 244.4 -19.3 234.1 31.7 C 223.8 82.8 216.9 132.4 189.6 164.8 C 162.3 197.2 114.5 212.3 66.4 226.7 C 18.2 241.2 -30.3 254.9 -72.7 244.1 C -115.1 233.2 -151.2 197.8 -173.1 158.1 C -194.9 118.3 -202.4 74.2 -209.2 29.8 C -216 -14.6 -222.2 -59.5 -211 -101.5 C -199.8 -143.5 -171.3 -182.8 -133.2 -204.6 C -95.2 -226.4 -47.6 -230.7 2.6 -234.8 C 52.8 -238.8 105.6 -242.7 150.9 -224.2 Z",
-        "M 115.7 -186.7 C 150 -158 177.8 -126 192.7 -89.2 C 207.7 -52.4 209.7 -11 207.2 32.2 C 204.7 75.3 197.6 120.2 174.7 157.3 C 151.8 194.5 113.1 223.9 67.7 242.9 C 22.3 261.9 -29.9 270.6 -74 255.9 C -118.1 241.1 -154.3 203.1 -189.1 163.5 C -224 124 -257.5 82.9 -258.3 40.5 C -259.2 -1.9 -227.4 -45.6 -203.5 -90.8 C -179.6 -136.1 -163.6 -182.9 -131 -212.3 C -98.4 -241.8 -49.2 -253.9 -4.2 -247.3 C 40.7 -240.7 81.5 -215.4 115.7 -186.7 Z",
-        "M 93.9 -104.7 C 135.9 -76.6 194 -60.5 203.7 -32 C 213.4 -3.5 174.7 37.5 141.3 68.7 C 108 99.9 80 121.4 52 122.9 C 24.1 124.4 -3.9 105.9 -52.2 105 C -100.6 104.1 -169.4 120.8 -197.2 100.4 C -225.1 80 -212 22.4 -195.9 -28.6 C -179.8 -79.6 -160.6 -124 -127.4 -153.7 C -94.3 -183.4 -47.1 -198.2 -10.6 -185.5 C 25.9 -172.9 51.9 -132.8 93.9 -104.7 Z",
-        "M 183.6 -174.4 C 230.9 -136.2 257.5 -68.1 245.2 -12.3 C 232.9 43.6 181.9 87.2 134.5 127.5 C 87.2 167.9 43.6 204.9 -6.2 211.2 C -56.1 217.4 -112.2 192.9 -149.9 152.5 C -187.5 112.2 -206.8 56.1 -207.9 -1.2 C -209.1 -58.5 -192.2 -116.9 -154.6 -155.1 C -116.9 -193.2 -58.5 -211.1 4.8 -216 C 68.1 -220.8 136.2 -212.6 183.6 -174.4 Z",
-        "M 154 -190.7 C 194.1 -150 217.2 -96.2 216.5 -46.1 C 215.9 3.9 191.5 50.2 159.7 80 C 128 109.8 88.8 123 50.1 136.5 C 11.5 150 -26.6 163.8 -66.3 159.3 C -106 154.7 -147.4 131.9 -169.6 96.4 C -191.8 61 -194.9 13.1 -183.1 -28.6 C -171.4 -70.3 -144.8 -105.6 -111.8 -147.6 C -78.8 -189.6 -39.4 -238.3 8.8 -248.8 C 57 -259.3 114 -231.5 154 -190.7 Z"
-      ],
       form: [
         "M 200 200m -75 0a 75 75 0 1 0 150 0a 75 75 0 1 0 -150 0",
         "M 43.5703 34 C 115.977 -36.9719 237.588 40.7602 338.504 34 C 436.992 27.4024 584.269 -28.7116 623.167 20.0936 C 662.065 68.8988 600.451 177.68 602.012 281.32 C 603.64 389.403 654.491 511.401 602.012 586 C 532.926 586 158.625 587 31 586 C -29.2288 527.147 17.9491 394.039 22 296.215 C 26.729 182.016 -33.4904 109.534 43.5703 34 Z",
@@ -124,9 +117,8 @@ export default class Home extends Component {
       }
     }
   };
-  
-  _mobileTouchMove = () => {
 
+  _mobileTouchMove = () => {
     var ts;
     $(document).bind("touchstart", e => {
       ts = e.originalEvent.touches[0].clientY;
@@ -135,15 +127,18 @@ export default class Home extends Component {
     $(document).bind("touchend", e => {
       var te = e.originalEvent.changedTouches[0].clientY;
       if (ts > te + 5) {
-        if (this.state.bubblePosition === 4) {
-          document.getElementsByTagName("body")[0].style.position = "relative";
-          window.scrollTo({ top: 3000, left: 0, behavior: "smooth" });
-          this.setState({
-            ...this.state,
-            bubblePosition: 5
-          });
-        } else {
-          this._changeSVGForm("down");
+        if (this.state.bubblePosition < 5) {
+          if (this.state.bubblePosition === 4) {
+            document.getElementsByTagName("body")[0].style.position =
+              "relative";
+            window.scrollTo({ top: 3000, left: 0, behavior: "smooth" });
+            this.setState({
+              ...this.state,
+              bubblePosition: 5
+            });
+          } else {
+            this._changeSVGForm("down");
+          }
         }
       } else if (ts < te - 5) {
         if (this.state.bubblePosition !== 1) {
@@ -162,19 +157,21 @@ export default class Home extends Component {
       }
     });
   };
-  
 
-  _scrollEvent = () => { 
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      this._mobileTouchMove()
-     } else {
-      this._mouseWheelDesktop()
-     }
-  }
+  _scrollEvent = () => {
+    if (
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent
+      )
+    ) {
+      this._mobileTouchMove();
+    } else {
+      this._mouseWheelDesktop();
+    }
+  };
 
   _mouseWheelDesktop = () => {
-
-    var delta = 0
+    var delta = 0;
 
     const wheelEvent =
       "onwheel" in document.createElement("div")
@@ -346,35 +343,34 @@ export default class Home extends Component {
   render() {
     return (
       <HomeWrapperStyle id="bodyHome">
-      <Bubbles position={this.state.bubblePosition} />
-      {/* <CrossfadeImage
+        <Bubbles position={this.state.bubblePosition} />
+        {/* <CrossfadeImage
         src={
           images[this.state.formPosition < 5 && this.state.formPosition - 1]
         }
         duration={1500}
         timingFunction={"ease-out"}
       /> */}
-      <img
-        src={
-          images[this.state.formPosition < 5 && this.state.formPosition - 1]
-        }
-      />
+        <img
+          src={
+            images[this.state.formPosition < 5 && this.state.formPosition - 1]
+          }
+        />
 
-      <svg id="container">
-        <clipPath id="svgPath">
-          <path id="target" />
-        </clipPath>
+        <svg id="container">
+          <clipPath id="svgPath">
+            <path id="target" />
+          </clipPath>
+        </svg>
 
-      </svg>
-
-      <SectionTitle
-        duration={500}
-        timingFunction={"ease"}
-        {...HomeText[
-          this.state.formPosition < 5 && this.state.formPosition - 1
-        ]}
-      />
-</HomeWrapperStyle>
+        <SectionTitle
+          duration={500}
+          timingFunction={"ease"}
+          {...HomeText[
+            this.state.formPosition < 5 && this.state.formPosition - 1
+          ]}
+        />
+      </HomeWrapperStyle>
     );
   }
 }
