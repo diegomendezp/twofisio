@@ -44,10 +44,10 @@ export const CookieWrapper = styled.div`
       border: none;
       background-color: ${props => (props.backgroundColor ? props.backgroundColor : 'white')};
       font-family: "Monserrat-Semibold";
-      color:  #740a64;
+      color: #740a64;
       font-size: 1.2rem;
       letter-spacing: 0.04rem;
-      width: 30%;
+      width: 70%;
     }
   }
   .logo {
@@ -58,12 +58,18 @@ export const CookieWrapper = styled.div`
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     .cookies-content {
       width: 75%;
+      button {
+        width: 30%;
+      }
     }
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .cookies-content {
       width: 75%;
+      button {
+        width: 30%;
+      }
     }
   }
 
@@ -73,6 +79,9 @@ export const CookieWrapper = styled.div`
     border-radius: 2px;
     .cookies-content {
       width: 80%;
+      button {
+        width: 30%;
+      }
     }
   }
 `;
