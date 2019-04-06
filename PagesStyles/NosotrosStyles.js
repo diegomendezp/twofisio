@@ -63,6 +63,7 @@ const NosotrosStyles = styled.div`
     justify-content: space-evenly;
     width: 90%;
     margin: 0 auto;
+    margin-bottom: 1rem;
   }
 
   .member-name {
