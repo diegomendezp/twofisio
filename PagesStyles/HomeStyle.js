@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const HomeWrapperStyle = styled.div`
   width: 100vw;
@@ -98,7 +98,7 @@ const HomeWrapperStyle = styled.div`
     background: rgb(116, 10, 100);
     border: 1px solid rgb(116, 10, 100);
   }
-
+  
   @media only screen and (max-width: 415px) {
     overflow: hidden;
 

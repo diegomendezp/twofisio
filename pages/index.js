@@ -5,7 +5,7 @@ import MonserratSemiBold from "../static/fonts/Montserrat/Montserrat-SemiBold.tt
 import MonserratRegular from "../static/fonts/Montserrat/Montserrat-Regular.ttf";
 import homeContent from "../content/home.json";
 import Link from "next/link";
-
+import Cookies from '../components/Cookies/Cookies'
 import FontBold from "../PagesStyles/FontStyle/FontBold";
 import Home from "../components/Home/Home";
 
@@ -53,11 +53,21 @@ export default () => (
         position: fixed;
         overflow: hidden;
       }
+
+      .center {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+      }
     `}</style>
     <React.Fragment>
       <Navbar link="Nosotros" />
       <Home></Home>
       {/* <HomeStyles>{displayHomeContent()}</HomeStyles> */}
+      <div className="center">
+        <Cookies backgroundColor="white" color="#0f1c51"/>
+      </div>
       <Footer />
     </React.Fragment>
   </React.Fragment>
