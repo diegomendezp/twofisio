@@ -7,15 +7,26 @@ import FontLink from "../../PagesStyles/FontStyle/FontLink";
 class Cookies extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { display: "flex" };
+    this.state = { display: null };
   }
 
+  componentDidMount() {
+    const display = localStorage.getItem('display') || 'flex'
+    this.setState({... this.state , display})
+  }
+  
+
   changeDisplay = () => {
-    this.setState({... this.state , display:"none"})
+    localStorage.setItem('display', 'none')
+    const display = localStorage.getItem('display')
+    this.setState({... this.state , display})
   };
+
   render() {
     const { backgroundColor, color } = this.props;
+    const { display } = this.state
     return (
+      display && 
       <CookieWrapper
         backgroundColor={backgroundColor}
         color={color}
