@@ -9,7 +9,7 @@ import Bubbles from "./Bubles";
 import { _bubleAnimation, detectmob } from "../../utils/animations";
 import ReactPageScroller from "react-page-scroller";
 
-const _=require('lodash')
+const _ = require("lodash");
 
 const images = [
   "../../static/imgFisioterapia.jpg",
@@ -21,6 +21,7 @@ const images = [
 var interval;
 
 export default class Home extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -122,43 +123,44 @@ export default class Home extends Component {
   };
 
   _mobileTouchMove = () => {
-    var ts;
-    $(document).bind("touchstart", e => {
-      ts = e.originalEvent.touches[0].clientY;
-    });
+    if (window.location.pathname === "/") {
+      var ts;
+      $(document).bind("touchstart", e => {
+        ts = e.originalEvent.touches[0].clientY;
+      });
 
-    $(document).bind("touchend", e => {
-      var te = e.originalEvent.changedTouches[0].clientY;
-      if (ts > te + 5) {
-        if (this.state.bubblePosition < 5) {
-          if (this.state.bubblePosition === 4) {
-            document.getElementsByTagName("body")[0].style.position =
-              "relative";
-            window.scrollTo({ top: 3000, left: 0, behavior: "smooth" });
-            this.setState({
-              ...this.state,
-              bubblePosition: 5
-            });
-          } else {
-            this._changeSVGForm("down");
+      $(document).bind("touchend", e => {
+        var te = e.originalEvent.changedTouches[0].clientY;
+        if (ts > te + 5) {
+          if (this.state.bubblePosition < 5) {
+            if (this.state.bubblePosition === 4) {
+              document.getElementById("bodyHome").style.position = "relative";
+              window.scrollTo({ top: 3000, left: 0, behavior: "smooth" });
+              this.setState({
+                ...this.state,
+                bubblePosition: 5
+              });
+            } else {
+              this._changeSVGForm("down");
+            }
+          }
+        } else if (ts < te - 5) {
+          if (this.state.bubblePosition !== 1) {
+            if (this.state.bubblePosition === 5) {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              document.getElementById("bodyHome").style.position = "fixed";
+              document.getElementById("bodyHome").style.overflow = "hidden";
+              this.setState({
+                ...this.state,
+                bubblePosition: 4
+              });
+            } else {
+              this._changeSVGForm("up");
+            }
           }
         }
-      } else if (ts < te - 5) {
-        if (this.state.bubblePosition !== 1) {
-          if (this.state.bubblePosition === 5) {
-            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-            document.getElementsByTagName("body")[0].style.position = "fixed";
-            document.getElementsByTagName("body")[0].style.overflow = "hidden";
-            this.setState({
-              ...this.state,
-              bubblePosition: 4
-            });
-          } else {
-            this._changeSVGForm("up");
-          }
-        }
-      }
-    });
+      });
+    }
   };
 
   _scrollEvent = () => {
@@ -187,63 +189,65 @@ export default class Home extends Component {
         );
       }
     }, 1000);
-  }
+  };
 
   _downUp = e => {
-
     if (e.originalEvent.wheelDelta > 0) {
       // document.getElementsByTagName("body")[0].style.overflowY = "hidden";
-  
-        
-        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-        if (this.state.bubblePosition === 5) {
-          this._changeBubble(3);
-        }
 
-        if (this.state.formPosition > 1) {
-          if (this.state.bubblePosition !== 5) {
-            this._changeSVGForm("up");
-          } else {
-            this.setState({ ...this.state, bubblePosition: 4 }, () => {
-              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-              setTimeout(() => {
-                document.getElementsByTagName("body")[0].style.position =
-                  "fixed";
-              }, 1000);
-            });
-          }
-        }
-      
-    } else {
-        if (this.state.formPosition < 4) {
-          this._changeSVGForm("down");
+      // window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+      if (this.state.bubblePosition === 5) {
+        this._changeBubble(3);
+      }
+
+      if (this.state.formPosition > 1) {
+        if (this.state.bubblePosition !== 5) {
+          this._changeSVGForm("up");
         } else {
-          this.setState({ ...this.state, bubblePosition: 5 }, () => {
-            document.getElementsByTagName("body")[0].style.position =
-              "relative";
-            this._changeBubble(4);
-            window.scrollTo({ top: 1000, left: 0, behavior: "smooth" });
+          this.setState({ ...this.state, bubblePosition: 4 }, () => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            setTimeout(() => {
+              document.getElementById("bodyHome").style.position = "fixed";
+            }, 1000);
           });
         }
-      
+      }
+    } else {
+      if (this.state.formPosition < 4) {
+        this._changeSVGForm("down");
+      } else {
+        this.setState({ ...this.state, bubblePosition: 5 }, () => {
+          document.getElementById("bodyHome").style.position = "relative";
+          this._changeBubble(4);
+          window.scrollTo({ top: 1000, left: 0, behavior: "smooth" });
+        });
+      }
     }
-  }
+  };
 
   _mouseWheelDesktop = () => {
-
     const wheelEvent =
-    "onwheel" in document.createElement("div")
-      ? "wheel" // Modern browsers support "wheel"
-      : document.onmousewheel !== undefined
-      ? "mousewheel" // Webkit and IE support at least "mousewheel"
-      : "DOMMouseScroll"; // let's assume that remaining browsers are older Firefox
+      "onwheel" in document.createElement("div")
+        ? "wheel" // Modern browsers support "wheel"
+        : document.onmousewheel !== undefined
+        ? "mousewheel" // Webkit and IE support at least "mousewheel"
+        : "DOMMouseScroll"; // let's assume that remaining browsers are older Firefox
 
     if (detectmob()) {
       var scrollPos = 0;
       var timerId;
-      $(window).bind(wheelEvent, _.throttle((e) => this._down(e), 1000, { leading: true, trailing: false}));
+      $(window).bind(
+        wheelEvent,
+        _.throttle(e => this._down(e), 1000, { leading: true, trailing: false })
+      );
     } else {
-      $(window).on(wheelEvent, _.throttle((e) => this._downUp(e), 1000, { leading: true, trailing: false}) );
+      $(window).on(
+        wheelEvent,
+        _.throttle(e => this._downUp(e), 1000, {
+          leading: true,
+          trailing: false
+        })
+      );
     }
   };
 
@@ -303,25 +307,19 @@ export default class Home extends Component {
     }
   };
 
+  _blockScroll = () => {
+    document.getElementById("bodyHome").style.position = "fixed";
+    document.getElementById("bodyHome").style.overflow = "hidden";
+  };
+
   componentDidMount() {
+    console.log(window.location.pathname);
 
-
-    // $(window).on(wheelEvent,  _.throttle((e) => this._downUp(e), { leading: true, trailing: false}) )
-    //this._listenSliderButtons();
     this._scrollEvent();
     this._manageResize();
+    this._blockScroll();
 
     window.addEventListener("resize", this._manageResize);
-
-    // if (window.innerWidth <= 768) {
-    //   interval = setInterval(() => {
-    //     if (this.state.formPosition < 4) {
-    //       this._changeSVGForm("down");
-    //     } else {
-    //       this.setState({...this.state, formPosition:1})
-    //     }
-    //   }, 5000);
-    // }
 
     this.setState(
       {
