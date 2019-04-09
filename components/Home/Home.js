@@ -183,7 +183,7 @@ export default class Home extends Component {
     if (detectmob()) {
       var scrollPos = 0;
       var timerId;
-      $(window).bind("scroll", () => {
+      $(window).bind(wheelEvent, () => {
         clearTimeout(timerId);
         timerId = setTimeout(() => {
           if (this.state.formPosition < 4) {
@@ -200,9 +200,8 @@ export default class Home extends Component {
       $(window).on(wheelEvent, e => {
         if (e.originalEvent.wheelDelta > 0) {
           // document.getElementsByTagName("body")[0].style.overflowY = "hidden";
-          delta++;
-          if (delta >= 10) {
-            delta = 0;
+      
+            
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             if (this.state.bubblePosition === 5) {
               this._changeBubble(3);
@@ -221,11 +220,9 @@ export default class Home extends Component {
                 });
               }
             }
-          }
+          
         } else {
           delta--;
-          if (delta <= -10) {
-            delta = 0;
             if (this.state.formPosition < 4) {
               this._changeSVGForm("down");
             } else {
@@ -236,7 +233,7 @@ export default class Home extends Component {
                 window.scrollTo({ top: 1000, left: 0, behavior: "smooth" });
               });
             }
-          }
+          
         }
       });
     }
