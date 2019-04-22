@@ -59,7 +59,7 @@ const NavbarStyles = styled.div`
   background-color: ${props => (props.backgroundColor ? props.backgroundColor : 'transparent')};
   transition: all 0.5s ease 0s;
   box-sizing: border-box;
-  padding-bottom: 1.5%;
+  padding-bottom: 1%;
 `;
 
 export { NavbarWrapper, NavbarStyles };
