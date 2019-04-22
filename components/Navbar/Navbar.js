@@ -37,9 +37,9 @@ export default class Navbar extends React.Component {
 
 
   render() {
-
+    const { backgroundColor } = this.props;
     return (
-      <NavbarStyles>
+      <NavbarStyles backgroundColor={backgroundColor}>
         <NavbarWrapper>
         <Link href="/">
           <img src="/static/logo.png" alt="two-fisio-logo" />
