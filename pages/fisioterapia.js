@@ -19,12 +19,27 @@ const displayTechniques = techniques => {
 };
 
 class fisioterapia extends React.Component {
-  
-  componentDidMount() {
+  constructor() {
+    super();
+    this.state = {
+      navColor: "transparent"
+    };
+  }
 
+  changeNavScroll = () => {
+    window.addEventListener("scroll", () => {
+      window.scrollY > 10
+        ? this.setState({ ...this.state, navColor: "white" })
+        : this.setState({ ...this.state, navColor: "transparent" });
+    });
+  };
+
+  componentDidMount() {
+    this.changeNavScroll()
   }
 
   render() {
+    const { navColor } = this.state;
     const { description, techniques } = tecnicas;
     return (
       <React.Fragment>
@@ -57,7 +72,7 @@ class fisioterapia extends React.Component {
             max-width: 100%;
           }
         `}</style>
-        <Navbar link="Nosotros" />
+        <Navbar link="Nosotros" backgroundColor={navColor}/>
         <FisioterapiaStyles>
         <HeaderAnimated img={imgFisio} positionY={40}/>
           <div className="techniques-content">
