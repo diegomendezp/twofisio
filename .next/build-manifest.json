@@ -15,7 +15,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/pilates": [
+    "/tratamientos": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
@@ -23,7 +23,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/tratamientos": [
+    "/pilates": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
