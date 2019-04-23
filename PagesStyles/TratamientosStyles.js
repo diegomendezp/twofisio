@@ -39,7 +39,7 @@ const TratamientosStyles = styled.div`
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin-bottom: 15%;
+      margin-bottom: 0;
     }
    
   }
@@ -57,7 +57,7 @@ const TratamientosStyles = styled.div`
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin-bottom: 15%;
+      margin-bottom: 0;
     }
   }
 
@@ -78,6 +78,7 @@ const TratamientosStyles = styled.div`
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      margin-bottom: 0;
     }
 
    

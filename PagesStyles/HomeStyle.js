@@ -134,7 +134,7 @@ const HomeWrapperStyle = styled.div`
     }
 
     .arrowImage {
-      width: 15vw;
+      width: 10vw;
       object-fit: cover; 
       position: absolute;
       bottom: 18%;
