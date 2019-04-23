@@ -56,7 +56,7 @@ const HomeWrapperStyle = styled.div`
     }
   }
 
-  img {
+  .imageHome {
     position: absolute;
     top: 0;
     left: 0;
@@ -98,8 +98,21 @@ const HomeWrapperStyle = styled.div`
     background: rgb(116, 10, 100);
     border: 1px solid rgb(116, 10, 100);
   }
-  
+
+  @keyframes markerAnimation {
+    0%   {bottom: 6%}
+    50% {bottom: 3%}
+    100% {bottom: 6%}
+  }
+
   @media only screen and (max-width: 415px) {
+
+    @keyframes markerAnimation {
+    0%   {bottom: 18%}
+    50% {bottom: 15%}
+    100% {bottom: 18%}
+  }
+
     overflow: hidden;
 
     .sectionTitle {
@@ -119,6 +132,19 @@ const HomeWrapperStyle = styled.div`
     #imgSlider {
       padding-left: 38%;
     }
+
+    .arrowImage {
+      width: 15vw;
+      object-fit: cover; 
+      position: absolute;
+      bottom: 18%;
+      left: 3%;
+      animation-name: markerAnimation;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
   }
 
   @media only screen and (min-width: 415px) and (max-width: 768px) {
@@ -129,10 +155,31 @@ const HomeWrapperStyle = styled.div`
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
+
+    @keyframes markerAnimation {
+    0%   {bottom: 6%}
+    50% {bottom: 3%}
+    100% {bottom: 6%}
+    }
+
     .sectionTitle {
       justify-content: center;
       width: 50vw;
     }
+
+    .arrowImage {
+      width: 8vw;
+      object-fit: cover; 
+      position: absolute;
+      bottom: 6%;
+      left: 3%;
+      animation-name: markerAnimation;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    
   }
 
   @media only screen and (min-width: 1024px) and (max-width: 1440px) {
@@ -140,9 +187,34 @@ const HomeWrapperStyle = styled.div`
       justify-content: center;
       width: 30vw;
     }
+
+    .arrowImage {
+      width: 8vw;
+      object-fit: cover; 
+      position: absolute;
+      bottom: 6%;
+      left: 3%;
+      animation-name: markerAnimation;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
   }
 
   @media only screen and (min-width: 1441px) {
+
+    .arrowImage {
+      width: 8vw;
+      object-fit: cover; 
+      position: absolute;
+      bottom: 6%;
+      left: 3%;
+      animation-name: markerAnimation;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
   }
 `;
 

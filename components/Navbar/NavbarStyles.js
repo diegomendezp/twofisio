@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const NavbarWrapper = styled.div`
-  z-index: 100;
+  /* z-index: 100; */
   font-family: "Monserrat-Semibold";
   display: flex;
   justify-content: space-between;
@@ -9,8 +9,8 @@ const NavbarWrapper = styled.div`
   color: rgb(116, 10, 100);
   width: 95%;
   max-width: 100vw;
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+  /* top: 0; */
   margin: 0 auto;
 
   img:hover{
@@ -52,6 +52,14 @@ const NavbarWrapper = styled.div`
 const NavbarStyles = styled.div`
   display: flex;
   justify-content: center;
+  position: fixed;
+  z-index: 100;
+  top:0;
+  width: 100%;
+  background-color: ${props => (props.backgroundColor ? props.backgroundColor : 'transparent')};
+  transition: all 0.5s ease 0s;
+  box-sizing: border-box;
+  padding-bottom: 1%;
 `;
 
 export { NavbarWrapper, NavbarStyles };

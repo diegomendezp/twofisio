@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import FontBold from "../../PagesStyles/FontStyle/FontBold";
 import FontRegular from "../../PagesStyles/FontStyle/FontRegular";
 import FontLink from "../../PagesStyles/FontStyle/FontLink";
-
+import arrow from "../../static/arrows.svg"
 
 class SectionTitle extends Component {
   constructor(props) {
@@ -42,39 +42,19 @@ class SectionTitle extends Component {
     }
   }
   render() {
-    const { duration, timingFunction} = this.props;
-    const { topSrc, bottomOpacity, bottomSrc, topOpacity } = this.state;
-    
-
+    const { topSrc } = this.state;
     return (
       <div>
         {topSrc &&
             <div className="sectionTitle"
-            style={{
-                ...{
-                  opacity: topOpacity,
-                  transition: `opacity ${duration / 1000}s ${timingFunction}`
-                }
-              }}  
             >
             <FontBold>{topSrc.title}</FontBold>
             <FontRegular>{topSrc.body}</FontRegular>
-            <FontLink href={topSrc.link}>+ Mas Info</FontLink>
+            <FontLink href={topSrc.link} style={{display: "block"}}>+ Mas Info</FontLink>
+            
           </div>
           }
-        {bottomSrc &&
-              <div className="sectionTitle"
-              style={{
-                ...{
-                  opacity: bottomOpacity,
-                  transition: `opacity ${duration / 1000}s ${timingFunction}`
-                }
-              }}  
-              >
-              <FontBold>{bottomSrc.title}</FontBold>
-              <FontRegular>{bottomSrc.body}</FontRegular>
-              <a href={bottomSrc.link}>+ Mas Info</a>
-            </div>}
+          <img className="arrowImage" src={arrow}/>
       </div>
     );
   }
