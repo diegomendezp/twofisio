@@ -152,6 +152,17 @@ const HomeWrapperStyle = styled.div`
       justify-content: center;
       width: 50vw;
     }
+    .arrowImage {
+      width: 5vw;
+      object-fit: cover; 
+      position: absolute;
+      bottom: 6%;
+      left: 3%;
+      animation-name: markerAnimation;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
@@ -168,7 +179,7 @@ const HomeWrapperStyle = styled.div`
     }
 
     .arrowImage {
-      width: 8vw;
+      width: 3vw;
       object-fit: cover; 
       position: absolute;
       bottom: 6%;
@@ -189,7 +200,7 @@ const HomeWrapperStyle = styled.div`
     }
 
     .arrowImage {
-      width: 8vw;
+      width: 3vw;
       object-fit: cover; 
       position: absolute;
       bottom: 6%;
@@ -205,7 +216,7 @@ const HomeWrapperStyle = styled.div`
   @media only screen and (min-width: 1441px) {
 
     .arrowImage {
-      width: 8vw;
+      width: 3vw;
       object-fit: cover; 
       position: absolute;
       bottom: 6%;
