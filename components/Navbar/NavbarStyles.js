@@ -21,6 +21,7 @@ const NavbarWrapper = styled.div`
     margin-top:0.5%;
     height: 50px;
     object-fit: contain;  
+    padding-bottom: 1%;
   }
 
   ul {
@@ -59,7 +60,6 @@ const NavbarStyles = styled.div`
   background-color: ${props => (props.backgroundColor ? props.backgroundColor : 'transparent')};
   transition: all 0.5s ease 0s;
   box-sizing: border-box;
-  padding-bottom: 1%;
 `;
 
 export { NavbarWrapper, NavbarStyles };
