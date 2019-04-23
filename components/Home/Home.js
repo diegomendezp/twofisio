@@ -358,6 +358,7 @@ export default class Home extends Component {
         timingFunction={"ease-out"}
       /> */}
         <img
+        className="imageHome"
           src={
             images[this.state.formPosition < 5 && this.state.formPosition - 1]
           }
@@ -376,6 +377,8 @@ export default class Home extends Component {
             this.state.formPosition < 5 && this.state.formPosition - 1
           ]}
         />
+
+
       </HomeWrapperStyle>
     );
   }
