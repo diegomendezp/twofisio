@@ -24,7 +24,6 @@ export default class Navbar extends React.Component {
 
   manageScroll = () => {
     if (this.props.lilnk === "Cerrar" ) {
-      console.log("hola")
       document.getElementsByTagName("body")[0].style.position = "fixed";
       document.getElementsByTagName("body")[0].style.overflow = "hidden";
     } else {
