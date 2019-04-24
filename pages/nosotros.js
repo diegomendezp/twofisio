@@ -1,7 +1,7 @@
 import React from "react";
 import team from "../content/team.json";
 import { Member } from "../components/Member.js";
-import Navbar from "../components/Navbar/Navbar";
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer/Footer.js";
 import NosotrosStyles from "../PagesStyles/NosotrosStyles.js";
 import Head from "next/head";

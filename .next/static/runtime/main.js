@@ -1,4 +1,4 @@
-((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/runtime/main.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/runtime/main.js"],{
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!***********************************************************************!*\
@@ -30,6 +30,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/get-iterator */ "./n
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/json/stringify */ "./node_modules/core-js/library/fn/json/stringify.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/map.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/map.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/map */ "./node_modules/core-js/library/fn/map.js");
 
 /***/ }),
 
@@ -198,55 +209,6 @@ function _assertThisInitialized(self) {
 }
 
 module.exports = _assertThisInitialized;
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/asyncToGenerator.js":
-/*!*************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/asyncToGenerator.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var _Promise = __webpack_require__(/*! ../core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js");
-
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {
-  try {
-    var info = gen[key](arg);
-    var value = info.value;
-  } catch (error) {
-    reject(error);
-    return;
-  }
-
-  if (info.done) {
-    resolve(value);
-  } else {
-    _Promise.resolve(value).then(_next, _throw);
-  }
-}
-
-function _asyncToGenerator(fn) {
-  return function () {
-    var self = this,
-        args = arguments;
-    return new _Promise(function (resolve, reject) {
-      var gen = fn.apply(self, args);
-
-      function _next(value) {
-        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);
-      }
-
-      function _throw(err) {
-        asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);
-      }
-
-      _next(undefined);
-    });
-  };
-}
-
-module.exports = _asyncToGenerator;
 
 /***/ }),
 
@@ -990,6 +952,25 @@ var $JSON = core.JSON || (core.JSON = { stringify: JSON.stringify });
 module.exports = function stringify(it) { // eslint-disable-line no-unused-vars
   return $JSON.stringify.apply($JSON, arguments);
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/map.js":
+/*!************************************************!*\
+  !*** ./node_modules/core-js/library/fn/map.js ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../modules/es6.object.to-string */ "./node_modules/core-js/library/modules/es6.object.to-string.js");
+__webpack_require__(/*! ../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
+__webpack_require__(/*! ../modules/web.dom.iterable */ "./node_modules/core-js/library/modules/web.dom.iterable.js");
+__webpack_require__(/*! ../modules/es6.map */ "./node_modules/core-js/library/modules/es6.map.js");
+__webpack_require__(/*! ../modules/es7.map.to-json */ "./node_modules/core-js/library/modules/es7.map.to-json.js");
+__webpack_require__(/*! ../modules/es7.map.of */ "./node_modules/core-js/library/modules/es7.map.of.js");
+__webpack_require__(/*! ../modules/es7.map.from */ "./node_modules/core-js/library/modules/es7.map.from.js");
+module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Map;
 
 
 /***/ }),
@@ -3657,6 +3638,37 @@ addToUnscopables('entries');
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/es6.map.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es6.map.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var strong = __webpack_require__(/*! ./_collection-strong */ "./node_modules/core-js/library/modules/_collection-strong.js");
+var validate = __webpack_require__(/*! ./_validate-collection */ "./node_modules/core-js/library/modules/_validate-collection.js");
+var MAP = 'Map';
+
+// 23.1 Map Objects
+module.exports = __webpack_require__(/*! ./_collection */ "./node_modules/core-js/library/modules/_collection.js")(MAP, function (get) {
+  return function Map() { return get(this, arguments.length > 0 ? arguments[0] : undefined); };
+}, {
+  // 23.1.3.6 Map.prototype.get(key)
+  get: function get(key) {
+    var entry = strong.getEntry(validate(this, MAP), key);
+    return entry && entry.v;
+  },
+  // 23.1.3.9 Map.prototype.set(key, value)
+  set: function set(key, value) {
+    return strong.def(validate(this, MAP), key === 0 ? 0 : key, value);
+  }
+}, strong, true);
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/es6.object.assign.js":
 /*!*******************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es6.object.assign.js ***!
@@ -4437,6 +4449,47 @@ setToStringTag(global.JSON, 'JSON', true);
 
 /***/ }),
 
+/***/ "./node_modules/core-js/library/modules/es7.map.from.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.map.from.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://tc39.github.io/proposal-setmap-offrom/#sec-map.from
+__webpack_require__(/*! ./_set-collection-from */ "./node_modules/core-js/library/modules/_set-collection-from.js")('Map');
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es7.map.of.js":
+/*!************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.map.of.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://tc39.github.io/proposal-setmap-offrom/#sec-map.of
+__webpack_require__(/*! ./_set-collection-of */ "./node_modules/core-js/library/modules/_set-collection-of.js")('Map');
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/modules/es7.map.to-json.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/core-js/library/modules/es7.map.to-json.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// https://github.com/DavidBruant/Map-Set.prototype.toJSON
+var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
+
+$export($export.P + $export.R, 'Map', { toJSON: __webpack_require__(/*! ./_collection-to-json */ "./node_modules/core-js/library/modules/_collection-to-json.js")('Map') });
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/library/modules/es7.promise.finally.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/core-js/library/modules/es7.promise.finally.js ***!
@@ -4597,6 +4650,94 @@ for (var i = 0; i < DOMIterables.length; i++) {
 
 module.exports = __webpack_require__(/*! ./dist/lib/runtime-config */ "./node_modules/next-server/dist/lib/runtime-config.js")
 
+
+/***/ }),
+
+/***/ "./node_modules/next-server/dist/lib/data-manager-context.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/next-server/dist/lib/data-manager-context.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importStar = void 0 && (void 0).__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  }
+  result["default"] = mod;
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+exports.DataManagerContext = React.createContext(null);
+
+/***/ }),
+
+/***/ "./node_modules/next-server/dist/lib/data-manager.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/next-server/dist/lib/data-manager.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
+
+var _map = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/map */ "./node_modules/@babel/runtime-corejs2/core-js/map.js"));
+
+var _classCallCheck2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js"));
+
+var _createClass2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js"));
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var DataManager =
+/*#__PURE__*/
+function () {
+  function DataManager(data) {
+    (0, _classCallCheck2.default)(this, DataManager);
+    this.data = new _map.default(data);
+  }
+
+  (0, _createClass2.default)(DataManager, [{
+    key: "getData",
+    value: function getData() {
+      return this.data;
+    }
+  }, {
+    key: "get",
+    value: function get(key) {
+      return this.data.get(key);
+    }
+  }, {
+    key: "set",
+    value: function set(key, value) {
+      this.data.set(key, value);
+    }
+  }, {
+    key: "overwrite",
+    value: function overwrite(data) {
+      this.data = new _map.default(data);
+    }
+  }]);
+  return DataManager;
+}();
+
+exports.DataManager = DataManager;
 
 /***/ }),
 
@@ -5107,6 +5248,66 @@ exports.default = mitt;
 
 /***/ }),
 
+/***/ "./node_modules/next-server/dist/lib/request-context.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/next-server/dist/lib/request-context.js ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importStar = void 0 && (void 0).__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  }
+  result["default"] = mod;
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+exports.RequestContext = React.createContext(null);
+
+/***/ }),
+
+/***/ "./node_modules/next-server/dist/lib/router-context.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/next-server/dist/lib/router-context.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var __importStar = void 0 && (void 0).__importStar || function (mod) {
+  if (mod && mod.__esModule) return mod;
+  var result = {};
+  if (mod != null) for (var k in mod) {
+    if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+  }
+  result["default"] = mod;
+  return result;
+};
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+exports.RouterContext = React.createContext(null);
+
+/***/ }),
+
 /***/ "./node_modules/next-server/dist/lib/router/router.js":
 /*!************************************************************!*\
   !*** ./node_modules/next-server/dist/lib/router/router.js ***!
@@ -5188,6 +5389,12 @@ function () {
         }), utils_1.getURL());
 
         return;
+      } // Make sure we don't re-render on initial load,
+      // can be caused by navigating back from an external site
+
+
+      if (e.state.options && e.state.options.fromExternal) {
+        return;
       } // If the downstream application returns falsy, return.
       // They will then be responsible for handling the event.
 
@@ -5246,20 +5453,21 @@ function () {
         pathname: pathname,
         query: query
       }), as);
-      window.addEventListener('popstate', this.onPopState); // Workaround for weird Firefox bug, see below links
-      // https://github.com/zeit/next.js/issues/3817
-      // https://bugzilla.mozilla.org/show_bug.cgi?id=1422334
-      // TODO: let's remove this once the Firefox bug is resolved
+      window.addEventListener('popstate', this.onPopState);
+      window.addEventListener('unload', function () {
+        // Workaround for popstate firing on initial page load when
+        // navigating back from an external site
+        if (history.state) {
+          var _history$state = history.state,
+              url = _history$state.url,
+              _as2 = _history$state.as,
+              options = _history$state.options;
 
-      if (navigator.userAgent && navigator.userAgent.match(/firefox/i)) {
-        window.addEventListener('unload', function () {
-          try {
-            if (window.location.search) window.location.replace(window.location.toString());
-          } catch (_) {
-            /* since it's a workaround, ignore */
-          }
-        });
-      }
+          _this.changeState('replaceState', url, _as2, (0, _assign.default)({}, options, {
+            fromExternal: true
+          }));
+        }
+      });
     }
   }
 
@@ -6264,9 +6472,86 @@ SOFTWARE.
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
 
-var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js"));
+var _promise = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js"));
 
-var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/asyncToGenerator.js"));
+function _catch(body, recover) {
+  try {
+    var result = body();
+  } catch (e) {
+    return recover(e);
+  }
+
+  if (result && result.then) {
+    return result.then(void 0, recover);
+  }
+
+  return result;
+}
+
+// Attempt to update code on the fly, fall back to a hard reload.
+var tryApplyUpdates = function (_tryApplyUpdates) {
+  function tryApplyUpdates(_x) {
+    return _tryApplyUpdates.apply(this, arguments);
+  }
+
+  tryApplyUpdates.toString = function () {
+    return _tryApplyUpdates.toString();
+  };
+
+  return tryApplyUpdates;
+}(function (onHotUpdateSuccess) {
+  try {
+    if (false) {}
+
+    function handleApplyUpdates(err, updatedModules) {
+      if (err || hadRuntimeError) {
+        if (err) {
+          console.warn('Error while applying updates, reloading page', err);
+        }
+
+        if (hadRuntimeError) {
+          console.warn('Had runtime error previously, reloading page');
+        }
+
+        window.location.reload();
+        return;
+      }
+
+      if (typeof onHotUpdateSuccess === 'function') {
+        // Maybe we want to do something.
+        onHotUpdateSuccess();
+      }
+
+      if (isUpdateAvailable()) {
+        // While we were updating, there was a new update! Do it again.
+        tryApplyUpdates();
+      }
+    } // https://webpack.github.io/docs/hot-module-replacement.html#check
+
+
+    if (!isUpdateAvailable() || !canApplyUpdates()) {
+      return _promise.default.resolve();
+    }
+
+    var _temp2 = _catch(function () {
+      return _promise.default.resolve(module.hot.check(
+      /* autoApply */
+      {
+        ignoreUnaccepted: true
+      })).then(function (updatedModules) {
+        if (updatedModules) {
+          handleApplyUpdates(null, updatedModules);
+        }
+      });
+    }, function (err) {
+      handleApplyUpdates(err, null);
+    });
+
+    return _promise.default.resolve(_temp2 && _temp2.then ? _temp2.then(function () {}) : void 0);
+  } catch (e) {
+    return _promise.default.reject(e);
+  }
+});
 
 var __importDefault = void 0 && (void 0).__importDefault || function (mod) {
   return mod && mod.__esModule ? mod : {
@@ -6514,97 +6799,6 @@ function isUpdateAvailable() {
 
 function canApplyUpdates() {
   return module.hot.status() === 'idle';
-} // Attempt to update code on the fly, fall back to a hard reload.
-
-
-function tryApplyUpdates(_x) {
-  return _tryApplyUpdates.apply(this, arguments);
-}
-
-function _tryApplyUpdates() {
-  _tryApplyUpdates = (0, _asyncToGenerator2.default)(
-  /*#__PURE__*/
-  _regenerator.default.mark(function _callee(onHotUpdateSuccess) {
-    var handleApplyUpdates, updatedModules;
-    return _regenerator.default.wrap(function _callee$(_context) {
-      while (1) {
-        switch (_context.prev = _context.next) {
-          case 0:
-            handleApplyUpdates = function _ref2(err, updatedModules) {
-              if (err || hadRuntimeError) {
-                if (err) {
-                  console.warn('Error while applying updates, reloading page', err);
-                }
-
-                if (hadRuntimeError) {
-                  console.warn('Had runtime error previously, reloading page');
-                }
-
-                window.location.reload();
-                return;
-              }
-
-              if (typeof onHotUpdateSuccess === 'function') {
-                // Maybe we want to do something.
-                onHotUpdateSuccess();
-              }
-
-              if (isUpdateAvailable()) {
-                // While we were updating, there was a new update! Do it again.
-                tryApplyUpdates();
-              }
-            };
-
-            if (true) {
-              _context.next = 4;
-              break;
-            }
-
-            // HotModuleReplacementPlugin is not in Webpack configuration.
-            console.error('HotModuleReplacementPlugin is not in Webpack configuration.'); // window.location.reload();
-
-            return _context.abrupt("return");
-
-          case 4:
-            if (!(!isUpdateAvailable() || !canApplyUpdates())) {
-              _context.next = 6;
-              break;
-            }
-
-            return _context.abrupt("return");
-
-          case 6:
-            _context.prev = 6;
-            _context.next = 9;
-            return module.hot.check(
-            /* autoApply */
-            {
-              ignoreUnaccepted: true
-            });
-
-          case 9:
-            updatedModules = _context.sent;
-
-            if (updatedModules) {
-              handleApplyUpdates(null, updatedModules);
-            }
-
-            _context.next = 16;
-            break;
-
-          case 13:
-            _context.prev = 13;
-            _context.t0 = _context["catch"](6);
-            handleApplyUpdates(_context.t0, null);
-
-          case 16:
-          case "end":
-            return _context.stop();
-        }
-      }
-    }, _callee, null, [[6, 13]]);
-  }));
-  return _tryApplyUpdates.apply(this, arguments);
 }
 
 /***/ }),
@@ -7182,8 +7376,12 @@ FetchTransport.prototype.open = function (xhr, onStartCallback, onProgressCallba
 
       readNextChunk();
     });
-  })['finally'](function () {
+  }).then(function (result) {
     onFinishCallback();
+    return result;
+  }, function (error) {
+    onFinishCallback();
+    return _promise.default.reject(error);
   });
 };
 
@@ -7776,18 +7974,169 @@ var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/help
 
 var _assign = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js"));
 
-var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js"));
-
-var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/asyncToGenerator.js"));
-
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/slicedToArray.js"));
 
 var _promise = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js"));
 
-var __importDefault = void 0 && (void 0).__importDefault || function (mod) {
-  return mod && mod.__esModule ? mod : {
-    "default": mod
-  };
+function _catch(body, recover) {
+  try {
+    var result = body();
+  } catch (e) {
+    return recover(e);
+  }
+
+  if (result && result.then) {
+    return result.then(void 0, recover);
+  }
+
+  return result;
+}
+
+var doRender = function doRender(_ref5) {
+  var App = _ref5.App,
+      Component = _ref5.Component,
+      props = _ref5.props,
+      err = _ref5.err;
+
+  try {
+    function _temp11() {
+      Component = Component || lastAppProps.Component;
+      props = props || lastAppProps.props;
+      var appProps = (0, _assign.default)({
+        Component: Component,
+        err: err,
+        router: exports.router
+      }, props); // lastAppProps has to be set before ReactDom.render to account for ReactDom throwing an error.
+
+      lastAppProps = appProps;
+      exports.emitter.emit('before-reactdom-render', {
+        Component: Component,
+        ErrorComponent: exports.ErrorComponent,
+        appProps: appProps
+      }); // In development runtime errors are caught by react-error-overlay.
+
+      if (true) {
+        renderReactElement(react_1.default.createElement(react_1.Suspense, {
+          fallback: react_1.default.createElement("div", null, "Loading...")
+        }, react_1.default.createElement(router_context_1.RouterContext.Provider, {
+          value: router_1.makePublicRouterInstance(exports.router)
+        }, react_1.default.createElement(data_manager_context_1.DataManagerContext.Provider, {
+          value: exports.dataManager
+        }, react_1.default.createElement(head_manager_context_1.HeadManagerContext.Provider, {
+          value: headManager.updateHead
+        }, react_1.default.createElement(App, (0, _assign.default)({}, appProps)))))), appContainer);
+      } else {}
+
+      exports.emitter.emit('after-reactdom-render', {
+        Component: Component,
+        ErrorComponent: exports.ErrorComponent,
+        appProps: appProps
+      });
+    }
+
+    var _temp12 = function () {
+      if (!props && Component && Component !== exports.ErrorComponent && lastAppProps.Component === exports.ErrorComponent) {
+        var _exports$router = exports.router,
+            pathname = _exports$router.pathname,
+            _query = _exports$router.query,
+            _asPath = _exports$router.asPath;
+        return _promise.default.resolve(utils_1.loadGetInitialProps(App, {
+          Component: Component,
+          router: exports.router,
+          ctx: {
+            err: err,
+            pathname: pathname,
+            query: _query,
+            asPath: _asPath
+          }
+        })).then(function (_utils_1$loadGetIniti) {
+          props = _utils_1$loadGetIniti;
+        });
+      }
+    }();
+
+    // Usual getInitialProps fetching is handled in next/router
+    // this is for when ErrorComponent gets replaced by Component by HMR
+    return _promise.default.resolve(_temp12 && _temp12.then ? _temp12.then(_temp11) : _temp11(_temp12));
+  } catch (e) {
+    return _promise.default.reject(e);
+  }
+};
+
+// This method handles all runtime and debug errors.
+// 404 and 500 errors are special kind of errors
+// and they are still handle via the main render method.
+var renderError = function renderError(props) {
+  try {
+    var _App = props.App,
+        _err = props.err;
+
+    if (true) {
+      return _promise.default.resolve(webpackHMR.reportRuntimeError(webpackHMR.prepareError(_err)));
+    } // Make sure we log the error to the console, otherwise users can't track down issues.
+
+
+    console.error(_err);
+    return _promise.default.resolve(pageLoader.loadPage('/_error')).then(function (_pageLoader$loadPage3) {
+      function _temp8(initProps) {
+        return _promise.default.resolve(doRender((0, _assign.default)({}, props, {
+          err: _err,
+          Component: exports.ErrorComponent,
+          props: initProps
+        }))).then(function () {});
+      }
+
+      exports.ErrorComponent = _pageLoader$loadPage3;
+      var _props$props = props.props;
+      // In production we do a normal render with the `ErrorComponent` as component.
+      // If we've gotten here upon initial render, we can use the props from the server.
+      // Otherwise, we need to call `getInitialProps` on `App` before mounting.
+      return _props$props ? _temp8(props.props) : _promise.default.resolve(utils_1.loadGetInitialProps(_App, {
+        Component: exports.ErrorComponent,
+        router: exports.router,
+        ctx: {
+          err: _err,
+          pathname: page,
+          query: query,
+          asPath: asPath
+        }
+      })).then(_temp8);
+    });
+  } catch (e) {
+    return _promise.default.reject(e);
+  }
+};
+
+var render = function render(props) {
+  try {
+    var _exit3 = false;
+
+    function _temp6(_result2) {
+      if (_exit3) return _result2;
+
+      var _temp3 = _catch(function () {
+        return _promise.default.resolve(doRender(props)).then(function () {});
+      }, function (err) {
+        return _promise.default.resolve(renderError((0, _assign.default)({}, props, {
+          err: err
+        }))).then(function () {});
+      });
+
+      if (_temp3 && _temp3.then) return _temp3.then(function () {});
+    }
+
+    var _temp7 = function () {
+      if (props.err) {
+        return _promise.default.resolve(renderError(props)).then(function () {
+          _exit3 = true;
+        });
+      }
+    }();
+
+    return _promise.default.resolve(_temp7 && _temp7.then ? _temp7.then(_temp6) : _temp6(_temp7));
+  } catch (e) {
+    return _promise.default.reject(e);
+  }
 };
 
 var __importStar = void 0 && (void 0).__importStar || function (mod) {
@@ -7800,11 +8149,17 @@ var __importStar = void 0 && (void 0).__importStar || function (mod) {
   return result;
 };
 
+var __importDefault = void 0 && (void 0).__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 
 var react_dom_1 = __importDefault(__webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js"));
 
@@ -7824,7 +8179,13 @@ var error_boundary_1 = __webpack_require__(/*! ./error-boundary */ "./node_modul
 
 var loadable_1 = __importDefault(__webpack_require__(/*! next-server/dist/lib/loadable */ "./node_modules/next-server/dist/lib/loadable.js"));
 
-var head_manager_context_1 = __webpack_require__(/*! next-server/dist/lib/head-manager-context */ "./node_modules/next-server/dist/lib/head-manager-context.js"); // Polyfill Promise globally
+var head_manager_context_1 = __webpack_require__(/*! next-server/dist/lib/head-manager-context */ "./node_modules/next-server/dist/lib/head-manager-context.js");
+
+var data_manager_context_1 = __webpack_require__(/*! next-server/dist/lib/data-manager-context */ "./node_modules/next-server/dist/lib/data-manager-context.js");
+
+var router_context_1 = __webpack_require__(/*! next-server/dist/lib/router-context */ "./node_modules/next-server/dist/lib/router-context.js");
+
+var data_manager_1 = __webpack_require__(/*! next-server/dist/lib/data-manager */ "./node_modules/next-server/dist/lib/data-manager.js"); // Polyfill Promise globally
 // This is needed because Webpack's dynamic loading(common chunks) code
 // depends on Promise.
 // So, we need to polyfill it.
@@ -7842,9 +8203,12 @@ var props = data.props,
     page = data.page,
     query = data.query,
     buildId = data.buildId,
+    dynamicBuildId = data.dynamicBuildId,
     assetPrefix = data.assetPrefix,
     runtimeConfig = data.runtimeConfig,
     dynamicIds = data.dynamicIds;
+var d = JSON.parse(window.__NEXT_DATA__.dataManager);
+exports.dataManager = new data_manager_1.DataManager(d);
 var prefix = assetPrefix || ''; // With dynamic assetPrefix it's no longer possible to set assetPrefix at the build time
 // So, this is how we do it in the client side at runtime
 
@@ -7879,68 +8243,26 @@ var webpackHMR;
 var Component;
 var App;
 exports.emitter = mitt_1.default();
-exports.default =
-/*#__PURE__*/
-(0, _asyncToGenerator2.default)(
-/*#__PURE__*/
-_regenerator.default.mark(function _callee() {
-  var _ref4,
-      passedWebpackHMR,
-      initialErr,
-      _require,
-      isValidElementType,
-      _args = arguments;
 
-  return _regenerator.default.wrap(function _callee$(_context) {
-    while (1) {
-      switch (_context.prev = _context.next) {
-        case 0:
-          _ref4 = _args.length > 0 && _args[0] !== undefined ? _args[0] : {}, passedWebpackHMR = _ref4.webpackHMR;
+exports.default = function () {
+  var _ref3 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+      passedWebpackHMR = _ref3.webpackHMR;
 
-          // This makes sure this specific line is removed in production
-          if (true) {
-            webpackHMR = passedWebpackHMR;
+  try {
+    // This makes sure this specific line is removed in production
+    if (true) {
+      webpackHMR = passedWebpackHMR;
+    }
+
+    return _promise.default.resolve(pageLoader.loadPage('/_app')).then(function (_pageLoader$loadPage) {
+      var _exit = false;
+
+      function _temp2(_result) {
+        return _exit ? _result : _promise.default.resolve(loadable_1.default.preloadReady(dynamicIds || [])).then(function () {
+          if (dynamicBuildId === true) {
+            pageLoader.onDynamicBuildId();
           }
 
-          _context.next = 4;
-          return pageLoader.loadPage('/_app');
-
-        case 4:
-          App = _context.sent;
-          initialErr = err;
-          _context.prev = 6;
-          _context.next = 9;
-          return pageLoader.loadPage(page);
-
-        case 9:
-          Component = _context.sent;
-
-          if (false) {}
-
-          _require = __webpack_require__(/*! react-is */ "./node_modules/next/node_modules/react-is/index.js"), isValidElementType = _require.isValidElementType;
-
-          if (isValidElementType(Component)) {
-            _context.next = 14;
-            break;
-          }
-
-          throw new Error("The default export is not a React Component in page: \"".concat(page, "\""));
-
-        case 14:
-          _context.next = 19;
-          break;
-
-        case 16:
-          _context.prev = 16;
-          _context.t0 = _context["catch"](6);
-          // This catches errors like throwing in the top level of a module
-          initialErr = _context.t0;
-
-        case 19:
-          _context.next = 21;
-          return loadable_1.default.preloadReady(dynamicIds || []);
-
-        case 21:
           exports.router = router_1.createRouter(page, query, asPath, {
             initialProps: props,
             pageLoader: pageLoader,
@@ -7948,11 +8270,11 @@ _regenerator.default.mark(function _callee() {
             Component: Component,
             err: initialErr
           });
-          exports.router.subscribe(function (_ref5) {
-            var App = _ref5.App,
-                Component = _ref5.Component,
-                props = _ref5.props,
-                err = _ref5.err;
+          exports.router.subscribe(function (_ref4) {
+            var App = _ref4.App,
+                Component = _ref4.Component,
+                props = _ref4.props,
+                err = _ref4.err;
             render({
               App: App,
               Component: Component,
@@ -7968,142 +8290,39 @@ _regenerator.default.mark(function _callee() {
             err: initialErr,
             emitter: exports.emitter
           });
-          return _context.abrupt("return", exports.emitter);
-
-        case 25:
-        case "end":
-          return _context.stop();
+          return exports.emitter;
+        });
       }
-    }
-  }, _callee, null, [[6, 16]]);
-}));
 
-function render(_x) {
-  return _render.apply(this, arguments);
-}
+      App = _pageLoader$loadPage;
+      var initialErr = err;
 
-function _render() {
-  _render = (0, _asyncToGenerator2.default)(
-  /*#__PURE__*/
-  _regenerator.default.mark(function _callee2(props) {
-    return _regenerator.default.wrap(function _callee2$(_context2) {
-      while (1) {
-        switch (_context2.prev = _context2.next) {
-          case 0:
-            if (!props.err) {
-              _context2.next = 4;
-              break;
+      var _temp = _catch(function () {
+        return _promise.default.resolve(pageLoader.loadPage(page)).then(function (_pageLoader$loadPage2) {
+          Component = _pageLoader$loadPage2;
+
+          if (true) {
+            var _require = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js"),
+                isValidElementType = _require.isValidElementType;
+
+            if (!isValidElementType(Component)) {
+              throw new Error("The default export is not a React Component in page: \"".concat(page, "\""));
             }
+          }
+        });
+      }, function (error) {
+        // This catches errors like throwing in the top level of a module
+        initialErr = error;
+      });
 
-            _context2.next = 3;
-            return renderError(props);
+      return _temp && _temp.then ? _temp.then(_temp2) : _temp2(_temp);
+    });
+  } catch (e) {
+    return _promise.default.reject(e);
+  }
+};
 
-          case 3:
-            return _context2.abrupt("return");
-
-          case 4:
-            _context2.prev = 4;
-            _context2.next = 7;
-            return doRender(props);
-
-          case 7:
-            _context2.next = 13;
-            break;
-
-          case 9:
-            _context2.prev = 9;
-            _context2.t0 = _context2["catch"](4);
-            _context2.next = 13;
-            return renderError((0, _assign.default)({}, props, {
-              err: _context2.t0
-            }));
-
-          case 13:
-          case "end":
-            return _context2.stop();
-        }
-      }
-    }, _callee2, null, [[4, 9]]);
-  }));
-  return _render.apply(this, arguments);
-}
-
-exports.render = render; // This method handles all runtime and debug errors.
-// 404 and 500 errors are special kind of errors
-// and they are still handle via the main render method.
-
-function renderError(_x2) {
-  return _renderError.apply(this, arguments);
-}
-
-function _renderError() {
-  _renderError = (0, _asyncToGenerator2.default)(
-  /*#__PURE__*/
-  _regenerator.default.mark(function _callee3(props) {
-    var App, err, initProps;
-    return _regenerator.default.wrap(function _callee3$(_context3) {
-      while (1) {
-        switch (_context3.prev = _context3.next) {
-          case 0:
-            App = props.App, err = props.err;
-
-            if (false) {}
-
-            return _context3.abrupt("return", webpackHMR.reportRuntimeError(webpackHMR.prepareError(err)));
-
-          case 3:
-            // Make sure we log the error to the console, otherwise users can't track down issues.
-            console.error(err);
-            _context3.next = 6;
-            return pageLoader.loadPage('/_error');
-
-          case 6:
-            exports.ErrorComponent = _context3.sent;
-
-            if (!props.props) {
-              _context3.next = 11;
-              break;
-            }
-
-            _context3.t0 = props.props;
-            _context3.next = 14;
-            break;
-
-          case 11:
-            _context3.next = 13;
-            return utils_1.loadGetInitialProps(App, {
-              Component: exports.ErrorComponent,
-              router: exports.router,
-              ctx: {
-                err: err,
-                pathname: page,
-                query: query,
-                asPath: asPath
-              }
-            });
-
-          case 13:
-            _context3.t0 = _context3.sent;
-
-          case 14:
-            initProps = _context3.t0;
-            _context3.next = 17;
-            return doRender((0, _assign.default)({}, props, {
-              err: err,
-              Component: exports.ErrorComponent,
-              props: initProps
-            }));
-
-          case 17:
-          case "end":
-            return _context3.stop();
-        }
-      }
-    }, _callee3);
-  }));
-  return _renderError.apply(this, arguments);
-}
-
+exports.render = render;
 exports.renderError = renderError;
 var isInitialRender = true;
 
@@ -8115,81 +8334,6 @@ function renderReactElement(reactEl, domEl) {
   } else {
     react_dom_1.default.render(reactEl, domEl);
   }
-}
-
-function doRender(_x3) {
-  return _doRender.apply(this, arguments);
-}
-
-function _doRender() {
-  _doRender = (0, _asyncToGenerator2.default)(
-  /*#__PURE__*/
-  _regenerator.default.mark(function _callee4(_ref6) {
-    var App, Component, props, err, _exports$router, pathname, _query, _asPath, appProps;
-
-    return _regenerator.default.wrap(function _callee4$(_context4) {
-      while (1) {
-        switch (_context4.prev = _context4.next) {
-          case 0:
-            App = _ref6.App, Component = _ref6.Component, props = _ref6.props, err = _ref6.err;
-
-            if (!(!props && Component && Component !== exports.ErrorComponent && lastAppProps.Component === exports.ErrorComponent)) {
-              _context4.next = 6;
-              break;
-            }
-
-            _exports$router = exports.router, pathname = _exports$router.pathname, _query = _exports$router.query, _asPath = _exports$router.asPath;
-            _context4.next = 5;
-            return utils_1.loadGetInitialProps(App, {
-              Component: Component,
-              router: exports.router,
-              ctx: {
-                err: err,
-                pathname: pathname,
-                query: _query,
-                asPath: _asPath
-              }
-            });
-
-          case 5:
-            props = _context4.sent;
-
-          case 6:
-            Component = Component || lastAppProps.Component;
-            props = props || lastAppProps.props;
-            appProps = (0, _assign.default)({
-              Component: Component,
-              err: err,
-              router: exports.router
-            }, props); // lastAppProps has to be set before ReactDom.render to account for ReactDom throwing an error.
-
-            lastAppProps = appProps;
-            exports.emitter.emit('before-reactdom-render', {
-              Component: Component,
-              ErrorComponent: exports.ErrorComponent,
-              appProps: appProps
-            }); // In development runtime errors are caught by react-error-overlay.
-
-            if (true) {
-              renderReactElement(react_1.default.createElement(head_manager_context_1.HeadManagerContext.Provider, {
-                value: headManager.updateHead
-              }, react_1.default.createElement(App, (0, _assign.default)({}, appProps))), appContainer);
-            } else {}
-
-            exports.emitter.emit('after-reactdom-render', {
-              Component: Component,
-              ErrorComponent: exports.ErrorComponent,
-              appProps: appProps
-            });
-
-          case 13:
-          case "end":
-            return _context4.stop();
-        }
-      }
-    }, _callee4);
-  }));
-  return _doRender.apply(this, arguments);
 }
 
 /***/ }),
@@ -8305,9 +8449,7 @@ _1.default({
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
 
-var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js"));
-
-var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/asyncToGenerator.js"));
+var _promise = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js"));
 
 var _this = void 0;
 
@@ -8325,42 +8467,26 @@ var router_1 = __importDefault(__webpack_require__(/*! next/router */ "./node_mo
 
 var on_demand_entries_utils_1 = __webpack_require__(/*! ./on-demand-entries-utils */ "./node_modules/next/dist/client/on-demand-entries-utils.js");
 
-exports.default =
-/*#__PURE__*/
-function () {
-  var _ref2 = (0, _asyncToGenerator2.default)(
-  /*#__PURE__*/
-  _regenerator.default.mark(function _callee(_ref) {
-    var assetPrefix;
-    return _regenerator.default.wrap(function _callee$(_context) {
-      while (1) {
-        switch (_context.prev = _context.next) {
-          case 0:
-            assetPrefix = _ref.assetPrefix;
-            router_1.default.ready(function () {
-              router_1.default.events.on('routeChangeStart', function () {
-                return on_demand_entries_utils_1.closePing();
-              });
-              router_1.default.events.on('routeChangeComplete', on_demand_entries_utils_1.setupPing.bind(_this, assetPrefix, function () {
-                return router_1.default.pathname;
-              }));
-            });
-            on_demand_entries_utils_1.setupPing(assetPrefix, function () {
-              return router_1.default.pathname;
-            }, on_demand_entries_utils_1.currentPage);
+exports.default = function (_ref) {
+  var assetPrefix = _ref.assetPrefix;
 
-          case 3:
-          case "end":
-            return _context.stop();
-        }
-      }
-    }, _callee);
-  }));
-
-  return function (_x) {
-    return _ref2.apply(this, arguments);
-  };
-}();
+  try {
+    router_1.default.ready(function () {
+      router_1.default.events.on('routeChangeStart', function () {
+        return on_demand_entries_utils_1.closePing();
+      });
+      router_1.default.events.on('routeChangeComplete', on_demand_entries_utils_1.setupPing.bind(_this, assetPrefix, function () {
+        return router_1.default.pathname;
+      }));
+    });
+    on_demand_entries_utils_1.setupPing(assetPrefix, function () {
+      return router_1.default.pathname;
+    }, on_demand_entries_utils_1.currentPage);
+    return;
+  } catch (e) {
+    return _promise.default.reject(e);
+  }
+};
 
 /***/ }),
 
@@ -8454,10 +8580,6 @@ exports.setupPing = setupPing;
 
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
 
-var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js"));
-
-var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/asyncToGenerator.js"));
-
 var _promise = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */ "./node_modules/@babel/runtime-corejs2/core-js/promise.js"));
 
 var _set = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/set */ "./node_modules/@babel/runtime-corejs2/core-js/set.js"));
@@ -8477,7 +8599,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 /* global document */
 
-var mitt_1 = __importDefault(__webpack_require__(/*! next-server/dist/lib/mitt */ "./node_modules/next-server/dist/lib/mitt.js")); // smaller version of https://gist.github.com/igrigorik/a02f2359f3bc50ca7a9c
+var mitt_1 = __importDefault(__webpack_require__(/*! next-server/dist/lib/mitt */ "./node_modules/next-server/dist/lib/mitt.js"));
+
+var unfetch_1 = __importDefault(__webpack_require__(/*! unfetch */ "./node_modules/unfetch/dist/unfetch.mjs")); // smaller version of https://gist.github.com/igrigorik/a02f2359f3bc50ca7a9c
 
 
 function supportsPreload(list) {
@@ -8505,6 +8629,7 @@ function () {
     this.prefetchCache = new _set.default();
     this.pageRegisterEvents = mitt_1.default();
     this.loadingRoutes = {};
+    this.promisedBuildId = _promise.default.resolve();
   }
 
   (0, _createClass2.default)(PageLoader, [{
@@ -8568,33 +8693,64 @@ function () {
       });
     }
   }, {
-    key: "loadScript",
-    value: function loadScript(route) {
+    key: "onDynamicBuildId",
+    value: function onDynamicBuildId() {
       var _this2 = this;
 
-      route = this.normalizeRoute(route);
-      var scriptRoute = route === '/' ? '/index.js' : "".concat(route, ".js");
-      var script = document.createElement('script');
-      var url = "".concat(this.assetPrefix, "/_next/static/").concat(encodeURIComponent(this.buildId), "/pages").concat(scriptRoute);
-      script.crossOrigin = undefined;
-      script.src = url;
+      this.promisedBuildId = new _promise.default(function (resolve) {
+        unfetch_1.default("".concat(_this2.assetPrefix, "/_next/static/HEAD_BUILD_ID")).then(function (res) {
+          if (res.ok) {
+            return res;
+          }
 
-      script.onerror = function () {
-        var error = new Error("Error when loading route: ".concat(route));
-        error.code = 'PAGE_LOAD_ERROR';
+          var err = new Error('Failed to fetch HEAD buildId');
+          err.res = res;
+          throw err;
+        }).then(function (res) {
+          return res.text();
+        }).then(function (buildId) {
+          _this2.buildId = buildId.trim();
+        }).catch(function () {
+          // When this fails it's not a _huge_ deal, preload wont work and page
+          // navigation will 404, triggering a SSR refresh
+          console.warn('Failed to load BUILD_ID from server. ' + 'The following client-side page transition will likely 404 and cause a SSR.\n' + 'http://err.sh/zeit/next.js/head-build-id');
+        }).then(resolve, resolve);
+      });
+    }
+  }, {
+    key: "loadScript",
+    value: function (route) {
+      try {
+        var _this4 = this;
 
-        _this2.pageRegisterEvents.emit(route, {
-          error: error
+        return _promise.default.resolve(_this4.promisedBuildId).then(function () {
+          route = _this4.normalizeRoute(route);
+          var scriptRoute = route === '/' ? '/index.js' : "".concat(route, ".js");
+          var script = document.createElement('script');
+          var url = "".concat(_this4.assetPrefix, "/_next/static/").concat(encodeURIComponent(_this4.buildId), "/pages").concat(scriptRoute);
+          script.crossOrigin = undefined;
+          script.src = url;
+
+          script.onerror = function () {
+            var error = new Error("Error when loading route: ".concat(route));
+            error.code = 'PAGE_LOAD_ERROR';
+
+            _this4.pageRegisterEvents.emit(route, {
+              error: error
+            });
+          };
+
+          document.body.appendChild(script);
         });
-      };
-
-      document.body.appendChild(script);
+      } catch (e) {
+        return _promise.default.reject(e);
+      }
     } // This method if called by the route code.
 
   }, {
     key: "registerPage",
     value: function registerPage(route, regFn) {
-      var _this3 = this;
+      var _this5 = this;
 
       var register = function register() {
         try {
@@ -8602,21 +8758,21 @@ function () {
               error = _regFn.error,
               page = _regFn.page;
 
-          _this3.pageCache[route] = {
+          _this5.pageCache[route] = {
             error: error,
             page: page
           };
 
-          _this3.pageRegisterEvents.emit(route, {
+          _this5.pageRegisterEvents.emit(route, {
             error: error,
             page: page
           });
         } catch (error) {
-          _this3.pageCache[route] = {
+          _this5.pageCache[route] = {
             error: error
           };
 
-          _this3.pageRegisterEvents.emit(route, {
+          _this5.pageRegisterEvents.emit(route, {
             error: error
           });
         }
@@ -8644,90 +8800,69 @@ function () {
     }
   }, {
     key: "prefetch",
-    value: function () {
-      var _prefetch = (0, _asyncToGenerator2.default)(
-      /*#__PURE__*/
-      _regenerator.default.mark(function _callee(route) {
-        var _this4 = this;
+    value: function (route) {
+      try {
+        var _exit2 = false;
 
-        var scriptRoute, link;
-        return _regenerator.default.wrap(function _callee$(_context) {
-          while (1) {
-            switch (_context.prev = _context.next) {
-              case 0:
-                route = this.normalizeRoute(route);
-                scriptRoute = route === '/' ? '/index.js' : "".concat(route, ".js");
+        var _this7 = this;
 
-                if (!this.prefetchCache.has(scriptRoute)) {
-                  _context.next = 4;
-                  break;
-                }
+        function _temp3(_result) {
+          if (_exit2) return _result;
 
-                return _context.abrupt("return");
-
-              case 4:
-                this.prefetchCache.add(scriptRoute); // Inspired by quicklink, license: https://github.com/GoogleChromeLabs/quicklink/blob/master/LICENSE
-                // Don't prefetch if the user is on 2G / Don't prefetch if Save-Data is enabled
-
-                if (!('connection' in navigator)) {
-                  _context.next = 8;
-                  break;
-                }
-
-                if (!((navigator.connection.effectiveType || '').indexOf('2g') !== -1 || navigator.connection.saveData)) {
-                  _context.next = 8;
-                  break;
-                }
-
-                return _context.abrupt("return");
-
-              case 8:
-                if (!hasPreload) {
-                  _context.next = 16;
-                  break;
-                }
-
-                link = document.createElement('link');
-                link.rel = 'preload';
-                link.crossOrigin = undefined;
-                link.href = "".concat(this.assetPrefix, "/_next/static/").concat(encodeURIComponent(this.buildId), "/pages").concat(scriptRoute);
-                link.as = 'script';
-                document.head.appendChild(link);
-                return _context.abrupt("return");
-
-              case 16:
-                if (!(document.readyState === 'complete')) {
-                  _context.next = 20;
-                  break;
-                }
-
-                return _context.abrupt("return", this.loadPage(route).catch(function () {}));
-
-              case 20:
-                return _context.abrupt("return", new _promise.default(function (resolve) {
-                  window.addEventListener('load', function () {
-                    _this4.loadPage(route).then(function () {
-                      return resolve();
-                    }, function () {
-                      return resolve();
-                    });
-                  });
-                }));
-
-              case 21:
-              case "end":
-                return _context.stop();
-            }
+          if (document.readyState === 'complete') {
+            return _this7.loadPage(route).catch(function () {});
+          } else {
+            return new _promise.default(function (resolve) {
+              window.addEventListener('load', function () {
+                _this7.loadPage(route).then(function () {
+                  return resolve();
+                }, function () {
+                  return resolve();
+                });
+              });
+            });
           }
-        }, _callee, this);
-      }));
+        }
 
-      function prefetch(_x) {
-        return _prefetch.apply(this, arguments);
+        route = _this7.normalizeRoute(route);
+        var scriptRoute = route === '/' ? '/index.js' : "".concat(route, ".js");
+
+        if (_this7.prefetchCache.has(scriptRoute)) {
+          return _promise.default.resolve();
+        }
+
+        _this7.prefetchCache.add(scriptRoute); // Inspired by quicklink, license: https://github.com/GoogleChromeLabs/quicklink/blob/master/LICENSE
+        // Don't prefetch if the user is on 2G / Don't prefetch if Save-Data is enabled
+
+
+        if ('connection' in navigator) {
+          if ((navigator.connection.effectiveType || '').indexOf('2g') !== -1 || navigator.connection.saveData) {
+            return _promise.default.resolve();
+          }
+        } // Feature detection is used to see if preload is supported
+        // If not fall back to loading script tags before the page is loaded
+        // https://caniuse.com/#feat=link-rel-preload
+
+
+        var _temp4 = function () {
+          if (hasPreload) {
+            return _promise.default.resolve(_this7.promisedBuildId).then(function () {
+              var link = document.createElement('link');
+              link.rel = 'preload';
+              link.crossOrigin = undefined;
+              link.href = "".concat(_this7.assetPrefix, "/_next/static/").concat(encodeURIComponent(_this7.buildId), "/pages").concat(scriptRoute);
+              link.as = 'script';
+              document.head.appendChild(link);
+              _exit2 = true;
+            });
+          }
+        }();
+
+        return _promise.default.resolve(_temp4 && _temp4.then ? _temp4.then(_temp3) : _temp3(_temp4));
+      } catch (e) {
+        return _promise.default.reject(e);
       }
-
-      return prefetch;
-    }()
+    }
   }, {
     key: "clearCache",
     value: function clearCache(route) {
@@ -8777,7 +8912,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 /* global window */
 
+var react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
 var router_1 = __importDefault(__webpack_require__(/*! next-server/dist/lib/router/router */ "./node_modules/next-server/dist/lib/router/router.js"));
+
+exports.Router = router_1.default;
+
+var router_context_1 = __webpack_require__(/*! next-server/dist/lib/router-context */ "./node_modules/next-server/dist/lib/router-context.js");
+
+var request_context_1 = __webpack_require__(/*! next-server/dist/lib/request-context */ "./node_modules/next-server/dist/lib/request-context.js");
 
 var SingletonRouter = {
   router: null,
@@ -8789,7 +8932,8 @@ var SingletonRouter = {
       this.readyCallbacks.push(cb);
     }
   }
-}; // Create public properties and methods of the router in the SingletonRouter
+}; // const x = SingletonRouter as IRealRouter
+// Create public properties and methods of the router in the SingletonRouter
 
 var urlPropertyFields = ['pathname', 'route', 'query', 'asPath'];
 var propertyFields = ['components'];
@@ -8808,29 +8952,31 @@ propertyFields.concat(urlPropertyFields).forEach(function (field) {
   // proper way to access it
   (0, _defineProperty.default)(SingletonRouter, field, {
     get: function get() {
-      throwIfNoRouter();
-      return SingletonRouter.router[field];
+      var router = getRouter();
+      return router[field];
     }
   });
 });
 coreMethodFields.forEach(function (field) {
+  // We don't really know the types here, so we add them later instead
   SingletonRouter[field] = function () {
-    var _SingletonRouter$rout;
-
-    throwIfNoRouter();
-    return (_SingletonRouter$rout = SingletonRouter.router)[field].apply(_SingletonRouter$rout, arguments);
+    var router = getRouter();
+    return router[field].apply(router, arguments);
   };
 });
 routerEvents.forEach(function (event) {
   SingletonRouter.ready(function () {
     router_1.default.events.on(event, function () {
       var eventField = "on".concat(event.charAt(0).toUpperCase()).concat(event.substring(1));
+      var singletonRouter = SingletonRouter;
 
-      if (SingletonRouter[eventField]) {
+      if (singletonRouter[eventField]) {
         try {
-          SingletonRouter[eventField].apply(SingletonRouter, arguments);
+          singletonRouter[eventField].apply(singletonRouter, arguments);
         } catch (err) {
-          console.error("Error when running the Router event: ".concat(eventField));
+          // tslint:disable-next-line:no-console
+          console.error("Error when running the Router event: ".concat(eventField)); // tslint:disable-next-line:no-console
+
           console.error("".concat(err.message, "\n").concat(err.stack));
         }
       }
@@ -8838,11 +8984,13 @@ routerEvents.forEach(function (event) {
   });
 });
 
-function throwIfNoRouter() {
+function getRouter() {
   if (!SingletonRouter.router) {
     var message = 'No router instance found.\n' + 'You should only use "next/router" inside the client side of your app.\n';
     throw new Error(message);
   }
+
+  return SingletonRouter.router;
 } // Export the SingletonRouter and this is the public API.
 
 
@@ -8850,7 +8998,19 @@ exports.default = SingletonRouter; // Reexport the withRoute HOC
 
 var with_router_1 = __webpack_require__(/*! ./with-router */ "./node_modules/next/dist/client/with-router.js");
 
-exports.withRouter = with_router_1.default; // INTERNAL APIS
+exports.withRouter = with_router_1.default;
+
+function useRouter() {
+  return react_1.default.useContext(router_context_1.RouterContext);
+}
+
+exports.useRouter = useRouter;
+
+function useRequest() {
+  return react_1.default.useContext(request_context_1.RequestContext);
+}
+
+exports.useRequest = useRequest; // INTERNAL APIS
 // -------------
 // (do not use following exports inside the app)
 // Create a router and assign it as the singleton instance.
@@ -8868,24 +9028,23 @@ exports.createRouter = function () {
   });
   SingletonRouter.readyCallbacks = [];
   return SingletonRouter.router;
-}; // Export the actual Router class, which is usually used inside the server
+}; // This function is used to create the `withRouter` router instance
 
-
-exports.Router = router_1.default; // This function is used to create the `withRouter` router instance
 
 function makePublicRouterInstance(router) {
+  var _router = router;
   var instance = {};
 
   for (var _i = 0; _i < urlPropertyFields.length; _i++) {
     var property = urlPropertyFields[_i];
 
-    if (typeof router[property] === 'object') {
-      instance[property] = (0, _assign.default)({}, router[property]); // makes sure query is not stateful
+    if (typeof _router[property] === 'object') {
+      instance[property] = (0, _assign.default)({}, _router[property]); // makes sure query is not stateful
 
       continue;
     }
 
-    instance[property] = router[property];
+    instance[property] = _router[property];
   } // Events is a static property on the router, the router doesn't have to be initialized to use it
 
 
@@ -8897,13 +9056,13 @@ function makePublicRouterInstance(router) {
     // proper way to access it
     (0, _defineProperty.default)(instance, field, {
       get: function get() {
-        return router[field];
+        return _router[field];
       }
     });
   });
   coreMethodFields.forEach(function (field) {
     instance[field] = function () {
-      return router[field].apply(router, arguments);
+      return _router[field].apply(_router, arguments);
     };
   });
   return instance;
@@ -9087,6 +9246,12 @@ function withRouter(ComposedComponent) {
     router: prop_types_1.default.object
   };
   WithRouteWrapper.getInitialProps = ComposedComponent.getInitialProps;
+
+  if (true) {
+    var name = ComposedComponent.displayName || ComposedComponent.name || 'Unknown';
+    WithRouteWrapper.displayName = "withRouter(".concat(name, ")");
+  }
+
   return WithRouteWrapper;
 }
 
@@ -9819,242 +9984,6 @@ if (true) {
 var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
-
-
-/***/ }),
-
-/***/ "./node_modules/next/node_modules/react-is/cjs/react-is.development.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/next/node_modules/react-is/cjs/react-is.development.js ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/** @license React v16.6.1
- * react-is.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-
-
-if (true) {
-  (function() {
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-// nor polyfill, then a plain number is used for performance.
-var hasSymbol = typeof Symbol === 'function' && Symbol.for;
-
-var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
-var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
-var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
-var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
-var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
-var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
-var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace;
-var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
-var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
-var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
-var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
-var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
-var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
-
-function isValidElementType(type) {
-  return typeof type === 'string' || typeof type === 'function' ||
-  // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE);
-}
-
-/**
- * Forked from fbjs/warning:
- * https://github.com/facebook/fbjs/blob/e66ba20ad5be433eb54423f2b097d829324d9de6/packages/fbjs/src/__forks__/warning.js
- *
- * Only change is we use console.warn instead of console.error,
- * and do nothing when 'console' is not supported.
- * This really simplifies the code.
- * ---
- * Similar to invariant but only logs a warning if the condition is not met.
- * This can be used to log issues in development environments in critical
- * paths. Removing the logging code for production environments will keep the
- * same logic and follow the same code paths.
- */
-
-var lowPriorityWarning = function () {};
-
-{
-  var printWarning = function (format) {
-    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      args[_key - 1] = arguments[_key];
-    }
-
-    var argIndex = 0;
-    var message = 'Warning: ' + format.replace(/%s/g, function () {
-      return args[argIndex++];
-    });
-    if (typeof console !== 'undefined') {
-      console.warn(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-
-  lowPriorityWarning = function (condition, format) {
-    if (format === undefined) {
-      throw new Error('`lowPriorityWarning(condition, format, ...args)` requires a warning ' + 'message argument');
-    }
-    if (!condition) {
-      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-        args[_key2 - 2] = arguments[_key2];
-      }
-
-      printWarning.apply(undefined, [format].concat(args));
-    }
-  };
-}
-
-var lowPriorityWarning$1 = lowPriorityWarning;
-
-function typeOf(object) {
-  if (typeof object === 'object' && object !== null) {
-    var $$typeof = object.$$typeof;
-
-    switch ($$typeof) {
-      case REACT_ELEMENT_TYPE:
-        var type = object.type;
-
-        switch (type) {
-          case REACT_ASYNC_MODE_TYPE:
-          case REACT_CONCURRENT_MODE_TYPE:
-          case REACT_FRAGMENT_TYPE:
-          case REACT_PROFILER_TYPE:
-          case REACT_STRICT_MODE_TYPE:
-            return type;
-          default:
-            var $$typeofType = type && type.$$typeof;
-
-            switch ($$typeofType) {
-              case REACT_CONTEXT_TYPE:
-              case REACT_FORWARD_REF_TYPE:
-              case REACT_PROVIDER_TYPE:
-                return $$typeofType;
-              default:
-                return $$typeof;
-            }
-        }
-      case REACT_PORTAL_TYPE:
-        return $$typeof;
-    }
-  }
-
-  return undefined;
-}
-
-// AsyncMode is deprecated along with isAsyncMode
-var AsyncMode = REACT_ASYNC_MODE_TYPE;
-var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
-var ContextConsumer = REACT_CONTEXT_TYPE;
-var ContextProvider = REACT_PROVIDER_TYPE;
-var Element = REACT_ELEMENT_TYPE;
-var ForwardRef = REACT_FORWARD_REF_TYPE;
-var Fragment = REACT_FRAGMENT_TYPE;
-var Profiler = REACT_PROFILER_TYPE;
-var Portal = REACT_PORTAL_TYPE;
-var StrictMode = REACT_STRICT_MODE_TYPE;
-
-var hasWarnedAboutDeprecatedIsAsyncMode = false;
-
-// AsyncMode should be deprecated
-function isAsyncMode(object) {
-  {
-    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-      hasWarnedAboutDeprecatedIsAsyncMode = true;
-      lowPriorityWarning$1(false, 'The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
-    }
-  }
-  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
-}
-function isConcurrentMode(object) {
-  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
-}
-function isContextConsumer(object) {
-  return typeOf(object) === REACT_CONTEXT_TYPE;
-}
-function isContextProvider(object) {
-  return typeOf(object) === REACT_PROVIDER_TYPE;
-}
-function isElement(object) {
-  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-}
-function isForwardRef(object) {
-  return typeOf(object) === REACT_FORWARD_REF_TYPE;
-}
-function isFragment(object) {
-  return typeOf(object) === REACT_FRAGMENT_TYPE;
-}
-function isProfiler(object) {
-  return typeOf(object) === REACT_PROFILER_TYPE;
-}
-function isPortal(object) {
-  return typeOf(object) === REACT_PORTAL_TYPE;
-}
-function isStrictMode(object) {
-  return typeOf(object) === REACT_STRICT_MODE_TYPE;
-}
-
-exports.typeOf = typeOf;
-exports.AsyncMode = AsyncMode;
-exports.ConcurrentMode = ConcurrentMode;
-exports.ContextConsumer = ContextConsumer;
-exports.ContextProvider = ContextProvider;
-exports.Element = Element;
-exports.ForwardRef = ForwardRef;
-exports.Fragment = Fragment;
-exports.Profiler = Profiler;
-exports.Portal = Portal;
-exports.StrictMode = StrictMode;
-exports.isValidElementType = isValidElementType;
-exports.isAsyncMode = isAsyncMode;
-exports.isConcurrentMode = isConcurrentMode;
-exports.isContextConsumer = isContextConsumer;
-exports.isContextProvider = isContextProvider;
-exports.isElement = isElement;
-exports.isForwardRef = isForwardRef;
-exports.isFragment = isFragment;
-exports.isProfiler = isProfiler;
-exports.isPortal = isPortal;
-exports.isStrictMode = isStrictMode;
-  })();
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/next/node_modules/react-is/index.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/next/node_modules/react-is/index.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/next/node_modules/react-is/cjs/react-is.development.js");
-}
 
 
 /***/ }),
@@ -12935,5 +12864,5 @@ module.exports = dll_7aff549c98b978433226;
 
 /***/ })
 
-},[["./node_modules/next/dist/client/next-dev.js","static/runtime/webpack.js"]]]));;
+},[["./node_modules/next/dist/client/next-dev.js","static/runtime/webpack.js"]]]);
 //# sourceMappingURL=main.js.map

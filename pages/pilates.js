@@ -2,7 +2,7 @@ import React from "react";
 import MonserratSemiBold from "../static/fonts/Montserrat/Montserrat-SemiBold.ttf";
 import MonserratRegular from "../static/fonts/Montserrat/Montserrat-Regular.ttf";
 import Head from "next/head";
-import Navbar from "../components/Navbar/Navbar";
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer/Footer";
 import PilatesStyles from "../PagesStyles/PilatesStyles.js";
 import HeaderAnimated from "../components/HeaderAnimated/HeaderAnimated.js";

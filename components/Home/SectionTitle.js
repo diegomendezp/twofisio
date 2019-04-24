@@ -44,7 +44,7 @@ class SectionTitle extends Component {
   render() {
     const { topSrc } = this.state;
     return (
-      <div>
+      <div style={{zIndex: 20}}>
         {topSrc &&
             <div className="sectionTitle"
             >
