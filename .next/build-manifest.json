@@ -11,7 +11,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/index": [
+    "/pilates": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
@@ -19,11 +19,11 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/fisioterapia": [
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/pilates": [
+    "/fisioterapia": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
