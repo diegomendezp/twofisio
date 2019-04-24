@@ -10,7 +10,7 @@ justify-content: space-between;
 align-items: center;
 position: fixed;
 z-index: ${props => props.position ? 0 : 10};
-overflow-x: hidden;
+overflow: hidden;
 animation-delay: 0.4s;
 z-index: 10;
 
@@ -50,6 +50,7 @@ z-index: 10;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .menuSection {
