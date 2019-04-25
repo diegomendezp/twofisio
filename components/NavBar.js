@@ -3,7 +3,7 @@ import posed from 'react-pose';
 import { NavWrapperStyle } from '../PagesStyles/NavBarStyle'
 import { NavTextStyle } from '../PagesStyles/NavTextStyle'
 import logo from '../static/logo.png'
-import tailorLogo from '../static/iconWhite.svg'
+import tailorLogo from '../static/iconPurple.svg'
 import Link from 'next/link';
 
 const Box = posed.div({
@@ -132,16 +132,16 @@ class NavBar extends React.Component {
 
                         <div className="navInfoContainer">
                             <p className="navInfo">Teléfono:</p>
-                            <p className="navInfo">971 116 20 | 609 058 398</p>
+                            <p className="navInfo"><a href={`tel:${"971 116 20"}`}>971 116 20</a> | <a href={`tel:${"609 058 398"}`}>609 058 398</a></p>
                         </div>
 
                         <div className="navInfoContainer">
-                            <p className="navInfo">Email: centrodefisioterapia@twofisio.es</p>
+                            <p className="navInfo">Email: <a href={`mailto:centrodefisioterapia@twofisio.es`}>centrodefisioterapia@twofisio.es</a></p>
                         </div>
 
                         <div className="navInfoContainer">
                             <p className="navInfo">Dirección:</p>
-                            <p className="navInfo">Avenida del Padre Piquer, 39,</p>
+                            <p className="navInfo"><a href="https://goo.gl/maps/K6zbJ39jVTn" target="_blank">Avenida del Padre Piquer, 39</a></p>
                             <p className="navInfo">28024 Madrid</p>
                         </div>
                    </div>
@@ -164,7 +164,7 @@ class NavBar extends React.Component {
                     </div>
                     </div>
                     <div className="menuFooter">
-                        <NavTextStyle>© 2019 by Tailor</NavTextStyle>
+                        <NavTextStyle><a href="http://tailor-hub.com" target="_blank">© 2019 by Tailor</a></NavTextStyle>
                         <img src={tailorLogo}></img>
                     </div>
                 </Box>

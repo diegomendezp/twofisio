@@ -43,7 +43,14 @@ letter-spacing: 0.2px;
 @media (min-width: 320px) and (max-width: 480px) {
 
     width: 100vw;
-    font-size: 5.5vw;
+
+    font-family: "Monserrat-Semibold";
+    color: #740a64;
+    font-size: 1.5rem;
+    -webkit-letter-spacing: 0.04rem;
+    -moz-letter-spacing: 0.04rem;
+    -ms-letter-spacing: 0.04rem;
+    letter-spacing: 0.04rem;
 }
 
 `;

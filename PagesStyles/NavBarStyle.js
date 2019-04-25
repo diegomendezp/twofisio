@@ -23,7 +23,10 @@ z-index: 10;
 .navInfoContainer {
   margin-bottom: 2%;
   p {
-    font-size: 1.6vw;
+    a {
+      color: black;
+      text-decoration: none;
+    }
   }
 }
 
@@ -70,7 +73,7 @@ z-index: 10;
   text-align: left;
 
   p {
-    font-size: 1.2vw;
+    font-size: 1rem;
   }
 }
 
@@ -82,6 +85,12 @@ z-index: 10;
   justify-content: center;
   align-items: center;
   margin-top: 0%;
+
+  p {
+    font-family: "Monserrat-Semibold";
+    color: #740a64;
+    font-size: 1.5rem;
+  }
 }
 
 .menuFooter {
@@ -89,10 +98,16 @@ z-index: 10;
   align-items: center;
   padding: 5% 5%;
   background: white;
+  width: 100vw;
 
   p {
     font-family: "Monserrat-Regular";
-    margin-right: 1%;
+    font-size: 1rem;
+    
+    a {
+      text-decoration: none;
+      color: #740a64;
+    }
   }
 }
 
@@ -194,8 +209,13 @@ z-index: 10;
 */
 
 @media (min-width: 376px) and (max-width: 767px) {
-  
-  .menu {
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+  width: 30px;
+  height: 4px;
+}
+
+.menu {
   box-sizing: border-box;
 }
 
@@ -205,18 +225,24 @@ z-index: 10;
 
 .navInfoContainer {
   margin-bottom: 0%;
+  p {
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
 }
 
 .logoSection {
   width: 100vw;
-  height: 20vh;
+  height: 16vh;
   padding: 5% 5% 0 5%;
 }
 
 .menuSection {
   background: white;
   flex-direction: column-reverse;
-  height: 90vw;
+  height: 98vw;
  
 }
 
@@ -224,7 +250,7 @@ z-index: 10;
   margin-top: 5%;
   margin-bottom: 5%;
   width: 100vw;
-  height: 60vw;
+  height: 44vw;
 
   p {
     font-size: 3vw;
@@ -233,10 +259,16 @@ z-index: 10;
 
 .subMenuSection2 {
   margin-top: 5%;
-  margin-bottom: 15%;
+  margin-bottom: 8%;
   width: 100vw;
   p {
-    font-size: 6vw;
+    font-family: "Monserrat-Semibold";
+    color: #740a64;
+    font-size: 1.5rem;
+    -webkit-letter-spacing: 0.04rem;
+    -moz-letter-spacing: 0.04rem;
+    -ms-letter-spacing: 0.04rem;
+    letter-spacing: 0.04rem;
   }
 }
 
@@ -247,7 +279,7 @@ z-index: 10;
   p {
     font-family: "Monserrat-Regular";
     font-size: 4vw;
-    width: 34vw;
+    width: 36vw;
   }
 
   img {
@@ -274,6 +306,13 @@ z-index: 10;
 
 .navInfoContainer {
   margin-bottom: 0%;
+
+  p {
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
 }
 
 .logoSection {
@@ -305,7 +344,13 @@ z-index: 10;
   margin-bottom: 15%;
   width: 100vw;
   p {
-    font-size: 8vw;
+    font-family: "Monserrat-Semibold";
+    color: #740a64;
+    font-size: 1.5rem;
+    -webkit-letter-spacing: 0.04rem;
+    -moz-letter-spacing: 0.04rem;
+    -ms-letter-spacing: 0.04rem;
+    letter-spacing: 0.04rem;
   }
 }
 
