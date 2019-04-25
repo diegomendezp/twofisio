@@ -149,8 +149,8 @@ class NavBar extends React.Component {
                         <Link href="/nosotros">
                             <NavTextStyle title={true} margin={true}>Nosotros</NavTextStyle>
                         </Link>
-                        <Link href="/pilates">
-                            <NavTextStyle title={true} margin={true}>Pilates</NavTextStyle>
+                        <Link href="/fisioterapia">                        
+                            <NavTextStyle title={true} margin={true}>Fisioterapia</NavTextStyle>
                         </Link>
                         <Link href="/tratamientos">
                             <NavTextStyle title={true} margin={true}>Tratamientos</NavTextStyle>
@@ -158,8 +158,8 @@ class NavBar extends React.Component {
                         <Link href="/ecografia">                        
                             <NavTextStyle title={true} margin={true}>Ecografías</NavTextStyle>
                         </Link>
-                        <Link href="/fisioterapia">                        
-                            <NavTextStyle title={true} margin={true}>Fisioterapia</NavTextStyle>
+                        <Link href="/pilates">
+                            <NavTextStyle title={true} margin={true}>Pilates</NavTextStyle>
                         </Link>
                     </div>
                     </div>
