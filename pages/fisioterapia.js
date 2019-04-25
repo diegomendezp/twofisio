@@ -1,6 +1,6 @@
 import React from "react";
 import tecnicas from "../content/tecnicas.json";
-import Navbar from "../components/Navbar/Navbar.js";
+import Navbar from "../components/NavBar.js";
 import Footer from "../components/Footer/Footer.js";
 import HeaderAnimated from "../components/HeaderAnimated/HeaderAnimated.js";
 import MonserratSemiBold from "../static/fonts/Montserrat/Montserrat-SemiBold.ttf";

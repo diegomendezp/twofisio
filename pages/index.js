@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar/Navbar";
+import Navbar from "../components/NavBar";
 import Footer from "../components/Footer/Footer";
 import MonserratSemiBold from "../static/fonts/Montserrat/Montserrat-SemiBold.ttf";
 import MonserratRegular from "../static/fonts/Montserrat/Montserrat-Regular.ttf";
@@ -62,7 +62,7 @@ export default () => (
       }
     `}</style>
     <React.Fragment>
-      <Navbar link="Nosotros" />
+      <Navbar/>
       <Home></Home>
       {/* <HomeStyles>{displayHomeContent()}</HomeStyles> */}
       <div className="center">

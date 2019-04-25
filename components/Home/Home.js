@@ -313,8 +313,6 @@ export default class Home extends Component {
   };
 
   componentDidMount() {
-    console.log(window.location.pathname);
-
     this._scrollEvent();
     this._manageResize();
     this._blockScroll();

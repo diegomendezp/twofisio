@@ -9,7 +9,7 @@ import MonserratSemiBold from "../static/fonts/Montserrat/Montserrat-SemiBold.tt
 import MonserratRegular from "../static/fonts/Montserrat/Montserrat-Regular.ttf";
 
 import Head from "next/head";
-import Navbar from "../components/Navbar/Navbar.js";
+import Navbar from "../components/NavBar.js";
 import Footer from "../components/Footer/Footer.js";
 import imgTrata from "../static/imgTratamientos.jpg";
 import HeaderAnimated from "../components/HeaderAnimated/HeaderAnimated";
