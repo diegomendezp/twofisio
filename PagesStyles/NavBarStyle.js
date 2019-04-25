@@ -296,6 +296,11 @@ z-index: 10;
 
 @media (min-width: 320px) and (max-width: 375px) {
 
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
+  width: 30px;
+  height: 4px;
+}
+
 .menu {
   box-sizing: border-box;
 }
