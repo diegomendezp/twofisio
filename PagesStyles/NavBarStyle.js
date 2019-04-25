@@ -129,11 +129,12 @@ z-index: 10;
 @media (min-width: 1281px) {
   
   .menuSection {
-  height: 64vh;
-}
-.menuFooter {
-  padding: 1% 5%;
-}
+    height: 64vh;
+  }
+
+  .menuFooter {
+    padding: 1% 5%;
+  }
   
 }
 /* 
@@ -154,25 +155,43 @@ z-index: 10;
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px
 */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+.navLogo {
+  height: 15vh;
+}
+
+.menuIcon {
+  align-items: center;
+}
   
-  .menuSection {
+.menuSection {
   height: 64vh;
 }
+
+.subMenuSection2 {
+  p {
+    width: 36vw;
+  }
+}
+
 .menuFooter {
   padding: 1% 5%;
+  width: 100vw;
+  img {
+    width: 4vw;
+    margin-left: 1%;
+  }
 }
   
 }
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
+
+
 @media (min-width: 376px) and (max-width: 767px) {
+  
+
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
   width: 30px;
   height: 4px;
@@ -217,6 +236,7 @@ z-index: 10;
   margin-bottom: 8%;
   width: 100vw;
   p {
+    width: 100vw;
     font-family: "Monserrat-Semibold";
     color: #740a64;
     font-size: 1.5rem;
@@ -232,7 +252,6 @@ z-index: 10;
   p {
     font-family: "Monserrat-Regular";
     font-size: 4vw;
-    width: 36vw;
   }
   img {
     width: 10vw;
@@ -272,7 +291,7 @@ z-index: 10;
 .menuSection {
   background: white;
   flex-direction: column-reverse;
-  height: 100vw;
+  height: 105vw;
  
 }
 .subMenuSection {
@@ -289,6 +308,7 @@ z-index: 10;
   margin-bottom: 15%;
   width: 100vw;
   p {
+    width: 100vw;
     font-family: "Monserrat-Semibold";
     color: #740a64;
     font-size: 1.5rem;
@@ -304,13 +324,87 @@ z-index: 10;
   p {
     font-family: "Monserrat-Regular";
     font-size: 4vw;
-    width: 34vw;
   }
   img {
     width: 10vw;
   }
 }
 }
+
+@media (orientation: landscape) {
+  .navLogo {
+  height: 17vh;
+  }
+
+  .logo {
+  height: 10vw;
+  margin-top: 5%;
+}
+
+.navInfoContainer {
+  margin-bottom: 0%;
+  p {
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+
+.logoSection {
+  width: 100vw;
+  height: 45vh;
+  padding: 0% 5% 0 5%;
+}
+
+.menuSection {
+  background: white;
+  flex-direction: row;
+  height: 98vw;
+ 
+}
+
+.subMenuSection {
+  background: transparent;
+  width: 50vw;
+  margin-top: -5%;
+
+  p {
+    font-size: 0.7rem;
+  }
+}
+
+.subMenuSection2 {
+  margin-top: -10%;
+  width: 50vw;
+  p {
+    width: 50vw;
+    font-family: "Monserrat-Semibold";
+    color: #740a64;
+    font-size: 1.5rem;
+    -webkit-letter-spacing: 0.04rem;
+    -moz-letter-spacing: 0.04rem;
+    -ms-letter-spacing: 0.04rem;
+    letter-spacing: 0.04rem;
+  }
+}
+
+.menuFooter {
+  margin-bottom: 5%;
+  padding: 0% 5%;
+  background: white;
+
+  p {
+    font-family: "Monserrat-Regular";
+    font-size: 2vw;
+  }
+
+  img {
+    width: 5vw;
+  }
+}
+}
+
 `;
 
 export { NavWrapperStyle };

@@ -8,8 +8,7 @@ const NavTextStyle = styled.p`
 cursor: pointer;
 margin: 0;
 padding: 0;
-font-size: ${props => (props.title ? '2.6vw' : '1.2vw')};
-width: 10vw;
+font-size: ${props => (props.title ? "2.6vw" : "1.2vw")};
 margin-bottom: ${props => props.margin && '1%'};
 font-family: "Monserrat-Semibold";
 color: #740a64;
@@ -36,13 +35,12 @@ letter-spacing: 0.2px;
 
 
 @media (min-width: 481px) and (max-width: 767px) {
-  width: 100vw;
+
 }
 
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-    width: 100vw;
 
     font-family: "Monserrat-Semibold";
     color: #740a64;
