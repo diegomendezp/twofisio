@@ -13,10 +13,31 @@ const NavWrapperStyle = styled.div`
   animation-delay: 0.4s;
   z-index: 10;
 
-  .navLogo {
-    height: 7vh;
-    object-fit: cover;
-    z-index: ${props => (props.lvisible ? '1' : '-1')};
+width: 100vw;
+height: ${props => (props.lvisible ? '20vh' : '100vh')};
+padding: 0;
+display: ${props => (props.visible ? 'flex' : 'none')};
+justify-content: space-between;
+align-items: center;
+position: fixed;
+z-index: ${props => (props.position ? 0 : 10)};
+overflow: hidden;
+animation-delay: 0.4s;
+z-index: 10;
+
+.navLogo {
+  height: 9vh;
+  object-fit: cover;
+  z-index: ${props => (props.lvisible ? '1' : '-1')}
+}
+
+.navInfoContainer {
+  margin-bottom: 2%;
+  p {
+    a {
+      color: black;
+      text-decoration: none;
+    }
   }
 
   .navInfoContainer {
@@ -113,7 +134,9 @@ const NavWrapperStyle = styled.div`
   .menuIcon {
     display: flex;
     box-sizing: border-box;
-    background-color: ${props => (props.backgroundColor && props.position ? props.backgroundColor : 'transparent')};
+    background-color: ${props => (props.backgroundColor && props.position
+    ? props.backgroundColor
+    : 'transparent')};
     justify-content: space-between;
     padding: 1% 1%;
     position: absolute;

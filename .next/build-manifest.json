@@ -14,10 +14,13 @@
     "/ecografia": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
+<<<<<<< HEAD
     ],
     "/fisioterapia": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
+=======
+>>>>>>> f34c5d91691a5bd5ae5b5643d1c75bc8b83953f2
     ]
   }
 }
