@@ -1,12 +1,10 @@
 import React from 'react'
 import posed from 'react-pose';
 import { NavWrapperStyle } from '../PagesStyles/NavBarStyle'
-import NavTextStyle from '../PagesStyles/NavTextStyle'
+import { NavTextStyle } from '../PagesStyles/NavTextStyle'
 import logo from '../static/logo.png'
-import tailorLogo from '../static/iconWhite.svg'
+import tailorLogo from '../static/iconPurple.svg'
 import Link from 'next/link';
-import FontRegular from '../PagesStyles/FontStyle/FontRegular';
-import contactList from '../content/contact.json'
 
 const Box = posed.div({
     up: {
@@ -91,52 +89,6 @@ class NavBar extends React.Component {
         }
         
     }
-    
-    
-    displayContactElements = contactList => {
-        return contactList.map((element, i) => {
-          return element.name === "Dirección" ? (
-            <div className="navInfoContainer" key={i}>
-              <FontRegular className="contact-name">
-                {element.name}:
-              </FontRegular>
-              <FontRegular className="contact-value">
-                <a href="https://goo.gl/maps/K6zbJ39jVTn" target="_blank">
-                  {element.value}
-                </a>
-              </FontRegular>
-            </div>
-          ) : element.name == "Email" ? (
-            <div className="navInfoContainer" key={i}>
-              <FontRegular className="contact-name">
-                {element.name}:
-              </FontRegular>
-              <FontRegular className="contact-value">
-                <a href={`mailto:${element.value}`}>{element.value}</a>
-              </FontRegular>
-            </div>
-          ) : element.name == "Teléfono" ? (
-            <div className="navInfoContainer" key={i}>
-              <FontRegular className="contact-name">
-                {element.name}:
-              </FontRegular>
-              <FontRegular className="contact-value">
-                <a href={`tel:${element.value}`}>{element.value}</a> |{" "}
-                <a href={`tel:${element.value2}`}>{element.value2}</a>
-              </FontRegular>
-            </div>
-          ) : (
-            <div className="navInfoContainer" key={i}>
-              <FontRegular className="contact-name">
-                {element.name}:
-              </FontRegular>
-              <FontRegular className="contact-value">
-                {element.value}
-              </FontRegular>
-            </div>
-          );
-        });
-      };
 
     _managePositionNav = () => {
         if (this.state.pos) {
@@ -178,28 +130,41 @@ class NavBar extends React.Component {
                     <div className="menuSection">
                     <div className="subMenuSection">
 
-                       {this.displayContactElements(contactList)}
+                        <div className="navInfoContainer">
+                            <p className="navInfo">Teléfono:</p>
+                            <p className="navInfo"><a href={`tel:${"971 116 20"}`}>971 116 20</a> | <a href={`tel:${"609 058 398"}`}>609 058 398</a></p>
+                        </div>
+
+                        <div className="navInfoContainer">
+                            <p className="navInfo">Email: <a href={`mailto:centrodefisioterapia@twofisio.es`}>centrodefisioterapia@twofisio.es</a></p>
+                        </div>
+
+                        <div className="navInfoContainer">
+                            <p className="navInfo">Dirección:</p>
+                            <p className="navInfo"><a href="https://goo.gl/maps/K6zbJ39jVTn" target="_blank">Avenida del Padre Piquer, 39</a></p>
+                            <p className="navInfo">28024 Madrid</p>
+                        </div>
                    </div>
                     <div className="subMenuSection2">
                         <Link href="/nosotros">
-                            <NavTextStyle  margin={true}>Nosotros</NavTextStyle>
-                        </Link>
-                        <Link href="/fisioterapia">                        
-                            <NavTextStyle  margin={true}>Fisioterapia</NavTextStyle>
-                        </Link>
-                        <Link href="/tratamientos">
-                            <NavTextStyle  margin={true}>Tratamientos</NavTextStyle>
-                        </Link>
-                        <Link href="/ecografia">                        
-                            <NavTextStyle  margin={true}>Ecografías</NavTextStyle>
+                            <NavTextStyle title={true} margin={true}>Nosotros</NavTextStyle>
                         </Link>
                         <Link href="/pilates">
-                            <NavTextStyle  margin={true}>Pilates</NavTextStyle>
+                            <NavTextStyle title={true} margin={true}>Pilates</NavTextStyle>
+                        </Link>
+                        <Link href="/tratamientos">
+                            <NavTextStyle title={true} margin={true}>Tratamientos</NavTextStyle>
+                        </Link>
+                        <Link href="/ecografia">                        
+                            <NavTextStyle title={true} margin={true}>Ecografías</NavTextStyle>
+                        </Link>
+                        <Link href="/fisioterapia">                        
+                            <NavTextStyle title={true} margin={true}>Fisioterapia</NavTextStyle>
                         </Link>
                     </div>
                     </div>
                     <div className="menuFooter">
-                        <NavTextStyle>© 2019 by Tailor</NavTextStyle>
+                        <NavTextStyle><a href="http://tailor-hub.com" target="_blank">© 2019 by Tailor</a></NavTextStyle>
                         <img src={tailorLogo}></img>
                     </div>
                 </Box>

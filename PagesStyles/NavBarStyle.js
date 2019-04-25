@@ -20,17 +20,15 @@ const NavWrapperStyle = styled.div`
   }
 
   .navInfoContainer {
-    margin-bottom: 1%;
+    margin-bottom: 2%;
     p {
-      font-size: 1.6vw;
+      a {
+        color: black;
+        text-decoration: none;
+      }
     }
   }
-  .contact-name {
-    margin-bottom: 0;
-  }
-  .contact-value {
-    margin-top: 0;
-  }
+
   .navInfo {
     font-family: "Monserrat-Regular";
     margin: 2% 0;
@@ -74,18 +72,8 @@ const NavWrapperStyle = styled.div`
     text-align: left;
 
     p {
-      font-size: 1.2vw;
+      font-size: 1rem;
     }
-  }
-
-  a {
-    text-decoration: none;
-    list-style: none;
-    color: black;
-    cursor: pointer;
-  }
-  a:visited {
-    color: black;
   }
 
   .subMenuSection2 {
@@ -96,6 +84,12 @@ const NavWrapperStyle = styled.div`
     justify-content: center;
     align-items: center;
     margin-top: 0%;
+
+    p {
+      font-family: "Monserrat-Semibold";
+      color: #740a64;
+      font-size: 1.5rem;
+    }
   }
 
   .menuFooter {
@@ -103,25 +97,28 @@ const NavWrapperStyle = styled.div`
     align-items: center;
     padding: 5% 5%;
     background: white;
+    width: 100vw;
+
     p {
       font-family: "Monserrat-Regular";
-      margin-right: 1%;
-      font-size: 1.2vw;
+      font-size: 1rem;
+
+      a  {
+        text-decoration: none;
+        color: #740a64;
+      }
     }
   }
 
   .menuIcon {
     display: flex;
     box-sizing: border-box;
-    background-color: ${props => (props.backgroundColor && props.position
-    ? props.backgroundColor
-    : 'transparent')};
+    background-color: ${props => (props.backgroundColor && props.position ? props.backgroundColor : 'transparent')};
     justify-content: space-between;
     padding: 1% 1%;
     position: absolute;
     width: 100vw;
     top: 0;
-    transition: all 0.5s ease 0s;
   }
 
   .hamburger {
@@ -203,6 +200,13 @@ const NavWrapperStyle = styled.div`
 */
 
   @media (min-width: 376px) and (max-width: 767px) {
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      width: 30px;
+      height: 4px;
+    }
+
     .menu {
       box-sizing: border-box;
     }
@@ -213,25 +217,31 @@ const NavWrapperStyle = styled.div`
 
     .navInfoContainer {
       margin-bottom: 0%;
+      p {
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
     }
 
     .logoSection {
       width: 100vw;
-      height: 20vh;
+      height: 16vh;
       padding: 5% 5% 0 5%;
     }
 
     .menuSection {
       background: white;
       flex-direction: column-reverse;
-      height: 90vw;
+      height: 98vw;
     }
 
     .subMenuSection {
       margin-top: 5%;
       margin-bottom: 5%;
       width: 100vw;
-      height: 60vw;
+      height: 44vw;
 
       p {
         font-size: 3vw;
@@ -240,10 +250,16 @@ const NavWrapperStyle = styled.div`
 
     .subMenuSection2 {
       margin-top: 5%;
-      margin-bottom: 15%;
+      margin-bottom: 8%;
       width: 100vw;
       p {
-        font-size: 6vw;
+        font-family: "Monserrat-Semibold";
+        color: #740a64;
+        font-size: 1.5rem;
+        -webkit-letter-spacing: 0.04rem;
+        -moz-letter-spacing: 0.04rem;
+        -ms-letter-spacing: 0.04rem;
+        letter-spacing: 0.04rem;
       }
     }
 
@@ -254,7 +270,7 @@ const NavWrapperStyle = styled.div`
       p {
         font-family: "Monserrat-Regular";
         font-size: 4vw;
-        width: 34vw;
+        width: 36vw;
       }
 
       img {
@@ -269,6 +285,13 @@ const NavWrapperStyle = styled.div`
 */
 
   @media (min-width: 320px) and (max-width: 375px) {
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      width: 30px;
+      height: 4px;
+    }
+
     .menu {
       box-sizing: border-box;
     }
@@ -279,6 +302,13 @@ const NavWrapperStyle = styled.div`
 
     .navInfoContainer {
       margin-bottom: 0%;
+
+      p {
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
     }
 
     .logoSection {
@@ -309,7 +339,13 @@ const NavWrapperStyle = styled.div`
       margin-bottom: 15%;
       width: 100vw;
       p {
-        font-size: 8vw;
+        font-family: "Monserrat-Semibold";
+        color: #740a64;
+        font-size: 1.5rem;
+        -webkit-letter-spacing: 0.04rem;
+        -moz-letter-spacing: 0.04rem;
+        -ms-letter-spacing: 0.04rem;
+        letter-spacing: 0.04rem;
       }
     }
 
