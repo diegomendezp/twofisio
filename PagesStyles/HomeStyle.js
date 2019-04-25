@@ -183,7 +183,7 @@ const HomeWrapperStyle = styled.div`
       object-fit: cover; 
       position: absolute;
       bottom: 6%;
-      left: 3%;
+      left: 4%;
       animation-name: markerAnimation;
       animation-duration: 2s;
       animation-timing-function: linear;
