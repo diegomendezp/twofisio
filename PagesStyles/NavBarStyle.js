@@ -15,7 +15,7 @@ animation-delay: 0.4s;
 z-index: 10;
 
 .navLogo {
-  height: 7vh;
+  height: 9vh;
   object-fit: cover;
   z-index: ${props => props.lvisible ? "1" : "-1"}
 }
