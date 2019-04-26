@@ -83,7 +83,6 @@ z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin-top: 0%;
 
   p {
@@ -99,6 +98,11 @@ z-index: 10;
   padding: 5% 5%;
   background: white;
   width: 100vw;
+
+  img {
+    width: 3vw;
+    margin-left: 1%;
+  }
 
   p {
     font-family: "Monserrat-Regular";
@@ -186,11 +190,18 @@ z-index: 10;
   ##Screen = B/w 768px to 1024px
 */
 
-
 @media (min-width: 768px) and (max-width: 1024px) {
 
 .navLogo {
   height: 15vh;
+}
+
+.navInfoContainer {
+
+  p {
+    font-size: 1rem;
+  }
+
 }
 
 .menuIcon {
@@ -215,11 +226,95 @@ z-index: 10;
     margin-left: 1%;
   }
 }
+
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+
+.navLogo {
+  height: 17vh;
+  }
+
+  .logo {
+  height: 10vw;
+  margin-top: 5%;
+}
+
+.navInfoContainer {
+  margin-bottom: 0%;
+  p {
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+
+.logoSection {
+  width: 100vw;
+  height: 45vh;
+  padding: 0% 5% 0 5%;
+}
+
+.menuSection {
+  background: white;
+  flex-direction: row;
+  height: 98vw;
+ 
+}
+
+.subMenuSection {
+  background: transparent;
+  width: 50vw;
+  margin-top: -5%;
+
+  p {
+    font-size: 0.7rem;
+  }
+}
+
+.subMenuSection2 {
+  margin-top: -10%;
+  width: 50vw;
+  p {
+    width: 50vw;
+    font-family: "Monserrat-Semibold";
+    color: #740a64;
+    font-size: 1.5rem;
+    -webkit-letter-spacing: 0.04rem;
+    -moz-letter-spacing: 0.04rem;
+    -ms-letter-spacing: 0.04rem;
+    letter-spacing: 0.04rem;
+  }
+}
+
+.menuFooter {
+  margin-bottom: 5%;
+  padding: 0% 5%;
+  background: white;
+
+  p {
+    font-family: "Monserrat-Regular";
+    font-size: 2vw;
+  }
+
+  img {
+    width: 5vw;
+  }
+}
+
+
   
 }
 
 
-@media (min-width: 376px) and (max-width: 767px) {
+
+
+@media (min-width: 376px) and (max-width: 735px) {
   
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
@@ -388,7 +483,7 @@ z-index: 10;
 
 }
 
-@media (orientation: landscape) {
+/* @media (orientation: landscape) {
   .navLogo {
   height: 17vh;
   }
@@ -459,7 +554,7 @@ z-index: 10;
   img {
     width: 5vw;
   }
-}
+} */
 }
 
 `;
