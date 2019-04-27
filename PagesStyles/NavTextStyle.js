@@ -14,6 +14,7 @@ font-family: "Monserrat-Semibold";
 color: #740a64;
 letter-spacing: 0.2px;
 
+
 @media (min-width: 1281px) {
   
 }
