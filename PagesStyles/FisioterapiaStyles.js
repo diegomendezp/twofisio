@@ -67,7 +67,7 @@ const FisioterapiaStyles = styled.div`
     .techniques-content {
     width: 60vw;
     margin-left: 5.5%;
-    margin-top: 8%;
+    margin-top: 2%;
     margin-bottom: 10%;
   }
 

@@ -33,6 +33,7 @@ z-index: 10;
 .logoSection {
   height: 15vh;
   padding: 2% 5%;
+  z-index:10;
 }
 .logo {
   margin-bottom: 15%;

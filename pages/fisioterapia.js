@@ -74,7 +74,7 @@ class fisioterapia extends React.Component {
         `}</style>
         <Navbar link="Nosotros" backgroundColor={navColor}/>
         <FisioterapiaStyles>
-        <HeaderAnimated img={imgFisio} positionY={40}/>
+        <HeaderAnimated img={imgFisio} positionY={0}/>
           <div className="techniques-content">
             <FontBold>Fisioterapia</FontBold>
             <FontRegular>{description}</FontRegular>
