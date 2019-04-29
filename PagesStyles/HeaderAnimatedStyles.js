@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const HeaderAnimatedStyles = styled.div`
   position: relative;
   width: 100vw;
-  height: 50vh;
+  height: 70vh;
   background-image: url(${props => props.backImage});
   -webkit-clip-path: url(#svgPath);
   background-position-y: ${props => props.backPositionY}%;
@@ -34,6 +34,7 @@ const HeaderAnimatedStyles = styled.div`
   
   @media only screen and (min-width: 361px) and (max-width: 415px) {
     background-position-x: 100%;
+    background-position-y: 0%;
     background-size: 140%;  
     height: 45vh;
   }
@@ -53,14 +54,14 @@ const HeaderAnimatedStyles = styled.div`
   }
 
   @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    height: 40vh;
+    height: 70vh;
     background-position: cover;
     background-position-y: 71%;
   }
 
   @media only screen and (min-width: 1441px) {
-    height: 50vh;
-    background-position-y: 70%;
+    height: 70vh;
+    background-position-y: 90%;
    
   }
 
