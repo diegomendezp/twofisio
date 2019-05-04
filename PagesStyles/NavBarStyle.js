@@ -169,7 +169,7 @@ z-index: 10;
 @media (min-width: 568px) and (max-width: 1024px) {
 
 .navLogo {
-  height: 15vh;
+  height: 9vh;
 }
 
 .menuIcon {
@@ -198,7 +198,7 @@ z-index: 10;
 }
 
 
-@media (min-width: 568px) and (max-width: 1024px) and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-height: 414px) {
 
 
 .navLogo {
