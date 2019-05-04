@@ -5,5 +5,7 @@
   {
     "name": "Horario",
     "value": "Lunes a jueves de 9 a 14 y de 15 a 21 horas. Viernes de 9 a 14 y de 16 a 21 horas"
-  }
+  },
+  { "name": "RRSS",  "value": "Facebook", "value2":"Instagram"
+    }
 ]

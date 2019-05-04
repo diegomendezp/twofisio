@@ -144,11 +144,13 @@ class NavBar extends React.Component {
                             <p className="navInfo"><a href="https://goo.gl/maps/K6zbJ39jVTn" target="_blank">Avenida del Padre Piquer, 39</a></p>
                             <p className="navInfo">28024 Madrid</p>
                         </div>
+                        {/* <div className="navInfoContainer">
+                            <p className="navInfo">RRSS:</p>
+                            <p className="navInfo"><a href={`https://www.facebook.com/twofisio.scp`}target="_blank">Facebook</a>  | <a href={`https://www.instagram.com/twofisio/?hl=es`}target="_blank">Instagram</a></p>
+                        </div> */}
                    </div>
                     <div className="subMenuSection2">
-                        <Link href="/nosotros">
-                            <NavTextStyle title={true} margin={true}>Nosotros</NavTextStyle>
-                        </Link>
+                        
                         <Link href="/fisioterapia">                        
                             <NavTextStyle title={true} margin={true}>Fisioterapia</NavTextStyle>
                         </Link>
@@ -161,12 +163,15 @@ class NavBar extends React.Component {
                         <Link href="/pilates">
                             <NavTextStyle title={true} margin={true}>Pilates</NavTextStyle>
                         </Link>
+                        <Link href="/nosotros">
+                            <NavTextStyle title={true} margin={true}>Nosotros</NavTextStyle>
+                        </Link>
                     </div>
                     </div>
-                    <div className="menuFooter">
+                    {/* <div className="menuFooter">
                         <NavTextStyle><a href="http://tailor-hub.com" target="_blank">© 2019 by Tailor</a></NavTextStyle>
                         <img src={tailorLogo}></img>
-                    </div>
+                    </div> */}
                 </Box>
             </NavWrapperStyle>
         )

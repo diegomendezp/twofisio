@@ -36,6 +36,16 @@ const displayContactElements = contactList => {
           <a href={`tel:${element.value2}`}>{element.value2}</a>
         </FontRegular>
       </div>
+    ) : element.name == "RRSS"  ? (
+      <div>
+        <FontRegular color="white" className="contact-name">
+          {element.name}:
+        </FontRegular>
+        <FontRegular color="white" className="contact-value">
+          <a href={`https://www.facebook.com/twofisio.scp`}target="_blank">{element.value}</a> |{" "}
+          <a href={`https://www.instagram.com/twofisio/?hl=es`}target="_blank">{element.value2}</a>
+        </FontRegular>
+      </div>
     ) : (
       <div key={i}>
         <FontRegular color="white" className="contact-name">
