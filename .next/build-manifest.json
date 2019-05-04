@@ -15,24 +15,9 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/ecografia": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
-    "/fisioterapia": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
-    ],
     "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
-<<<<<<< HEAD
-=======
-    ],
-    "/pilates": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
->>>>>>> 5e9b73bf1bbf2611e3da422eeec6f956990b08bb
     ]
   }
 }
