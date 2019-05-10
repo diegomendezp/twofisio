@@ -286,6 +286,11 @@ export default class Home extends Component {
     );
   };
 
+  componentWillUnmount() {
+    
+  }
+  
+
   _startAnimation(target) {
     this.state.animation.start(styler(document.querySelector(target)).set("d"));
   }
