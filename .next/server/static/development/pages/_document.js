@@ -2295,7 +2295,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/Diegomendez1997/Tailor/twofisio/pages/_document.js";
+var _jsxFileName = "/Users/albertosoler/Desktop/TaylorHUB/Proyectos/Clients/twofisio/pages/_document.js";
 
 
 
