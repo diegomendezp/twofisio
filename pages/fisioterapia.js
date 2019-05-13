@@ -19,8 +19,8 @@ const displayTechniques = techniques => {
 };
 
 class fisioterapia extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       navColor: "transparent"
     };
@@ -34,7 +34,16 @@ class fisioterapia extends React.Component {
     });
   };
 
+  changeLocalStorage = () => {
+    if(this.props && this.props.url.query.formPosition){
+      localStorage.setItem("formPosition", this.props.url.query.formPosition)
+    } else {
+      localStorage.clear();
+    }
+  }
+
   componentDidMount() {
+    this.changeLocalStorage()
     this.changeNavScroll()
   }
 

@@ -316,16 +316,31 @@ export default class Home extends Component {
     document.getElementById("bodyHome").style.overflow = "hidden";
   };
 
+  controlLocalStorage = () => {
+    const position = localStorage.getItem('formPosition')
+    if (position && position < 6 ) {  
+      localStorage.clear()
+      return +position 
+    } else {
+      return 1
+    }
+  }
+
   componentDidMount() {
     this._scrollEvent();
     this._manageResize();
     this._blockScroll();
-
+    let position = this.controlLocalStorage()
+    if(position !== 1) {
+      this._changeBubble(position -1 )
+    }
     window.addEventListener("resize", this._manageResize);
 
     this.setState(
       {
         ...this.state,
+        formPosition: position,
+        bubblePosition: position,
         shape: styler(document.querySelector("#target")),
         vw: window.innerWidth,
         vh: window.innerHeight,
@@ -349,9 +364,11 @@ export default class Home extends Component {
   }
 
   render() {
+    const {formPosition} = this.state;
     return (
+      
       <HomeWrapperStyle id="bodyHome">
-        <Bubbles position={this.state.bubblePosition} />
+        <Bubbles position={this.state.formPosition} />
         {/* <CrossfadeImage
         src={
           images[this.state.formPosition < 5 && this.state.formPosition - 1]
@@ -378,10 +395,12 @@ export default class Home extends Component {
           {...HomeText[
             this.state.formPosition < 6 && this.state.formPosition - 1
           ]}
+          formPosition={this.state.formPosition}
         />
 
 
-      </HomeWrapperStyle>
+        </HomeWrapperStyle> 
     );
+   
   }
 }

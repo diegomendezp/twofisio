@@ -33,7 +33,16 @@ class tratamientos extends React.Component {
     });
   };
 
+  changeLocalStorage = () => {
+    if(this.props && this.props.url.query.formPosition){
+      localStorage.setItem("formPosition", this.props.url.query.formPosition)
+    } else {
+      localStorage.clear();
+    }
+  }
+
   componentDidMount() {
+    this.changeLocalStorage()
     this.changeNavScroll()
   } 
 

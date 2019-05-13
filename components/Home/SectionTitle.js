@@ -5,6 +5,7 @@ import FontBold from "../../PagesStyles/FontStyle/FontBold";
 import FontRegular from "../../PagesStyles/FontStyle/FontRegular";
 import FontLink from "../../PagesStyles/FontStyle/FontLink";
 import arrow from "../../static/arrows.svg"
+import Link from 'next/link'
 
 class SectionTitle extends Component {
   constructor(props) {
@@ -43,6 +44,8 @@ class SectionTitle extends Component {
   }
   render() {
     const { topSrc } = this.state;
+    const { link } = topSrc ? topSrc : '';
+    const { formPosition } = this.props;
     return (
       <div style={{zIndex: 20}}>
         {topSrc &&
@@ -50,8 +53,9 @@ class SectionTitle extends Component {
             >
             <FontBold>{topSrc.title}</FontBold>
             <FontRegular>{topSrc.body}</FontRegular>
-            <FontLink href={topSrc.link} style={{display: "block"}}>+ Mas Info</FontLink>
-            
+            <Link href={{ pathname: link, query: { formPosition } }} as={link}>
+              <FontLink  style={{display: "block"}}>+ Mas Info</FontLink>
+            </Link>
           </div>
           }
           <img className="arrowImage" src={arrow}/>
@@ -60,6 +64,8 @@ class SectionTitle extends Component {
   }
 }
 
+
+
 // const defaultStyle = { width: "100vw", height: "100vh" };
 
 SectionTitle.propTypes = {
@@ -67,7 +73,8 @@ SectionTitle.propTypes = {
   duration: PropTypes.number,
   timingFunction: PropTypes.string,
   delay: PropTypes.number,
-  style: PropTypes.object
+  style: PropTypes.object,
+  formPosition:PropTypes.number
 };
 
 SectionTitle.defaultProps = {
