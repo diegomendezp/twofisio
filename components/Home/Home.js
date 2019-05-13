@@ -331,6 +331,9 @@ export default class Home extends Component {
     this._manageResize();
     this._blockScroll();
     let position = this.controlLocalStorage()
+    if(position !== 1) {
+      this._changeBubble(position -1 )
+    }
     window.addEventListener("resize", this._manageResize);
 
     this.setState(
@@ -361,9 +364,11 @@ export default class Home extends Component {
   }
 
   render() {
+    const {formPosition} = this.state;
     return (
+      
       <HomeWrapperStyle id="bodyHome">
-        <Bubbles position={this.state.bubblePosition} />
+        <Bubbles position={this.state.formPosition} />
         {/* <CrossfadeImage
         src={
           images[this.state.formPosition < 5 && this.state.formPosition - 1]
@@ -394,7 +399,8 @@ export default class Home extends Component {
         />
 
 
-      </HomeWrapperStyle>
+        </HomeWrapperStyle> 
     );
+   
   }
 }
