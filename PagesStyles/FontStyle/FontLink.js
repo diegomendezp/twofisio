@@ -8,6 +8,7 @@ const FontLink = styled.a`
     line-height: 1.3rem;
     color: rgb(116, 10, 100);
     text-decoration: none;
+    cursor: pointer;
 
   
     @media only screen and (min-width: 414px) and (max-width: 768px) {

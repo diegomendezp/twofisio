@@ -28,8 +28,16 @@ export default class Nosotros extends React.Component {
         : this.setState({ ...this.state, navColor: "transparent" });
     });
   };
+  changeLocalStorage = () => {
+    if(this.props && this.props.url.query.formPosition){
+      localStorage.setItem("formPosition", this.props.url.query.formPosition)
+    } else {
+      localStorage.clear();
+    }
+  }
 
   componentDidMount() {
+    this.changeLocalStorage()
     document.getElementsByTagName("body")[0].style.position = "relative";
     document.getElementsByTagName("body")[0].style.overflow = "scroll";
     this.changeNavScroll();
