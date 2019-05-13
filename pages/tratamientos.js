@@ -37,7 +37,7 @@ class tratamientos extends React.Component {
     if(this.props && this.props.url.query.formPosition){
       localStorage.setItem("formPosition", this.props.url.query.formPosition)
     } else {
-      localStorage.clear();
+      localStorage.removeItem('formPosition')
     }
   }
 

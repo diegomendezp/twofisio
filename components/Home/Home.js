@@ -319,7 +319,7 @@ export default class Home extends Component {
   controlLocalStorage = () => {
     const position = localStorage.getItem('formPosition')
     if (position && position < 6 ) {  
-      localStorage.clear()
+      localStorage.removeItem('formPosition')
       return +position 
     } else {
       return 1
