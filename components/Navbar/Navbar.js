@@ -41,7 +41,7 @@ export default class Navbar extends React.Component {
       <NavbarStyles backgroundColor={backgroundColor}>
         <NavbarWrapper>
         <Link href="/">
-          <img src="/static/logo.png" alt="two-fisio-logo" />
+          <img src="/static/logo.png" alt="two-fisio-logo" className="logo-image"/>
           </Link>
           <ul>
             <Link href={this.state.url} >

@@ -125,7 +125,7 @@ class NavBar extends React.Component {
                 <Box pose={this.state.position ? "up" : "down"} className="menu" y={this.state.menuSizes !== undefined && this.state.menuSizes.y} y2={this.state.menuSizes !== undefined && this.state.menuSizes.y2}>
                     <div className="logoSection">
                         <Link href="/">
-                            <img className="logo" src={logo} />
+                            <img className="logo" src={logo}  />
                         </Link></div>
                     <div className="menuSection">
                     <div className="subMenuSection">

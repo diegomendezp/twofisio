@@ -12,10 +12,13 @@ z-index: ${props => (props.position ? 0 : 10)};
 overflow: hidden;
 animation-delay: 0.4s;
 z-index: 10;
+
 .navLogo {
   height: 9vh;
   object-fit: cover;
   z-index: ${props => (props.lvisible ? '1' : '-1')}
+
+  
 }
 .navInfoContainer {
   margin-bottom: 2%;
@@ -33,7 +36,8 @@ z-index: 10;
 .logoSection {
   height: 15vh;
   padding: 2% 5%;
-  z-index:10;
+  cursor: pointer;
+  z-index: 10;
 }
 .logo {
   margin-bottom: 15%;
