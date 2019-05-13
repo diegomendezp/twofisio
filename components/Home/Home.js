@@ -288,9 +288,6 @@ export default class Home extends Component {
     );
   };
 
-  componentWillUnmount() {
-    
-  }
   
 
   _startAnimation(target) {
