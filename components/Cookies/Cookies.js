@@ -11,14 +11,14 @@ class Cookies extends React.Component {
   }
 
   componentDidMount() {
-    const display = localStorage.getItem('display') || 'flex'
+    const display = localStorage.getItem('displayTwofisio') || 'flex'
     this.setState({... this.state , display})
   }
   
 
   changeDisplay = () => {
-    localStorage.setItem('display', 'none')
-    const display = localStorage.getItem('display')
+    localStorage.setItem('displayTwofisio', 'none')
+    const display = localStorage.getItem('displayTwofisio')
     this.setState({... this.state , display})
   };
 
