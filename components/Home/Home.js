@@ -14,7 +14,7 @@ const _ = require("lodash");
 const images = [
   "../../static/imgFisioterapia2.jpg",
   "../../static/imgTratamientos.jpg",
-  "../../static/imgEcografia2.jpg",
+  "../../static/imgEcografia4.jpg",
   "../../static/imgPilates2.jpg",
   "../../static/nosotros.jpg"
 ];

@@ -6,7 +6,7 @@ import HeaderAnimated from "../components/HeaderAnimated/HeaderAnimated.js";
 import MonserratSemiBold from "../static/fonts/Montserrat/Montserrat-SemiBold.ttf";
 import MonserratRegular from "../static/fonts/Montserrat/Montserrat-Regular.ttf";
 import Head from "next/head";
-import imgFisio from "../static/imgFisioterapia.jpg"
+import imgFisio from "../static/imgFisioterapia2.jpg"
 import Technique from "../components/Technique.js";
 import FisioterapiaStyles from "../PagesStyles/FisioterapiaStyles.js";
 import FontBold from "../PagesStyles/FontStyle/FontBold.js";

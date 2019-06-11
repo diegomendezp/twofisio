@@ -61,7 +61,7 @@ const HeaderAnimatedStyles = styled.div`
 
   @media only screen and (min-width: 1441px) {
     height: 70vh;
-    background-position-y: 90%;
+    background-position-y: 50%;
    
   }
 

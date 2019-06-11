@@ -5,7 +5,7 @@ import Head from "next/head";
 import Navbar from "../components/NavBar";
 import Footer from "../components/Footer/Footer";
 import EcographyStyles from "../PagesStyles/EcografiaStyles";
-import imgEco from "../static/imgEcografia.jpg";
+import imgEco from "../static/imgEcografia4.jpg";
 import HeaderAnimated from "../components/HeaderAnimated/HeaderAnimated";
 
 import FontRegular from "../PagesStyles/FontStyle/FontRegular.js";
