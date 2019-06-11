@@ -12,7 +12,7 @@ import ReactPageScroller from "react-page-scroller";
 const _ = require("lodash");
 
 const images = [
-  "../../static/imgFisioterapia4.jpg",
+  "../../static/imgFisioterapia3.jpg",
   "../../static/imgTratamientos.jpg",
   "../../static/imgEcografia5.jpg",
   "../../static/imgPilates3.jpg",
@@ -41,7 +41,8 @@ export default class Home extends Component {
         "M 75.1844 1 C 170.356 -1.99840e-15 579.113 1.44444 655.384 1 C 702.032 52.9773 670.102 148.623 671.974 259 C 673.927 374.107 734.909 489.73 671.974 569.178 C 577.486 569.178 151.391 569.178 38.9624 569.178 C -33.2669 506.499 17.1678 392.724 22.0259 288.541 C 27.6971 166.92 -17.2306 81.443 75.1844 1 Z",
         "M 82.9297 0.177734 C 175.391 0.177734 514.086 0.177734 611.617 0.177734 C 705.69 58.498 705.581 197.178 707.544 265.501 C 709.592 336.753 744.92 430.818 678.912 479.996 C 599.359 539.265 468.354 519.324 360.813 525.922 C 197.377 535.949 112.529 548.1 35 479.996 C -34.375 419.055 23.1953 348.466 23.1953 266.966 C 23.1953 191.551 -13.9983 49.9723 82.9297 0.177734 Z",
         "M 82.9297 0.177734 C 175.391 0.177734 514.086 0.177734 611.617 0.177734 C 705.69 58.498 705.581 197.178 707.544 265.501 C 709.592 336.753 744.92 430.818 678.912 479.996 C 599.359 539.265 468.354 519.324 360.813 525.922 C 197.377 535.949 112.529 548.1 35 479.996 C -34.375 419.055 23.1953 348.466 23.1953 266.966 C 23.1953 191.551 -13.9983 49.9723 82.9297 0.177734 Z",
-      ]
+      ], 
+      images: [...images]
     };
   }
 
@@ -87,7 +88,6 @@ export default class Home extends Component {
   };
 
   pageOnChange = number => {
-    console.log(number, this.state.bubblePosition);
 
     if (number > this.state.bubblePosition) {
       if (number === 6) {
@@ -296,11 +296,28 @@ export default class Home extends Component {
 
   _manageResize = () => {
     switch (true) {
-      case window.innerWidth <= 375:
+      case window.innerWidth <= 375: 
         _bubleAnimation(190, 200, 2, 2.2, 1.8, 2, -100, -200);
+        let newImages1 = [
+          "../../static/imgFisioterapia4.jpg",
+          "../../static/imgTratamientos.jpg",
+          "../../static/imgEcografia5.jpg",
+          "../../static/imgPilates3.jpg",
+          "../../static/nosotros.jpg"
+        ];
+        this.setState({...this.state, images:newImages1})
         break;
       case window.innerWidth <= 414:
+        console.log('in')
         _bubleAnimation(200, 210, 2.3, 3, 3.1, 3.2, -200, -400);
+        let newImages2 = [
+          "../../static/imgFisioterapia4.jpg",
+          "../../static/imgTratamientos.jpg",
+          "../../static/imgEcografia5.jpg",
+          "../../static/imgPilates3.jpg",
+          "../../static/nosotros.jpg"
+        ];
+        this.setState({...this.state, images:newImages2})
         break;
       case window.innerWidth <= 768:
         _bubleAnimation(400, 410, 2.3, 3, 3.1, 3.2, -200, -400);
@@ -364,7 +381,7 @@ export default class Home extends Component {
   }
 
   render() {
-    const {formPosition} = this.state;
+    const {formPosition, images} = this.state;
     return (
       
       <HomeWrapperStyle id="bodyHome">
