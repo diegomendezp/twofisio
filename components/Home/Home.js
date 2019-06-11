@@ -308,7 +308,6 @@ export default class Home extends Component {
         this.setState({...this.state, images:newImages1})
         break;
       case window.innerWidth <= 414:
-        console.log('in')
         _bubleAnimation(200, 210, 2.3, 3, 3.1, 3.2, -200, -400);
         let newImages2 = [
           "../../static/imgFisioterapia4.jpg",
@@ -352,7 +351,14 @@ export default class Home extends Component {
       this._changeBubble(position -1 )
     }
     window.addEventListener("resize", this._manageResize);
-
+    let newImages = [
+      "../../static/imgFisioterapia4.jpg",
+      "../../static/imgTratamientos.jpg",
+      "../../static/imgEcografia5.jpg",
+      "../../static/imgPilates3.jpg",
+      "../../static/nosotros.jpg"
+    ];
+    let newImages2 = window.innerWidth <= 414 ? newImages : images
     this.setState(
       {
         ...this.state,
@@ -361,6 +367,7 @@ export default class Home extends Component {
         shape: styler(document.querySelector("#target")),
         vw: window.innerWidth,
         vh: window.innerHeight,
+        images: newImages2,
         bodyHome: document.querySelector("#bodyHome"),
         animation: tween({
           duration: 1000,
@@ -393,12 +400,12 @@ export default class Home extends Component {
         duration={1500}
         timingFunction={"ease-out"}
       /> */}
-        <img
+        {images && <img
         className="imageHome"
           src={
             images[this.state.formPosition < 6 && this.state.formPosition - 1]
           }
-        />
+        /> }
 
         <svg id="container">
           <clipPath id="svgPath">
