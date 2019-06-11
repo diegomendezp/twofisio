@@ -1,8 +1,12 @@
 {
   "devFiles": [
-    "static/development/dll/dll_a1332422834f747f7fe3.js"
+    "static/development/dll/dll_aa8f31c0c93a8f34edc5.js"
   ],
   "pages": {
+    "/": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/_app": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
@@ -11,7 +15,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/pilates": [
+    "/fisioterapia": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
@@ -19,7 +23,7 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/": [
+    "/next/dist/pages/_error": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
