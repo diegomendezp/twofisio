@@ -12,7 +12,7 @@ import ReactPageScroller from "react-page-scroller";
 const _ = require("lodash");
 
 const images = [
-  "../../static/imgFisioterapia3.jpg",
+  "../../static/imgFisioterapia4.jpg",
   "../../static/imgTratamientos.jpg",
   "../../static/imgEcografia5.jpg",
   "../../static/imgPilates3.jpg",
