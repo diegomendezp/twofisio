@@ -33,7 +33,7 @@ const HeaderAnimatedStyles = styled.div`
   }
   
   @media only screen and (min-width: 361px) and (max-width: 415px) {
-    background-position-x: 100%;
+    background-position-x: 60%;
     background-position-y: 0%;
     background-size: 140%;  
     height: 45vh;
@@ -45,7 +45,7 @@ const HeaderAnimatedStyles = styled.div`
 
   @media only screen and (min-width: 415px) and (max-width: 768px) {
     height: 40vh;
-    background-position-y: 90%;
+    background-position-y:30%;
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -56,12 +56,12 @@ const HeaderAnimatedStyles = styled.div`
   @media only screen and (min-width: 1025px) and (max-width: 1440px) {
     height: 80vh;
     background-position: cover;
-    background-position-y: 71%;
+    background-position-y: 20%;
   }
 
   @media only screen and (min-width: 1441px) {
     height: 70vh;
-    background-position-y: 90%;
+    background-position-y: 50%;
    
   }
 
