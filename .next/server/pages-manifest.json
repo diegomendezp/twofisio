@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"/_document":"static/development/pages/_document.js","/_app":"static/development/pages/_app.js","/_error":"static/development/pages/_error.js","/index":"static/development/pages/index.js","/ecografia":"static/development/pages/ecografia.js","/":"static/development/pages/index.js"}
-=======
-{"/_app":"static/development/pages/_app.js","/_document":"static/development/pages/_document.js","/_error":"static/development/pages/_error.js","/fisioterapia":"static/development/pages/fisioterapia.js","/index":"static/development/pages/index.js","/":"static/development/pages/index.js"}
->>>>>>> 26c4d06e53a41a6d20b1c9897f580e83d9f30107
+{"/_document":"static/development/pages/_document.js","/_app":"static/development/pages/_app.js","/_error":"static/development/pages/_error.js","/index":"static/development/pages/index.js","/pilates":"static/development/pages/pilates.js","/":"static/development/pages/index.js"}
