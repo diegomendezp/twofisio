@@ -132,7 +132,7 @@ class NavBar extends React.Component {
 
                         <div className="navInfoContainer">
                             <p className="navInfo">Teléfono:</p>
-                            <p className="navInfo"><a href={`tel:${"971 116 20"}`}>971 116 20</a> | <a href={`tel:${"609 058 398"}`}>609 058 398</a></p>
+                            <p className="navInfo"><a href={`tel:${"917116205"}`}>917 116 205</a> | <a href={`tel:${"609 058 398"}`}>609 058 398</a></p>
                         </div>
 
                         <div className="navInfoContainer">
