@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import FontBold from "../../PagesStyles/FontStyle/FontBold";
 import FontRegular from "../../PagesStyles/FontStyle/FontRegular";
 import FontLink from "../../PagesStyles/FontStyle/FontLink";
-import arrow from "../../static/arrows.svg"
 import Link from 'next/link'
 
 class SectionTitle extends Component {
@@ -58,7 +57,7 @@ class SectionTitle extends Component {
             </Link>
           </div>
           }
-          <img className="arrowImage" src={arrow}/>
+          <img className="arrowImage" src={`${process.env.ASSET_PREFIX}/static/arrows.svg`}/>
       </div>
     );
   }
