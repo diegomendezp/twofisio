@@ -173,7 +173,17 @@ const HomeWrapperStyle = styled.div`
     50% {bottom: 3%}
     100% {bottom: 6%}
     }
-
+    
+    .imageHome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-clip-path: url(#svgPath);
+    clip-path: url(#svgPath);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
     .sectionTitle {
       justify-content: center;
       width: 50vw;

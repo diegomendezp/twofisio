@@ -12,10 +12,10 @@ import ReactPageScroller from "react-page-scroller";
 const _ = require("lodash");
 
 const images = [
-  "../../static/imgFisioterapia3.jpg",
+  "../../static/imgFisioterapia6.jpg",
   "../../static/imgTratamientos.jpg",
   "../../static/imgEcografia5.jpg",
-  "../../static/imgPilates3.jpg",
+  "../../static/imgPilates4.jpg",
   "../../static/nosotros.jpg"
 ];
 
@@ -321,6 +321,11 @@ export default class Home extends Component {
       case window.innerWidth <= 768:
         _bubleAnimation(400, 410, 2.3, 3, 3.1, 3.2, -200, -400);
         break;
+        case window.innerWidth <= 1024:
+          const posX1 = window.innerWidth / 2;
+        _bubleAnimation(posX1, posX1 + 10, 3, 3.1, 3.1, 3.2, -200, -400);
+          break; 
+
       default:
         const posX = window.innerWidth / 3;
         _bubleAnimation(posX, posX + 10, 3, 3.1, 3.1, 3.2, -200, -400);

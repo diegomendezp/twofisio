@@ -6,7 +6,7 @@ import Navbar from "../components/NavBar";
 import Footer from "../components/Footer/Footer";
 import PilatesStyles from "../PagesStyles/PilatesStyles.js";
 import HeaderAnimated from "../components/HeaderAnimated/HeaderAnimated.js";
-import imgPilates from "../static/imgPilates2.jpg";
+import imgPilates from "../static/imgPilates5.jpg";
 import FontRegular from "../PagesStyles/FontStyle/FontRegular.js";
 import FontBold from "../PagesStyles/FontStyle/FontBold.js";
 class pilates extends React.Component {

@@ -1,50 +1,27 @@
 {
-  "devFiles": [],
+  "devFiles": [
+    "static/development/dll/dll_a1332422834f747f7fe3.js"
+  ],
   "pages": {
-    "/ecografia": [
-      "static/runtime/webpack-838b392324e3598684b5.js",
-      "static/chunks/commons.09f30c06e84a2938ef6d.js",
-      "static/runtime/main-3a7c160fc9eaefbe62e7.js"
-    ],
-    "/fisioterapia": [
-      "static/runtime/webpack-838b392324e3598684b5.js",
-      "static/chunks/commons.09f30c06e84a2938ef6d.js",
-      "static/runtime/main-3a7c160fc9eaefbe62e7.js"
-    ],
-    "/index": [
-      "static/runtime/webpack-838b392324e3598684b5.js",
-      "static/chunks/commons.09f30c06e84a2938ef6d.js",
-      "static/runtime/main-3a7c160fc9eaefbe62e7.js"
-    ],
-    "/nosotros": [
-      "static/runtime/webpack-838b392324e3598684b5.js",
-      "static/chunks/commons.09f30c06e84a2938ef6d.js",
-      "static/runtime/main-3a7c160fc9eaefbe62e7.js"
-    ],
-    "/pilates": [
-      "static/runtime/webpack-838b392324e3598684b5.js",
-      "static/chunks/commons.09f30c06e84a2938ef6d.js",
-      "static/runtime/main-3a7c160fc9eaefbe62e7.js"
-    ],
-    "/tratamientos": [
-      "static/runtime/webpack-838b392324e3598684b5.js",
-      "static/chunks/commons.09f30c06e84a2938ef6d.js",
-      "static/runtime/main-3a7c160fc9eaefbe62e7.js"
-    ],
     "/_app": [
-      "static/runtime/webpack-838b392324e3598684b5.js",
-      "static/chunks/commons.09f30c06e84a2938ef6d.js",
-      "static/runtime/main-3a7c160fc9eaefbe62e7.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/_error": [
-      "static/runtime/webpack-838b392324e3598684b5.js",
-      "static/chunks/commons.09f30c06e84a2938ef6d.js",
-      "static/runtime/main-3a7c160fc9eaefbe62e7.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/index": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/pilates": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ],
     "/": [
-      "static/runtime/webpack-838b392324e3598684b5.js",
-      "static/chunks/commons.09f30c06e84a2938ef6d.js",
-      "static/runtime/main-3a7c160fc9eaefbe62e7.js"
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
     ]
   }
 }
