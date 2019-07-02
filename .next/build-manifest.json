@@ -11,11 +11,15 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/fisioterapia": [
+    "/tratamientos": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/tratamientos": [
+    "/ecografia": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/fisioterapia": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
