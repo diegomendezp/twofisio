@@ -12,6 +12,7 @@ import FisioterapiaStyles from "../PagesStyles/FisioterapiaStyles.js";
 import FontBold from "../PagesStyles/FontStyle/FontBold.js";
 import FontRegular from "../PagesStyles/FontStyle/FontRegular.js";
 import { tween, styler, easing } from "popmotion";
+import Meta from "../components/Meta.js";
 
 
 const displayTechniques = techniques => {
@@ -52,35 +53,7 @@ class fisioterapia extends React.Component {
     const { description, techniques } = tecnicas;
     return (
       <React.Fragment>
-        <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta charSet="utf-8" />
-          <title>Twofisio – Fisioterapia</title>
-          <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/16Twofiso-favicon.ico" />
-          <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/32Twofiso-favicon.ico" />
-          <link rel="icon" type="image/png" sizes="64x64" href="../static/favicon/64Twofiso-favicon.ico" />
-          <link rel="icon" type="image/png" sizes="128x128" href="../static/favicon/128Twofiso-favicon.ico" />
-        </Head>
-        <style jsx global>{`
-          @font-face {
-            font-family: "Monserrat-Semibold";
-            src: url(${MonserratSemiBold}) format("truetype");
-            font-weight: normal;
-            font-style: normal;
-          }
-          @font-face {
-            font-family: "Monserrat-Regular";
-            src: url(${MonserratRegular}) format("truetype");
-            font-weight: normal;
-            font-style: normal;
-          }
-  
-          body {
-            margin: 0;
-            padding: 0;
-            max-width: 100%;
-          }
-        `}</style>
+        <Meta title="Twofisio – Fisioterapia" />
         <Navbar link="Nosotros" backgroundColor={navColor}/>
         <FisioterapiaStyles>
         <HeaderAnimated img={imgFisio} positionY={0}/>
