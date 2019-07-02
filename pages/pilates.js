@@ -4,7 +4,6 @@ import Navbar from "../components/NavBar";
 import Footer from "../components/Footer/Footer";
 import PilatesStyles from "../PagesStyles/PilatesStyles.js";
 import HeaderAnimated from "../components/HeaderAnimated/HeaderAnimated.js";
-import imgPilates from "../static/imgPilates5.jpg";
 import FontRegular from "../PagesStyles/FontStyle/FontRegular.js";
 import FontBold from "../PagesStyles/FontStyle/FontBold.js";
 import Meta from "../components/Meta";
@@ -44,7 +43,7 @@ class pilates extends React.Component {
         <Meta title="Twofisio – Pilates" />
         <Navbar link="Nosotros" backgroundColor={navColor}/>
         <PilatesStyles>
-          <HeaderAnimated img={imgPilates} positionY={13} />
+          <HeaderAnimated img={`${process.env.ASSET_PREFIX}/static/imgPilates5.jpg`} positionY={13} />
           <div className="pilates-content">
             <FontBold>Pilates</FontBold>
             <div className="pilates">

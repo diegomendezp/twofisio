@@ -4,7 +4,7 @@ import { Member } from "../components/Member.js";
 import Navbar from "../components/NavBar";
 import Footer from "../components/Footer/Footer.js";
 import NosotrosStyles from "../PagesStyles/NosotrosStyles.js";
-import Head from "next/head";
+
 
 
 import FontRegular from "../PagesStyles/FontStyle/FontRegular";
