@@ -9,7 +9,6 @@ import Technique from "../components/Technique.js";
 import FisioterapiaStyles from "../PagesStyles/FisioterapiaStyles.js";
 import FontBold from "../PagesStyles/FontStyle/FontBold.js";
 import FontRegular from "../PagesStyles/FontStyle/FontRegular.js";
-import { tween, styler, easing } from "popmotion";
 import Meta from "../components/Meta.js";
 
 
