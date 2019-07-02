@@ -11,18 +11,15 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-<<<<<<< HEAD
-=======
-    "/fisioterapia": [
+    "/ecografia": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
->>>>>>> feature-preparing-deploy
-    "/index": [
+    "/pilates": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/": [
+    "/nosotros": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
