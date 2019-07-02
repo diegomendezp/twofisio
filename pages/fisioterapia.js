@@ -3,8 +3,6 @@ import tecnicas from "../content/tecnicas.json";
 import Navbar from "../components/NavBar.js";
 import Footer from "../components/Footer/Footer.js";
 import HeaderAnimated from "../components/HeaderAnimated/HeaderAnimated.js";
-import MonserratSemiBold from "../static/fonts/Montserrat/Montserrat-SemiBold.ttf";
-import MonserratRegular from "../static/fonts/Montserrat/Montserrat-Regular.ttf";
 import Head from "next/head";
 import imgFisio from "../static/imgFisioterapia.jpg"
 import Technique from "../components/Technique.js";
