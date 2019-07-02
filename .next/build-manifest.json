@@ -11,6 +11,13 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+<<<<<<< HEAD
+=======
+    "/fisioterapia": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+>>>>>>> feature-preparing-deploy
     "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"

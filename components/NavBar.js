@@ -2,8 +2,6 @@ import React from 'react'
 import posed from 'react-pose';
 import { NavWrapperStyle } from '../PagesStyles/NavBarStyle'
 import { NavTextStyle } from '../PagesStyles/NavTextStyle'
-import logo from '../static/logo.png'
-import tailorLogo from '../static/iconPurple.svg'
 import Link from 'next/link';
 
 const Box = posed.div({
@@ -113,7 +111,7 @@ class NavBar extends React.Component {
             <NavWrapperStyle position={this.state.pos} visible={this.state.visible} lvisible={this.state.logoVisible} backgroundColor={backgroundColor}>
                 <div className="menuIcon">
                 <Link href="/">
-                    <img className="navLogo" src={logo}/>
+                    <img className="navLogo" src={`${process.env.ASSET_PREFIX}/static/logo.png`}/>
                 </Link>
                     <link href="/static/css/hamburger.css" rel="stylesheet" />
                     <button className="hamburger hamburger--spin" type="button" onClick={() => this._managePositionNav()}>
@@ -125,7 +123,7 @@ class NavBar extends React.Component {
                 <Box pose={this.state.position ? "up" : "down"} className="menu" y={this.state.menuSizes !== undefined && this.state.menuSizes.y} y2={this.state.menuSizes !== undefined && this.state.menuSizes.y2}>
                     <div className="logoSection">
                         <Link href="/">
-                            <img className="logo" src={logo}  />
+                            <img className="logo" src={`${process.env.ASSET_PREFIX}/static/logo.png`}  />
                         </Link></div>
                     <div className="menuSection">
                     <div className="subMenuSection">
@@ -144,10 +142,6 @@ class NavBar extends React.Component {
                             <p className="navInfo"><a href="https://goo.gl/maps/K6zbJ39jVTn" target="_blank">Avenida del Padre Piquer, 39</a></p>
                             <p className="navInfo">28024 Madrid</p>
                         </div>
-                        {/* <div className="navInfoContainer">
-                            <p className="navInfo">RRSS:</p>
-                            <p className="navInfo"><a href={`https://www.facebook.com/twofisio.scp`}target="_blank">Facebook</a>  | <a href={`https://www.instagram.com/twofisio/?hl=es`}target="_blank">Instagram</a></p>
-                        </div> */}
                    </div>
                     <div className="subMenuSection2">
                         
@@ -168,10 +162,6 @@ class NavBar extends React.Component {
                         </Link>
                     </div>
                     </div>
-                    {/* <div className="menuFooter">
-                        <NavTextStyle><a href="http://tailor-hub.com" target="_blank">© 2019 by Tailor</a></NavTextStyle>
-                        <img src={tailorLogo}></img>
-                    </div> */}
                 </Box>
             </NavWrapperStyle>
         )
