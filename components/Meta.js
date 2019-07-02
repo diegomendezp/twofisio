@@ -31,6 +31,13 @@ const Meta = ({title}) => {
             padding: 0;
             max-width: 100%;
           }
+
+          .center {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+          }
         `}</style>
     </React.Fragment>
   );
