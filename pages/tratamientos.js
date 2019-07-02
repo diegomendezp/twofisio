@@ -4,11 +4,8 @@ import Treatment from "../components/Treatment.js";
 import TratamientosStyles from "../PagesStyles/TratamientosStyles.js";
 
 import FontBold from "../PagesStyles/FontStyle/FontBold.js";
-
-import Head from "next/head";
 import Navbar from "../components/NavBar.js";
 import Footer from "../components/Footer/Footer.js";
-import imgTrata from "../static/imgTratamientos.jpg";
 import HeaderAnimated from "../components/HeaderAnimated/HeaderAnimated";
 import Meta from "../components/Meta.js";
 const displayTreatments = () => {
@@ -51,7 +48,7 @@ class tratamientos extends React.Component {
         <Meta title="Twofisio – Tratamientos" />
         <Navbar link="Nosotros" backgroundColor={navColor} />
         <TratamientosStyles>
-          <HeaderAnimated img={imgTrata} positionY={13} />
+          <HeaderAnimated img={`${process.env.ASSET_PREFIX}/static/imgTratamientos.jpg`} positionY={13} />
           <div className="treatments-content">
             <FontBold>Tratamientos</FontBold>
             <div className="treatments">{displayTreatments()}</div>
