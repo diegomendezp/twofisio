@@ -15,7 +15,7 @@
       "Tratamiento fisioterápico en disfunciones articulación témporo-mandibular (Fisioterapia Arguelles)",
       "Monitora de pilates (Federación Madrileña de Gimnasia)"
     ],
-    "photo":"../static/twofisioRebeca.png"
+    "photo":"/static/twofisioRebeca.png"
   },
   {
     "name": "Clara Taboada",
@@ -33,7 +33,7 @@
       "Máster en fisioterapia deportiva (Universidad Europea de Madrid y Escuela de fisioterapia del Real Madrid)",
       "Kinesiotaping nivel I y nivel II (Universidad Europea de Madrid)"
     ],
-    "photo":"../static/twofisioClara.png"
+    "photo":"/static/twofisioClara.png"
   },
   {
     "name": "Alejandro Méndez",
@@ -44,7 +44,7 @@
       "Especialista en Nutrición Deportiva y Fisiología del ejercicio (Dietas, Deportes y Tecnología S.L)",
       "Experto en pilates y su aplicación a la fisioterapia (AEFEP)"
     ],
-    "photo":"../static/twofisioAlejandro.png"
+    "photo":"/static/twofisioAlejandro.png"
   },
   {
     "name": "Lara González",
@@ -55,6 +55,6 @@
       "Certificado “Kinesio Taping Fundamentals And Advanced (KT1 & KT2)” por la Kinesio Taping International Association",
       "Máster en fisioterapia deportiva (Universidad Pontificia de Salamanca y Clínica Cemtro)"
     ],
-    "photo":"../static/twofisioLara.png"
+    "photo":"/static/twofisioLara.png"
   }
 ]

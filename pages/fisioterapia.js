@@ -3,8 +3,6 @@ import tecnicas from "../content/tecnicas.json";
 import Navbar from "../components/NavBar.js";
 import Footer from "../components/Footer/Footer.js";
 import HeaderAnimated from "../components/HeaderAnimated/HeaderAnimated.js";
-import Head from "next/head";
-import imgFisio from "../static/imgFisioterapia.jpg"
 import Technique from "../components/Technique.js";
 import FisioterapiaStyles from "../PagesStyles/FisioterapiaStyles.js";
 import FontBold from "../PagesStyles/FontStyle/FontBold.js";
@@ -53,7 +51,7 @@ class fisioterapia extends React.Component {
         <Meta title="Twofisio – Fisioterapia" />
         <Navbar link="Nosotros" backgroundColor={navColor}/>
         <FisioterapiaStyles>
-        <HeaderAnimated img={imgFisio} positionY={0}/>
+        <HeaderAnimated img={`${process.env.ASSET_PREFIX}/static/imgFisioterapia.jpg`} positionY={0}/>
           <div className="techniques-content">
             <FontBold>Fisioterapia</FontBold>
             <FontRegular>{description}</FontRegular>

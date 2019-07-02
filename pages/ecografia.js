@@ -3,7 +3,6 @@ import Head from "next/head";
 import Navbar from "../components/NavBar";
 import Footer from "../components/Footer/Footer";
 import EcographyStyles from "../PagesStyles/EcografiaStyles";
-import imgEco from "../static/imgEcografia4.jpg";
 import HeaderAnimated from "../components/HeaderAnimated/HeaderAnimated";
 
 import FontRegular from "../PagesStyles/FontStyle/FontRegular.js";
@@ -44,7 +43,7 @@ class ecografia extends React.Component {
         <Meta title="Twofisio – Ecografías"/>
         <Navbar link="Nosotros" backgroundColor={navColor} />
         <EcographyStyles>
-          <HeaderAnimated img={imgEco} positionY={40} />
+          <HeaderAnimated img={`${process.env.ASSET_PREFIX}/static/imgEcografia4.jpg`} positionY={40} />
           <div className="back-photo">
             <div className="ecography-content">
               <FontBold>Ecografía y fisioterapía invasiva</FontBold>
