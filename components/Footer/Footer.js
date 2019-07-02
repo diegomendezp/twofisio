@@ -74,7 +74,7 @@ const Footer = () => {
             </a>
             <img
               className="footerLogo"
-              src="../../static/iconWhite.svg"
+              src={`${process.env.ASSET_PREFIX}/static/iconWhite.svg`}
               alt="logo-tailor"
             />
           </div>

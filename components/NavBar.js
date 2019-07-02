@@ -142,10 +142,6 @@ class NavBar extends React.Component {
                             <p className="navInfo"><a href="https://goo.gl/maps/K6zbJ39jVTn" target="_blank">Avenida del Padre Piquer, 39</a></p>
                             <p className="navInfo">28024 Madrid</p>
                         </div>
-                        {/* <div className="navInfoContainer">
-                            <p className="navInfo">RRSS:</p>
-                            <p className="navInfo"><a href={`https://www.facebook.com/twofisio.scp`}target="_blank">Facebook</a>  | <a href={`https://www.instagram.com/twofisio/?hl=es`}target="_blank">Instagram</a></p>
-                        </div> */}
                    </div>
                     <div className="subMenuSection2">
                         
@@ -166,10 +162,6 @@ class NavBar extends React.Component {
                         </Link>
                     </div>
                     </div>
-                    {/* <div className="menuFooter">
-                        <NavTextStyle><a href="http://tailor-hub.com" target="_blank">© 2019 by Tailor</a></NavTextStyle>
-                        <img src={tailorLogo}></img>
-                    </div> */}
                 </Box>
             </NavWrapperStyle>
         )
