@@ -108,7 +108,7 @@ z-index: 10;
   box-sizing: border-box;
   background-color: ${props => (props.backgroundColor && props.position ? props.backgroundColor : 'transparent')};
   justify-content: space-between;
-  padding: 1% 1%;
+  padding: 1% 2%;
   position: absolute;
   width: 100vw;
   top: 0;
