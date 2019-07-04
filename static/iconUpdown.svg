@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="16px" viewBox="0 0 27 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Path</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Screen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Nosotros" transform="translate(-483.000000, -629.000000)" fill="#740A64" fill-rule="nonzero">
+            <g id="Person" transform="translate(102.000000, 371.000000)">
+                <g id="Rebeca">
+                    <g id="back" transform="translate(394.500000, 266.000000) scale(-1, 1) rotate(-90.000000) translate(-394.500000, -266.000000) translate(386.500000, 252.500000)">
+                        <path d="M2.44378346,13.4993189 L15.2635336,1.75729554 C15.5788221,1.4685126 15.5788221,1.00537015 15.2635336,0.716587206 C14.9482451,0.427804265 14.4425937,0.427804265 14.1273052,0.716587206 L0.736466389,12.9816891 C0.42117787,13.270472 0.42117787,13.7336145 0.736466389,14.0223974 L14.1273052,26.2820506 C14.281975,26.4237177 14.4901844,26.5 14.692445,26.5 C14.8947055,26.5 15.1029149,26.4291664 15.2575848,26.2820506 C15.5728733,25.9932677 15.5728733,25.5301252 15.2575848,25.2413423 L2.44378346,13.4993189 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
