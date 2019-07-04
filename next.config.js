@@ -5,7 +5,7 @@ const withPlugins = require('next-compose-plugins');
 const webpack = require('webpack');
 
 const debug = process.env.NODE_ENV !== 'production';
-const assetPrefix = !debug ? '' : '';
+const assetPrefix = !debug ? '/twofisio' : '';
 
 
 const nextConfig = {
