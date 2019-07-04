@@ -32,7 +32,7 @@ class Cookies extends React.Component {
         color={color}
         display={this.state.display}
       >
-        <img src='../static/logo.png' alt="app-logo" className="logo" />
+        <img src='/static/logo.png' alt="app-logo" className="logo" />
         <div className="cookies-content">
           <FontRegular>
             Este sitio web utiliza cookies para garantizar que obtenga la mejor
