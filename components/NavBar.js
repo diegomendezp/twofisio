@@ -115,7 +115,7 @@ class NavBar extends React.Component {
               src={`${process.env.ASSET_PREFIX}/static/logo.png`}
             />
           </Link>
-          <link href="/static/css/hamburger.css" rel="stylesheet" />
+          <link href={`${process.env.ASSET_PREFIX}/static/css/hamburger.css`} rel="stylesheet" />
           <button
             className="hamburger hamburger--spin"
             type="button"
