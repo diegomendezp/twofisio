@@ -13,6 +13,10 @@ overflow: hidden;
 animation-delay: 0.4s;
 z-index: 10;
 
+.hamburger .hamburger--spin {
+  box-shadow: none;
+  border:none;
+}
 .navLogo {
   height: 9vh;
   object-fit: cover;
