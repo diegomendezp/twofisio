@@ -3,47 +3,47 @@
   "pages": {
     "/ecografia": [
       "static/runtime/webpack-838b392324e3598684b5.js",
-      "static/chunks/commons.89096ea703edab9342f3.js",
+      "static/chunks/commons.fbc2ef8f4f9a0eeeeef9.js",
       "static/runtime/main-3a7c160fc9eaefbe62e7.js"
     ],
     "/fisioterapia": [
       "static/runtime/webpack-838b392324e3598684b5.js",
-      "static/chunks/commons.89096ea703edab9342f3.js",
+      "static/chunks/commons.fbc2ef8f4f9a0eeeeef9.js",
       "static/runtime/main-3a7c160fc9eaefbe62e7.js"
     ],
     "/index": [
       "static/runtime/webpack-838b392324e3598684b5.js",
-      "static/chunks/commons.89096ea703edab9342f3.js",
+      "static/chunks/commons.fbc2ef8f4f9a0eeeeef9.js",
       "static/runtime/main-3a7c160fc9eaefbe62e7.js"
     ],
     "/nosotros": [
       "static/runtime/webpack-838b392324e3598684b5.js",
-      "static/chunks/commons.89096ea703edab9342f3.js",
+      "static/chunks/commons.fbc2ef8f4f9a0eeeeef9.js",
       "static/runtime/main-3a7c160fc9eaefbe62e7.js"
     ],
     "/pilates": [
       "static/runtime/webpack-838b392324e3598684b5.js",
-      "static/chunks/commons.89096ea703edab9342f3.js",
+      "static/chunks/commons.fbc2ef8f4f9a0eeeeef9.js",
       "static/runtime/main-3a7c160fc9eaefbe62e7.js"
     ],
     "/tratamientos": [
       "static/runtime/webpack-838b392324e3598684b5.js",
-      "static/chunks/commons.89096ea703edab9342f3.js",
+      "static/chunks/commons.fbc2ef8f4f9a0eeeeef9.js",
       "static/runtime/main-3a7c160fc9eaefbe62e7.js"
     ],
     "/_app": [
       "static/runtime/webpack-838b392324e3598684b5.js",
-      "static/chunks/commons.89096ea703edab9342f3.js",
+      "static/chunks/commons.fbc2ef8f4f9a0eeeeef9.js",
       "static/runtime/main-3a7c160fc9eaefbe62e7.js"
     ],
     "/_error": [
       "static/runtime/webpack-838b392324e3598684b5.js",
-      "static/chunks/commons.89096ea703edab9342f3.js",
+      "static/chunks/commons.fbc2ef8f4f9a0eeeeef9.js",
       "static/runtime/main-3a7c160fc9eaefbe62e7.js"
     ],
     "/": [
       "static/runtime/webpack-838b392324e3598684b5.js",
-      "static/chunks/commons.89096ea703edab9342f3.js",
+      "static/chunks/commons.fbc2ef8f4f9a0eeeeef9.js",
       "static/runtime/main-3a7c160fc9eaefbe62e7.js"
     ]
   }
