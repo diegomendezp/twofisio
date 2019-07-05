@@ -12,11 +12,11 @@ import ReactPageScroller from "react-page-scroller";
 const _ = require("lodash");
 
 const images = [
-  "/static/imgFisioterapia6.jpg",
-  "/static/imgTratamientos.jpg",
-  "/static/imgEcografia5.jpg",
-  "/static/imgPilates4.jpg",
-  "/static/nosotros.jpg"
+  `${process.env.ASSET_PREFIX}/static/imgFisioterapia6.jpg`,
+  `${process.env.ASSET_PREFIX}/static/imgTratamientos.jpg`,
+  `${process.env.ASSET_PREFIX}/static/imgEcografia5.jpg`,
+  `${process.env.ASSET_PREFIX}/static/imgPilates4.jpg`,
+  `${process.env.ASSET_PREFIX}/static/nosotros.jpg`
 ];
 
 var interval;
@@ -299,22 +299,22 @@ export default class Home extends Component {
       case window.innerWidth <= 375: 
         _bubleAnimation(190, 200, 2, 2.2, 1.8, 2, -100, -200);
         let newImages1 = [
-          "/static/imgFisioterapia4.jpg",
-          "/static/imgTratamientos.jpg",
-          "/static/imgEcografia5.jpg",
-          "/static/imgPilates3.jpg",
-          "/static/nosotros.jpg"
+          `${process.env.ASSET_PREFIX}/static/imgFisioterapia4.jpg`,
+          `${process.env.ASSET_PREFIX}/static/imgTratamientos.jpg`,
+          `${process.env.ASSET_PREFIX}/static/imgEcografia5.jpg`,
+          `${process.env.ASSET_PREFIX}/static/imgPilates3.jpg`,
+          `${process.env.ASSET_PREFIX}/static/nosotros.jpg`
         ];
         this.setState({...this.state, images:newImages1})
         break;
       case window.innerWidth <= 414:
         _bubleAnimation(200, 210, 2.3, 3, 3.1, 3.2, -200, -400);
         let newImages2 = [
-          "/static/imgFisioterapia4.jpg",
-          "/static/imgTratamientos.jpg",
-          "/static/imgEcografia5.jpg",
-          "/static/imgPilates3.jpg",
-          "/static/nosotros.jpg"
+          `${process.env.ASSET_PREFIX}/static/imgFisioterapia4.jpg`,
+          `${process.env.ASSET_PREFIX}/static/imgTratamientos.jpg`,
+          `${process.env.ASSET_PREFIX}/static/imgEcografia5.jpg`,
+          `${process.env.ASSET_PREFIX}/static/imgPilates3.jpg`,
+          `${process.env.ASSET_PREFIX}/static/nosotros.jpg`
         ];
         this.setState({...this.state, images:newImages2})
         break;
@@ -357,11 +357,11 @@ export default class Home extends Component {
     }
     window.addEventListener("resize", this._manageResize);
     let newImages = [
-      "/static/imgFisioterapia4.jpg",
-      "/static/imgTratamientos.jpg",
-      "/static/imgEcografia5.jpg",
-      "/static/imgPilates3.jpg",
-      "/static/nosotros.jpg"
+      `${process.env.ASSET_PREFIX}/static/imgFisioterapia4.jpg`,
+      `${process.env.ASSET_PREFIX}/static/imgTratamientos.jpg`,
+      `${process.env.ASSET_PREFIX}/static/imgEcografia5.jpg`,
+      `${process.env.ASSET_PREFIX}/static/imgPilates3.jpg`,
+      `${process.env.ASSET_PREFIX}/static/nosotros.jpg`
     ];
     let newImages2 = window.innerWidth <= 414 ? newImages : images
     this.setState(
