@@ -35,7 +35,7 @@ export class Member extends React.Component {
       <div className="member">
         <img
           className="member-img"
-          src={photo}
+          src={`${process.env.ASSET_PREFIX/photo}`}
           alt={`${name}-photo`}
         />
         <Accordion>
@@ -50,7 +50,7 @@ export class Member extends React.Component {
                 <FontRegular className="member-cole"> NºColegiado: {number}</FontRegular>
               </div>
               <img
-                src="../../static/iconUpdown.svg"
+                src={`${process.env.ASSET_PREFIX}/static/iconUpdown.svg`}
                 alt="up-down-icon"
                 id={`up-down-icon-${name}`}
               />
